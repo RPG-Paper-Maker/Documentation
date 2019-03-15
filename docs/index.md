@@ -30,6 +30,12 @@ Check out the `README` instructions in the root of the folder. After running the
 
 *Coming soon.*
 
+## Change theme
+
+There actually are two different themes: `Dark` and `White`. If you want to change it, go to `Options > General options...`.
+
+![Screenshot](img/themes-options.png)
+
 ## Create a new project
 
 You can create a new project by clicking here on the main toolbar:
@@ -49,3 +55,11 @@ You can open an existing project by clicking here on the main toolbar:
 ![Screenshot](img/open-project.png)
 
 You can also use `CTRL+O` or go to `File > Open project > Browse...`.
+
+## Test your game
+
+You can test your opened project by clicking here on the main toolbar:
+
+![Screenshot](img/play.png)
+
+## Deploy your game

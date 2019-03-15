@@ -7,5 +7,6 @@ pages:
     - Getting started: 'index.md' 
     - Basics:
         - 'Map editor basics': 'basics/map-editor-basics.md'
-        - 'Manage your ressources': 'basics/manage-your-ressources.md'
+        - 'Manage your resources': 'basics/manage-your-resources.md'
     - Advanced: 'advanced.md'
+    - FAQ: 'faq.md'
