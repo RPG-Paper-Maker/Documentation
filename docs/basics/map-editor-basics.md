@@ -102,7 +102,7 @@ In the texture selector **(2)**, you just have to select a square:
 
 ## Animated autotiles
 
-*Not available yet*
+*Not available yet.*
 
 ## Sprites
 
