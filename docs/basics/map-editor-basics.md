@@ -48,6 +48,17 @@ For example with a floor:
 
 You can go back / after a change in each map. Press `CTRL+Z` for undo and `CTRL+Y` for redo.
 
+## Save changes
+
+To save your map editor changes, you can use these shortcuts in the toolbar:
+
+![Screenshot](img/save.png)
+
+* `Save`: Save the changes on the current opened map.
+* `All`: Save the changes on all the modified maps. A map has been changed when you see a `*` after its name:
+
+![Screenshot](img/map-save.png)
+
 ## Show / Hide some UI details
 
 * `G`: Show / Hide grid

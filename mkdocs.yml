@@ -8,9 +8,9 @@ pages:
     - Basics:
         - 'Map editor basics': 'basics/map-editor-basics.md'
         - 'Manage your resources': 'basics/manage-your-resources.md'
-        - 'Tilesets & collisions': 'basics/tilesets-and-collisions.md'
+        - 'Tilesets & Collisions': 'basics/tilesets-and-collisions.md'
         - 'Variables overview': 'basics/variables-overview.md'
-        - 'Objects & events': 'basics/objects-and-events.md'
+        - 'Objects & Events': 'basics/objects-and-events.md'
         - 'Event commands overview': 'basics/event-commands-overview.md'
         - 'Battle system': 'basics/battle-system.md'
         - 'Window skins': 'basics/window-skins.md'

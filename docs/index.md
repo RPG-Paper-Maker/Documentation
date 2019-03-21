@@ -70,16 +70,34 @@ A lot of options are available in the `Systems manager`. Click here on the main 
 * `Max number of save slots`: *(not available yet)* Change the max number of save slots available for the players.
 * `Price of sold item`: *(not available yet)* Change the percent value of the original price of an item when you want to sell it in a shop.
 
-## Save your changes
+## Update keyboard controls
 
-When you are opening a window and clicking on `OK` button, the changes will be saved and there is no way to go back. To save your map editor changes, you can use these shortcuts in the toolbar:
+You can change the engine and game keyboard controls in the keyboard manager by clicking on the main toolbar:
 
-![Screenshot](img/save.png)
+![Screenshot](img/keyboard-manager.png)
 
-* `Save`: Save the changes on the current opened map.
-* `All`: Save the changes on all the modified maps. A map has been changed when you see a `*` after its name:
+For engine:
 
-![Screenshot](img/map-save.png)
+* `CursorUp`, `CursorDown`, `CursorLeft`, `CursorRight`: The cursor directions in map editor.
+
+For Game:
+
+* `UpHero`, `DownHero`, `LeftHero`, `RightHero`: The hero directions in map.
+* `UpMenu`, `DownMenu`, `LeftMenu`, `RightMenu`: The directions in menus.
+* `LeftCamera`, `RightCamera`: Turn the camera.
+* `Action`: Hero action in map.
+* `Cancel`: Cancel in menus.
+* `Main menu`: Open / Close main menu.
+
+Select the corresponding system menus controls: `Action`, `Cancel`, `Up`, `Down`, `Left`, `Right`. You can add as much keys as possbile.
+
+When adding / editing a key:
+
+* `Abbreviation`: Name used for JavaScript use (for programers).
+* `Description`: Will be displayed ingame for the keyboard settings menu.
+* `Shortcut`: Change the shortcut here. Press the corresponding shortcut thanks to `Change...` button. You can have several shortcuts for one action (separated with `|` symbol) and also several keys for one shortcut (separated with `+` symbol).
+	* `Remove last`: Remove the last shortcut (on the right).
+	* `Remove all`: Remove all the entered shortcuts.
 
 ## Test your game
 

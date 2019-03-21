@@ -1,4 +1,4 @@
-# Tilesets & collisions
+# Tilesets & Collisions
 
 We've previously seen that the map properties had an option `Tileset` selection. We will now see what it is.
 
@@ -18,7 +18,7 @@ Collisions are important in video games. You need to manage if the moving object
 
 ## Bounding boxes
 
-Bounding box are simple geometries that are used for checking intersections. Each object have a corresponding bounding box, after each move the engine will check if the object bounding box intersect with another bounding box in the map.
+Bounding box are simple geometries that are used for checking intersections. Each object has a corresponding bounding box, after each move the engine will check if the object bounding box intersect with another bounding box in the map.
 
 There is a way to see the bounding boxes for debugging (if you encounter any strange behavior). Check the following option:
 
@@ -30,7 +30,7 @@ Depending on which sprite you are using, bounding boxes can be oriented like thi
 
 ![Screenshot](img/collision-boxes.png)
  
-Fix sprites are flat, so they don't need to be oriented. However, face, double, and quadra sprites are voluminous and their bounding box could be a cylinder. A cylinder collision is overkilled so we are using oriented boxes that are reasonable to manage collisions with great performances.
+Fix sprites are flat, so they don't need to be oriented. However, face, double, and quadra sprites are voluminous and their bounding box could be a cylinder. A cylinder collision is over killed so we are using oriented boxes that are reasonable to manage collisions with great performances.
 
 ## How can I change collisions?
 
@@ -40,7 +40,7 @@ For tileset, you can edit it directly in the picture preview on the `Tilesets` t
 
 ## Praticable
 
-You can for example change the tileset collision by resizing it for each square. This will affect the size of the bounding boxes. You can resize it with your `mouse` or `Right click` and click on `Edit` in order to open a window for selecting the rectangle values.
+You can for example change the tileset collision by re-sizing it for each square. This will affect the size of the bounding boxes. You can res-ize it with your `mouse` or `Right click` and click on `Edit` in order to open a window for selecting the rectangle values.
 
 ![Screenshot](img/collision-praticable.png)
 
@@ -48,9 +48,11 @@ You can for example change the tileset collision by resizing it for each square.
 
 You can indicate in which direction there will be a collision.
 
+![Screenshot](img/collision-direction.png)
+
 ## Characters
 
-Characters are animated and you can handle different collisions for different frames. But if you want to have the same collisions for all the frames, check the `Repeat` option.
+Characters are animated and you can handle different collisions for different frames. But, if you want to have the same collisions for all the frames, check the `Repeat` option.
 
 ![Screenshot](img/collision-character.png)
 
