@@ -56,6 +56,31 @@ You can open an existing project by clicking here on the main toolbar:
 
 You can also use `CTRL+O` or go to `File > Open project > Browse...`.
 
+## Change general game settings
+
+A lot of options are available in the `Systems manager`. Click here on the main toolbar and go to the `System` tab:
+
+![Screenshot](img/system-basic.png)
+
+* `Game name`: *(not available yet)* Change the name of your game.
+* `Game native resolution`: *(not available yet)* Change width / height resolution and also choose if you want a Window or Fullscreen display. `Display console` option is for programing debugging.
+* `Square size (in px)`: choose here the size (in pixel) of a square in your maps. You should adapt your textures after any change here.
+* `Ray portions to show`: *(not available yet)* The map is separated into several portions (16x16 squares). You can change here the number of portions to display.
+* `Relief block height (in px)`: *(not available yet)* The height considered for blocking the hero so the hero can go up blocks that are in inferior height value.
+* `Max number of save slots`: *(not available yet)* Change the max number of save slots available for the players.
+* `Price of sold item`: *(not available yet)* Change the percent value of the original price of an item when you want to sell it in a shop.
+
+## Save your changes
+
+When you are opening a window and clicking on `OK` button, the changes will be saved and there is no way to go back. To save your map editor changes, you can use these shortcuts in the toolbar:
+
+![Screenshot](img/save.png)
+
+* `Save`: Save the changes on the current opened map.
+* `All`: Save the changes on all the modified maps. A map has been changed when you see a `*` after its name:
+
+![Screenshot](img/map-save.png)
+
 ## Test your game
 
 You can test your opened project by clicking here on the main toolbar:
@@ -63,3 +88,11 @@ You can test your opened project by clicking here on the main toolbar:
 ![Screenshot](img/play.png)
 
 ## Deploy your game
+
+If you want to publish your game (share your game without any need for players to have RPG Paper Maker installed) you have to go to `File > Export standalone...`.
+
+![Screenshot](img/deploy.png)
+
+* `Location`: The location of the standalone folder that you want to create. The name of this folder will be `yourGameName{OS}`.
+* `Deploy a desktop application`: Choose here to deploy your game as a desktop application (choose the OS in options: Windows, Linux, or Mac).
+* `Deploy for web browser`: *(not available yet)* Choose here to deploy your game as a web application. This will generate an `index.html` page and other files.

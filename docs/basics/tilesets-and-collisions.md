@@ -70,7 +70,7 @@ Rendering in map:
 
 Don't forget to add your autotiles in the tileset:
 
-
+![Screenshot](img/autotiles-tileset.png)
 
 ## Animated autotiles
 
@@ -80,10 +80,10 @@ Don't forget to add your autotiles in the tileset:
 
 You can manage the walls the same way you did for autotiles in:
 
-* In collisions manager
-* In `Tilesets` tab in datas manager:
+* Collisions manager
+* `Tilesets` tab in datas manager:
 
-
+![Screenshot](img/walls-tileset.png)
 
 ## 3D objects
 

@@ -15,5 +15,6 @@ pages:
         - 'Battle system': 'basics/battle-system.md'
         - 'Window skins': 'basics/window-skins.md'
         - 'Title screen & Game Over': 'basics/title-screen-and-game-over.md'
+        - 'Control the camera': 'basics/control-the-camera.md'
     - Advanced: 'advanced.md'
     - FAQ: 'faq.md'
