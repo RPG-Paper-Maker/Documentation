@@ -30,7 +30,7 @@ The camera is always looking at the following cursor:
 
 ![Screenshot](img/cursor.png)
 
-You can move it by pressing `QWSD` on keyboard.
+You can move it by pressing `QWSD` on keyboard. You can also teleport the cursor on the pointed square by using `CTRL + Left click`.
 
 To move the camera position, press the `mouse wheel` and move the mouse in the direction you want:
 

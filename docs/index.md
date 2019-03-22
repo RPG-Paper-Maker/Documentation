@@ -99,6 +99,12 @@ When adding / editing a key:
 	* `Remove last`: Remove the last shortcut (on the right).
 	* `Remove all`: Remove all the entered shortcuts.
 
+## Update general colors
+
+Go to the `Systems manager > System` and take a look on the `Colors` box:
+
+![Screenshot](img/colors.png)
+
 ## Test your game
 
 You can test your opened project by clicking here on the main toolbar:

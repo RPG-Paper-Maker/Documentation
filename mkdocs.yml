@@ -3,6 +3,7 @@ docs_dir: ../Documentation/docs
 site_name: RPG Paper Maker
 repo_url: https://github.com/RPG-Paper-Maker/RPG-Paper-Maker
 copyright: RPG Paper Maker Copyright (C) 2017-2019 Marie Laporte
+theme: readthedocs
 pages:
     - Getting started: 'index.md' 
     - Basics:
@@ -12,9 +13,9 @@ pages:
         - 'Variables overview': 'basics/variables-overview.md'
         - 'Objects & Events': 'basics/objects-and-events.md'
         - 'Event commands overview': 'basics/event-commands-overview.md'
+        - 'Control the camera': 'basics/control-the-camera.md'
         - 'Battle system': 'basics/battle-system.md'
         - 'Window skins': 'basics/window-skins.md'
         - 'Title screen & Game Over': 'basics/title-screen-and-game-over.md'
-        - 'Control the camera': 'basics/control-the-camera.md'
     - Advanced: 'advanced.md'
     - FAQ: 'faq.md'
