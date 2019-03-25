@@ -10,7 +10,21 @@ Open the pictures manager by clicking here on the main toolbar:
 
 ![Screenshot](img/pictures-manager.png)
 
-On the left, you have a tree containing all the pictures kind available in your project (`Facesets`, `Battlers`, `Characters`, etc.). The second list corresponds to all the pictures that you are using in your game (according to the kind of pictures you selected). Each picture has an `ID` and a `name`. This system is in place in order to:
+On the left, you have a tree containing all the pictures kind available in your project:
+
+* `Bars`: All the graphic bars for specific statistics.
+* `Faceset`: All the face images used in battles when targeting a character.
+* `Icons`: All the icons used in the game.
+* `WindowSkins`: All the information used for windows, arrows, texts, etc.
+* `TitleScreen`: All the graphics for title screen.
+* `Autotiles`: All the autotiles textures.
+* `Battlers`: All the battlers used for battles corresponding to different sprites states.
+* `Character`: All the character sprites with walk animations.
+* `Reliefs`: *Not available yet.*
+* `Tilesets`: All the tilesets used for map textures.
+* `Walls`: All the walls textures.
+
+The second list corresponds to all the pictures that you are using in your game (according to the kind of pictures you selected). Each picture has an `ID` and a `name`. This system is in place in order to:
 
 * Avoid having useless textures to be loaded
 * Being able to change the names of your ressources without problem

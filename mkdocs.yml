@@ -18,4 +18,5 @@ pages:
         - 'Window skins': 'basics/window-skins.md'
         - 'Title screen & Game Over': 'basics/title-screen-and-game-over.md'
     - Advanced: 'advanced.md'
+    - Experts: 'experts.md'
     - FAQ: 'faq.md'
