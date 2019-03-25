@@ -1,27 +1,58 @@
-# Variables overview
+# Window Skins
 
-Variables are important to understand if you want to have a dynamic game. Here is an overview on the subject.
+A WindowSkin is a picture that is cut for being used as a design for window boxes (text dialog for example), arrows (end of message, target selection, up/down), texts in battles (damage numbers with normal, critical, heals, and miss). RPG Paper Maker doesn't have a fix template, you can edit the cutting of each element of your WindowSkin by yourself.
 
-## What is a variable ?
+Here is the default Window Skin image used:
 
-A variable is a value that can change when you are playing in your game. There are three possible type of variables:
+![Screenshot](img/default-windowskin.png)
 
-* `Numbers`: number with or without decimals.
-* `Switches`: ON or OFF.
-* `Messages`: Any type of message.
+ 
+## Create a Window Skin and / or change default Window Skin
 
-You have access to a large number of variables. By default, when you launch a new game all the variables are equals to `0`.
+Got to `Systems Manager > System`.
 
-## Variables manager
+![Screenshot](img/window-skins.png)
 
-Open the variables manager by clicking here on the main toolbar:
+* On left: Change default.
+* On right: Manage all WindowSkins.
 
-![Screenshot](img/variables-manager.png)
+## Edit WindowSkin
 
-You can only manage the number and names of variables here. You cannot change the values. We will see later how to modify the values ingame.
+To view a cutting, put your mouse on the widget associated (example: top-left border). You'll see a red rectangle. If you want to change it, there are two ways.
 
-## Using example
+### Enter
 
-Imagine that you want to create a feature that allows the player to change the music volume. You can use variables here! The engine propose to use fix numbers or variables:
+Click on the `Enter...` button to open a dialog box and edit the rectangle with input numbers.
 
-![Screenshot](img/volume-variable.png)
+![Screenshot](img/window-skins-enter.png)
+
+### Select
+
+Click on the `Select...` button and draw the rectangle with your mouse directly on the picture preview.
+
+![Screenshot](img/window-skins-select.gif)
+
+## Properties
+
+* `Picture`: The picture used by the WindowSkin.
+* **Side borders**: The side borders used for the window boxes.
+* **Borders**: The borders used for the window boxes.
+* **Background**:
+
+	![Screenshot](img/window-skins-bg-option.png)
+
+	* `Normal`: The background image used for the window boxes.
+	* `Selection`: The background image used for the window choices / tabs when selected.
+	* `Option`:
+		* `Repeat`: Repeat the background image for larger windows.
+		* `Stretch`: Stretch the background image for larger windows.
+		
+* **Arrows**:
+	* `Target selection`: The arrows animation used for the battle target selection.
+	* `End of message`: The arrows animation used for the command show text command.
+	* `Up / Down`: The arrows used for the input number.
+* **Texts**:
+	* `Normal damage`: The texts numbers used for normal damages.
+	* `Heal damage`: The texts numbers used for heal damages.
+	* `Critical damage`: The texts numbers used for critical damages.
+	* `Miss`: The texts numbers used for miss damages.
