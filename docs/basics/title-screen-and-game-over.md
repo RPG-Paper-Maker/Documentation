@@ -1,27 +1,17 @@
-# Variables overview
+# Title Screen & Game Over
 
-Variables are important to understand if you want to have a dynamic game. Here is an overview on the subject.
+Got to `Systems datas > Title screen / Game over`:
 
-## What is a variable ?
+![Screenshot](img/title-screen-game-over.png)
 
-A variable is a value that can change when you are playing in your game. There are three possible type of variables:
+## Title Screen
 
-* `Numbers`: number with or without decimals.
-* `Switches`: ON or OFF.
-* `Messages`: Any type of message.
+In the first section, you can edit some of the title screen properties.
 
-You have access to a large number of variables. By default, when you launch a new game all the variables are equals to `0`.
+* `Logo`: Picture used for displaying the logo on top-left border.
+* `Background`: Picture used for title screen background.
+* `Music`: Music used when player is in title screen.
 
-## Variables manager
+## Game Over
 
-Open the variables manager by clicking here on the main toolbar:
-
-![Screenshot](img/variables-manager.png)
-
-You can only manage the number and names of variables here. You cannot change the values. We will see later how to modify the values ingame.
-
-## Using example
-
-Imagine that you want to create a feature that allows the player to change the music volume. You can use variables here! The engine propose to use fix numbers or variables:
-
-![Screenshot](img/volume-variable.png)
+*Not available yet.*

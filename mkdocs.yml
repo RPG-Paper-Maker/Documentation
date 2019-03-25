@@ -16,7 +16,7 @@ pages:
         - 'Control the camera': 'basics/control-the-camera.md'
         - 'Battle system': 'basics/battle-system.md'
         - 'Window skins': 'basics/window-skins.md'
-        - 'Title screen & Game Over': 'basics/title-screen-and-game-over.md'
+        - 'Title Screen & Game Over': 'basics/title-screen-and-game-over.md'
     - Advanced: 'advanced.md'
     - Experts: 'experts.md'
     - FAQ: 'faq.md'
