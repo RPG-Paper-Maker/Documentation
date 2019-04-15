@@ -16,19 +16,19 @@ If you are experiencing any issue on RPG Paper Maker, feel free to ask for some 
 
 ## Installation
 
-Go to the [Download section](http://rpg-paper-maker.com/index.php/downloads#content) from the official website and download the installer according to your system. Extract the file.
+Go to the [Download section](http://rpg-paper-maker.com/index.php/downloads#content) from the official website and download the installer according to your system.
 
 ### Windows
 
-Run `RPG Paper Maker.exe`. This will ask you for downloading the latest version of RPG Paper Maker. Wait for the downloading to be finished.
+Run `RPG Paper Maker installer.exe`. This will install the program on your computer and run `RPG Paper Maker.exe`. This will ask you for downloading the latest version of RPG Paper Maker. Wait for the downloading to be finished.
 
 ### Linux
 
-Check out the `README` instructions in the root of the folder. After running the last instruction (`./run.sh`), this will ask you for downloading the latest version of RPG Paper Maker. Wait for the downloading to be finished.
+Extract the file. Check out the `README` instructions in the root of the folder. After running the last instruction (`./run.sh`), this will ask you for downloading the latest version of RPG Paper Maker. Wait for the downloading to be finished.
 
 ### MacOSX
 
-*Coming soon.*
+Extract the file. After running `RPG Paper Maker.app`, this will ask you for downloading the latest version of RPG Paper Maker. Wait for the downloading to be finished.
 
 ## Change theme
 
