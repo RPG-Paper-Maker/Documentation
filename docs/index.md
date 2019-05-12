@@ -4,9 +4,9 @@ Welcome to this guide! You will find here all what you need to be a pro Paper Ma
 
 ## License
 
-First, you should know that RPG Paper Maker is an Open Source project under GNU General Public License v3.0. Feel free to contribute to the github repository [here](https://github.com/RPG-Paper-Maker/RPG-Paper-Maker) if you have any skills in programming, project management, etc.
+First, you should know that RPG Paper Maker is an Open Source project under GNU Lesser General Public License v3.0. Feel free to contribute to the github repository [here](https://github.com/RPG-Paper-Maker/RPG-Paper-Maker) if you have any skills in programming, project management, etc.
 
-**RPG Paper Maker is free for non-commercial use** so you don't have to pay for it if you only want to share your games freely and have fun! However, if you want to sell your games made with the engine you will have to pay for the license. More details [here](http://rpg-paper-maker.com/index.php/downloads#content). If you want to support us, check out our [Patreon](https://www.patreon.com/rpgpapermaker/overview)!
+RPG Paper Maker games are licensed under Creative Commons Attribution-NonCommercial 4.0 license. **You are free to use RPG Paper Maker for your personal or non-profit games**. You can get the author's permission to use RPG Paper Maker for commercial games by paying a fee. More details [here](http://rpg-paper-maker.com/index.php/downloads#content). If you want to support us, check out our [Patreon](https://www.patreon.com/rpgpapermaker/overview)!
 
 **The commercial license is not released yet. This is comming out soon.**
 
@@ -54,7 +54,7 @@ You can open an existing project by clicking here on the main toolbar:
 
 ![Screenshot](img/open-project.png)
 
-You can also use `CTRL+O` or go to `File > Open project > Browse...`.
+You can also use `CTRL+O` or go to `File > Open project > Browse...`. Recent projects can also be opened on the first screen (or go to `File > Open project`).
 
 ## Change general game settings
 
@@ -105,6 +105,25 @@ Go to the `Systems manager > System` and take a look on the `Colors` box:
 
 ![Screenshot](img/colors.png)
 
+## Change game name
+
+Go to the `Systems manager > System` and take a look on the `Game name` box:
+
+![Screenshot](img/game-name.png)
+
+This will affect the window title when you are launching the game.
+
+## Change game screen resolution
+
+Go to the `Systems manager > System` and take a look on the `Game native resolution` box:
+
+![Screenshot](img/game-resolution.png)
+
+* `Width`: The native width of your game window.
+* `Height`: The native height of your game window.
+* `Window`: Choose a window mode.
+* `Full screen`: choose full screen mode. Note that `Width` and `Height` have no effect with this option.
+
 ## Test your game
 
 You can test your opened project by clicking here on the main toolbar:
@@ -118,5 +137,7 @@ If you want to publish your game (share your game without any need for players t
 ![Screenshot](img/deploy.png)
 
 * `Location`: The location of the standalone folder that you want to create. The name of this folder will be `yourGameName{OS}`.
-* `Deploy a desktop application`: Choose here to deploy your game as a desktop application (choose the OS in options: Windows, Linux, or Mac).
-* `Deploy for web browser`: *(not available yet)* Choose here to deploy your game as a web application. This will generate an `index.html` page and other files.
+* `Type of export`: Choose export options here.
+	* `Deploy a desktop application`: Choose here to deploy your game as a desktop application (choose the `OS` in options: Windows, Linux, or Mac).
+	* `Deploy for web browser`: *(not available yet)* Choose here to deploy your game as a web application. This will generate an `index.html` page and other files.
+* `Version`: Choose you game version. Having 1 for `major` and 0 for `minor` will create a 1.0 version.

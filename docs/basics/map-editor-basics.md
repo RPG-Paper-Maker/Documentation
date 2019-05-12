@@ -154,3 +154,7 @@ To define where the game should start, you have to define who is the hero in one
 ![Screenshot](img/define-hero.png)
 
 That's it! You will understand later why we are using an object and why this will open a lot of opportunities for customizing your games!
+
+*Note:* You can see who is the hero with a "S" symbol under it.
+
+![Screenshot](img/hero.png)

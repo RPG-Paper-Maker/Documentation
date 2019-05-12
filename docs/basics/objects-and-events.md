@@ -33,6 +33,10 @@ To edit / add a new command in a reaction, `Double click` on a corresponding nod
 
 We will see later all these commands details one by one.
 
+There is also a way to find your commands faster with keyboard search:
+
+![Screenshot](img/commands-keyboard.png)
+
 You can also copy / paste / delete by `Right-clicking` on the corresponding command node.
 
 ## Common reactions
@@ -83,9 +87,13 @@ System events are the following:
 
 An object has a set of `States`. For example, the hero can be in a normal state, or poisoned / vulnerable. Note that an object can be in several states at the same time. 
 
+You can add a new state on this list. There also is a `Update complete list...` button if you want to create new common states.
+
 ![Screenshot](img/object-state-second.png)
 
 For each state, you have to choose different reactions to specific events. You can copy / paste reactions through states by using `Copy reaction` and `Paste reaction` buttons. These different options are also available for each state:
+
+![Screenshot](img/state-options.png)
 
 * `Graphics`: Select the object graphics here (character picture). Choose below the kind of element (Sprite etc.).
 * `Moving`: *(not available yet)* Options linked to the object moves.

@@ -8,7 +8,7 @@ A tileset corresponds to a set of informations linked to the map textures and co
 
 ![Screenshot](img/tileset-manager.png)
 
-If you want to add / remove tileset(s), you can use the `Change maximum...` button. You can change the `Picture` by clicking on the following widget that will open a reduced picture manager (containing only one kind of picture). That picture will correspond to the static textures that you will use for your maps having this tileset.
+If you want to add / remove tileset(s), you can use the `Set max...` button or `+` or `-`. You can change the `Picture` by clicking on the following widget that will open a reduced picture manager (containing only one kind of picture). That picture will correspond to the static textures that you will use for your maps having this tileset.
 
 You can also change special textures (autotiles, walls, etc.) linked to the tileset.
 
