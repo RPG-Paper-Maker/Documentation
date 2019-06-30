@@ -24,13 +24,22 @@ If you want to create / edit a map, you will get this window:
 * `Background sound`: The background that is played in the background with the music. This can be wind, rain, etc.
 * `Sky color`: The color used for the sky.
 
-## Move camera
+## Move cursor / grid / camera
 
 The camera is always looking at the following cursor:
 
 ![Screenshot](img/cursor.png)
 
-You can move it by pressing `QWSD` on keyboard. You can also teleport the cursor on the pointed square by using `CTRL + Left click`.
+Here are some actions possible with the cursor:
+
+* Move on `X` and `Z` axis by using `QWSD` on keyboard.
+* Move on `Y` axis: 
+	* Move by square: use `CTRL + Arrow Up/Down` or `CTRL + mouse wheel`
+	* Move by pixel: use `CTRL + SHIFT + Arrow Up/Down` or `CTRL + SHIFT + mouse wheel`
+
+![Screenshot](img/y-axis.png)
+
+* Teleport the cursor on the pointed element square by using `CTRL + Left click`.
 
 To move the camera position, press the `mouse wheel` and move the mouse in the direction you want:
 
@@ -131,6 +140,20 @@ Sprites are vertical planes that can be used to simulate a "paper" world. Here a
 Another kind of sprites are `Walls Sprite` that are dynamic (such as autotiles).
 
 ![Screenshot](img/walls-preview.png)
+
+In the texture selector **(2)**, you just have to select a wall:
+
+![Screenshot](img/walls-texture.png)
+
+## 3D Objects
+
+There are not only sprites, but also 3D objects available for your maps! 
+
+![Screenshot](img/objects-3d-preview.png)
+
+In the texture selector **(2)**, you just have to select an object:
+
+![Screenshot](img/objects-3d-texture.png)
 
 ## Objects
 

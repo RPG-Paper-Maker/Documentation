@@ -64,3 +64,15 @@ Also note that there are four sorts of songs:
 * `Background sounds`: Sounds that are looping on top of the current played music (used for rain, wind, etc.).
 * `Sounds`: Sound played one (used for cursor, attacks sounds, etc.).
 * `Music effects`: Short music stopping the currently played music. After the end of this music, the previously played music goes back (used for object found music, level up music, etc.).
+
+## Manage shapes
+
+You can import your own 3D models in your maps! Open the shapes manager by clicking here on the main toolbar:
+
+![Screenshot](img/shapes-manager.png)
+
+Again, you can manage your songs exactly like pictures. Here are the different kind of shapes that you can handle:
+
+* `OBJ`: `.obj` files for importing 3D objects models.
+* `MTL` **(not available yet)**
+* `Collisions`: **(not available yet)**
