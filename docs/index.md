@@ -4,9 +4,11 @@ Welcome to this guide! You will find here all what you need to be a pro Paper Ma
 
 ## License
 
-First, you should know that RPG Paper Maker is an Open Source project under GNU Lesser General Public License v3.0. Feel free to contribute to the github repository [here](https://github.com/RPG-Paper-Maker/RPG-Paper-Maker) if you have any skills in programming, project management, etc.
+RPG Paper Maker is free for non commercial use. You don't have any fee to pay as long as you don't plan to publish commercial games done with RPG Paper Maker.
 
-RPG Paper Maker games are licensed under Creative Commons Attribution-NonCommercial 4.0 license. **You are free to use RPG Paper Maker for your personal or non-profit games**. You can get the author's permission to use RPG Paper Maker for commercial games by paying a fee. More details [here](http://rpg-paper-maker.com/index.php/downloads#content). If you want to support us, check out our [Patreon](https://www.patreon.com/rpgpapermaker/overview)!
+RPG Paper Maker is proprietary licensed. See the RPG Paper Maker EULA [here](http://rpg-paper-maker.com/index.php/eula). RPG Paper Maker was previously open source, but the software keeps a lot of these aspects (source code access on github, free for non commercial use...). Feel free to contribute to the github repository [here](https://github.com/RPG-Paper-Maker/RPG-Paper-Maker) if you have any skills in programming, project management, etc. **Be aware that any contribution becomes RPG Paper Maker property, but we guaranty that RPG Paper Maker will always be available for free.**
+
+If you want to support us financially for the free model, check out our [Patreon](https://www.patreon.com/rpgpapermaker/overview)!
 
 **The commercial license is not released yet. This is comming out soon.**
 
