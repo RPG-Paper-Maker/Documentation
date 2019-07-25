@@ -10,8 +10,6 @@ RPG Paper Maker is proprietary licensed. See the RPG Paper Maker EULA [here](htt
 
 If you want to support us financially for the free model, check out our [Patreon](https://www.patreon.com/rpgpapermaker/overview)!
 
-**The commercial license is not released yet. This is comming out soon.**
-
 ## Community and support
 
 If you are experiencing any issue on RPG Paper Maker, feel free to ask for some help in the [website forums](http://rpg-paper-maker.com/index.php/forum). You can also share your creations and propose your wanted [next features](https://feathub.com/RPG-Paper-Maker/RPG-Paper-Maker).
@@ -64,13 +62,16 @@ A lot of options are available in the `Systems manager`. Click here on the main 
 
 ![Screenshot](img/system-basic.png)
 
-* `Game name`: *(not available yet)* Change the name of your game.
-* `Game native resolution`: *(not available yet)* Change width / height resolution and also choose if you want a Window or Fullscreen display. `Display console` option is for programing debugging.
+* `Game name`: Change the name of your game.
+* `Game native resolution`: Change width / height resolution and also choose if you want a Window or Fullscreen display. `Display console` option is for programing debugging.
 * `Square size (in px)`: choose here the size (in pixel) of a square in your maps. You should adapt your textures after any change here.
-* `Ray portions to show`: *(not available yet)* The map is separated into several portions (16x16 squares). You can change here the number of portions to display.
-* `Relief block height (in px)`: *(not available yet)* The height considered for blocking the hero so the hero can go up blocks that are in inferior height value.
+* `Ray portions (editor)`: *(not available yet)* The map is separated into several portions (16x16 squares). You can change here the number of portions to display.
+* `Ray portions (ingame)`: *(not available yet)* Same but for ingame.
+* `Mountain collision height limit (in px)`: The height considered for blocking the hero so the hero can go up blocks that are in inferior height value.
+* `Mountain collision angle limit (in degree)`: The angle considered for blocking the hero so the hero can go up mountains that are in inferior angle value.
 * `Max number of save slots`: *(not available yet)* Change the max number of save slots available for the players.
 * `Price of sold item`: *(not available yet)* Change the percent value of the original price of an item when you want to sell it in a shop.
+* `Window skin`: The default windows skin used for designing windows UI.
 
 ## Update keyboard controls
 

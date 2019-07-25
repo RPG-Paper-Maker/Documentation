@@ -145,6 +145,26 @@ In the texture selector **(2)**, you just have to select a wall:
 
 ![Screenshot](img/walls-texture.png)
 
+## Mountains
+
+You can add some reliefs to your map thanks to mountains!
+
+![Screenshot](img/mountains-preview.png)
+
+In the texture selector **(2)**, you have several possible options for designing your mountains:
+
+![Screenshot](img/mountains-texture.png)
+
+* `Top floor`: The floor that whill be automatically added on top of the mountains. This floor depends on the tileset texture. Click on the `...` button to edit the top floor.
+* `Border width`: If the border width is equal to zero, this will be a 90° mountain. You can adjust here the width of the borders of the mountains (this will create small slopes).
+	* `Square(s)`: Select the number of squares.
+	* `Pixel(s)`: Select the number of pixels added.
+* `Height`: The total height of the mountain.
+	* `Square(s)`: Select the number of squares.
+	* `Pixel(s)`: Select the number of pixels added.
+
+Note that you can se the angle value bellow these options so you can refer to this for angle collisions in `Systems manager > System`.
+
 ## 3D Objects
 
 There are not only sprites, but also 3D objects available for your maps! 

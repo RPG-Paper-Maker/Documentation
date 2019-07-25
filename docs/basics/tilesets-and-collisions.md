@@ -74,6 +74,10 @@ Don't forget to add your autotiles in the tileset:
 
 ![Screenshot](img/autotiles-tileset.png)
 
+This can also be done in the texture selector **(2)**:
+
+![Screenshot](img/autotiles-update-list.png)
+
 ## Animated autotiles
 
 *Not available yet.*
@@ -83,9 +87,22 @@ Don't forget to add your autotiles in the tileset:
 You can manage the walls the same way you did for autotiles in:
 
 * Collisions manager
+* In the texture selector
 * `Tilesets` tab in datas manager:
 
 ![Screenshot](img/walls-tileset.png)
+
+
+## Mountains
+
+You can manage the mountains the same way you did for autotiles in:
+
+* In the texture selector
+* `Tilesets` tab in datas manager:
+
+![Screenshot](img/mountains-tileset.png)
+
+To manage collisions with mountains, go to `Systems manager > System` and set the `Mountain collisions height limit (in px)` and `Mountain collisions angle limit (in degree)`.
 
 ## 3D objects
 
@@ -134,6 +151,4 @@ Don't forget to add your objects in the tileset:
 
 ![Screenshot](img/objects-3d-tileset.png)
 
-## Reliefs
-
-*Not available yet.*
+(or use the texture selector)
