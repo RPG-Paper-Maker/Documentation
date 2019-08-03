@@ -26,6 +26,26 @@ Render in game:
 
 *Not available yet.*
 
+## Change screen tone
+
+*Not available yet.*
+
+## Shake screen
+
+*Not available yet.*
+
+## Flash screen
+
+*Not available yet.*
+
+## Change meteo
+
+*Not available yet.*
+
+## Change map properties
+
+*Not available yet.*
+
 ## Wait
 
 ![Screenshot](img/command-wait.png)
@@ -35,99 +55,6 @@ Wait during a specific time.
 * `Time`: Time to wait in seconds.
 
 ## Change chronometer
-
-*Not available yet.*
-
-## Display a picture
-
-*Not available yet.*
-
-## Set / Move / Turn a picture
-
-*Not available yet.*
-
-## Remove a picture
-
-*Not available yet.*
-
-## Play a video
-
-*Not available yet.*
-
-## Condition
-
-![Screenshot](img/command-conditions.png)
-
-Create a container for commands that will be executed only if the indicated condition is true.
-
-* `Add "else" when conditions do not apply`: Create another container for commands that will be executed only if the indicated condition is false.
-
-* **Variables**:
-	* `Variable`: The variable that will be compared by value.
-
-## Loop
-
-Create a container for commands that will be executed on a loop.
-
-## Break loop
-
-If inside a loop container, this will go out of the loop and go to the next command after the loop.
-
-## Label
-
-*Not available yet.*
-
-## Jump to label
-
-*Not available yet.*
-
-## Stop the reaction
-
-*Not available yet.*
-
-## Comment
-
-*Not available yet.*
-
-## Call a common reaction
-
-*Not available yet.*
-
-## Send event
-
-![Screenshot](img/command-send-event.png)
-
-This will send an event to the selected target.
-
-* **Target**:
-	* `All`: *Not available yet.*
-	* `Detection`: Depends on a detection data. *Actually it just sends an event to objects in front of the object.*
-	* `Object`: *Not available yet.*
-	* `Sender`: *Not available yet.*
-	* `The hero`: Simply send to the defined hero.
-* **Event**:
-	* `Event system`: Select a system event (events sent by the game system itself).
-	* `Event user`: Select a user event (custom events sent by the map objects).
-	* `Parameters values`: Select the event parameters values. You can keep the default value.
-
-## Change state
-
-![Screenshot](img/command-change-state.png)
-
-This will change the state of the current object. An object can have several states at the same time.
-
-* **Selection**:
-	* `State's ID`: The new state ID.
-* **Operation**:
-	* `Replace`: Remove all the current states of the object and add the new state.
-	* `Add`: Only add the new state.
-	* `Remove`: Remove the object state having this ID.
-
-## Change properties
-
-*Not available yet.*
-
-## Change graphic
 
 *Not available yet.*
 
@@ -186,131 +113,19 @@ Check out the camera guide [here](control-the-camera.md).
 
 *Not available yet.*
 
-## Change screen tone
+## Display a picture
 
 *Not available yet.*
 
-## Shake screen
+## Set / Move / Turn a picture
 
 *Not available yet.*
 
-## Flash screen
+## Remove a picture
 
 *Not available yet.*
 
-## Change meteo
-
-*Not available yet.*
-
-## Change map properties
-
-*Not available yet.*
-
-## Change variables
-
-![Screenshot](img/command-change-variables.png)
-
-This will change one or several variable(s) value.
-
-* **Selection**:
-	* `One variable`: The unique variable to change.
-	* `Range`: The range of variables IDs to change.
-* **Operation**: The operation to use according to the current variable(s) value.
-* **Value**:
-	* `Number`: A simple number.
-	* `Random`: A random number between two selected values.
-	* `Number of ... in inventory`: *Not available yet.*
-	* `Total currency ... with ID`: *Not available yet.*
-	* `An ... with instance ID ... statistic ID`: *Not available yet.*
-	* `An object in the map ... characteristic`: *Not available yet.*
-	* `Other characteristics`: *Not available yet.*
-
-## Change a statistic
-
-*Not available yet.*
-
-## Change experience curve
-
-*Not available yet.*
-
-## Change status
-
-*Not available yet.*
-
-## Change a skill
-
-*Not available yet.*
-
-## Change name
-
-*Not available yet.*
-
-## Change class
-
-*Not available yet.*
-
-## Change equipment
-
-*Not available yet.*
-
-## Change money
-
-*Not available yet.*
-
-## Modify inventory
-
-![Screenshot](img/command-modify-inventory.png)
-
-This will update inventory containing. You can for example add items to it.
-
-* **Selection**:
-	* `Item`: An item to select.
-	* `Weapon`: A weapon to select.
-	* `Armor`: An armor to select.
-* **Operation**: The operation to use according to the current number of the selection in the inventory.
-* **Number**: The value to use for updating the selection number.
-
-## Modify team
-
-![Screenshot](img/command-modify-team.png)
-
-This will update team organization.
-
-* `Create new instance with level ... in team / reserve / hidden of`: Create a new instance of a hero or monster in team, reserve, or hidden.
-	* `Stock instance ID in`: Choose a variable where you want to stock the instance ID. This can be useful to move or remove characters in team.
-* `Move / Remove the character with ID ... in team / reserve / hidden`: *Not available yet.*
-
-## Start a battle
-
-![Screenshot](img/command-start-battle.png)
-
-This will start a battle with your team against a troop (group of monsters).
-
-* **Troop's ID**:
-	* `ID`: Fix troop ID.
-	* `Random (in map property)`: Random ID indicated in map property window.
-* **Battle map**:
-	* `ID`: Fix battle map ID.
-	* `Select...`: Choose battle map and position thanks to a map previewer.
-	* `ID map`, `X`, `Y`, `Y plus`, `Z`: Choose battle map ID and position to go manually.
-* **Options**:
-	* `Allow escape`: If checked, it would be possible to use battle command `Escape` in this battle.
-	* `Defeat causes Game Over`: If checked, losing in this battle will automatically direct to game over. If not checked, there will be two commands container : one for the winning state, and the second for the losing state.
-* **Transition**:
-	* `Start / End`: Start / End type of transition:
-		* `None`: Immediate transition.
-		* `Fade in / out`: Transition on a color.
-		* `Zoom in / out`: Transition by zooming in / out.
-
-## Display / Hide enemy
-
-*Not available yet.*
-
-## Force an action
-
-*Not available yet.*
-
-## End battle
+## Play a video
 
 *Not available yet.*
 
@@ -347,26 +162,6 @@ Render in game:
 This will go to the game over screen.
 
 */!\ Today, there is no game over screen, it's only closing the game window.*
-
-## Script
-
-*Not available yet.*
-
-## Change windowskin
-
-*Not available yet.*
-
-## Allow / Forbid saves
-
-*Not available yet.*
-
-## Allow / Forbid main menu
-
-*Not available yet.*
-
-## Change general options
-
-*Not available yet.*
 
 ## Play a music
 
@@ -417,5 +212,218 @@ Check out the play music command [here](event-commands-overview/#play-a-music) t
 *Not available yet.*
 
 ## Change victory music
+
+*Not available yet.*
+
+## Send event
+
+![Screenshot](img/command-send-event.png)
+
+This will send an event to the selected target.
+
+* **Target**:
+	* `All`: *Not available yet.*
+	* `Detection`: Depends on a detection data. *Actually it just sends an event to objects in front of the object.*
+	* `Object`: *Not available yet.*
+	* `Sender`: *Not available yet.*
+	* `The hero`: Simply send to the defined hero.
+* **Event**:
+	* `Event system`: Select a system event (events sent by the game system itself).
+	* `Event user`: Select a user event (custom events sent by the map objects).
+	* `Parameters values`: Select the event parameters values. You can keep the default value.
+
+## Change state
+
+![Screenshot](img/command-change-state.png)
+
+This will change the state of the current object. An object can have several states at the same time.
+
+* **Selection**:
+	* `State's ID`: The new state ID.
+* **Operation**:
+	* `Replace`: Remove all the current states of the object and add the new state.
+	* `Add`: Only add the new state.
+	* `Remove`: Remove the object state having this ID.
+
+## Change properties
+
+*Not available yet.*
+
+## Change graphic
+
+*Not available yet.*
+
+## Change money
+
+*Not available yet.*
+
+## Modify inventory
+
+![Screenshot](img/command-modify-inventory.png)
+
+This will update inventory containing. You can for example add items to it.
+
+* **Selection**:
+	* `Item`: An item to select.
+	* `Weapon`: A weapon to select.
+	* `Armor`: An armor to select.
+* **Operation**: The operation to use according to the current number of the selection in the inventory.
+* **Number**: The value to use for updating the selection number.
+
+## Modify team
+
+![Screenshot](img/command-modify-team.png)
+
+This will update team organization.
+
+* `Create new instance with level ... in team / reserve / hidden of`: Create a new instance of a hero or monster in team, reserve, or hidden.
+	* `Stock instance ID in`: Choose a variable where you want to stock the instance ID. This can be useful to move or remove characters in team.
+* `Move / Remove the character with ID ... in team / reserve / hidden`: *Not available yet.*
+
+## Change windowskin
+
+*Not available yet.*
+
+## Allow / Forbid saves
+
+*Not available yet.*
+
+## Allow / Forbid main menu
+
+*Not available yet.*
+
+## Change general options
+
+*Not available yet.*
+
+## Start a battle
+
+![Screenshot](img/command-start-battle.png)
+
+This will start a battle with your team against a troop (group of monsters).
+
+* **Troop's ID**:
+	* `ID`: Fix troop ID.
+	* `Random (in map property)`: Random ID indicated in map property window.
+* **Battle map**:
+	* `ID`: Fix battle map ID.
+	* `Select...`: Choose battle map and position thanks to a map previewer.
+	* `ID map`, `X`, `Y`, `Y plus`, `Z`: Choose battle map ID and position to go manually.
+* **Options**:
+	* `Allow escape`: If checked, it would be possible to use battle command `Escape` in this battle.
+	* `Defeat causes Game Over`: If checked, losing in this battle will automatically direct to game over. If not checked, there will be two commands container : one for the winning state, and the second for the losing state.
+* **Transition**:
+	* `Start / End`: Start / End type of transition:
+		* `None`: Immediate transition.
+		* `Fade in / out`: Transition on a color.
+		* `Zoom in / out`: Transition by zooming in / out.
+
+## Display / Hide enemy
+
+*Not available yet.*
+
+## Force an action
+
+*Not available yet.*
+
+## End battle
+
+*Not available yet.*
+
+## Change battle music
+
+*Not available yet.*
+
+## Change victory music
+
+*Not available yet.*
+
+## Change a statistic
+
+*Not available yet.*
+
+## Change experience curve
+
+*Not available yet.*
+
+## Change status
+
+*Not available yet.*
+
+## Change a skill
+
+*Not available yet.*
+
+## Change name
+
+*Not available yet.*
+
+## Change class
+
+*Not available yet.*
+
+## Change equipment
+
+*Not available yet.*
+
+## Condition
+
+![Screenshot](img/command-conditions.png)
+
+Create a container for commands that will be executed only if the indicated condition is true.
+
+* `Add "else" when conditions do not apply`: Create another container for commands that will be executed only if the indicated condition is false.
+
+* **Variables**:
+	* `Variable`: The variable that will be compared by value.
+
+## Loop
+
+Create a container for commands that will be executed on a loop.
+
+## Break loop
+
+If inside a loop container, this will go out of the loop and go to the next command after the loop.
+
+## Label
+
+*Not available yet.*
+
+## Jump to label
+
+*Not available yet.*
+
+## Stop the reaction
+
+*Not available yet.*
+
+## Comment
+
+*Not available yet.*
+
+## Call a common reaction
+
+*Not available yet.*
+
+## Change variables
+
+![Screenshot](img/command-change-variables.png)
+
+This will change one or several variable(s) value.
+
+* **Selection**:
+	* `One variable`: The unique variable to change.
+	* `Range`: The range of variables IDs to change.
+* **Operation**: The operation to use according to the current variable(s) value.
+* **Value**:
+	* `Number`: A simple number.
+	* `Random`: A random number between two selected values.
+	* `Number of ... in inventory`: *Not available yet.*
+	* `Total currency ... with ID`: *Not available yet.*
+	* `An ... with instance ID ... statistic ID`: *Not available yet.*
+	* `An object in the map ... characteristic`: *Not available yet.*
+	* `Other characteristics`: *Not available yet.*
+
+## Script
 
 *Not available yet.*
