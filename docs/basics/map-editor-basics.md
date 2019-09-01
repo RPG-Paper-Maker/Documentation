@@ -22,7 +22,10 @@ If you want to create / edit a map, you will get this window:
 * `Depth`: The map depth number of squares (Y axe < 0).
 * `Music`: The music that is played in the background when entering the map.
 * `Background sound`: The background that is played in the background with the music. This can be wind, rain, etc.
+* `Camera prop. ID`: The camera property ID used when entering the map.
 * `Sky color`: The color used for the sky.
+* `Map startup reactions`: You can configure here particular things happening when entering the map. We will se later how to do that thanks to objects.
+* `Battles`: **(not implemented yet)**
 
 ## Move cursor / grid / camera
 
@@ -84,19 +87,6 @@ Here are the different paint mode **(4)** for drawing your elements in the map:
 * `Pencil`: Draw squares one by one.
 * `Rectangle`: Draw squares after tracing a rectangle **(not available yet)**.
 * `Pin of paint`: Fill squares with the same texture as the one pointed.
-
-## Layers options
-
-You can choose here if you want to be on layer mode or not here:
-
-![Screenshot](img/layers.png)
-
-* `No layer`: Replace the selected square by a new one.
-* `Layer`: Add a new square on top of the selected one. There is no limit.
-
-Example of layers used with walls:
-
-![Screenshot](img/walls-layers.png)
 
 ## Lands
 
@@ -201,3 +191,45 @@ That's it! You will understand later why we are using an object and why this wil
 *Note:* You can see who is the hero with a "S" symbol under it.
 
 ![Screenshot](img/hero.png)
+
+## Transformations
+
+In 3D, transformations are these 3 different action:
+
+### Translation
+
+*Not available yet.*
+
+### Rotation
+
+Apply rotation to sprites or 3D objects only.
+
+![Screenshot](img/rotate.png)
+
+If you left / right click a map element, this will select the object and apply the current configured transformation. You can choose the axis `X`, `Y`, or `Z` to apply the rotation on by selecting the corresponding tab.
+
+![Screenshot](img/rotation-panel.png)
+
+* `[Selected object]`: Display information about the current selected object bellow. New transformations will be applied to this selected object.
+* `+ / =`: The operation to apply on transformation (add or apply).
+* `Angle`: The angle to add or apply to the selected object.
+* `Apply on left / right click`: If checked, you will apply the transformation each time you click on a selected object. If `+` operation is activated, right click will in fact be a `-` operation. If not checked, updating `angle` will immediately update the selected object.
+* `Define as default X/Y/Z rotation`: Save current `angle` input in engine settings so you get this value in the `angle` input each time you restart the engine.
+* `Reset to default X/Y/Z rotation`: Fill current `angle` input with the saved default rotation value.
+
+### Scaling
+
+*Not available yet.*
+
+## Layers options
+
+You can choose here if you want to be on layer mode or not here:
+
+![Screenshot](img/layers.png)
+
+* `No layer`: Replace the selected square by a new one.
+* `Layer`: Add a new square on top of the selected one. There is no limit.
+
+Example of layers used with walls:
+
+![Screenshot](img/walls-layers.png)

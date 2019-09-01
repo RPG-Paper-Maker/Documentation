@@ -88,3 +88,18 @@ Here we are, now that you know a bit more about the camera properties we can see
 
 * `Wait the end of the move before the next command`: Wait the end of the move before the next command (same as for the [move object command](event-commands-overview/#move-object)). It can be used to execute commands while the camera is moving (display texts, sounds...).
 * `Time`: Indicate here the time in seconds for the camera to move to its final position. If 0, the move will be immediate.
+
+## Camera properties
+
+You can control the default properties of the camera when you are going into a new map. You can set the camera ID in `map properties`. You also have access to the camera properties list in `Systems manager > System`:
+
+![Screenshot](img/camera-properties.png)
+
+* `Name`: The name of the camera properties.
+* `Distance`: The distance between the camera and the hero.
+* `Horizontal angle`: The horizontal angle between the camera and the hero.
+* `Vertical angle`: The vertical angle between the camera and the hero.
+* `Target offset`: A position on every axes for adding an offset to the target position.
+* `Field of fiew`: The angle used to determine the angle vision limit of the camera. We recommand to keep the default value.
+* `Near`: Min distance between camera and elements for being drawn. We recommand to keep the default value.
+* `Far`: Max distance between camera and elements for being drawn. We recommand to keep the default value.

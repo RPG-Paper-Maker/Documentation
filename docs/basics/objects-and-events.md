@@ -47,7 +47,7 @@ If you see that you are often copying the same set of commands a lot of time may
 
 This way you will be able to call this common reaction instead of always copying it. It's even taking parameters if you have some variations in your reaction.
 
-* `Blocking hero`: If checked, the hero will not be able to move until the reaction is finished.
+* `Block hero when reaction`: If checked, the hero will not be able to move until the reaction is finished.
 
 ## Objects
 
@@ -58,6 +58,7 @@ To add an object in a map, select the `Object` map editor section. Point on a ma
 ![Screenshot](img/object-map.png)
 
 * `Name`: Choose a name for your objects. This can help later if you want to execute actions on this object externally.
+* `Only one event per frame`: We will see what are events, if checked the object will have only one reaction per frame and not several in the same time.
 * `Model`: Choose a model for this object. We will see later how to configure models.
 
 ### Events
@@ -96,7 +97,21 @@ For each state, you have to choose different reactions to specific events. You c
 ![Screenshot](img/state-options.png)
 
 * `Graphics`: Select the object graphics here (character picture). Choose below the kind of element (Sprite etc.).
-* `Moving`: *(not available yet)* Options linked to the object moves.
+* `Moving`: Options linked to the object moves when there is no reaction.
+	* `Type`: The type of moving.
+		* `Fix`: The object will not move at all.
+		* `Random`: The object will move randomly in the map.
+		* `Route`: The object will loop on a route that you can edit with the `Edit route...` button. Check out move object command documentation [here](event-commands-overview/#move-object) that is exactly the same.
+	* `Speed`: The speed value when the object is moving that increases/decreases the traveled distance for the same time.
+	* `Freq`: The frequency value when the object is moving that increases/decreases the number of animation frames displayed for the same time.
+
+	NOTE: You can edit speed and frequency list in `Systems manager > System`:
+
+	![Screenshot](img/speed-frequency.png)
+
+	* `Name`: The name of the speed / frequency.
+	* `Value`: The value of the speed / frequency (can only be a number).
+
 * `Move animation`: If checked, all the frames of the character will be drawn for move animation. If not, this will only draw the first frame of the character animation.
 * `Stop animation`: *(not available yet)* If checked, all the frames of the character will be drawn for stopped animation. If not, this will only draw the first frame of the character animation.
 * `Climb animation`: *(not available yet)* If checked, all the frames of the character will be drawn for climbing animation. If not, this will only draw the first frame of the character animation.
@@ -107,9 +122,12 @@ For each state, you have to choose different reactions to specific events. You c
 
 ### Properties
 
-*Not available yet.*
-
 The object also has a set of properties. It can be HPs, age, gender, etc. It all depends on what you need and your type of game.
+
+![Screenshot](img/object-properties.png)
+
+* `Name`: The property name.
+* `Initial value`: The initial value of the property when the object is loaded for the first time.
 
 ## Example: create a chest
 
@@ -166,3 +184,35 @@ If an object uses a model but also has content, this new content will replace so
 * **State**: If there is a state with the same ID, the model reactions for this state ID will be replaced by the current content.
 * **Property**: If there is a property with the same name, the model reactions for this property name will be replaced by the current content.
 * **Event**: This has no influence.
+
+## Map startup reactions
+
+In map properties, you can see this section:
+
+![Screenshot](img/map-startup-reactions.png)
+
+This simply is an invisible object that will be usefull for cinematics when entering a new map, for example. This is invisible, so there are no state graphics. By default, it is reacting to the event `Time` with 0 for interval parameter and OFF for repeat parameter. That means that these reactions will be excecuted in high priority when entering the map. This can be used for cinematics and some other stuff.
+
+## Detections
+
+It is important to use detections with objects. In fact, you are already using it when you react to `Hero Action` event. `Hero Action` event is an event that is sent by the hero itself to the objects that are in front of him. In order to determine where the events are sent, we use what we call `detections`.
+
+You can access to detections list in `Systems manager > System`:
+
+![Screenshot](img/detections.png)
+
+And here is the front detection! You clearly see here that your event can be sent in front. There is an arrow indicating the square position of the object sending the event, and also the orientation. You can add detection boxes by using `left click` and `right click` to delete existing detection boxes.
+
+* `Name`: The detection name.
+* `Field`: The detection field that you can increase/decrease.
+	* `Left`: Number of squares on the left side of the object sending the event.
+	* `Right`: Number of squares on the right side of the object sending the event.
+	* `Top`: Number of squares on the top side of the object sending the event.
+	* `Bot`: Number of squares on the bot side of the object sending the event.
+* `New box height`: The height that will be applied on the next boxes.
+	* `Square(s)`: Number of squares for detection box height.
+	* `Pixel(s)`: Number of pixels in addition for detection box height.
+* `Automatic`: A way to automaticaly generate detection boxes adding.
+	* `Circle`: Draw a circle with given `radius`.
+	* `Rectangle`: Draw a rectangle with given `length` and `width`.
+	* `Generate`: Clicking on this button will generate the selected form and options.

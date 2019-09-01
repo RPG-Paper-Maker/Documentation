@@ -100,9 +100,12 @@ You can manage the mountains the same way you did for autotiles in:
 * In the texture selector
 * `Tilesets` tab in datas manager:
 
-![Screenshot](img/mountains-tileset.png)
-
-To manage collisions with mountains, go to `Systems manager > System` and set the `Mountain collisions height limit (in px)` and `Mountain collisions angle limit (in degree)`.
+	![Screenshot](img/mountains-tileset.png)
+	
+	* `Collisions`: 
+		* `Default (according to height and angle):` To manage collisions with mountains, go to `Systems manager > System` and set the `Mountain collisions height limit (in px)` and `Mountain collisions angle limit (in degree)`.
+		* `Force always collides`: Force collision everytime. 
+		* `Force never collides`: Force no collision everytime. 
 
 ## 3D objects
 

@@ -69,9 +69,10 @@ A lot of options are available in the `Systems manager`. Click here on the main 
 * `Ray portions (ingame)`: *(not available yet)* Same but for ingame.
 * `Mountain collision height limit (in px)`: The height considered for blocking the hero so the hero can go up blocks that are in inferior height value.
 * `Mountain collision angle limit (in degree)`: The angle considered for blocking the hero so the hero can go up mountains that are in inferior angle value.
+* `Animation frames`: Number of frames available in an animation (walk, battlers, etc.).
+* `Window skin`: The default windows skin used for designing windows UI.
 * `Max number of save slots`: *(not available yet)* Change the max number of save slots available for the players.
 * `Price of sold item`: *(not available yet)* Change the percent value of the original price of an item when you want to sell it in a shop.
-* `Window skin`: The default windows skin used for designing windows UI.
 
 ## Update keyboard controls
 

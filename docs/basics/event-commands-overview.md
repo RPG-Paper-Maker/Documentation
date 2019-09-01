@@ -245,9 +245,17 @@ This will change the state of the current object. An object can have several sta
 	* `Add`: Only add the new state.
 	* `Remove`: Remove the object state having this ID.
 
-## Change properties
+## Change property
 
-*Not available yet.*
+![Screenshot](img/command-change-property.png)
+
+This will change a property value of the current object.
+
+* **Selection**:
+	* `property ID`: The property ID to change.
+* **Operation**: The operation to use according to the current property value.
+* **Value**:
+	* `New value`: The new value to apply to the property with the corresponding operation.
 
 ## Change graphic
 
@@ -374,8 +382,7 @@ Create a container for commands that will be executed only if the indicated cond
 
 * `Add "else" when conditions do not apply`: Create another container for commands that will be executed only if the indicated condition is false.
 
-* **Variables**:
-	* `Variable`: The variable that will be compared by value.
+* **Variables / Param / Prop**: Compare a variable or a parameter or a property with any other type of value.
 
 ## Loop
 
