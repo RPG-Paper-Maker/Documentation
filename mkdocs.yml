@@ -2,7 +2,7 @@ site_name: My Docs
 docs_dir: ../Documentation/docs
 site_name: RPG Paper Maker
 repo_url: https://github.com/RPG-Paper-Maker/RPG-Paper-Maker
-copyright: RPG Paper Maker Copyright (C) 2017-2019 Marie Laporte
+copyright: RPG Paper Maker Copyright (C) 2017-2019 Wano
 theme: readthedocs
 pages:
     - Getting started: 'index.md' 
@@ -17,6 +17,7 @@ pages:
         - 'Battle system': 'basics/battle-system.md'
         - 'Window skins': 'basics/window-skins.md'
         - 'Title Screen & Game Over': 'basics/title-screen-and-game-over.md'
-    - Advanced: 'advanced.md'
+    - Advanced:
+        - 'Action Battle System': 'advanced/abs.md'
     - Experts: 'experts.md'
     - FAQ: 'faq.md'
