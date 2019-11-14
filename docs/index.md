@@ -64,15 +64,22 @@ A lot of options are available in the `Systems manager`. Click here on the main 
 
 * `Game name`: Change the name of your game.
 * `Game native resolution`: Change width / height resolution and also choose if you want a Window or Fullscreen display. `Display console` option is for programing debugging.
-* `Square size (in px)`: choose here the size (in pixel) of a square in your maps. You should adapt your textures after any change here.
-* `Ray portions (editor)`: *(not available yet)* The map is separated into several portions (16x16 squares). You can change here the number of portions to display.
-* `Ray portions (ingame)`: *(not available yet)* Same but for ingame.
-* `Mountain collision height limit (in px)`: The height considered for blocking the hero so the hero can go up blocks that are in inferior height value.
-* `Mountain collision angle limit (in degree)`: The angle considered for blocking the hero so the hero can go up mountains that are in inferior angle value.
-* `Animation frames`: Number of frames available in an animation (walk, battlers, etc.).
-* `Window skin`: The default windows skin used for designing windows UI.
-* `Max number of save slots`: *(not available yet)* Change the max number of save slots available for the players.
-* `Price of sold item`: *(not available yet)* Change the percent value of the original price of an item when you want to sell it in a shop.
+* `Map properties`: 
+	* `Square size (in px)`: choose here the size (in pixel) of a square in your maps. You should adapt your textures after any change here.
+	* `Ray portions (editor)`: *(not available yet)* The map is separated into several portions (16x16 squares). You can change here the number of portions to display.
+	* `Ray portions (ingame)`: *(not available yet)* Same but for ingame.
+	* `Mountain collision height limit (in px)`: The height considered for blocking the hero so the hero can go up blocks that are in inferior height value.
+	* `Mountain collision angle limit (in degree)`: The angle considered for blocking the hero so the hero can go up mountains that are in inferior angle value.
+	* `Animation frames`: Number of frames available in an animation (walk, battlers, etc.).
+* `Global sounds`:
+	* `Cursor`: Sound to play when the cursor is moving in window choices.
+	* `Confirmation`: Sound to play when the cursor is confirming in window choices.
+	* `Cancel`: Sound to play when canceling something.
+	* `Impossible`: Sound to play when a choice is impossible in window choices.
+* `Other options`:
+	* `Window skin`: The default windows skin used for designing windows UI.
+	* `Max number of save slots`: *(not available yet)* Change the max number of save slots available for the players.
+	* `Price of sold item`: *(not available yet)* Change the percent value of the original price of an item when you want to sell it in a shop.
 
 ## Update keyboard controls
 
@@ -108,6 +115,12 @@ When adding / editing a key:
 Go to the `Systems manager > System` and take a look on the `Colors` box:
 
 ![Screenshot](img/colors.png)
+
+## Update general font sizes and font names
+
+Go to the `Systems manager > System` and take a look on the `Font size` and `Font name` box:
+
+![Screenshot](img/font-size-name.png)
 
 ## Change game name
 
@@ -145,3 +158,7 @@ If you want to publish your game (share your game without any need for players t
 	* `Deploy a desktop application`: Choose here to deploy your game as a desktop application (choose the `OS` in options: Windows, Linux, or Mac).
 	* `Deploy for web browser`: *(not available yet)* Choose here to deploy your game as a web application. This will generate an `index.html` page and other files.
 * `Version`: Choose you game version. Having 1 for `major` and 0 for `minor` will create a 1.0 version.
+
+## Enable / Disable updater
+
+Go on `Help > Auto display updater` to enable or disable the auto check of updater that will check if a new version is available or not.

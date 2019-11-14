@@ -6,9 +6,26 @@ Now that you are a pro for objects and event, let's see all the event commands t
 
 ![Screenshot](img/command-show-text.png)
 
-Displays a text with the current dialog box options.
+Displays a text in a dialog box with the current dialog box options.
 
-* `Message`: message to display on screen.
+* `Interlocutor`: This will display a text inside a small box on top of the text box for indicating the interlocutor's name. If empty, this will not show the box.
+* `Faceset`: The faceset to display inside the dialog box on the left.
+* `Message`:
+	* ![Screenshot](img/bold.png) : Apply bold effect on the selected text.
+	* ![Screenshot](img/italic.png) : Apply italic effect on the selected text.
+	* ![Screenshot](img/text-left.png) : Apply left align effect on the selected text.
+	* ![Screenshot](img/text-center.png) : Apply center align effect on the selected text.
+	* ![Screenshot](img/text-right.png) : Apply right align effect on the selected text.
+	* `Font size`: Apply the selected font size on the selected text.
+	* `Font name`: Apply the selected font name on the selected text.
+	* `Text color`: Apply the selected text color on the selected text.
+	* `Back color`: Apply the selected back color on the selected text.
+	* `Outline color`: Apply the selected outline color on the selected text.
+	* `Variable`: Display the value of the current selected variable.
+	* `Parameter`: Display the value of the current selected parameter.
+	* `Property`: Display the value of the current selected property.
+	* `Hero name`: Display the name of the selected hero instance ID.
+	* `Icon`: Display the selected icon.
 
 Render in game:
 
@@ -16,7 +33,23 @@ Render in game:
 
 ## Display a choice
 
-*Not available yet.*
+![Screenshot](img/command-display-choice.png)
+
+* `Choices`: The list of choices texts.
+* `Options`:
+	* `Cancel auto index`: The choice index to select when pressing cancel button.
+
+Using adter show text command:
+
+![Screenshot](img/commands-display-choice.png)
+
+![Screenshot](img/render-command-display-choice.png)
+
+Using without show text command before:
+
+![Screenshot](img/commands-display-choice-without-text.png)
+
+![Screenshot](img/render-command-display-choice-without-text.png)
 
 ## Input number
 
@@ -24,11 +57,47 @@ Render in game:
 
 ## Set dialog box options
 
-*Not available yet.*
+![Screenshot](img/command-dialog-box-options.png)
+
+Set all the dialog box options.
+
+* `Window skin ID`: The window skind ID to display.
+* `Transform`:
+	* `X`: The x position of the window.
+	* `Y`: The y position of the window.
+	* `Width`: The width of the window.
+	* `Height`: The height of the window.
+* `Padding`:
+	* `Left`: The left padding of the window.
+	* `Top`: The top padding of the window.
+	* `Right`: The right padding of the window.
+	* `Bottom`: The bottom padding of the window.
+* `Faceset`:
+	* `Position`: The position of the faceset. You can choose if it's behind or above the window.
+	* `X`: The additional x position of the faceset.
+	* `Y`: The additional y position of the faceset.
+* `Text`:
+	* `Outline`: Select if texts should have outlines.
+	* `Color ID`:
+		* `Text`: The color ID to use for texts.
+		* `Outline`: The color ID to use for outlines.
+		* `Background`: The color ID to use for backgrounds.
+	* `Size ID`: The size ID to use for texts.
+	* `Font ID`: The font ID to use for texts.
 
 ## Change screen tone
 
-*Not available yet.*
+![Screenshot](img/command-change-screen-tone.png)
+
+Change the screen tone (dominant color). The RGB color (0, 0, 0) changes nothing on the screen tone.
+
+* `Red`: The red dominant color.
+* `Green`: The green dominant color.
+* `Blue`: The blue dominant color.
+* `Grey`: The grey dominant color (saturation). If grey = 0, then no changes. If grey = 100, then the screen will only have grey colors.
+* `Adding color ID`: You can combine the previous color with an existing color.
+* `Wait the end of the change before the next command`: If checked, the command will end only after `Time` number.
+* `Time`: Time to wait for changing the screen tone.
 
 ## Shake screen
 
@@ -85,11 +154,11 @@ This will move an object in the current map with a specific route. You can also 
 	* `Square`: Change all the direction moves unit to square.
 	* `Step`: Change all the direction moves unit to step.
 	* `1 to North / South / West / East / North-West / North-East / South-West / South-East`: Move the object to 1 square / step in the selected direction.
-	* `1 to random`: *(not available yet)* Move the object to 1 square / step in a random direction.
-	* `1 to the hero`: *(not available yet)* Move the object to 1 square / step in the hero direction.
-	* `1 opposite to the hero`: *(not available yet)* Move the object to 1 square / step in the opposite of the hero direction.
-	* `1 in front`: *(not available yet)* Move the object to 1 square / step in front.
-	* `1 back`: *(not available yet)* Move the object to 1 square / step back.
+	* `1 to random`: Move the object to 1 square / step in a random direction.
+	* `1 to the hero`: Move the object to 1 square / step in the hero direction.
+	* `1 opposite to the hero`: Move the object to 1 square / step in the opposite of the hero direction.
+	* `1 in front`: Move the object to 1 square / step in front.
+	* `1 back`: Move the object to 1 square / step back.
 * **Change direction**: *Not available yet.*
 * **Change object properties**: *Not available yet.*
 
@@ -111,19 +180,57 @@ Check out the camera guide [here](control-the-camera.md).
 
 ## Remove object from map
 
-*Not available yet.*
+![Screenshot](img/command-remove-object-from-map.png)
+
+Remove an object from the map. This removing is effective as long as you don't change map or load the game in saves.
+
+* `Object ID`: The object ID to remove in the map.
 
 ## Display a picture
 
-*Not available yet.*
+![Screenshot](img/command-display-picture.png)
+
+Display a picture on top of the screen.
+
+* `Image ID`: The image ID to display.
+* `Index`: The index of the image to display. You can display several images in the same time if they have different index. The more the index is high, the more the image is displayed on top. If two images have the same index, then the ancient image will be removed.
+* `Origin`:
+	* `Top / Left`: The origin position will be (0, 0) (= top left of the screen).
+	* `Center`: The origin position will be the center of the screen.
+* `Coordinates`:
+	* `X`: The x position according to the origin.
+	* `Y`: The y position according to the origin.
+* `Effects`:
+	* `Zoom`: The % zooming of the image.
+	* `Opacity`: The % opacity of the image.
+	* `Angle`: The ° angle of the image.
 
 ## Set / Move / Turn a picture
 
-*Not available yet.*
+![Screenshot](img/command-set-move-turn-picture.png)
+
+Set / Move / Turn a picture that is already displayed on top of the screen.
+
+* `Image index`: Select the index of the image to set / move / turn.
+* `Set`: 
+	* `Image ID`: Change the image ID to display.
+	* `Zoom`: Change the % zooming of the image.
+	* `Opacity`: Change the % zooming of the image.
+* `Move`:
+	* `X`: Change the x position according to the origin.
+	* `Y`: CHange the y position according to the origin.
+* `Turn`: 
+	* `Angle`: Change the ° angle of the image.
+* `Wait the end of the actions before the next command`: If checked, the command will end only after `Time` number.
+* `Time`: Time to wait for updating the picture.
 
 ## Remove a picture
 
-*Not available yet.*
+![Screenshot](img/command-remove-picture.png)
+
+Remove a picture that is displayed on top of the screen.
+
+* `Image index`: Select the index of the image to remove.
 
 ## Play a video
 
@@ -155,7 +262,7 @@ Render in game:
 
 ## Title screen
 
-*Not available yet.*
+Go to the title screen.
 
 ## Game over
 
@@ -223,10 +330,9 @@ This will send an event to the selected target.
 
 * **Target**:
 	* `All`: *Not available yet.*
-	* `Detection`: Depends on a detection data. *Actually it just sends an event to objects in front of the object.*
-	* `Object`: *Not available yet.*
-	* `Sender`: *Not available yet.*
-	* `The hero`: Simply send to the defined hero.
+	* `Detection`: Send the event to a specific detection.
+		* `Sender can't receive`: The detection is not applied to the sender.
+	* `Object`: Send the event to a specific object.
 * **Event**:
 	* `Event system`: Select a system event (events sent by the game system itself).
 	* `Event user`: Select a user event (custom events sent by the map objects).
@@ -288,17 +394,17 @@ This will update team organization.
 	* `Stock instance ID in`: Choose a variable where you want to stock the instance ID. This can be useful to move or remove characters in team.
 * `Move / Remove the character with ID ... in team / reserve / hidden`: *Not available yet.*
 
-## Change windowskin
-
-*Not available yet.*
-
 ## Allow / Forbid saves
 
-*Not available yet.*
+![Screenshot](img/command-allow-forbid-saves.png)
+
+* `Allow`: If checked, the saves menu will be allowed.
 
 ## Allow / Forbid main menu
 
-*Not available yet.*
+![Screenshot](img/command-allow-forbid-main-menu.png)
+
+* `Allow`: If checked, the main menu will be allowed.
 
 ## Change general options
 
@@ -376,13 +482,48 @@ This will start a battle with your team against a troop (group of monsters).
 
 ## Condition
 
-![Screenshot](img/command-conditions.png)
-
 Create a container for commands that will be executed only if the indicated condition is true.
 
 * `Add "else" when conditions do not apply`: Create another container for commands that will be executed only if the indicated condition is false.
 
-* **Variables / Param / Prop**: Compare a variable or a parameter or a property with any other type of value.
+* **Variables / Param / Prop**:
+
+![Screenshot](img/command-condition-variables-param-prop.png)
+
+* `This`: Compare a variable or a parameter or a property with any other type of value.
+
+* **Heroes**:
+
+![Screenshot](img/command-condition-heroes.png)
+
+* `Hero(es)`: Select `all the heroes` or `none of the heroes` or `at least one hero` or `the hero with instance ID`.
+ in `team` or `reserve` or `hidden`.
+ 	* `Are named`: Check if the selection have this name.
+  	* `Are in`: Check if the selection is in the `team` or `reserve` or `hidden`.
+   	* `Are able to use the skill ID`: Check if the selection is able to use the selected skill ID.
+   	* `Are equiped with`:
+   		* `weapon ID`: Check if the selection is equiped with the selected weapon ID.
+   		* `armor ID`: Check if the selection is equiped with the selected armor ID.
+  	* `Are under effect of status ID`: *Not available yet.*
+  	* `Have the statistic ID`: Compare a selected statistic of the selection with any other type of value.
+
+* **Possessions**:
+
+![Screenshot](img/command-condition-possessions.png)
+
+* `Currency ID`: Compare a selected currency number with any other type of value.
+* `Item ID`: Compare a selected item number in inventory with any other type of value.
+* `Weapon ID`: Compare a selected weapon number in inventory with any other type of value.
+	* `Check weapons equiped too`: If checked, the equiped weapons will be included in the number of weapons.
+* `Armor ID`: Compare a selected armor number in inventory with any other type of value.
+	* `Check armors equiped too`: If checked, the equiped armors will be included in the number of armors.
+
+* **Others**:
+
+![Screenshot](img/command-condition-others.png)
+
+* `Key ID`: Check if selected key is ON or OFF.
+* `Script`: Check according to the script return value (for programmers).
 
 ## Loop
 
@@ -402,7 +543,7 @@ If inside a loop container, this will go out of the loop and go to the next comm
 
 ## Stop the reaction
 
-*Not available yet.*
+Stop the current reaction.
 
 ## Comment
 
@@ -410,7 +551,12 @@ If inside a loop container, this will go out of the loop and go to the next comm
 
 ## Call a common reaction
 
-*Not available yet.*
+![Screenshot](img/command-call-common-reaction.png)
+
+This will call a common reaction with the corresponding parameters.
+
+* `Common reaction`: The common reaction to call.
+* **Parameters values**: The parameters to apply with the common reaction.
 
 ## Change variables
 
@@ -425,12 +571,25 @@ This will change one or several variable(s) value.
 * **Value**:
 	* `Number`: A simple number.
 	* `Random`: A random number between two selected values.
+	* `Message`: A simple message.
+	* `Switch`: A simple switch.
 	* `Number of ... in inventory`: *Not available yet.*
 	* `Total currency ... with ID`: *Not available yet.*
 	* `An ... with instance ID ... statistic ID`: *Not available yet.*
-	* `An object in the map ... characteristic`: *Not available yet.*
+	* `An object in the map ... characteristic`: The selected object characteristic:
+		* `X square position`: The x square position of the selected object.
+		* `Y square position`: The y square position of the selected object.
+		* `Z square position`: The z square position of the selected object.
+		* `X square position`: The x pixel position of the selected object.
+		* `Y square position`: The y pixel position of the selected object.
+		* `Z square position`: The z pixel position of the selected object.
+		* `Orientation`: The orientation of the selected object.
 	* `Other characteristics`: *Not available yet.*
 
 ## Script
 
-*Not available yet.*
+![Screenshot](img/command-script.png)
+
+Execute a script code (for advanced programmers).
+
+* `Use dynamic`: Non-static code (in variable, or parameter, or property).

@@ -128,7 +128,7 @@ These four data have common properties:
 	* `Main menu only`: The data can be used only in main menu.
 	* `Always`: The data can be used in battle and main menu.
 	* `Never`: The data can never be used.
-* `Sound (main menu)`: *Not available yet.*
+* `Sound (main menu)`: The sound to play when using it in the main menu.
 * `User animation ID`: *Not available yet.*
 * `Target animation ID`: *Not available yet.*
 * `Price`: Price of the data when it can be bought / sold in a shop menu.
@@ -152,6 +152,8 @@ Choose the effects done for the target(s) data.
 
 * `Damages on`: Select which data will be damaged. It can be a `statistic`, a `currency`, or a `variable`.
 	* `with formula`: Select the value damage for the selected data.
+	* `Minimum`: Minimum value that can have final damages.
+	* `Maximum`: Maximum value that can have final damages
 	* `Element ID`: *Not available yet.*
 	* `Variance`: The variance damages in percent. This adds random on your damages. For example, if you choose 20% variance, your damages range would be : [damage - (20 * damage / 100) | damage + (20 * damage / 100)]. If not checked, there is no variance (= 0).
 	* `Critical`: The critical hit chance in percent. If not checked, there is no chance to do critical hit (= 0).

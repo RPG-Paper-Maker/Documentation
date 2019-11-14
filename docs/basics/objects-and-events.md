@@ -120,6 +120,10 @@ For each state, you have to choose different reactions to specific events. You c
 * `Pixel offset`: If checked, the move animation will go 1px down after two frames. This adds an interesting effect.
 * `Keep position`: *(not available yet)* If checked, the object always keep its position after moving, even after loading save or changing map. If not, the object position is reinitialized after loading save or changing map.
 
+![Screenshot](img/object-state-detection.png)
+
+* `Detection`: A detection to select for sending an event each frames.
+
 ### Properties
 
 The object also has a set of properties. It can be HPs, age, gender, etc. It all depends on what you need and your type of game.
