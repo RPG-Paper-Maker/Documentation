@@ -102,12 +102,14 @@ For each state, you have to choose different reactions to specific events. You c
 		* `Fix`: The object will not move at all.
 		* `Random`: The object will move randomly in the map.
 		* `Route`: The object will loop on a route that you can edit with the `Edit route...` button. Check out move object command documentation [here](event-commands-overview/#move-object) that is exactly the same.
-	* `Speed`: The speed value when the object is moving that increases/decreases the traveled distance for the same time.
-	* `Freq`: The frequency value when the object is moving that increases/decreases the number of animation frames displayed for the same time.
+	* `Speed`: The speed value when the object is moving. This value is multiplied with the traveled distance with equal time. This also is multiplying the frame duration. Default value is 1.
+	* `Freq`: The frequency value when the object is moving. This value is changing the time in second(s) to wait before executing the next move. Default value is 0 (second(s)).
 
 	NOTE: You can edit speed and frequency list in `Systems manager > System`:
 
-	![Screenshot](img/speed-frequency.png)
+	![Screenshot](img/speeds.png)
+
+	![Screenshot](img/frequencies.png)
 
 	* `Name`: The name of the speed / frequency.
 	* `Value`: The value of the speed / frequency (can only be a number).
