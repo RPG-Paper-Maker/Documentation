@@ -2,7 +2,7 @@ site_name: My Docs
 docs_dir: ../Documentation/docs
 site_name: RPG Paper Maker
 repo_url: https://github.com/RPG-Paper-Maker/RPG-Paper-Maker
-copyright: RPG Paper Maker Copyright (C) 2017-2019 Wano
+copyright: RPG Paper Maker Copyright (C) 2017-2020 Wano
 theme: readthedocs
 pages:
     - Getting started: 'index.md' 
