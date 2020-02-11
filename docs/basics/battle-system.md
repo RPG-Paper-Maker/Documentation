@@ -14,7 +14,13 @@ A lot of battle system datas can be found in `Systems Manager > Battle System`.
 
 ## Elements
 
-*Not available yet.*
+![Screenshot](img/elements.png) 
+
+You can manage here all the elements that you want to have in your game for influencing your damages effects.
+
+* `Name`: Name displayed in game UI.
+* `Icon`: Icon displayed in game UI.
+* **Efficiency**: You can edit here how efficient is the current element against all the other existing elements. This is pretty usefull when the element is assigned to a class. By default, it's x1.0 (normal effect).
 
 ## Common statistics
 
@@ -154,7 +160,7 @@ Choose the effects done for the target(s) data.
 	* `with formula`: Select the value damage for the selected data.
 	* `Minimum`: Minimum value that can have final damages.
 	* `Maximum`: Maximum value that can have final damages
-	* `Element ID`: *Not available yet.*
+	* `Element ID`: Element applied for these damages.
 	* `Variance`: The variance damages in percent. This adds random on your damages. For example, if you choose 20% variance, your damages range would be : [damage - (20 * damage / 100) | damage + (20 * damage / 100)]. If not checked, there is no variance (= 0).
 	* `Critical`: The critical hit chance in percent. If not checked, there is no chance to do critical hit (= 0).
 	* `Precision`: The precision hit in percent. If not checked, you have 100% chance to hit.
@@ -178,7 +184,7 @@ Choose the characteristics added to the character when equipped.
 
 * `Buff increase / decrease`: Select which data will be influenced. This can be:
 	* `Statistic value`: Select a statistic. If bar statistic, this will increase the max value.
-	* `Element resistance`: *Not available yet.*
+	* `Element resistance`: Select an element to apply resistance on it.
 	* `Status resistance`: *Not available yet.*
 	* `Experience gain`: *Not available yet.*
 	* `Currency gain`: *Not available yet.*
