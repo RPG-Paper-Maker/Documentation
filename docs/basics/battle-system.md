@@ -135,8 +135,8 @@ These four data have common properties:
 	* `Always`: The data can be used in battle and main menu.
 	* `Never`: The data can never be used.
 * `Sound (main menu)`: The sound to play when using it in the main menu.
-* `User animation ID`: *Not available yet.*
-* `Target animation ID`: *Not available yet.*
+* `User animation ID`: The animation to display before the user attack.
+* `Target animation ID`: The animation to display before displaying damages on target(s).
 * `Price`: Price of the data when it can be bought / sold in a shop menu.
 
 There also are three more common properties that can be listed: `Costs`, `Effects`, and `Caracteristics`.
@@ -285,4 +285,69 @@ Troops correspond to a monsters group and some states with reactions.
 
 ## Animations
 
-*Not available yet.*
+![Screenshot](img/battle-animations.png)
+
+Animations are used for: weapons, skills, items, and event command display an animation. You can customize these 2D animations with several different options.
+
+* `Picture`: The texture used for the entire animation.
+* `Position`: Choose the origin position. You have an indicator of this position with the battler example drawn in the panel.
+* **Frames**: List of different frames of the animation.
+	* **Graphics**: You can add elements in the panel by left clicking:
+
+	![Screenshot](img/widget-animation.png)
+
+	You can right-click and click on `Edit...` to edit properties of an element:
+
+	![Screenshot](img/widget-animation-element-properties.png)
+
+	* `Index`: The index of the element. An element is always drawn on top of other elements that have lower index.
+	* `X`: The x position center of the element.
+	* `Y`: The y position center of the element.
+	* `Zoom`: The zoom % the element.
+	* `Angle`: The angle ° of the element.
+	* `Flip vertically`: If checked, the element will be flipped vertically.
+	* `Opacity`: The opcaity % of the element.
+
+	Before left clicking, you can choose the texture thanks to this selector:
+
+	![Screenshot](img/widget-animation-texture.png)
+
+	* **Options**:
+		* `Change battler`: Change the battler to display in the panel.
+		* `Copy frames...`: Copy frames with the following options.
+			
+			![Screenshot](img/animation-copy-frames.png)
+
+			* **Frames to copy**: Select all the frames to copy.
+			* `Paste from frame`: Paste from this frame.
+		* `Clear frames...`: Clear frames with the following options.
+
+		![Screenshot](img/animation-clear-frames.png)
+
+		* `Create transition...`: Create a transition on several frames with the following options.
+
+			![Screenshot](img/animation-create-transition.png)
+
+			* **Frames**: The frames begin and end transition.
+			* **Elements index**: The elements index to apply transition.
+			* `X`, `Y`, `Zoom`, `Angle`, `Opacity`: The optional values at the end of the transition. You can use the progress slider to choose how fast is the transition.
+
+		* `Apply texture`: Apply the selected texture to the selected element.
+		* `Play hit`: Test the animation when hit.
+		* `Play miss`: Test the animation when miss.
+		* `Play crit`: Test the animation when critical.
+		* `Rows`: The number of rows to split the texture animation. Default value is 5.
+		* `Columns`: The number of columns to split the texture animation. Default value is 5.
+
+	* **Sound effects / Flashs**: You can add a list of effects (sound effects or flashs) here:
+
+		![Screenshot](img/animation-effects.png)
+
+		* **Effect**:
+			* `Sound effect`: Select a sound to play at this frame.
+			* `Flash`: *Not available yet.*
+		* `Condition`: Select a condition for playing this sound or displaying this flash:
+			* `None`: No condition.
+			* `Hit`: When hitting an attack.
+			* `Miss`: When missing an attack.
+			* `Critical`: When doing a critical attack.
