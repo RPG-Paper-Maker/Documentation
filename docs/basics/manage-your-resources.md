@@ -4,6 +4,8 @@ When you are editing your maps, you are using textures that are proposed by defa
 
 ![Screenshot](img/br-location.png)
 
+You can also use `Auto` button to automaticaly find the BR folder in the RPG Paper Maker instance you are actually using.
+
 ## Manage pictures
 
 Open the pictures manager by clicking here on the main toolbar:
