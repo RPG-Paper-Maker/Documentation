@@ -266,7 +266,25 @@ Monsters are exactly like heroes but with extra information for battles:
 
 * **Actions**:
 
-*Not available yet.*
+You can manage your monster's AI here. You can specify monster actions with these following options:
+
+![Screenshot](img/monster-action.png)
+
+* `Priority`: The priority of the action. You can see `Probability` below that will give you the percent chance of the actions according to all the other actions priorities. Warning: Il you put a priority as a variable a `?` will be displayed.
+* `Target`:
+	* `Random`: Will attack on random target without any AI.
+	* `Weak enemies`: Will attack targets with lower HPs. Warning: do not remove or change hp abbreviation in common statistics to have this working.
+* **Action**:
+	* `Use skill ID`: The monster will use the selected skill.
+	* `Use item ID`: The monster will use the selected item.
+	* `Number max`: The number max of item that can be used by the monster. If < 0, will be infinite.
+	* `Do nothing`: The monster will do nothing.
+* **Conditions**:
+	* `Turn value`: This action can be done according to the current value of turns in the battle.
+	* `Statistic ID`: This action can be done according to the specified statistic percentage. Note: this should be only bars (with max value).
+	* `Variable`: This action can be done according to the current value of a variable.
+	* `Is under effect of status ID`: Not available yet.
+	* `Script`: This action can be done according to the script return.
 
 ## Troops
 
