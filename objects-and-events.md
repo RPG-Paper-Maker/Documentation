@@ -6,9 +6,9 @@ description: Give life for your game.
 
 You know how to create beautiful maps, but you want to make it be alive by adding NPCs, treasures, etc. These elements are called `objects`. These objects will also react to `events` \(hero action, chronometer, attack, etc.\). Objects and events are here to galvanize your maps and create your game stories!
 
-### Events <a id="events"></a>
+## Events <a id="events"></a>
 
-**/!\ Events in RPG Paper Maker are a different notion than in RM classic series.**
+**/! Events in RPG Paper Maker are a different notion than in RM classic series.**
 
 You can access to events in `Systems manager > Events / States`.
 
@@ -21,9 +21,9 @@ Events represent the fact that something important just happened and the objects
 
 An event also takes some `parameters`. For example, if you want to play a sound each three seconds in the background, you can use the time event with the parameter time = 3000 \(milliseconds\) and repeat = ON. Imagine such amazing things you can do with parameters \(a sword hit event taking a power parameter for example\). You can choose the default value of a parameter when editing parameters of an event.
 
-**/!\ Don't confuse physics and events. You should not use events for wind animations or gravity, etc.**
+**/! Don't confuse physics and events. You should not use events for wind animations or gravity, etc.**
 
-### Reactions <a id="reactions"></a>
+## Reactions <a id="reactions"></a>
 
 Reactions are a tree of commands that will be executed one by one. For example a command can be to display text on screen or to move specific objects in the map. Here is an example of reaction:
 
@@ -43,7 +43,7 @@ There is also a way to find your commands faster with keyboard search:
 
 You can also copy / paste / delete by `Right-clicking` on the corresponding command node.
 
-### Common reactions <a id="common-reactions"></a>
+## Common reactions <a id="common-reactions"></a>
 
 If you see that you are often copying the same set of commands a lot of time maybe you should consider creating a common reaction. You can access to these in `Systems manager > Common reactions`.
 
@@ -53,7 +53,7 @@ This way you will be able to call this common reaction instead of always copying
 
 * `Block hero when reaction`: If checked, the hero will not be able to move until the reaction is finished.
 
-### Objects <a id="objects"></a>
+## Objects <a id="objects"></a>
 
 An object is something that can move or/and react to some events in a map. So basically a tree is not an object \(except if you can cut it so it would have a reaction to an axe hit\) but only a static element. It can be a NPC, a monster, or anything else. Note that your hero is an object itself so you can perfectly program its reactions.
 
@@ -65,7 +65,7 @@ To add an object in a map, select the `Object` map editor section. Point on a ma
 * `Only one event per frame`: We will see what are events, if checked the object will have only one reaction per frame and not several in the same time.
 * `Model`: Choose a model for this object. We will see later how to configure models.
 
-#### Events <a id="events_1"></a>
+### Events <a id="events_1"></a>
 
 You can configure which event the object can react to in the `Events` section. `Double click` on a node:
 
@@ -88,7 +88,7 @@ System events are the following:
 * `KeyRelease`: Event sent when releasing a key on keyboard.
   * **ID** \(default: anything\): The ID of the key.
 
-#### States <a id="states"></a>
+### States <a id="states"></a>
 
 An object has a set of `States`. For example, the hero can be in a normal state, or poisoned / vulnerable. Note that an object can be in several states at the same time.
 
@@ -107,16 +107,22 @@ For each state, you have to choose different reactions to specific events. You c
     * `Fix`: The object will not move at all.
     * `Random`: The object will move randomly in the map.
     * `Route`: The object will loop on a route that you can edit with the `Edit route...` button. Check out move object command documentation [here](event-commands.md#move-object) that is exactly the same.
-  * `Speed`: The speed value when the object is moving that increases/decreases the traveled distance for the same time.
-  * `Freq`: The frequency value when the object is moving that increases/decreases the number of animation frames displayed for the same time.
+
+  \`\`
+
+  * `Speed`: The speed value when the object is moving. This value is multiplied with the traveled distance with equal time. This also is multiplying the frame duration. Default value is 1.
+  * `Freq`: The frequency value when the object is moving. This value is changing the time in second\(s\) to wait before executing the next move. Default value is 0 \(second\(s\)\).
+
+
 
   NOTE: You can edit speed and frequency list in `Systems manager > System`:
 
-  ![Screenshot](https://rpg-paper-maker.github.io/basics/img/speed-frequency.png)
+![](.gitbook/assets/speeds.png)
 
-  * `Name`: The name of the speed / frequency.
-  * `Value`: The value of the speed / frequency \(can only be a number\).
+![](.gitbook/assets/frequencies.png)
 
+* `Name`: The name of the speed / frequency.
+* `Value`: The value of the speed / frequency \(can only be a number\).
 * `Move animation`: If checked, all the frames of the character will be drawn for move animation. If not, this will only draw the first frame of the character animation.
 * `Stop animation`: _\(not available yet\)_ If checked, all the frames of the character will be drawn for stopped animation. If not, this will only draw the first frame of the character animation.
 * `Climb animation`: _\(not available yet\)_ If checked, all the frames of the character will be drawn for climbing animation. If not, this will only draw the first frame of the character animation.
@@ -129,7 +135,7 @@ For each state, you have to choose different reactions to specific events. You c
 
 * `Detection`: A detection to select for sending an event each frames.
 
-#### Properties <a id="properties"></a>
+### Properties <a id="properties"></a>
 
 The object also has a set of properties. It can be HPs, age, gender, etc. It all depends on what you need and your type of game.
 
@@ -138,7 +144,7 @@ The object also has a set of properties. It can be HPs, age, gender, etc. It all
 * `Name`: The property name.
 * `Initial value`: The initial value of the property when the object is loaded for the first time.
 
-### Example: create a chest <a id="example-create-a-chest"></a>
+## Example: create a chest <a id="example-create-a-chest"></a>
 
 Here is a simple way to produce a chest:
 
@@ -152,13 +158,13 @@ Here is a simple way to produce a chest:
 
 ![](https://rpg-paper-maker.github.io/basics/img/state-2.png)
 
-### Edit / Copy / Paste / Delete an existing object <a id="edit-copy-paste-delete-an-existing-object"></a>
+## Edit / Copy / Paste / Delete an existing object <a id="edit-copy-paste-delete-an-existing-object"></a>
 
 You can open a context menu by `Right clicking` on an object:
 
 ![Editing an object](https://rpg-paper-maker.github.io/basics/img/object-context-menu.png)
 
-### Models <a id="models"></a>
+## Models <a id="models"></a>
 
 Models are objects that can be commonly used. You can have models list in `Systems manager > Models`.
 
@@ -174,11 +180,11 @@ For example, if you want to add flowers that can be picked in your maps, you can
 
 ![Using model](https://rpg-paper-maker.github.io/basics/img/object-model-flower.png)
 
-#### Default model <a id="default-model"></a>
+### Default model <a id="default-model"></a>
 
 The model with ID 1 is the default model when you create a new object. You can change here the default information to have in an object creation.
 
-#### Hero model <a id="hero-model"></a>
+### Hero model <a id="hero-model"></a>
 
 The hero is also an object and reacts to a lot of systems events:
 
@@ -187,7 +193,7 @@ The hero is also an object and reacts to a lot of systems events:
 * `KeyPress > Action`: Send the custom event `HeroAction` to the facing square objects thanks to the send event command.
 * `KeyPress > MainMenu`: Open the main menu thanks to the open main menu command.
 
-#### Inheritance <a id="inheritance"></a>
+### Inheritance <a id="inheritance"></a>
 
 If an object uses a model but also has content, this new content will replace some of the model content. Models themselves can have models.
 
@@ -195,7 +201,7 @@ If an object uses a model but also has content, this new content will replace so
 * **Property**: If there is a property with the same name, the model reactions for this property name will be replaced by the current content.
 * **Event**: This has no influence.
 
-### Map startup reactions <a id="map-startup-reactions"></a>
+## Map startup reactions <a id="map-startup-reactions"></a>
 
 In map properties, you can see this section:
 
@@ -203,7 +209,7 @@ In map properties, you can see this section:
 
 This simply is an invisible object that will be useful for kinematics when entering a new map, for example. This is invisible, so there are no state graphics. By default, it is reacting to the event `Time` with 0 for interval parameter and OFF for repeat parameter. That means that these reactions will be executed in high priority when entering the map. This can be used for kinematics and some other stuff.
 
-### Detection <a id="detections"></a>
+## Detection <a id="detections"></a>
 
 It is important to use detection with objects. In fact, you are already using it when you react to `Hero Action` event. `Hero Action` event is an event that is sent by the hero itself to the objects that are in front of him. In order to determine where the events are sent, we use what we call `detection`.
 

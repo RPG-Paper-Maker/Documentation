@@ -8,7 +8,7 @@ In your 2D games, you are limited to screen moves for adding dynamism to your im
 
 ![Camera control sample](https://rpg-paper-maker.github.io/basics/img/camera-example.gif)
 
-### The camera <a id="the-camera"></a>
+## The camera <a id="the-camera"></a>
 
 First, you should know what is a camera. Just imagine that you are a cameraman for a great movie. The first two things required for filming a scene are:
 
@@ -22,25 +22,25 @@ Thanks to the scripts, these two positions are always calculated thanks to algor
 * The **horizontal angle** between the camera and the target
 * The **vertical angle** between the camera and the target
 
-### The distance <a id="the-distance"></a>
+## The distance <a id="the-distance"></a>
 
 ![](https://rpg-paper-maker.github.io/basics/img/camera-distance.png)
 
 The distance is simply a positive value indicating the distance between the camera and the target. This should take account of the three axis. This will be used for zooms. The default value is 125.
 
-### The horizontal angle <a id="the-horizontal-angle"></a>
+## The horizontal angle <a id="the-horizontal-angle"></a>
 
 ![](https://rpg-paper-maker.github.io/basics/img/camera-h.png)
 
 The horizontal angle is only applied to the X and Z axis. For example, if you want to turn around your target horizontally, you will have to change this value. The default value is -90°.
 
-### The vertical angle <a id="the-vertical-angle"></a>
+## The vertical angle <a id="the-vertical-angle"></a>
 
 ![](https://rpg-paper-maker.github.io/basics/img/camera-v.png)
 
 Same as the vertical angle but only applied to the Y axis. For example, if you want to turn around your target vertically, you will have to change this value \(to go down you have to increment the value, and to go up you have to decrease the value\). The default value is 55°.
 
-### The move camera command <a id="the-move-camera-command"></a>
+## The move camera command <a id="the-move-camera-command"></a>
 
 Here we are, now that you know a bit more about the camera properties we can see how to dynamically move it. The Move Camera event command is here for it!
 
@@ -95,7 +95,7 @@ Here we are, now that you know a bit more about the camera properties we can see
 * `Wait the end of the move before the next command`: Wait the end of the move before the next command \(same as for the [move object command](event-commands.md#move-object)\). It can be used to execute commands while the camera is moving \(display texts, sounds...\).
 * `Time`: Indicate here the time in seconds for the camera to move to its final position. If 0, the move will be immediate.
 
-### Camera properties <a id="camera-properties"></a>
+## Camera properties <a id="camera-properties"></a>
 
 You can control the default properties of the camera when you are going into a new map. You can set the camera ID in `map properties`. You also have access to the camera properties list in `Systems manager > System`:
 

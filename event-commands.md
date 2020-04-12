@@ -6,7 +6,7 @@ description: An overview about event commands
 
 Now that you are a pro for objects and event, let's see all the event commands that are possible to use.
 
-### Show text <a id="show-text"></a>
+## Show text <a id="show-text"></a>
 
 ![Show text Command editor](https://rpg-paper-maker.github.io/basics/img/command-show-text.png)
 
@@ -35,7 +35,7 @@ Render in game:
 
 ![Show text Command sample](https://rpg-paper-maker.github.io/basics/img/render-hello-world.png)
 
-### Display a choice <a id="display-a-choice"></a>
+## Display a choice <a id="display-a-choice"></a>
 
 ![Display choice command](https://rpg-paper-maker.github.io/basics/img/command-display-choice.png)
 
@@ -47,7 +47,7 @@ Using adapted show text command:
 
 ![Setting Display choice Command.](https://rpg-paper-maker.github.io/basics/img/commands-display-choice.png)
 
-![Display  choice Command](https://rpg-paper-maker.github.io/basics/img/render-command-display-choice.png)
+![Display choice Command](https://rpg-paper-maker.github.io/basics/img/render-command-display-choice.png)
 
 Using without show text command before:
 
@@ -55,11 +55,11 @@ Using without show text command before:
 
 ![Sample without Show text Command](https://rpg-paper-maker.github.io/basics/img/render-command-display-choice-without-text.png)
 
-### Input number <a id="input-number"></a>
+## Input number <a id="input-number"></a>
 
 _Not available yet._
 
-### Set dialog box options <a id="set-dialog-box-options"></a>
+## Set dialog box options <a id="set-dialog-box-options"></a>
 
 ![Dialog box options](https://rpg-paper-maker.github.io/basics/img/command-dialog-box-options.png)
 
@@ -89,7 +89,7 @@ Set all the dialog box options.
   * `Size ID`: The size ID to use for texts.
   * `Font ID`: The font ID to use for texts.
 
-### Change screen tone <a id="change-screen-tone"></a>
+## Change screen tone <a id="change-screen-tone"></a>
 
 ![Change screen tone](https://rpg-paper-maker.github.io/basics/img/command-change-screen-tone.png)
 
@@ -103,23 +103,23 @@ Change the screen tone \(dominant color\). The RGB color \(0, 0, 0\) changes not
 * `Wait the end of the change before the next command`: If checked, the command will end only after `Time` number.
 * `Time`: Time to wait for changing the screen tone.
 
-### Shake screen <a id="shake-screen"></a>
+## Shake screen <a id="shake-screen"></a>
 
 _Not available yet._
 
-### Flash screen <a id="flash-screen"></a>
+## Flash screen <a id="flash-screen"></a>
 
 _Not available yet._
 
-### Change meteo <a id="change-meteo"></a>
+## Change meteo <a id="change-meteo"></a>
 
 _Not available yet._
 
-### Change map properties <a id="change-map-properties"></a>
+## Change map properties <a id="change-map-properties"></a>
 
 _Not available yet._
 
-### Wait <a id="wait"></a>
+## Wait <a id="wait"></a>
 
 ![Setting Wait Command](https://rpg-paper-maker.github.io/basics/img/command-wait.png)
 
@@ -127,11 +127,11 @@ Wait during a specific time.
 
 * `Time`: Time to wait in seconds.
 
-### Change chronometer <a id="change-chronometer"></a>
+## Change chronometer <a id="change-chronometer"></a>
 
 _Not available yet._
 
-### Teleport object <a id="teleport-object"></a>
+## Teleport object <a id="teleport-object"></a>
 
 ![Teleportation of an object](https://rpg-paper-maker.github.io/basics/img/command-teleport-object.png)
 
@@ -144,7 +144,7 @@ This will teleport an object on an existing map with a new position.
   * `Object (ID)`: Choose an object to teleport on.
 * **Options**: _Not available yet._
 
-### Move object <a id="move-object"></a>
+## Move object <a id="move-object"></a>
 
 ![Move an object](https://rpg-paper-maker.github.io/basics/img/command-move-object.png)
 
@@ -166,23 +166,23 @@ This will move an object in the current map with a specific route. You can also 
 * **Change direction**: _Not available yet._
 * **Change object properties**: _Not available yet._
 
-### Display an animation <a id="display-an-animation"></a>
+## Display an animation <a id="display-an-animation"></a>
 
 _Not available yet._
 
-### Move camera <a id="move-camera"></a>
+## Move camera <a id="move-camera"></a>
 
 Check out the camera guide [here](camera-control.md).
 
-### Reset camera <a id="reset-camera"></a>
+## Reset camera <a id="reset-camera"></a>
 
 _Not available yet._
 
-### Create object in map <a id="create-object-in-map"></a>
+## Create object in map <a id="create-object-in-map"></a>
 
 _Not available yet._
 
-### Remove object from map <a id="remove-object-from-map"></a>
+## Remove object from map <a id="remove-object-from-map"></a>
 
 ![Removing object from map](https://rpg-paper-maker.github.io/basics/img/command-remove-object-from-map.png)
 
@@ -190,9 +190,9 @@ Remove an object from the map. This removing is effective as long as you don't c
 
 * `Object ID`: The object ID to remove in the map.
 
-### Display a picture <a id="display-a-picture"></a>
+## Display a picture <a id="display-a-picture"></a>
 
-![Display  a picture](https://rpg-paper-maker.github.io/basics/img/command-display-picture.png)
+![Display a picture](https://rpg-paper-maker.github.io/basics/img/command-display-picture.png)
 
 Display a picture on top of the screen.
 
@@ -209,7 +209,7 @@ Display a picture on top of the screen.
   * `Opacity`: The % opacity of the image.
   * `Angle`: The ° angle of the image.
 
-### Set / Move / Turn a picture <a id="set-move-turn-a-picture"></a>
+## Set / Move / Turn a picture <a id="set-move-turn-a-picture"></a>
 
 ![Manage a picture](https://rpg-paper-maker.github.io/basics/img/command-set-move-turn-picture.png)
 
@@ -228,7 +228,7 @@ Set / Move / Turn a picture that is already displayed on top of the screen.
 * `Wait the end of the actions before the next command`: If checked, the command will end only after `Time` number.
 * `Time`: Time to wait for updating the picture.
 
-### Remove a picture <a id="remove-a-picture"></a>
+## Remove a picture <a id="remove-a-picture"></a>
 
 ![Remove a picture](https://rpg-paper-maker.github.io/basics/img/command-remove-picture.png)
 
@@ -236,19 +236,19 @@ Remove a picture that is displayed on top of the screen.
 
 * `Image index`: Select the index of the image to remove.
 
-### Play a video <a id="play-a-video"></a>
+## Play a video <a id="play-a-video"></a>
 
 _Not available yet._
 
-### Start shop <a id="start-shop"></a>
+## Start shop <a id="start-shop"></a>
 
 _Not available yet._
 
-### Enter a name <a id="enter-a-name"></a>
+## Enter a name <a id="enter-a-name"></a>
 
 _Not available yet._
 
-### Open main menu <a id="open-main-menu"></a>
+## Open main menu <a id="open-main-menu"></a>
 
 This will open the main menu.
 
@@ -256,7 +256,7 @@ Render in game:
 
 ![Open Main Menu Command](https://rpg-paper-maker.github.io/basics/img/render-main-menu.png)
 
-### Open saves menu <a id="open-saves-menu"></a>
+## Open saves menu <a id="open-saves-menu"></a>
 
 This will open the saves menu.
 
@@ -264,17 +264,17 @@ Render in game:
 
 ![Open Save Menu Command](https://rpg-paper-maker.github.io/basics/img/render-saves-menu.png)
 
-### Title screen <a id="title-screen"></a>
+## Title screen <a id="title-screen"></a>
 
 Go to the title screen.
 
-### Game over <a id="game-over"></a>
+## Game over <a id="game-over"></a>
 
 This will go to the game over screen.
 
-_**/!\ Today, there is no game over screen, it's only closing the game window.**_
+_**/! Today, there is no game over screen, it's only closing the game window.**_
 
-### Play a music <a id="play-a-music"></a>
+## Play a music <a id="play-a-music"></a>
 
 ![Play music Command](https://rpg-paper-maker.github.io/basics/img/command-play-music.png)
 
@@ -286,7 +286,7 @@ This will play a music on the current map.
   * `Start`: The beginning time of the music in seconds.
   * `End`: The end time of the music in seconds.
 
-### Stop music <a id="stop-music"></a>
+## Stop music <a id="stop-music"></a>
 
 ![Stop music Command](https://rpg-paper-maker.github.io/basics/img/command-stop-music.png)
 
@@ -294,39 +294,39 @@ This will stop the music played in the current map.
 
 * `Disappear with time`: Number of seconds for music played for disappearing.
 
-### Play a background sound <a id="play-a-background-sound"></a>
+## Play a background sound <a id="play-a-background-sound"></a>
 
 This will play a background sound on top of the current music.
 
 Check out the play music command [here](event-commands.md#play-a-music) that is similar.
 
-### Stop background sound <a id="stop-background-sound"></a>
+## Stop background sound <a id="stop-background-sound"></a>
 
 This will stop the background sound played in the current map.
 
 Check out the stop music command [here](event-commands.md#stop-music) that is similar.
 
-### Play a sound <a id="play-a-sound"></a>
+## Play a sound <a id="play-a-sound"></a>
 
 This will play a sound on top of all the songs.
 
 Check out the play music command [here](event-commands.md#stop-music) that is similar.
 
-### Play a music effect <a id="play-a-music-effect"></a>
+## Play a music effect <a id="play-a-music-effect"></a>
 
 This will play a music by pausing the current played music. When the music effect is finished the previously played music is unpaused.
 
 Check out the play music command [here](event-commands.md#play-a-music) that is similar.
 
-### Change battle music <a id="change-battle-music"></a>
+## Change battle music <a id="change-battle-music"></a>
 
 _Not available yet._
 
-### Change victory music <a id="change-victory-music"></a>
+## Change victory music <a id="change-victory-music"></a>
 
 _Not available yet._
 
-### Send event <a id="send-event"></a>
+## Send event <a id="send-event"></a>
 
 ![Send event Command](https://rpg-paper-maker.github.io/basics/img/command-send-event.png)
 
@@ -342,7 +342,7 @@ This will send an event to the selected target.
   * `Event user`: Select a user event \(custom events sent by the map objects\).
   * `Parameters values`: Select the event parameters values. You can keep the default value.
 
-### Change state <a id="change-state"></a>
+## Change state <a id="change-state"></a>
 
 ![Change state Command](https://rpg-paper-maker.github.io/basics/img/command-change-state.png)
 
@@ -355,7 +355,7 @@ This will change the state of the current object. An object can have several sta
   * `Add`: Only add the new state.
   * `Remove`: Remove the object state having this ID.
 
-### Change property <a id="change-property"></a>
+## Change property <a id="change-property"></a>
 
 ![Change property Command](https://rpg-paper-maker.github.io/basics/img/command-change-property.png)
 
@@ -367,15 +367,15 @@ This will change a property value of the current object.
 * **Value**:
   * `New value`: The new value to apply to the property with the corresponding operation.
 
-### Change graphic <a id="change-graphic"></a>
+## Change graphic <a id="change-graphic"></a>
 
 _Not available yet._
 
-### Change money <a id="change-money"></a>
+## Change money <a id="change-money"></a>
 
 _Not available yet._
 
-### Modify inventory <a id="modify-inventory"></a>
+## Modify inventory <a id="modify-inventory"></a>
 
 ![Modify inventory Command](https://rpg-paper-maker.github.io/basics/img/command-modify-inventory.png)
 
@@ -388,7 +388,7 @@ This will update inventory containing. You can for example add items to it.
 * **Operation**: The operation to use according to the current number of the selection in the inventory.
 * **Number**: The value to use for updating the selection number.
 
-### Modify team <a id="modify-team"></a>
+## Modify team <a id="modify-team"></a>
 
 ![Modify team Command](https://rpg-paper-maker.github.io/basics/img/command-modify-team.png)
 
@@ -398,23 +398,23 @@ This will update team organization.
   * `Stock instance ID in`: Choose a variable where you want to stock the instance ID. This can be useful to move or remove characters in team.
 * `Move / Remove the character with ID ... in team / reserve / hidden`: _Not available yet._
 
-### Allow / Forbid saves <a id="allow-forbid-saves"></a>
+## Allow / Forbid saves <a id="allow-forbid-saves"></a>
 
 ![Allow/Forbid saves Command](https://rpg-paper-maker.github.io/basics/img/command-allow-forbid-saves.png)
 
 * `Allow`: If checked, the saves menu will be allowed.
 
-### Allow / Forbid main menu <a id="allow-forbid-main-menu"></a>
+## Allow / Forbid main menu <a id="allow-forbid-main-menu"></a>
 
 ![Allow/Forbid main menu Command](https://rpg-paper-maker.github.io/basics/img/command-allow-forbid-main-menu.png)
 
 * `Allow`: If checked, the main menu will be allowed.
 
-### Change general options <a id="change-general-options"></a>
+## Change general options <a id="change-general-options"></a>
 
 _Not available yet._
 
-### Start a battle <a id="start-a-battle"></a>
+## Start a battle <a id="start-a-battle"></a>
 
 ![Start a battle Command](https://rpg-paper-maker.github.io/basics/img/command-start-battle.png)
 
@@ -436,55 +436,55 @@ This will start a battle with your team against a troop \(group of monsters\).
     * `Fade in / out`: Transition on a color.
     * `Zoom in / out`: Transition by zooming in / out.
 
-### Display / Hide enemy <a id="display-hide-enemy"></a>
+## Display / Hide enemy <a id="display-hide-enemy"></a>
 
 _Not available yet._
 
-### Force an action <a id="force-an-action"></a>
+## Force an action <a id="force-an-action"></a>
 
 _Not available yet._
 
-### End battle <a id="end-battle"></a>
+## End battle <a id="end-battle"></a>
 
 _Not available yet._
 
-### Change battle music <a id="change-battle-music_1"></a>
+## Change battle music <a id="change-battle-music_1"></a>
 
 _Not available yet._
 
-### Change victory music <a id="change-victory-music_1"></a>
+## Change victory music <a id="change-victory-music_1"></a>
 
 _Not available yet._
 
-### Change a statistic <a id="change-a-statistic"></a>
+## Change a statistic <a id="change-a-statistic"></a>
 
 _Not available yet._
 
-### Change experience curve <a id="change-experience-curve"></a>
+## Change experience curve <a id="change-experience-curve"></a>
 
 _Not available yet._
 
-### Change status <a id="change-status"></a>
+## Change status <a id="change-status"></a>
 
 _Not available yet._
 
-### Change a skill <a id="change-a-skill"></a>
+## Change a skill <a id="change-a-skill"></a>
 
 _Not available yet._
 
-### Change name <a id="change-name"></a>
+## Change name <a id="change-name"></a>
 
 _Not available yet._
 
-### Change class <a id="change-class"></a>
+## Change class <a id="change-class"></a>
 
 _Not available yet._
 
-### Change equipment <a id="change-equipment"></a>
+## Change equipment <a id="change-equipment"></a>
 
 _Not available yet._
 
-### Condition <a id="condition"></a>
+## Condition <a id="condition"></a>
 
 Create a container for commands that will be executed only if the indicated condition is true.
 
@@ -524,31 +524,31 @@ Create a container for commands that will be executed only if the indicated cond
 * `Key ID`: Check if selected key is ON or OFF.
 * `Script`: Check according to the script return value \(for programmers\).
 
-### Loop <a id="loop"></a>
+## Loop <a id="loop"></a>
 
 Create a container for commands that will be executed on a loop.
 
-### Break loop <a id="break-loop"></a>
+## Break loop <a id="break-loop"></a>
 
 If inside a loop container, this will go out of the loop and go to the next command after the loop.
 
-### Label <a id="label"></a>
+## Label <a id="label"></a>
 
 _Not available yet._
 
-### Jump to label <a id="jump-to-label"></a>
+## Jump to label <a id="jump-to-label"></a>
 
 _Not available yet._
 
-### Stop the reaction <a id="stop-the-reaction"></a>
+## Stop the reaction <a id="stop-the-reaction"></a>
 
 Stop the current reaction.
 
-### Comment <a id="comment"></a>
+## Comment <a id="comment"></a>
 
 _Not available yet._
 
-### Call a common reaction <a id="call-a-common-reaction"></a>
+## Call a common reaction <a id="call-a-common-reaction"></a>
 
 ![Call a common reaction Command](https://rpg-paper-maker.github.io/basics/img/command-call-common-reaction.png)
 
@@ -557,7 +557,7 @@ This will call a common reaction with the corresponding parameters.
 * `Common reaction`: The common reaction to call.
 * **Parameters values**: The parameters to apply with the common reaction.
 
-### Change variables <a id="change-variables"></a>
+## Change variables <a id="change-variables"></a>
 
 ![Change variables Command](https://rpg-paper-maker.github.io/basics/img/command-change-variables.png)
 
@@ -585,7 +585,7 @@ This will change one or several variable\(s\) value.
     * `Orientation`: The orientation of the selected object.
   * `Other characteristics`: _Not available yet._
 
-### Script <a id="script"></a>
+## Script <a id="script"></a>
 
 ![Scrip editor](https://rpg-paper-maker.github.io/basics/img/command-script.png)
 

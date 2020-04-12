@@ -6,9 +6,11 @@ description: Here you'll find all you need about managing your game resources.
 
 When you are editing your maps, you are using textures that are proposed by default. You also have, music, interfaces, etc. All this stuff is called **BR \(Basic Resources\)**. It's located to the install folder. You can find the folder location here:
 
-![Setting BR folder location](https://rpg-paper-maker.github.io/basics/img/br-location.png)
+![](https://rpg-paper-maker.github.io/basics/img/br-location.png)
 
-### Manage pictures <a id="manage-pictures"></a>
+You can also use `Auto` button to automaticaly find the BR folder in the RPG Paper Maker instance you are actually using.
+
+## Manage pictures <a id="manage-pictures"></a>
 
 Open the pictures manager by clicking here on the main toolbar:
 
@@ -35,11 +37,11 @@ The second list corresponds to all the pictures that you are using in your game 
 
 If you check the option `Show available content of ...`, this will show the available pictures that are located in the Basic Resources folder.
 
-### Add / Remove pictures <a id="add-remove-pictures"></a>
+## Add / Remove pictures <a id="add-remove-pictures"></a>
 
 To add pictures in your game list: select a picture in the available content list, and press on the `left arrow` button below \(or `double click`\). To remove a picture in your game list, select one of your used picture and press `Del` on you keyboard.
 
-### Use my custom pictures <a id="use-my-custom-pictures"></a>
+## Use my custom pictures <a id="use-my-custom-pictures"></a>
 
 Click on the `+` button and select one or several pictures. This will add your custom pictures in the available content list. Not that you can distinguish BR and non BR pictures thanks to the bullets colors:
 
@@ -49,7 +51,7 @@ If you added your pictures manually inside the project folder, you will need to 
 
 Now add your pictures to your game project the same way you did for BR pictures!
 
-### Manage songs <a id="manage-songs"></a>
+## Manage songs <a id="manage-songs"></a>
 
 Songs are also a resource proposed in the BR. Open the songs manager by clicking here on the main toolbar:
 
@@ -68,7 +70,7 @@ Also note that there are four sorts of songs:
 * `Sounds`: Sound played one \(used for cursor, attacks sounds, etc.\).
 * `Music effects`: Short music stopping the currently played music. After the end of this music, the previously played music goes back \(used for object found music, level up music, etc.\).
 
-### Manage shapes <a id="manage-shapes"></a>
+## Manage shapes <a id="manage-shapes"></a>
 
 You can import your own 3D models in your maps! Open the shapes manager by clicking here on the main toolbar:
 

@@ -6,7 +6,7 @@ description: How to work with Tilesets & Collisions
 
 We've previously seen that the map properties had an option `Tileset` selection. We will now see what it is.
 
-### Tilesets <a id="tilesets"></a>
+## Tilesets <a id="tilesets"></a>
 
 A tileset corresponds to a set of information linked to the map textures and collisions. Open the Data manager by clicking here on the main toolbar and select the `Tilesets` tab:
 
@@ -16,11 +16,11 @@ If you want to add / remove tileset\(s\), you can use the `Set max...` button or
 
 You can also change special textures \(autotiles, walls, etc.\) linked to the tileset.
 
-### Collisions <a id="collisions"></a>
+## Collisions <a id="collisions"></a>
 
 Collisions are important in video games. You need to manage if the moving objects are colliding with other objects or any other map elements.
 
-### Bounding boxes <a id="bounding-boxes"></a>
+## Bounding boxes <a id="bounding-boxes"></a>
 
 Bounding box are simple geometries that are used for checking intersections. Each object has a corresponding bounding box, after each move the engine will check if the object bounding box intersect with another bounding box in the map.
 
@@ -28,7 +28,7 @@ There is a way to see the bounding boxes for debugging \(if you encounter any st
 
 ![Show collisions bound boxes](https://rpg-paper-maker.github.io/basics/img/collision-debug.png)
 
-### Simple boxes and Oriented boxes <a id="simple-boxes-and-oriented-boxes"></a>
+## Simple boxes and Oriented boxes <a id="simple-boxes-and-oriented-boxes"></a>
 
 Depending on which sprite you are using, bounding boxes can be oriented like this:
 
@@ -36,31 +36,31 @@ Depending on which sprite you are using, bounding boxes can be oriented like thi
 
 Fix sprites are flat, so they don't need to be oriented. However, face, double, and quadra sprites are voluminous and their bounding box could be a cylinder. A cylinder collision is over killed so we are using oriented boxes that are reasonable to manage collisions with great performances.
 
-### How can I change collisions? <a id="how-can-i-change-collisions"></a>
+## How can I change collisions? <a id="how-can-i-change-collisions"></a>
 
 For tileset, you can edit it directly in the picture preview on the `Tilesets` tab of datas manager. Another way is to open the collisions manager merging all the possible collisions. Open the collisions manager by clicking here on the main toolbar:
 
 ![Collision manager](https://rpg-paper-maker.github.io/basics/img/collision-manager.png)
 
-### Practicable <a id="praticable"></a>
+## Practicable <a id="praticable"></a>
 
 You can for example change the tileset collision by resizing it for each square. This will affect the size of the bounding boxes. You can resize it with your `mouse` or `Right click` and click on `Edit` in order to open a window for selecting the rectangle values.
 
 ![Collision resizing](https://rpg-paper-maker.github.io/basics/img/collision-praticable.png)
 
-### Directions \(only for floors\) <a id="directions-only-for-floors"></a>
+## Directions \(only for floors\) <a id="directions-only-for-floors"></a>
 
 You can indicate in which direction there will be a collision.
 
 ![Directions](https://rpg-paper-maker.github.io/basics/img/collision-direction.png)
 
-### Characters <a id="characters"></a>
+## Characters <a id="characters"></a>
 
 Characters are animated and you can handle different collisions for different frames. But, if you want to have the same collisions for all the frames, check the `Repeat` option.
 
 ![Characters collisions](https://rpg-paper-maker.github.io/basics/img/collision-character.png)
 
-### Autotiles <a id="autotiles"></a>
+## Autotiles <a id="autotiles"></a>
 
 You can manage the autotiles list by clicking here on the main toolbar:
 
@@ -82,11 +82,11 @@ This can also be done in the texture selector **\(2\)**:
 
 ![Also in texture selector](https://rpg-paper-maker.github.io/basics/img/autotiles-update-list.png)
 
-### Animated autotiles <a id="animated-autotiles"></a>
+## Animated autotiles <a id="animated-autotiles"></a>
 
 _Not available yet._
 
-### Sprites walls <a id="sprites-walls"></a>
+## Sprites walls <a id="sprites-walls"></a>
 
 You can manage the walls the same way you did for autotiles in:
 
@@ -96,23 +96,20 @@ You can manage the walls the same way you did for autotiles in:
 
 ![Walls manager](https://rpg-paper-maker.github.io/basics/img/walls-tileset.png)
 
-### Mountains <a id="mountains"></a>
+## Mountains <a id="mountains"></a>
 
 You can manage the mountains the same way you did for autotiles in:
 
 * In the texture selector
 * `Tilesets` tab in datas manager:
-
-
-
-  * `Collisions`:
-    * `Default (according to height and angle):` To manage collisions with mountains, go to `Systems manager > System` and set the `Mountain collisions height limit (in px)` and `Mountain collisions angle limit (in degree)`.
-    * `Force always collides`: Force collision everytime.
-    * `Force never collides`: Force no collision everytime.
+* `Collisions`:
+  * `Default (according to height and angle):` To manage collisions with mountains, go to `Systems manager > System` and set the `Mountain collisions height limit (in px)` and `Mountain collisions angle limit (in degree)`.
+  * `Force always collides`: Force collision everytime.
+  * `Force never collides`: Force no collision everytime.
 
 ![Mountains manager](https://rpg-paper-maker.github.io/basics/img/mountains-tileset.png)
 
-### 3D objects <a id="3d-objects"></a>
+## 3D objects <a id="3d-objects"></a>
 
 You can manage the 3D objects list by clicking here on the main toolbar:
 

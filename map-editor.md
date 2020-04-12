@@ -8,7 +8,7 @@ After opening a project, you should have this view:
 
 ![RPG Paper Maker screen](https://rpg-paper-maker.github.io/basics/img/map-editor.png)
 
-### Manage maps
+## Manage maps
 
 Take a look at the map selector **\(1\)**. You can add, edit, remove, copy, and paste folders or maps here. We recommend that you use folders to sort your maps for each zones of your game. By default, there's also a `Battle maps` folder that you can use to put all the maps that you will use for battle backgrounds. It is not required to put these maps into this specific folder. Clicking on a map will load this one on the map editor **\(5\)**. `Right clicking` will open this context menu:
 
@@ -31,7 +31,7 @@ If you want to create / edit a map, you will get this window:
 * `Map startup reactions`: You can configure here particular things happening when entering the map. We will se later how to do that thanks to objects.
 * `Battles`: **\(not implemented yet\)**
 
-### Move cursor / grid / camera <a id="move-cursor-grid-camera"></a>
+## Move cursor / grid / camera <a id="move-cursor-grid-camera"></a>
 
 The camera is always looking at the following cursor:
 
@@ -52,7 +52,7 @@ To move the camera position, press the `mouse wheel` and move the mouse in the d
 
 ![Move camera](https://rpg-paper-maker.github.io/basics/img/camera-turn.gif)
 
-### Place / Remove elements <a id="place-remove-elements"></a>
+## Place / Remove elements <a id="place-remove-elements"></a>
 
 The map element selection portion **\(3\)** allows you to select kind of element to place in the map \(lands, sprites, objects, reliefs, etc.\). You can add or remove something in a specific square by clicking left or right.
 
@@ -60,11 +60,11 @@ For example with a floor:
 
 ![](https://rpg-paper-maker.github.io/basics/img/map-editor-add-remove.png)
 
-### Undo / Redo <a id="undo-redo"></a>
+## Undo / Redo <a id="undo-redo"></a>
 
 You can go back / after a change in each map. Press `CTRL+Z` for undo and `CTRL+Y` for redo.
 
-### Save changes <a id="save-changes"></a>
+## Save changes <a id="save-changes"></a>
 
 To save your map editor changes, you can use these shortcuts in the toolbar:
 
@@ -75,14 +75,14 @@ To save your map editor changes, you can use these shortcuts in the toolbar:
 
 ![Unsaved changes](https://rpg-paper-maker.github.io/basics/img/map-save.png)
 
-### Show / Hide some UI details <a id="show-hide-some-ui-details"></a>
+## Show / Hide some UI details <a id="show-hide-some-ui-details"></a>
 
 * `G`: Show / Hide grid
 * `I`: Show / Hide information about the pointed square:
 
 ![UI details](https://rpg-paper-maker.github.io/basics/img/square-infos.png)
 
-### Change paint mode <a id="change-paint-mode"></a>
+## Change paint mode <a id="change-paint-mode"></a>
 
 Here are the different paint mode **\(4\)** for drawing your elements in the map:
 
@@ -92,19 +92,19 @@ Here are the different paint mode **\(4\)** for drawing your elements in the map
 * `Rectangle`: Draw squares after tracing a rectangle **\(not available yet\)**.
 * `Pin of paint`: Fill squares with the same texture as the one pointed.
 
-### Lands <a id="lands"></a>
+## Lands <a id="lands"></a>
 
 Here are the possible lands to place:
 
 ![Land types](https://rpg-paper-maker.github.io/basics/img/lands.png)
 
-### Floors <a id="floors"></a>
+## Floors <a id="floors"></a>
 
 The texture selector **\(2\)** allows you to select a rectangle for a texture. After selecting a rectangle, place your mouse on a square of your map to place your floor.
 
 ![Floor](https://rpg-paper-maker.github.io/basics/img/add-floor.png)
 
-### Autotiles <a id="autotiles"></a>
+## Autotiles <a id="autotiles"></a>
 
 Autotiles are dynamic floors. This will have borders with automatic changing according to the neighbor squares:
 
@@ -114,11 +114,11 @@ In the texture selector **\(2\)**, you just have to select a square:
 
 ![Texture selector](https://rpg-paper-maker.github.io/basics/img/autotile-texture.png)
 
-### Animated autotiles <a id="animated-autotiles"></a>
+## Animated autotiles <a id="animated-autotiles"></a>
 
 _Not available yet._
 
-### Sprites <a id="sprites"></a>
+## Sprites <a id="sprites"></a>
 
 ![Sprites menu](https://rpg-paper-maker.github.io/basics/img/sprites.png)
 
@@ -139,7 +139,7 @@ In the texture selector **\(2\)**, you just have to select a wall:
 
 ![Wall in texture selector](https://rpg-paper-maker.github.io/basics/img/walls-texture.png)
 
-### Mountains <a id="mountains"></a>
+## Mountains <a id="mountains"></a>
 
 You can add some reliefs to your map thanks to mountains!
 
@@ -159,7 +159,7 @@ In the texture selector **\(2\)**, you have several possible options for designi
 
 Note that you can se the angle value bellow these options so you can refer to this for angle collisions in `Systems manager > System`.
 
-### 3D Objects <a id="3d-objects"></a>
+## 3D Objects <a id="3d-objects"></a>
 
 There are not only sprites, but also 3D objects available for your maps!
 
@@ -169,7 +169,7 @@ In the texture selector **\(2\)**, you just have to select an object:
 
 ![3D object](https://rpg-paper-maker.github.io/basics/img/objects-3d-texture.png)
 
-### Objects <a id="objects"></a>
+## Objects <a id="objects"></a>
 
 All the previous elements were static \(it doesn't move\). There are objects in order to add some life on your map. This can be NPCs, chests, etc.
 
@@ -177,7 +177,7 @@ All the previous elements were static \(it doesn't move\). There are objects in 
 
 We will see later how to manage it because this is one of the biggest topics of the engine.
 
-### The hero <a id="the-hero"></a>
+## The hero <a id="the-hero"></a>
 
 To define where the game should start, you have to define who is the hero in one of your maps. When you create a new project, the hero is the character at the center of the first map. If you want to change it:
 
@@ -196,15 +196,15 @@ _Note:_ You can see who is the hero with a "S" symbol under it.
 
 ![The hero symbol](https://rpg-paper-maker.github.io/basics/img/hero.png)
 
-### Transformations <a id="transformations"></a>
+## Transformations <a id="transformations"></a>
 
 In 3D, transformations are these 3 different action:
 
-#### Translation <a id="translation"></a>
+### Translation <a id="translation"></a>
 
 _Not available yet._
 
-#### Rotation <a id="rotation"></a>
+### Rotation <a id="rotation"></a>
 
 Apply rotation to sprites or 3D objects only.
 
@@ -221,11 +221,11 @@ If you left / right click a map element, this will select the object and apply t
 * `Define as default X/Y/Z rotation`: Save current `angle` input in engine settings so you get this value in the `angle` input each time you restart the engine.
 * `Reset to default X/Y/Z rotation`: Fill current `angle` input with the saved default rotation value.
 
-#### Scaling <a id="scaling"></a>
+### Scaling <a id="scaling"></a>
 
 _Not available yet._
 
-### Layers options <a id="layers-options"></a>
+## Layers options <a id="layers-options"></a>
 
 You can choose here if you want to be on layer mode or not here:
 
@@ -236,5 +236,5 @@ You can choose here if you want to be on layer mode or not here:
 
 Example of layers used with walls:
 
-![Under-layering sample](.gitbook/assets/image.png)
+![Under-layering sample](.gitbook/assets/image%20%281%29.png)
 
