@@ -105,11 +105,24 @@ Change the screen tone \(dominant color\). The RGB color \(0, 0, 0\) changes not
 
 ## Shake screen <a id="shake-screen"></a>
 
-_Not available yet._
+![](.gitbook/assets/command-shake-screen.png)
+
+This is useful for staging your cinematics by simulating earthquakes, for example.
+
+* `Offset`: The number of pixel offset for each shake.
+* `Shake number`: The number of shakes per second.
+* `Wait the end of the move before the next command`: If checked, the next command will be executed when the shakes ends.
+* `Time`: Duration of the total shakes.
 
 ## Flash screen <a id="flash-screen"></a>
 
-_Not available yet._
+![](.gitbook/assets/command-flash-screen.png)
+
+This will simply fill your screen with a color and linearly go back to normal screen color.
+
+* `Color ID`: The color ID to display on screen.
+* `Wait the end of the move before the next command`: If checked, the next command will be executed when the flash ends.
+* `Time`: Duration of the flash.
 
 ## Change meteo <a id="change-meteo"></a>
 
@@ -146,7 +159,7 @@ This will teleport an object on an existing map with a new position.
 
 ## Move object <a id="move-object"></a>
 
-![Move an object](https://rpg-paper-maker.github.io/basics/img/command-move-object.png)
+![](.gitbook/assets/command-move-object.png)
 
 This will move an object in the current map with a specific route. You can also temporary change some properties linked to the object state.
 
@@ -164,11 +177,20 @@ This will move an object in the current map with a specific route. You can also 
   * `1 in front`: Move the object to 1 square / step in front.
   * `1 back`: Move the object to 1 square / step back.
 * **Change direction**: _Not available yet._
-* **Change object properties**: _Not available yet._
+* **Change object options**:
+  * ON / OFF: For some options, you can use the option ON or OFF.
+  * Permanent: If checked, the object option will be conserved even after saving.
+  * Change graphics: Change the obejct graphics.
 
 ## Display an animation <a id="display-an-animation"></a>
 
-_Not available yet._
+![](.gitbook/assets/command-display-an-animation.png)
+
+Display an animation in the current map.
+
+* `Object ID`: The object ID where the animation will be played.
+* `Animation ID`: The animation ID to play.
+* `Wait the end of the animation before next command`: If checked, the next command will be executed only after the animation end.
 
 ## Move camera <a id="move-camera"></a>
 
@@ -344,12 +366,15 @@ This will send an event to the selected target.
 
 ## Change state <a id="change-state"></a>
 
-![Change state Command](https://rpg-paper-maker.github.io/basics/img/command-change-state.png)
+![](.gitbook/assets/command-change-state.png)
 
 This will change the state of the current object. An object can have several states at the same time.
 
+* **Object**:
+  * `Map ID`: The map ID to change state.
+  * `Object ID`: The object ID to change state.
 * **Selection**:
-  * `State's ID`: The new state ID.
+  * `State ID`: The new state ID.
 * **Operation**:
   * `Replace`: Remove all the current states of the object and add the new state.
   * `Add`: Only add the new state.
@@ -367,24 +392,27 @@ This will change a property value of the current object.
 * **Value**:
   * `New value`: The new value to apply to the property with the corresponding operation.
 
-## Change graphic <a id="change-graphic"></a>
+## Modify currency <a id="change-money"></a>
 
-_Not available yet._
+![](.gitbook/assets/command-modify-currency.png)
 
-## Change money <a id="change-money"></a>
+Change the currency value.
 
-_Not available yet._
+* **Selection**:
+  * `Currency ID`: The currency ID to change value.
+* **Operation**: The operation to apply to the currency value.
+* **Number**: The number value to apply to the currency.
 
 ## Modify inventory <a id="modify-inventory"></a>
 
-![Modify inventory Command](https://rpg-paper-maker.github.io/basics/img/command-modify-inventory.png)
+![](.gitbook/assets/command-modify-inventory.png)
 
 This will update inventory containing. You can for example add items to it.
 
 * **Selection**:
-  * `Item`: An item to select.
-  * `Weapon`: A weapon to select.
-  * `Armor`: An armor to select.
+  * `Item ID`: An item to select.
+  * `Weapon ID`: A weapon to select.
+  * `Armor ID`: An armor to select.
 * **Operation**: The operation to use according to the current number of the selection in the inventory.
 * **Number**: The value to use for updating the selection number.
 
@@ -458,7 +486,20 @@ _Not available yet._
 
 ## Change a statistic <a id="change-a-statistic"></a>
 
-_Not available yet._
+![](.gitbook/assets/command-change-a-statistic.png)
+
+You can here change a statistic value to one or several characters \(heroes or enemies\).
+
+* `Statistic ID`: The statistic ID to change value.
+* **Selection**:
+  * `Hero / Enemy instance ID`: Select the instance ID of a character. They are mainly stocked into a variable.
+  * `The entire`: Select a group, this can be the `team`, `reserve`, or `hidden`.
+* **Operation**: Select the operation to apply to the current statistic value.
+* **Value**:
+  * `Number`: Choose a dynamic number value.
+  * `Formula`: Enter a formula as a value.
+  * `Maximum statistic value`: Take the maximum value of a statistic \(used to heal maximum HP, for example\)
+  * `Can go above maximum value`: If checked, the given value can be superior to maximum value of the statistic.
 
 ## Change experience curve <a id="change-experience-curve"></a>
 
@@ -470,11 +511,26 @@ _Not available yet._
 
 ## Change a skill <a id="change-a-skill"></a>
 
-_Not available yet._
+![](.gitbook/assets/command-change-a-skill.png)
+
+Choose if you want a character to learn or forget a specific skill.
+
+* `Skill ID`: The skill ID to learn or forget.
+* **Selection**:
+  * `Hero / Enemy instance ID`: Select the instance ID of a character. They are mainly stocked into a variable.
+  * `The entire`: Select a group, this can be the `team`, `reserve`, or `hidden`.
+* **Operation**: Choose here if you want to learn or forget the selected skill.
 
 ## Change name <a id="change-name"></a>
 
-_Not available yet._
+![](.gitbook/assets/command-change-name.png)
+
+Choose a character you want to change the name. This isn't like the command enter hero name, this doesn't open any HUD so the player can enter a name.
+
+* `Name`: The new character name.
+* **Selection**:
+  * `Hero / Enemy instance ID`: Select the instance ID of a character. They are mainly stocked into a variable.
+  * `The entire`: Select a group, this can be the `team`, `reserve`, or `hidden`.
 
 ## Change class <a id="change-class"></a>
 
@@ -482,7 +538,16 @@ _Not available yet._
 
 ## Change equipment <a id="change-equipment"></a>
 
-_Not available yet._
+![](.gitbook/assets/command-change-equipment.png)
+
+You can force a character to equip a weapon or an armor.
+
+* `Equipment ID`: The equipment slot ID to force equip.
+* `with Weapon ID / Armor ID`: The weapon or armor ID to force equip \(according to equipment ID\).
+* **Selection**:
+  * `Hero / Enemy instance ID`: Select the instance ID of a character. They are mainly stocked into a variable.
+  * `The entire`: Select a group, this can be the `team`, `reserve`, or `hidden`.
+* `Apply only if in inventory`: If checked, the equipment is not equiped if not in inventory. If not checked, the item will be added to inventory and then equiped.
 
 ## Condition <a id="condition"></a>
 
@@ -519,9 +584,10 @@ Create a container for commands that will be executed only if the indicated cond
   * `Check armors equiped too`: If checked, the equipped armors will be included in the number of armors.
 * **Others**:
 
-![Condition editor](https://rpg-paper-maker.github.io/basics/img/command-condition-others.png)
+![](.gitbook/assets/command-condition-others.png)
 
 * `Key ID`: Check if selected key is ON or OFF.
+* `Escaped last battle`: Check if the player escaped last battle \(using escape battle command\).
 * `Script`: Check according to the script return value \(for programmers\).
 
 ## Loop <a id="loop"></a>
@@ -534,11 +600,21 @@ If inside a loop container, this will go out of the loop and go to the next comm
 
 ## Label <a id="label"></a>
 
-_Not available yet._
+![](.gitbook/assets/command-label.png)
+
+Add label to your reaction, you will combine it with jump to label command. You can choose any name you want.
 
 ## Jump to label <a id="jump-to-label"></a>
 
-_Not available yet._
+![](.gitbook/assets/command-jump-label.png)
+
+Combined with label command, you can choose to move to the named label. Here is a nexample that will create a loop:
+
+![](.gitbook/assets/example-label.png)
+
+The commands will be executed like this:
+
+Condition ? &gt; No &gt; End if &gt;Jump to label loop &gt; Label loop &gt; End if &gt; Jump to label loop &gt; Label loop &gt; ...
 
 ## Stop the reaction <a id="stop-the-reaction"></a>
 
@@ -546,11 +622,15 @@ Stop the current reaction.
 
 ## Comment <a id="comment"></a>
 
-_Not available yet._
+![](.gitbook/assets/command-comment.png)
+
+Comments won't be interpreted in game, it's only here for you. You can leave a comment in specific places to remember why you used specific commands.
+
+![](.gitbook/assets/example-command-comment.png)
 
 ## Call a common reaction <a id="call-a-common-reaction"></a>
 
-![Call a common reaction Command](https://rpg-paper-maker.github.io/basics/img/command-call-common-reaction.png)
+![](https://rpg-paper-maker.github.io/basics/img/command-call-common-reaction.png)
 
 This will call a common reaction with the corresponding parameters.
 
@@ -559,7 +639,7 @@ This will call a common reaction with the corresponding parameters.
 
 ## Change variables <a id="change-variables"></a>
 
-![Change variables Command](https://rpg-paper-maker.github.io/basics/img/command-change-variables.png)
+![](https://rpg-paper-maker.github.io/basics/img/command-change-variables.png)
 
 This will change one or several variable\(s\) value.
 
@@ -587,7 +667,7 @@ This will change one or several variable\(s\) value.
 
 ## Script <a id="script"></a>
 
-![Scrip editor](https://rpg-paper-maker.github.io/basics/img/command-script.png)
+![](https://rpg-paper-maker.github.io/basics/img/command-script.png)
 
 Execute a script code \(for advanced programmers\).
 

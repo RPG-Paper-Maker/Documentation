@@ -44,11 +44,11 @@ Same as the vertical angle but only applied to the Y axis. For example, if you w
 
 Here we are, now that you know a bit more about the camera properties we can see how to dynamically move it. The Move Camera event command is here for it!
 
-![Move camera Command](https://rpg-paper-maker.github.io/basics/img/command-move-camera.png)
+![](.gitbook/assets/command-move-camera.png)
 
 * **Camera target**: By default, the camera is always looking at the hero.
   * `Unchanged`: Keep the current camera target.
-  * `Object ID`: _\(not available yet\)_ If you are selecting a new object ID to focus, the camera will move to its position and will consider it as the new target after it.
+  * `Object ID`: If you are selecting a new object ID to focus, the camera will move to its position and will consider it as the new target after it.
 * **Operation**: You can select here the kind of operation you want to apply to the modified values. For example, if you choose \(+\) and you set distance to 5, if the previous distance value was 125 it will become 125 + 5 = 130.
 * **Move**: You can modify here the camera position on the three axis \(you can choose squares by squares or pixel by pixel\).
 
@@ -56,14 +56,13 @@ Here we are, now that you know a bit more about the camera properties we can see
 
   _Moving X+10 squares with target offset OFF:_
 
-  ![Screenshot](https://rpg-paper-maker.github.io/basics/img/camera-move-off.gif)
+![Screenshot](https://rpg-paper-maker.github.io/basics/img/camera-move-off.gif)
 
-  _Moving X+10 squares with target offset ON:_
+_Moving X+10 squares with target offset ON:_
 
-  ![Screenshot](https://rpg-paper-maker.github.io/basics/img/camera-move-on.gif)
+![Screenshot](https://rpg-paper-maker.github.io/basics/img/camera-move-on.gif)
 
-  * `Take account of camera orientation`: _\(not available yet\)_ This is simply considering that the axis are modified according to the camera position \(see the same option for [Move Object command](event-commands.md#move-object)\).
-
+* `Take account of camera orientation`: _\(not available yet\)_ This is simply considering that the axis are modified according to the camera position \(see the same option for [Move Object command](event-commands.md#move-object)\).
 * **Rotation**: You can here modify the horizontal and the vertical angle of the camera in order to apply rotations.
 
   * `Target offset`: Same as for moves. This time, the target will turn around the camera.

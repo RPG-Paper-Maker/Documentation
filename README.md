@@ -26,17 +26,17 @@ Extract the file. After running `RPG Paper Maker.app`, this will ask you for dow
 
 There actually are two different themes: `Dark` and `White`. If you want to change it, go to `Options > General options...`.
 
-![Theme changing](https://rpg-paper-maker.github.io/img/themes-options.png)
+![](https://rpg-paper-maker.github.io/img/themes-options.png)
 
 ## Create a new project <a id="create-a-new-project"></a>
 
 You can create a new project by clicking here on the main toolbar:
 
-![New button](https://rpg-paper-maker.github.io/img/new-project.png)
+![](https://rpg-paper-maker.github.io/img/new-project.png)
 
 You can also use `CTRL+N` or go to `File > New project...`.
 
-![Creating new project](https://rpg-paper-maker.github.io/img/new-project-window.png)
+![](https://rpg-paper-maker.github.io/img/new-project-window.png)
 
 You can choose here the `Project name` corresponding to your game's name. This will auto generate a folder name \(you can disable the option `auto-generate` if you want to customize your folder name\). And finally, choose the `location` of your project folder. By default, it will be on a freshly created `RPG Paper Maker Games` folder.
 
@@ -44,7 +44,7 @@ You can choose here the `Project name` corresponding to your game's name. This w
 
 You can open an existing project by clicking here on the main toolbar:
 
-![Open a project](https://rpg-paper-maker.github.io/img/open-project.png)
+![](https://rpg-paper-maker.github.io/img/open-project.png)
 
 You can also use `CTRL+O` or go to `File > Open project > Browse...`. Recent projects can also be opened on the first screen \(or go to `File > Open project`\).
 
@@ -52,10 +52,12 @@ You can also use `CTRL+O` or go to `File > Open project > Browse...`. Recent pro
 
 A lot of options are available in the `Systems manager`. Click here on the main toolbar and go to the `System` tab:
 
-![System manager](https://rpg-paper-maker.github.io/img/system-basic.png)
+![](.gitbook/assets/system-basic.png)
 
 * `Game name`: Change the name of your game.
 * `Game native resolution`: Change width / height resolution and also choose if you want a Window or Fullscreen display. `Display console` option is for programing debugging.
+* `Display console`: _\(not available yet\)_ When testing your game, a console is displayed to print Javascript warnings/errors/logs.
+* `Antialiasing`: _\(not available yet\)_ If checked, antialiasing will be applied in game.
 * `Map properties`:
   * `Square size (in px)`: choose here the size \(in pixel\) of a square in your maps. You should adapt your textures after any change here.
   * `Ray portions (editor)`: _\(not available yet\)_ The map is separated into several portions \(16x16 squares\). You can change here the number of portions to display.
@@ -63,6 +65,7 @@ A lot of options are available in the `Systems manager`. Click here on the main 
   * `Mountain collision height limit (in px)`: The height considered for blocking the hero so the hero can go up blocks that are in inferior height value.
   * `Mountain collision angle limit (in degree)`: The angle considered for blocking the hero so the hero can go up mountains that are in inferior angle value.
   * `Animation frames`: Number of frames available in an animation \(walk, battlers, etc.\).
+  * `Map frame duration`: Time in milliseconds for a frame of a map \(characters\).
 * `Global sounds`:
   * `Cursor`: Sound to play when the cursor is moving in window choices.
   * `Confirmation`: Sound to play when the cursor is confirming in window choices.
@@ -72,6 +75,12 @@ A lot of options are available in the `Systems manager`. Click here on the main 
   * `Window skin`: The default windows skin used for designing windows UI.
   * `Max number of save slots`: _\(not available yet\)_ Change the max number of save slots available for the players.
   * `Price of sold item`: _\(not available yet\)_ Change the percent value of the original price of an item when you want to sell it in a shop.
+
+## Change language <a id="update-keyboard-controls"></a>
+
+You can change the engine language in `Options > Change language...`:
+
+![](.gitbook/assets/change-language.png)
 
 ## Update keyboard controls <a id="update-keyboard-controls"></a>
 

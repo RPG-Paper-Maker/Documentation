@@ -12,7 +12,7 @@ You know how to create beautiful maps, but you want to make it be alive by addin
 
 You can access to events in `Systems manager > Events / States`.
 
-![Systems manager](https://rpg-paper-maker.github.io/basics/img/event-states.png)
+![](.gitbook/assets/systems-manager-events-states.png)
 
 Events represent the fact that something important just happened and the objects in the map can react or not to it. An event can be for example the fact that your hero pressed the action button, or even the fact that a rain tempest just started. These events are sent to objects by other objects. There are two types of events:
 

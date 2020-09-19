@@ -16,20 +16,24 @@ Take a look at the map selector **\(1\)**. You can add, edit, remove, copy, and 
 
 If you want to create / edit a map, you will get this window:
 
-![Map proprieties](https://rpg-paper-maker.github.io/basics/img/map-properties.png)
+![](.gitbook/assets/map-properties.png)
 
 * `Name`: The map name.
 * `Tileset`: A tileset represents a lot of information applied on a specific set of textures \(collisions, dynamic textures,...\). We will see how to configure it in a next chapter.
-* `Length`: The map length number of squares \(X axe\).
-* `Width`: The map width number of squares \(Z axe\).
-* `Height`: The map height number of squares \(Y axe &gt; 0\).
-* `Depth`: The map depth number of squares \(Y axe &lt; 0\).
+* **Size**:
+  * `Length`: The map length number of squares \(X axe\).
+  * `Width`: The map width number of squares \(Z axe\).
+  * `Height`: The map height number of squares \(Y axe &gt; 0\).
+  * `Depth`: The map depth number of squares \(Y axe &lt; 0\).
 * `Music`: The music that is played in the background when entering the map.
 * `Background sound`: The background that is played in the background with the music. This can be wind, rain, etc.
 * `Camera prop. ID`: The camera property ID used when entering the map.
-* `Sky color`: The color used for the sky.
-* `Map startup reactions`: You can configure here particular things happening when entering the map. We will se later how to do that thanks to objects.
-* `Battles`: **\(not implemented yet\)**
+* **Sky**:
+  * `Color ID`: The unique color ID used for the sky.
+  * `Picture`: A picture used as background for the sky.
+  * `Skybox ID`: The skybox ID used for the sky.
+* **Map startup reactions**: You can configure here particular things happening when entering the map. We will se later how to do that thanks to objects.
+* **Battles**: **\(not implemented yet\)**
 
 ## Move cursor / grid / camera <a id="move-cursor-grid-camera"></a>
 
@@ -179,7 +183,13 @@ We will see later how to manage it because this is one of the biggest topics of 
 
 ## The hero <a id="the-hero"></a>
 
-To define where the game should start, you have to define who is the hero in one of your maps. When you create a new project, the hero is the character at the center of the first map. If you want to change it:
+To define where the game should start, you have to define who is the hero in one of your maps. When you create a new project, the hero is the character at the center of the first map. If you want to change it, here is the simple way:
+
+* Select an empty square on object mode, right click on it and click on `define as the hero`.
+
+![](.gitbook/assets/define-as-the-hero-none.png)
+
+Another way \(more complex\) is:
 
 * Create a new object \(`Double click` on a square\)
 * Remove all the states and events from the lists \(by using `Del` on keyboard\) and choose `Hero` as model in the combo box. You can name it "Hero" if you want. You should have something like this:
@@ -236,5 +246,17 @@ You can choose here if you want to be on layer mode or not here:
 
 Example of layers used with walls:
 
-![Under-layering sample](.gitbook/assets/image%20%281%29.png)
+![](.gitbook/assets/image%20%281%29%20%281%29.png)
+
+## Skyboxes <a id="layers-options"></a>
+
+Skyboxes are used to give illusion to be in a huge 3D world space.
+
+![](.gitbook/assets/skybox.png)
+
+Skybox is simply a huge textured cube that follows the camera. You can edit you skyboxes in `Systems > System > Skyboxes`:
+
+![](.gitbook/assets/system-skyboxes.png)
+
+And then, you can use it in map properties while selecting `Skybox ID`.
 
