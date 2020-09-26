@@ -1,10 +1,10 @@
 ---
-description: This is the initial page of RPG Paper Maker documentation.
+description: Welcome to RPG Paper Maker documentation!
 ---
 
 # Getting started
 
-Welcome to RPG Paper Maker documentation! You will find here all what you need to be a pro Paper Maker!
+You will find here all what you need to be a pro Paper Maker!
 
 ## Installation <a id="installation"></a>
 
