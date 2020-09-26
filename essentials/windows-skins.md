@@ -10,13 +10,13 @@ A WindowSkin is a picture that is cut for being used as a design for window boxe
 
 Here is the default Window Skin image used:
 
-![Windows skin sample](https://rpg-paper-maker.github.io/basics/img/default-windowskin.png)
+![](../.gitbook/assets/default-windowskin.png)
 
 ### Create a Window Skin and / or change default Window Skin <a id="create-a-window-skin-and-or-change-default-window-skin"></a>
 
 Got to `Systems Manager > System`.
 
-![Windows skin tool](https://rpg-paper-maker.github.io/basics/img/window-skins.png)
+![](../.gitbook/assets/window-skins.png)
 
 * On left: Change default.
 * On right: Manage all WindowSkins.
@@ -29,13 +29,13 @@ To view a cutting, put your mouse on the widget associated \(example: top-left b
 
 Click on the `Enter...` button to open a dialog box and edit the rectangle with input numbers.
 
-![Cutting windows skin](https://rpg-paper-maker.github.io/basics/img/window-skins-enter.png)
+![](../.gitbook/assets/window-skins-enter.png)
 
 #### Select <a id="select"></a>
 
 Click on the `Select...` button and draw the rectangle with your mouse directly on the picture preview.
 
-![Click to select](https://rpg-paper-maker.github.io/basics/img/window-skins-select.gif)
+![](../.gitbook/assets/window-skins-select.gif)
 
 ### Properties <a id="properties"></a>
 
@@ -44,14 +44,13 @@ Click on the `Select...` button and draw the rectangle with your mouse directly 
 * **Borders**: The borders used for the window boxes.
 * **Background**:
 
-  ![Screenshot](https://rpg-paper-maker.github.io/basics/img/window-skins-bg-option.png)
+![](../.gitbook/assets/window-skins-bg-option.png)
 
-  * `Normal`: The background image used for the window boxes.
-  * `Selection`: The background image used for the window choices / tabs when selected.
-  * `Option`:
-    * `Repeat`: Repeat the background image for larger windows.
-    * `Stretch`: Stretch the background image for larger windows.
-
+* `Normal`: The background image used for the window boxes.
+* `Selection`: The background image used for the window choices / tabs when selected.
+* `Option`:
+  * `Repeat`: Repeat the background image for larger windows.
+  * `Stretch`: Stretch the background image for larger windows.
 * **Arrows**:
   * `Target selection`: The arrows animation used for the battle target selection.
   * `End of message`: The arrows animation used for the command show text command.

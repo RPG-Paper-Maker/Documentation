@@ -6,7 +6,7 @@ description: Let's see how to work with Title and Game Over screens.
 
 Got to `Systems datas > Title screen / Game over`:
 
-![Systems manager &amp;gt; Title screen / Game Over tab](https://rpg-paper-maker.github.io/basics/img/title-screen-game-over.png)
+![](../.gitbook/assets/title-screen-game-over.png)
 
 ## Title Screen <a id="title-screen"></a>
 
@@ -25,7 +25,7 @@ In the first section, you can edit some of the title screen properties.
 
 Customize here the commands to display in the title screen.
 
-![Setting Title screen menu commands](https://rpg-paper-maker.github.io/basics/img/title-commands.png)
+![](../.gitbook/assets/title-commands.png)
 
 * `Name`: The displayed text in-game.
 * `Type of command`: The type of command.
@@ -37,13 +37,12 @@ Customize here the commands to display in the title screen.
 
 ### Settings configuration <a id="settings-configuration"></a>
 
-![Screenshot](https://rpg-paper-maker.github.io/basics/img/settings-menu.png)
+![](../.gitbook/assets/settings-menu.png)
 
 * `Settings configuration`: The settings menu can be customized here by reordering and / or displaying some of the options.
-
   * `Keyboard assignments`: Configuration of the keyboard assignements proposed in the `Keyboard manager`.
 
-  ![Screenshot](https://rpg-paper-maker.github.io/basics/img/keyboard-assignments.png)
+![](../.gitbook/assets/keyboard-assignments.png)
 
 ## Game Over <a id="game-over"></a>
 

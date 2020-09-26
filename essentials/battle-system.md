@@ -6,7 +6,7 @@ description: Time to some action.
 
 If you want to create to create a RPG, you may need a battle system. Here, we will see all the features linked to the battle implementation.
 
-![Battle system sample](https://rpg-paper-maker.github.io/basics/img/battle-demo.gif)
+![](../.gitbook/assets/battle-demo.gif)
 
 _Note: if you want to do an action RPG \(battles directly on maps\), you can do it through object & events_
 
@@ -28,7 +28,7 @@ You can manage here all the elements that you want to have in your game for infl
 
 ## Common statistics <a id="common-statistics"></a>
 
-![Statistic tool](https://rpg-paper-maker.github.io/basics/img/battle-statistic.png)
+![](../.gitbook/assets/battle-statistic.png)
 
 You can manage here all the statistics that you want to have in your game for influencing your battles \(HPs, lvl, strength, etc.\).
 
@@ -40,7 +40,7 @@ You can manage here all the statistics that you want to have in your game for in
 
 ## Common battle commands <a id="common-battle-commands"></a>
 
-![Battle Command](https://rpg-paper-maker.github.io/basics/img/battle-commands.png)
+![](../.gitbook/assets/battle-commands.png)
 
 Choose which battle commands you want to have after selecting a hero to do something.
 
@@ -48,7 +48,7 @@ Choose which battle commands you want to have after selecting a hero to do somet
 
 Render in game:
 
-![Battle in-game menu](https://rpg-paper-maker.github.io/basics/img/battle-commands-preview.png)
+![](../.gitbook/assets/battle-commands-preview.png)
 
 ## Common equipment <a id="common-equipment"></a>
 
@@ -56,7 +56,7 @@ Choose the name of common equipment so you will be able to equip weapons / armor
 
 ## Weapons / Armors kind <a id="weapons-armors-kind"></a>
 
-![Weapons / Armor kind](https://rpg-paper-maker.github.io/basics/img/battle-weapon-armor-kind.png)
+![](../.gitbook/assets/battle-weapon-armor-kind.png)
 
 Create a weapon / armor kind and also choose on which equipment you can assign it.
 
@@ -65,7 +65,7 @@ Create a weapon / armor kind and also choose on which equipment you can assign i
 
 ## Battle maps <a id="battle-maps"></a>
 
-![Battle maps](https://rpg-paper-maker.github.io/basics/img/battle-maps.png)
+![](../.gitbook/assets/battle-maps.png)
 
 Battle maps are in fact maps associated with a specific position \(representing the center point of the battle\). Select a map \(by default in the `Battle Maps` folder in the map selector\) and a position to add a new battle map.
 
@@ -89,7 +89,7 @@ Battle maps are in fact maps associated with a specific position \(representing 
 
 Go to `Systems Manager > System`.
 
-![Currencies system](https://rpg-paper-maker.github.io/basics/img/currencies.png)
+![](../.gitbook/assets/currencies.png)
 
 Currencies can be used in the game for trading with NPCs or any other way.
 
@@ -114,7 +114,7 @@ In `Weapons` tab:
 
 In `Armors` tab:
 
-![](https://rpg-paper-maker.github.io/basics/img/battle-armors.png)
+![](../.gitbook/assets/battle-armors.png)
 
 These four data have common properties:
 
@@ -147,7 +147,7 @@ There also are three more common properties that can be listed: `Costs`, `Effect
 
 ## Costs <a id="costs"></a>
 
-![Costs tool](https://rpg-paper-maker.github.io/basics/img/battle-costs.png)
+![](../.gitbook/assets/battle-costs.png)
 
 Choose the cost of using a skill. This is generally used for HP, MP, and TP statistic. A character will not be able to use a skill if he doesn't have enough for the use cost.
 
@@ -186,7 +186,7 @@ Choose the effects done for the target\(s\) data.
 
 Choose the characteristics added to the character when equipped.
 
-![Characteristics tool](https://rpg-paper-maker.github.io/basics/img/battle-caracteristics-buff.png)
+![](../.gitbook/assets/battle-caracteristics-buff.png)
 
 * `Buff increase / decrease`: Select which data will be influenced. This can be:
 
@@ -203,17 +203,17 @@ Choose the characteristics added to the character when equipped.
   * `* / +`: Choose operation by multiplying by or adding a value.
   * `% / Fix`: Choose unit value.
 
-![Characteristics tool](https://rpg-paper-maker.github.io/basics/img/battle-caracteristics-character.png)
+![](../.gitbook/assets/battle-caracteristics-character.png)
 
 _Not available yet._
 
-![Characteristics tool](https://rpg-paper-maker.github.io/basics/img/battle-caracteristics-other.png)
+![](../.gitbook/assets/battle-caracteristics-other.png)
 
 _Not available yet._
 
 ## Classes <a id="classes"></a>
 
-![Data Manager &amp;gt; Armors tab](https://rpg-paper-maker.github.io/basics/img/battle-classes.png)
+![](../.gitbook/assets/battle-classes.png)
 
 Each character has a class. The class defines a lot of attributes that a character can have.
 
@@ -245,7 +245,7 @@ Each character has a class. The class defines a lot of attributes that a charact
 
 ## Heroes <a id="heroes"></a>
 
-![Data Manager &amp;gt; Heroes tab](https://rpg-paper-maker.github.io/basics/img/battle-heroes.png)
+![](../.gitbook/assets/battle-heroes.png)
 
 * `Class`: Select an existing class.
 * `Faceset`: Select a faceset for battles.
@@ -255,22 +255,22 @@ All the other properties inherits from the class properties. For `Experience`, t
 
 ## Monsters <a id="monsters"></a>
 
-![Data Manager &amp;gt; Monster tab](https://rpg-paper-maker.github.io/basics/img/battle-monsters.png)
+![](../.gitbook/assets/battle-monsters.png)
 
 Monsters are exactly like heroes but with extra information for battles:
 
 * **Rewards**:
 
-  ![Screenshot](https://rpg-paper-maker.github.io/basics/img/battle-monsters-rewards.png)
+![](../.gitbook/assets/battle-monsters-rewards.png)
 
-  * `Experience`: Choose experience progression that your team can get at the end of a battle.
-  * `Currencies`: Choose currencies progression that your team can get at the end of a battle.
-  * `Loots`: The loots that your team can get at the end of a battle.
+* `Experience`: Choose experience progression that your team can get at the end of a battle.
+* `Currencies`: Choose currencies progression that your team can get at the end of a battle.
+* `Loots`: The loots that your team can get at the end of a battle.
 
-    * `Number`: The number of items to loot.
-    * `Probability`: The probability to loot.
-    * `Level between`: Choose range level of loot availability.
-    * `Loot`: Select `Item`, `Weapon`, and `Armor`.
+  * `Number`: The number of items to loot.
+  * `Probability`: The probability to loot.
+  * `Level between`: Choose range level of loot availability.
+  * `Loot`: Select `Item`, `Weapon`, and `Armor`.
 
 * **Actions**:
 
@@ -296,7 +296,7 @@ You can manage your monster's AI here. You can specify monster actions with thes
 
 ## Troops <a id="troops"></a>
 
-![Data Manager &amp;gt; Troops tab](https://rpg-paper-maker.github.io/basics/img/battle-troops.png)
+![](../.gitbook/assets/battle-troops.png)
 
 Troops correspond to a monsters group and some states with reactions.
 

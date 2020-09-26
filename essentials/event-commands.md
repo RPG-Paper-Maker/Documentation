@@ -8,7 +8,7 @@ Now that you are a pro for objects and event, you can have here a description of
 
 ## Show text <a id="show-text"></a>
 
-![Show text Command editor](https://rpg-paper-maker.github.io/basics/img/command-show-text.png)
+![](../.gitbook/assets/command-show-text.png)
 
 Displays a text in a dialog box with the current dialog box options.
 
@@ -33,11 +33,11 @@ Displays a text in a dialog box with the current dialog box options.
 
 Render in game:
 
-![Show text Command sample](https://rpg-paper-maker.github.io/basics/img/render-hello-world.png)
+![](../.gitbook/assets/render-hello-world.png)
 
 ## Display a choice <a id="display-a-choice"></a>
 
-![Display choice command](https://rpg-paper-maker.github.io/basics/img/command-display-choice.png)
+![](../.gitbook/assets/command-display-choice.png)
 
 * `Choices`: The list of choices texts.
 * `Options`:
@@ -45,15 +45,15 @@ Render in game:
 
 Using adapted show text command:
 
-![Setting Display choice Command.](https://rpg-paper-maker.github.io/basics/img/commands-display-choice.png)
+![](../.gitbook/assets/commands-display-choice.png)
 
-![Display choice Command](https://rpg-paper-maker.github.io/basics/img/render-command-display-choice.png)
+![](../.gitbook/assets/render-command-display-choice.png)
 
 Using without show text command before:
 
-![Without Show text Command](https://rpg-paper-maker.github.io/basics/img/commands-display-choice-without-text.png)
+![](../.gitbook/assets/commands-display-choice-without-text.png)
 
-![Sample without Show text Command](https://rpg-paper-maker.github.io/basics/img/render-command-display-choice-without-text.png)
+![](../.gitbook/assets/render-command-display-choice-without-text.png)
 
 ## Input number <a id="input-number"></a>
 
@@ -61,7 +61,7 @@ _Not available yet._
 
 ## Set dialog box options <a id="set-dialog-box-options"></a>
 
-![Dialog box options](https://rpg-paper-maker.github.io/basics/img/command-dialog-box-options.png)
+![](../.gitbook/assets/command-dialog-box-options.png)
 
 Set all the dialog box options.
 
@@ -91,7 +91,7 @@ Set all the dialog box options.
 
 ## Change screen tone <a id="change-screen-tone"></a>
 
-![Change screen tone](https://rpg-paper-maker.github.io/basics/img/command-change-screen-tone.png)
+![](../.gitbook/assets/command-change-screen-tone.png)
 
 Change the screen tone \(dominant color\). The RGB color \(0, 0, 0\) changes nothing on the screen tone.
 
@@ -134,7 +134,7 @@ _Not available yet._
 
 ## Wait <a id="wait"></a>
 
-![Setting Wait Command](https://rpg-paper-maker.github.io/basics/img/command-wait.png)
+![](../.gitbook/assets/command-wait.png)
 
 Wait during a specific time.
 
@@ -146,7 +146,7 @@ _Not available yet._
 
 ## Teleport object <a id="teleport-object"></a>
 
-![Teleportation of an object](https://rpg-paper-maker.github.io/basics/img/command-teleport-object.png)
+![](../.gitbook/assets/command-teleport-object.png)
 
 This will teleport an object on an existing map with a new position.
 
@@ -206,7 +206,7 @@ _Not available yet._
 
 ## Remove object from map <a id="remove-object-from-map"></a>
 
-![Removing object from map](https://rpg-paper-maker.github.io/basics/img/command-remove-object-from-map.png)
+![](../.gitbook/assets/command-remove-object-from-map.png)
 
 Remove an object from the map. This removing is effective as long as you don't change map or load the game in saves.
 
@@ -214,7 +214,7 @@ Remove an object from the map. This removing is effective as long as you don't c
 
 ## Display a picture <a id="display-a-picture"></a>
 
-![Display a picture](https://rpg-paper-maker.github.io/basics/img/command-display-picture.png)
+![](../.gitbook/assets/command-display-picture.png)
 
 Display a picture on top of the screen.
 
@@ -233,7 +233,7 @@ Display a picture on top of the screen.
 
 ## Set / Move / Turn a picture <a id="set-move-turn-a-picture"></a>
 
-![Manage a picture](https://rpg-paper-maker.github.io/basics/img/command-set-move-turn-picture.png)
+![](../.gitbook/assets/command-set-move-turn-picture.png)
 
 Set / Move / Turn a picture that is already displayed on top of the screen.
 
@@ -252,7 +252,7 @@ Set / Move / Turn a picture that is already displayed on top of the screen.
 
 ## Remove a picture <a id="remove-a-picture"></a>
 
-![Remove a picture](https://rpg-paper-maker.github.io/basics/img/command-remove-picture.png)
+![](../.gitbook/assets/command-remove-picture.png)
 
 Remove a picture that is displayed on top of the screen.
 
@@ -276,7 +276,7 @@ This will open the main menu.
 
 Render in game:
 
-![Open Main Menu Command](https://rpg-paper-maker.github.io/basics/img/render-main-menu.png)
+![](../.gitbook/assets/render-main-menu.png)
 
 ## Open saves menu <a id="open-saves-menu"></a>
 
@@ -284,7 +284,7 @@ This will open the saves menu.
 
 Render in game:
 
-![Open Save Menu Command](https://rpg-paper-maker.github.io/basics/img/render-saves-menu.png)
+![](../.gitbook/assets/render-saves-menu.png)
 
 ## Title screen <a id="title-screen"></a>
 
@@ -298,7 +298,7 @@ _**/! Today, there is no game over screen, it's only closing the game window.**_
 
 ## Play a music <a id="play-a-music"></a>
 
-![Play music Command](https://rpg-paper-maker.github.io/basics/img/command-play-music.png)
+![](../.gitbook/assets/command-play-music.png)
 
 This will play a music on the current map.
 
@@ -310,7 +310,7 @@ This will play a music on the current map.
 
 ## Stop music <a id="stop-music"></a>
 
-![Stop music Command](https://rpg-paper-maker.github.io/basics/img/command-stop-music.png)
+![](../.gitbook/assets/command-stop-music.png)
 
 This will stop the music played in the current map.
 
@@ -350,7 +350,7 @@ _Not available yet._
 
 ## Send event <a id="send-event"></a>
 
-![Send event Command](https://rpg-paper-maker.github.io/basics/img/command-send-event.png)
+![](../.gitbook/assets/command-send-event.png)
 
 This will send an event to the selected target.
 
@@ -382,7 +382,7 @@ This will change the state of the current object. An object can have several sta
 
 ## Change property <a id="change-property"></a>
 
-![Change property Command](https://rpg-paper-maker.github.io/basics/img/command-change-property.png)
+![](../.gitbook/assets/command-change-property.png)
 
 This will change a property value of the current object.
 
@@ -418,7 +418,7 @@ This will update inventory containing. You can for example add items to it.
 
 ## Modify team <a id="modify-team"></a>
 
-![Modify team Command](https://rpg-paper-maker.github.io/basics/img/command-modify-team.png)
+![](../.gitbook/assets/command-modify-team.png)
 
 This will update team organization.
 
@@ -428,13 +428,13 @@ This will update team organization.
 
 ## Allow / Forbid saves <a id="allow-forbid-saves"></a>
 
-![Allow/Forbid saves Command](https://rpg-paper-maker.github.io/basics/img/command-allow-forbid-saves.png)
+![](../.gitbook/assets/command-allow-forbid-saves.png)
 
 * `Allow`: If checked, the saves menu will be allowed.
 
 ## Allow / Forbid main menu <a id="allow-forbid-main-menu"></a>
 
-![Allow/Forbid main menu Command](https://rpg-paper-maker.github.io/basics/img/command-allow-forbid-main-menu.png)
+![](../.gitbook/assets/command-allow-forbid-main-menu.png)
 
 * `Allow`: If checked, the main menu will be allowed.
 
@@ -444,7 +444,7 @@ _Not available yet._
 
 ## Start a battle <a id="start-a-battle"></a>
 
-![Start a battle Command](https://rpg-paper-maker.github.io/basics/img/command-start-battle.png)
+![](../.gitbook/assets/command-start-battle.png)
 
 This will start a battle with your team against a troop \(group of monsters\).
 
@@ -556,12 +556,12 @@ Create a container for commands that will be executed only if the indicated cond
 * `Add "else" when conditions do not apply`: Create another container for commands that will be executed only if the indicated condition is false.
 * **Variables / Param / Prop**:
 
-![Condition editor](https://rpg-paper-maker.github.io/basics/img/command-condition-variables-param-prop.png)
+![](../.gitbook/assets/command-conditions.png)
 
 * `This`: Compare a variable or a parameter or a property with any other type of value.
 * **Heroes**:
 
-![Condition Editor](https://rpg-paper-maker.github.io/basics/img/command-condition-heroes.png)
+![](../.gitbook/assets/command-condition-heroes.png)
 
 * `Hero(es)`: Select `all the heroes` or `none of the heroes` or `at least one hero` or `the hero with instance ID`. in `team` or `reserve` or `hidden`.
   * `Are named`: Check if the selection have this name.
@@ -574,7 +574,7 @@ Create a container for commands that will be executed only if the indicated cond
   * `Have the statistic ID`: Compare a selected statistic of the selection with any other type of value.
 * **Possessions**:
 
-![Condition editor](https://rpg-paper-maker.github.io/basics/img/command-condition-possessions.png)
+![](../.gitbook/assets/command-condition-possessions.png)
 
 * `Currency ID`: Compare a selected currency number with any other type of value.
 * `Item ID`: Compare a selected item number in inventory with any other type of value.
@@ -630,7 +630,7 @@ Comments won't be interpreted in game, it's only here for you. You can leave a c
 
 ## Call a common reaction <a id="call-a-common-reaction"></a>
 
-![](https://rpg-paper-maker.github.io/basics/img/command-call-common-reaction.png)
+![](../.gitbook/assets/command-call-common-reaction.png)
 
 This will call a common reaction with the corresponding parameters.
 
@@ -639,7 +639,7 @@ This will call a common reaction with the corresponding parameters.
 
 ## Change variables <a id="change-variables"></a>
 
-![](https://rpg-paper-maker.github.io/basics/img/command-change-variables.png)
+![](../.gitbook/assets/command-change-variables.png)
 
 This will change one or several variable\(s\) value.
 
@@ -667,7 +667,7 @@ This will change one or several variable\(s\) value.
 
 ## Script <a id="script"></a>
 
-![](https://rpg-paper-maker.github.io/basics/img/command-script.png)
+![](../.gitbook/assets/command-script.png)
 
 Execute a script code \(for advanced programmers\).
 

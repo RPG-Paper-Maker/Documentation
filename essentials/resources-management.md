@@ -6,7 +6,7 @@ description: Here you'll find all you need about managing your game resources.
 
 When you are editing your maps, you are using textures that are proposed by default. You also have, music, interfaces, etc. All this stuff is called **BR \(Basic Resources\)**. It's located to the install folder. You can find the folder location here:
 
-![](https://rpg-paper-maker.github.io/basics/img/br-location.png)
+![](../.gitbook/assets/br-location%20%281%29.png)
 
 You can also use `Auto` button to automaticaly find the BR folder in the RPG Paper Maker instance you are actually using.
 
@@ -14,7 +14,7 @@ You can also use `Auto` button to automaticaly find the BR folder in the RPG Pap
 
 Open the pictures manager by clicking here on the main toolbar:
 
-![Pictures manager](https://rpg-paper-maker.github.io/basics/img/pictures-manager.png)
+![](../.gitbook/assets/pictures-manager.png)
 
 On the left, you have a tree containing all the pictures kind available in your project:
 
@@ -45,7 +45,9 @@ To add pictures in your game list: select a picture in the available content lis
 
 Click on the `+` button and select one or several pictures. This will add your custom pictures in the available content list. Not that you can distinguish BR and non BR pictures thanks to the bullets colors:
 
-![Screenshot](https://rpg-paper-maker.github.io/basics/img/point-r.png) Custom ![Screenshot](https://rpg-paper-maker.github.io/basics/img/point-b.png) BR
+![Custom](../.gitbook/assets/point-r.png)
+
+![BR](../.gitbook/assets/point-b.png)
 
 If you added your pictures manually inside the project folder, you will need to use the `Refresh` button in order to see your changes in the list.
 
@@ -55,7 +57,7 @@ Now add your pictures to your game project the same way you did for BR pictures!
 
 Songs are also a resource proposed in the BR. Open the songs manager by clicking here on the main toolbar:
 
-![Sounds manager](https://rpg-paper-maker.github.io/basics/img/songs-manager.png)
+![](../.gitbook/assets/songs-manager.png)
 
 You can manage your songs exactly like pictures. You can also test music options on the right:
 
@@ -74,7 +76,7 @@ Also note that there are four sorts of songs:
 
 You can import your own 3D models in your maps! Open the shapes manager by clicking here on the main toolbar:
 
-![Shapes manager](https://rpg-paper-maker.github.io/basics/img/shapes-manager.png)
+![](../.gitbook/assets/shapes-manager.png)
 
 Again, you can manage your songs exactly like pictures. Here are the different kind of shapes that you can handle:
 

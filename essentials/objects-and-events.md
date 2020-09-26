@@ -27,19 +27,19 @@ An event also takes some `parameters`. For example, if you want to play a sound 
 
 Reactions are a tree of commands that will be executed one by one. For example a command can be to display text on screen or to move specific objects in the map. Here is an example of reaction:
 
-![Reactions](https://rpg-paper-maker.github.io/basics/img/example-reaction.png)
+![](../.gitbook/assets/example-reaction.png)
 
 This reaction will check if the variable myValue is equal to 2. If it's OK, this will display the message "It's OK!". If not, this will display the message "Go back later.".
 
 To edit / add a new command in a reaction, `Double click` on a corresponding node. This will open this window containing a large list of commands:
 
-![Commands](https://rpg-paper-maker.github.io/basics/img/event-commands.png)
+![](../.gitbook/assets/event-commands.png)
 
 We will see later all these commands details one by one.
 
 There is also a way to find your commands faster with keyboard search:
 
-![](https://rpg-paper-maker.github.io/basics/img/commands-keyboard.png)
+![](../.gitbook/assets/commands-keyboard.png)
 
 You can also copy / paste / delete by `Right-clicking` on the corresponding command node.
 
@@ -47,7 +47,7 @@ You can also copy / paste / delete by `Right-clicking` on the corresponding comm
 
 If you see that you are often copying the same set of commands a lot of time maybe you should consider creating a common reaction. You can access to these in `Systems manager > Common reactions`.
 
-![Common reactions](https://rpg-paper-maker.github.io/basics/img/common-reactions.png)
+![](../.gitbook/assets/common-reactions.png)
 
 This way you will be able to call this common reaction instead of always copying it. It's even taking parameters if you have some variations in your reaction.
 
@@ -59,7 +59,7 @@ An object is something that can move or/and react to some events in a map. So ba
 
 To add an object in a map, select the `Object` map editor section. Point on a map square and `Double click` or press `Enter` after clicking on the square. This will open a new window.
 
-![Objects](https://rpg-paper-maker.github.io/basics/img/object-map.png)
+![](../.gitbook/assets/object-map.png)
 
 * `Name`: Choose a name for your objects. This can help later if you want to execute actions on this object externally.
 * `Only one event per frame`: We will see what are events, if checked the object will have only one reaction per frame and not several in the same time.
@@ -69,11 +69,11 @@ To add an object in a map, select the `Object` map editor section. Point on a ma
 
 You can configure which event the object can react to in the `Events` section. `Double click` on a node:
 
-![Event](https://rpg-paper-maker.github.io/basics/img/event.png)
+![](../.gitbook/assets/event.png)
 
 You can select if you want a user or system event and change parameters value:
 
-![Parameter values](https://rpg-paper-maker.github.io/basics/img/event-parameters.png)
+![](../.gitbook/assets/event-parameters.png)
 
 System events are the following:
 
@@ -94,11 +94,11 @@ An object has a set of `States`. For example, the hero can be in a normal state,
 
 You can add a new state on this list. There also is a `Update complete list...` button if you want to create new common states.
 
-![States](https://rpg-paper-maker.github.io/basics/img/object-state-second.png)
+![](../.gitbook/assets/object-state-second.png)
 
 For each state, you have to choose different reactions to specific events. You can copy / paste reactions through states by using `Copy reaction` and `Paste reaction` buttons. These different options are also available for each state:
 
-![Setting reactions for a state](https://rpg-paper-maker.github.io/basics/img/state-options.png)
+![](../.gitbook/assets/state-options.png)
 
 * `Graphics`: Select the object graphics here \(character picture\). Choose below the kind of element \(Sprite etc.\).
 * `Moving`: Options linked to the object moves when there is no reaction.
@@ -130,16 +130,13 @@ For each state, you have to choose different reactions to specific events. You c
 * `Set with camera`: If checked, the graphics will update orientation according to the camera orientation. If not, the camera orientation changes nothing.
 * `Pixel offset`: If checked, the move animation will go 1px down after two frames. This adds an interesting effect.
 * `Keep position`: _\(not available yet\)_ If checked, the object always keep its position after moving, even after loading save or changing map. If not, the object position is reinitialized after loading save or changing map.
-
-![](https://rpg-paper-maker.github.io/basics/img/object-state-detection.png)
-
 * `Detection`: A detection to select for sending an event each frames.
 
 ### Properties <a id="properties"></a>
 
 The object also has a set of properties. It can be HPs, age, gender, etc. It all depends on what you need and your type of game.
 
-![Set property](https://rpg-paper-maker.github.io/basics/img/object-properties.png)
+![](../.gitbook/assets/object-properties.png)
 
 * `Name`: The property name.
 * `Initial value`: The initial value of the property when the object is loaded for the first time.
@@ -150,35 +147,35 @@ Here is a simple way to produce a chest:
 
 * Be sure to have a state for the chest in the systems manager when it is opened:
 
-![Screenshot](https://rpg-paper-maker.github.io/basics/img/states-opened.png)
+![](../.gitbook/assets/states-opened.png)
 
 * Complete reactions for each state and don't forget to replace state at the end of the normal state:
 
-![](https://rpg-paper-maker.github.io/basics/img/state-1.png)
+![](../.gitbook/assets/state-1.png)
 
-![](https://rpg-paper-maker.github.io/basics/img/state-2.png)
+![](../.gitbook/assets/state-2.png)
 
 ## Edit / Copy / Paste / Delete an existing object <a id="edit-copy-paste-delete-an-existing-object"></a>
 
 You can open a context menu by `Right clicking` on an object:
 
-![Editing an object](https://rpg-paper-maker.github.io/basics/img/object-context-menu.png)
+![](../.gitbook/assets/object-context-menu.png)
 
 ## Models <a id="models"></a>
 
 Models are objects that can be commonly used. You can have models list in `Systems manager > Models`.
 
-![Models](https://rpg-paper-maker.github.io/basics/img/object-hero.png)
+![](../.gitbook/assets/object-hero.png)
 
 For example, if you want to add flowers that can be picked in your maps, you can create a model "Flower", and use this model for an empty object in your map:
 
 * Create model:
 
-![Create model](https://rpg-paper-maker.github.io/basics/img/model-flower.png)
+![](../.gitbook/assets/model-flower.png)
 
 * Use model flower for a map object:
 
-![Using model](https://rpg-paper-maker.github.io/basics/img/object-model-flower.png)
+![](../.gitbook/assets/object-model-flower.png)
 
 ### Default model <a id="default-model"></a>
 
@@ -205,7 +202,7 @@ If an object uses a model but also has content, this new content will replace so
 
 In map properties, you can see this section:
 
-![Map start up reactions](https://rpg-paper-maker.github.io/basics/img/map-startup-reactions.png)
+![](../.gitbook/assets/map-startup-reactions.png)
 
 This simply is an invisible object that will be useful for kinematics when entering a new map, for example. This is invisible, so there are no state graphics. By default, it is reacting to the event `Time` with 0 for interval parameter and OFF for repeat parameter. That means that these reactions will be executed in high priority when entering the map. This can be used for kinematics and some other stuff.
 
@@ -215,7 +212,7 @@ It is important to use detection with objects. In fact, you are already using it
 
 You can access to detection list in `Systems manager > System`:
 
-![Setting detection](https://rpg-paper-maker.github.io/basics/img/detections.png)
+![](../.gitbook/assets/detections.png)
 
 And here is the front detection! You clearly see here that your event can be sent in front. There is an arrow indicating the square position of the object sending the event, and also the orientation. You can add detection boxes by using `left click` and `right click` to delete existing detection boxes.
 

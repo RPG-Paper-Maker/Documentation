@@ -1,10 +1,10 @@
 ---
-description: Welcome to RPG Paper Maker documentation!
+description: This is the initial page of RPG Paper Maker documentation.
 ---
 
 # Getting started
 
-You will find here all what you need to be a pro Paper Maker!
+Welcome to RPG Paper Maker documentation! You will find here all what you need to be a pro Paper Maker!
 
 ## Installation <a id="installation"></a>
 
@@ -26,17 +26,17 @@ Extract the file. After running `RPG Paper Maker.app`, this will ask you for dow
 
 There actually are two different themes: `Dark` and `White`. If you want to change it, go to `Options > General options...`.
 
-![](https://rpg-paper-maker.github.io/img/themes-options.png)
+![](.gitbook/assets/themes-options.png)
 
 ## Create a new project <a id="create-a-new-project"></a>
 
 You can create a new project by clicking here on the main toolbar:
 
-![](https://rpg-paper-maker.github.io/img/new-project.png)
+![](.gitbook/assets/new-project.png)
 
 You can also use `CTRL+N` or go to `File > New project...`.
 
-![](https://rpg-paper-maker.github.io/img/new-project-window.png)
+![](.gitbook/assets/new-project-window.png)
 
 You can choose here the `Project name` corresponding to your game's name. This will auto generate a folder name \(you can disable the option `auto-generate` if you want to customize your folder name\). And finally, choose the `location` of your project folder. By default, it will be on a freshly created `RPG Paper Maker Games` folder.
 
@@ -44,7 +44,7 @@ You can choose here the `Project name` corresponding to your game's name. This w
 
 You can open an existing project by clicking here on the main toolbar:
 
-![](https://rpg-paper-maker.github.io/img/open-project.png)
+![](.gitbook/assets/open-project.png)
 
 You can also use `CTRL+O` or go to `File > Open project > Browse...`. Recent projects can also be opened on the first screen \(or go to `File > Open project`\).
 
@@ -86,7 +86,7 @@ You can change the engine language in `Options > Change language...`:
 
 You can change the engine and game keyboard controls in the keyboard manager by clicking on the main toolbar:
 
-![Keyboard controls](https://rpg-paper-maker.github.io/img/keyboard-manager.png)
+![](.gitbook/assets/keyboard-manager.png)
 
 For engine:
 
@@ -115,19 +115,19 @@ When adding / editing a key:
 
 Go to the `Systems manager > System` and take a look on the `Colors` box:
 
-![Colors](https://rpg-paper-maker.github.io/img/colors.png)
+![](.gitbook/assets/colors.png)
 
 ## Update general font sizes and font names <a id="update-general-font-sizes-and-font-names"></a>
 
 Go to the `Systems manager > System` and take a look on the `Font size` and `Font name` box:
 
-![System tab](.gitbook/assets/deepinscreenshot_select-area_20200323082522.png)
+![](.gitbook/assets/deepinscreenshot_select-area_20200323082522.png)
 
 ## Change game name <a id="change-game-name"></a>
 
 Go to the `Systems manager > System` and take a look on the `Game name` box:
 
-![Changing game name](https://rpg-paper-maker.github.io/img/game-name.png)
+![](.gitbook/assets/game-name.png)
 
 This will affect the window title when you are launching the game.
 
@@ -135,7 +135,7 @@ This will affect the window title when you are launching the game.
 
 Go to the `Systems manager > System` and take a look on the `Game native resolution` box:
 
-![Changing game resolution](https://rpg-paper-maker.github.io/img/game-resolution.png)
+![](.gitbook/assets/game-resolution.png)
 
 * `Width`: The native width of your game window.
 * `Height`: The native height of your game window.
@@ -146,13 +146,13 @@ Go to the `Systems manager > System` and take a look on the `Game native resolut
 
 You can test your opened project by clicking here on the main toolbar:
 
-![Trying the game](https://rpg-paper-maker.github.io/img/play.png)
+![](.gitbook/assets/play.png)
 
 ## Deploy your game <a id="deploy-your-game"></a>
 
 If you want to publish your game \(share your game without any need for players to have RPG Paper Maker installed\) you have to go to `File > Export standalone...`.
 
-![Exporting the game](https://rpg-paper-maker.github.io/img/deploy.png)
+![](.gitbook/assets/deploy.png)
 
 * `Location`: The location of the standalone folder that you want to create. The name of this folder will be `yourGameName{OS}`.
 * `Type of export`: Choose export options here.
@@ -164,5 +164,5 @@ If you want to publish your game \(share your game without any need for players 
 
 Go on `Help > Auto display updater` to enable or disable the auto check of updater that will check if a new version is available or not.
 
-![Enable / Disable Updater](.gitbook/assets/autoupdater.png)
+![](.gitbook/assets/autoupdater.png)
 

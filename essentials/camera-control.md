@@ -6,7 +6,7 @@ description: Being director of your game.
 
 In your 2D games, you are limited to screen moves for adding dynamism to your important scenes. A 3D camera offers a lot of opportunities for your scenes \(moves, rotations, zooms...\) and you need to know some easy basics to use it correctly.
 
-![Camera control sample](https://rpg-paper-maker.github.io/basics/img/camera-example.gif)
+![](../.gitbook/assets/camera-example.gif)
 
 ## The camera <a id="the-camera"></a>
 
@@ -24,19 +24,19 @@ Thanks to the scripts, these two positions are always calculated thanks to algor
 
 ## The distance <a id="the-distance"></a>
 
-![](https://rpg-paper-maker.github.io/basics/img/camera-distance.png)
+![](../.gitbook/assets/camera-distance.png)
 
 The distance is simply a positive value indicating the distance between the camera and the target. This should take account of the three axis. This will be used for zooms. The default value is 125.
 
 ## The horizontal angle <a id="the-horizontal-angle"></a>
 
-![](https://rpg-paper-maker.github.io/basics/img/camera-h.png)
+![](../.gitbook/assets/camera-h.png)
 
 The horizontal angle is only applied to the X and Z axis. For example, if you want to turn around your target horizontally, you will have to change this value. The default value is -90°.
 
 ## The vertical angle <a id="the-vertical-angle"></a>
 
-![](https://rpg-paper-maker.github.io/basics/img/camera-v.png)
+![](../.gitbook/assets/camera-v.png)
 
 Same as the vertical angle but only applied to the Y axis. For example, if you want to turn around your target vertically, you will have to change this value \(to go down you have to increment the value, and to go up you have to decrease the value\). The default value is 55°.
 
@@ -51,37 +51,23 @@ Here we are, now that you know a bit more about the camera properties we can see
   * `Object ID`: If you are selecting a new object ID to focus, the camera will move to its position and will consider it as the new target after it.
 * **Operation**: You can select here the kind of operation you want to apply to the modified values. For example, if you choose \(+\) and you set distance to 5, if the previous distance value was 125 it will become 125 + 5 = 130.
 * **Move**: You can modify here the camera position on the three axis \(you can choose squares by squares or pixel by pixel\).
-
   * `Target offset`: if this option is checked, you will move the camera and the target offset positions at the same time. In 2D games, it's like if you only wanted to move the screen and ignore the hero position.
 
-  _Moving X+10 squares with target offset OFF:_
+![Moving X+10 squares with target offset OFF](../.gitbook/assets/camera-move-off.gif)
 
-![Screenshot](https://rpg-paper-maker.github.io/basics/img/camera-move-off.gif)
-
-_Moving X+10 squares with target offset ON:_
-
-![Screenshot](https://rpg-paper-maker.github.io/basics/img/camera-move-on.gif)
+![Moving X+10 squares with target offset ON](../.gitbook/assets/camera-move-on.gif)
 
 * `Take account of camera orientation`: _\(not available yet\)_ This is simply considering that the axis are modified according to the camera position \(see the same option for [Move Object command](event-commands.md#move-object)\).
 * **Rotation**: You can here modify the horizontal and the vertical angle of the camera in order to apply rotations.
-
   * `Target offset`: Same as for moves. This time, the target will turn around the camera.
 
-  _Adding 360° to the horizontal angle with target offset OFF:_
+![Adding 360&#xB0; to the horizontal angle with target offset OFF](../.gitbook/assets/camera-h-r-off.gif)
 
-  ![Screenshot](https://rpg-paper-maker.github.io/basics/img/camera-h-r-off.gif)
+![Adding 360&#xB0; to the horizontal angle with target offset ON](../.gitbook/assets/camera-h-r-on.gif)
 
-  _Adding 360° to the horizontal angle with target offset ON:_
+![Adding 360&#xB0; to the vertical angle with target offset OFF](../.gitbook/assets/camera-v-r-off.gif)
 
-  ![Screenshot](https://rpg-paper-maker.github.io/basics/img/camera-h-r-on.gif)
-
-  _Adding 360° to the vertical angle with target offset ON:_
-
-  ![Screenshot](https://rpg-paper-maker.github.io/basics/img/camera-v-r-off.gif)
-
-  _Adding 360° to the vertical angle with target offset ON:_
-
-  ![Screenshot](https://rpg-paper-maker.github.io/basics/img/camera-v-r-on.gif)
+![Adding 360&#xB0; to the vertical angle with target offset ON](../.gitbook/assets/camera-v-r-on.gif)
 
 * **Zoom**: You can set the distance between the camera and the target to create a zoom effect.
 
@@ -98,7 +84,7 @@ _Moving X+10 squares with target offset ON:_
 
 You can control the default properties of the camera when you are going into a new map. You can set the camera ID in `map properties`. You also have access to the camera properties list in `Systems manager > System`:
 
-![Camera properties](https://rpg-paper-maker.github.io/basics/img/camera-properties.png)
+![](../.gitbook/assets/camera-properties.png)
 
 * `Name`: The name of the camera properties.
 * `Distance`: The distance between the camera and the hero.

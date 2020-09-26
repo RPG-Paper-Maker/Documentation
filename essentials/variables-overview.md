@@ -20,7 +20,7 @@ You have access to a large number of variables. By default, when you launch a ne
 
 Open the variables manager by clicking here on the main toolbar:
 
-![Variable manager](https://rpg-paper-maker.github.io/basics/img/variables-manager.png)
+![](../.gitbook/assets/variables-manager.png)
 
 You can only manage the number and names of variables here. You cannot change the values. We will see later how to modify the values in-game.
 
@@ -28,5 +28,5 @@ You can only manage the number and names of variables here. You cannot change th
 
 Imagine that you want to create a feature that allows the player to change the music volume. You can use variables here! The engine propose to use fix numbers or variables:
 
-![Screenshot](https://rpg-paper-maker.github.io/basics/img/volume-variable.png)
+![](../.gitbook/assets/volume-variable.png)
 

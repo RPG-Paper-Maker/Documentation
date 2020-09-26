@@ -10,7 +10,7 @@ We've previously seen that the map properties had an option `Tileset` selection.
 
 A tileset corresponds to a set of information linked to the map textures and collisions. Open the Data manager by clicking here on the main toolbar and select the `Tilesets` tab:
 
-![Tilesets tab](https://rpg-paper-maker.github.io/basics/img/tileset-manager.png)
+![](../.gitbook/assets/tileset-manager.png)
 
 If you want to add / remove tileset\(s\), you can use the `Set max...` button or `+` or `-`. You can change the `Picture` by clicking on the following widget that will open a reduced picture manager \(containing only one kind of picture\). That picture will correspond to the static textures that you will use for your maps having this tileset.
 
@@ -26,13 +26,13 @@ Bounding box are simple geometries that are used for checking intersections. Eac
 
 There is a way to see the bounding boxes for debugging \(if you encounter any strange behavior\). Check the following option:
 
-![Show collisions bound boxes](https://rpg-paper-maker.github.io/basics/img/collision-debug.png)
+![](../.gitbook/assets/collision-debug.png)
 
 ## Simple boxes and Oriented boxes <a id="simple-boxes-and-oriented-boxes"></a>
 
 Depending on which sprite you are using, bounding boxes can be oriented like this:
 
-![Collision bounding boxes samples](https://rpg-paper-maker.github.io/basics/img/collision-boxes.png)
+![](../.gitbook/assets/collision-boxes.png)
 
 Fix sprites are flat, so they don't need to be oriented. However, face, double, and quadra sprites are voluminous and their bounding box could be a cylinder. A cylinder collision is over killed so we are using oriented boxes that are reasonable to manage collisions with great performances.
 
@@ -40,47 +40,47 @@ Fix sprites are flat, so they don't need to be oriented. However, face, double, 
 
 For tileset, you can edit it directly in the picture preview on the `Tilesets` tab of datas manager. Another way is to open the collisions manager merging all the possible collisions. Open the collisions manager by clicking here on the main toolbar:
 
-![Collision manager](https://rpg-paper-maker.github.io/basics/img/collision-manager.png)
+![](../.gitbook/assets/collision-manager.png)
 
 ## Practicable <a id="praticable"></a>
 
 You can for example change the tileset collision by resizing it for each square. This will affect the size of the bounding boxes. You can resize it with your `mouse` or `Right click` and click on `Edit` in order to open a window for selecting the rectangle values.
 
-![Collision resizing](https://rpg-paper-maker.github.io/basics/img/collision-praticable.png)
+![](../.gitbook/assets/collision-praticable.png)
 
 ## Directions \(only for floors\) <a id="directions-only-for-floors"></a>
 
 You can indicate in which direction there will be a collision.
 
-![Directions](https://rpg-paper-maker.github.io/basics/img/collision-direction.png)
+![](../.gitbook/assets/collision-direction.png)
 
 ## Characters <a id="characters"></a>
 
 Characters are animated and you can handle different collisions for different frames. But, if you want to have the same collisions for all the frames, check the `Repeat` option.
 
-![Characters collisions](https://rpg-paper-maker.github.io/basics/img/collision-character.png)
+![](../.gitbook/assets/collision-character.png)
 
 ## Autotiles <a id="autotiles"></a>
 
 You can manage the autotiles list by clicking here on the main toolbar:
 
-![Autotiles manager](https://rpg-paper-maker.github.io/basics/img/autotiles-list.png)
+![](../.gitbook/assets/autotiles-list.png)
 
 You can manage picture and collisions for each autotiles here. Autotiles are dynamic floors. This will have borders with automatic changing according to the neighbor squares. Here is an example of an autotile picture:
 
-![Autotile sample](https://rpg-paper-maker.github.io/basics/img/autotile-general.png)
+![](../.gitbook/assets/autotile-general.png)
 
 Rendering in map:
 
-![Autotile sample](https://rpg-paper-maker.github.io/basics/img/autotiles-preview.png)
+![](../.gitbook/assets/autotiles-preview%20%281%29.png)
 
 Don't forget to add your autotiles in the tileset:
 
-![Adding autotile in tileset](https://rpg-paper-maker.github.io/basics/img/autotiles-tileset.png)
+![](../.gitbook/assets/autotiles-tileset.png)
 
 This can also be done in the texture selector **\(2\)**:
 
-![Also in texture selector](https://rpg-paper-maker.github.io/basics/img/autotiles-update-list.png)
+![](../.gitbook/assets/autotiles-update-list.png)
 
 ## Animated autotiles <a id="animated-autotiles"></a>
 
@@ -94,7 +94,7 @@ You can manage the walls the same way you did for autotiles in:
 * In the texture selector
 * `Tilesets` tab in datas manager:
 
-![Walls manager](https://rpg-paper-maker.github.io/basics/img/walls-tileset.png)
+![](../.gitbook/assets/walls-tileset.png)
 
 ## Mountains <a id="mountains"></a>
 
@@ -107,13 +107,13 @@ You can manage the mountains the same way you did for autotiles in:
   * `Force always collides`: Force collision everytime.
   * `Force never collides`: Force no collision everytime.
 
-![Mountains manager](https://rpg-paper-maker.github.io/basics/img/mountains-tileset.png)
+![](../.gitbook/assets/mountains-tileset.png)
 
 ## 3D objects <a id="3d-objects"></a>
 
 You can manage the 3D objects list by clicking here on the main toolbar:
 
-![3D Objects manager](https://rpg-paper-maker.github.io/basics/img/objects-3d-list.png)
+![](../.gitbook/assets/objects-3d-tileset.png)
 
 The options for your 3D objects are different according to the `shape` you choose.
 
@@ -134,7 +134,7 @@ The options for your 3D objects are different according to the `shape` you choos
       * `Stretch`: Stretch your texture. You can use it if you follow the template with a different size that doesn't take account of size proportions.
       * `Perfect size`: Use it if you want to always respect pixels proportions. See the cupboard example which is 2x2x1 size:
 
-![3D object sample](https://rpg-paper-maker.github.io/basics/img/box-cupboard.png)
+![](../.gitbook/assets/box-template.png)
 
 * `Sphere` **\(not available yet\)**
 * `Cylinder` **\(not available yet\)**
@@ -151,7 +151,7 @@ The options for your 3D objects are different according to the `shape` you choos
 
 Don't forget to add your objects in the tileset:
 
-![Adding 3D object in Tileset](https://rpg-paper-maker.github.io/basics/img/objects-3d-tileset.png)
+![](../.gitbook/assets/objects-3d-tileset%20%281%29.png)
 
 \(or use the texture selector\)
 
