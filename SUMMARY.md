@@ -26,11 +26,8 @@
 * [Stack and scenes](plugins-tutorials/stack-and-scenes.md)
 * [WindowBox & WindowChoices](plugins-tutorials/windowbox-and-windowchoices.md)
 * [Datas & System](plugins-tutorials/datas-and-system.md)
-* [Three.js & 3D](plugins-tutorials/three.js-and-3d.md)
 * [Common classes](plugins-tutorials/common-classes.md)
 * [Event commands](plugins-tutorials/event-commands.md)
-* [Collisions](plugins-tutorials/collisions.md)
-* [Picture2D](plugins-tutorials/picture2d.md)
 * [How to create a plugin](plugins-tutorials/how-to-make-a-new-plugin.md)
 
 ---

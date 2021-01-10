@@ -51,7 +51,7 @@ The `Libs` folder contains every external libraries used by RPG Paper Maker.
 We are using he following:
 
 * `howler.js`: It's a library managing every songs playing very easily.
-* `three.js`: The most important library. It provides a lot of functions and classes to handle webGL \(3D\) very easily. We will see it a lot in our code.
+* `three.js`: The most important library. It provides a lot of functions and classes to handle webGL \(3D\) very easily. We will see it a lot in our code. You can check out the doc here: [https://threejs.org/docs/](https://threejs.org/docs/) and easily understand the RPG Paper Maker use.
 
 ## Plugins
 

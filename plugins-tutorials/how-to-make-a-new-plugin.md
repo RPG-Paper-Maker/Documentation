@@ -4,8 +4,6 @@ description: Here are the steps to make a new plugin
 
 # How to create a plugin
 
-
-
 Now that you have all the keys to start your own plugins, let's do it!
 
 Open the scripts manager:
@@ -101,7 +99,7 @@ myClass.prototype.myFunction = function() {
 This way, you can edit an existing function prototype. As an example, let's try to display an icon in the title screen. What we will need to do is extend two functions:
 
 * `load`: To load the icon to display
-* `draw`: To draw the icon loaded
+* `drawHUD`: To draw the icon loaded
 
 ```javascript
 import { Datas } from "../../System/index.js";
