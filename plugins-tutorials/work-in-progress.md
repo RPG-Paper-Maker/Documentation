@@ -28,7 +28,7 @@ _You Don't Know JS \(book\):_
 You know the JS basics? Now you can keep going! :\)
 {% endhint %}
 
-First of all, we strongly recommand you to use **Visual Studio Code** as your **IDE** \(**Integrated Development Environment**\). This will help a lot for auto-complete. You can download it here: [https://code.visualstudio.com/](https://code.visualstudio.com/).
+First of all, we strongly recommand you to use **Visual Studio Code** as your **IDE** \(**Integrated Development Environment**\). This will help a lot for auto-completion. You can download it here: [https://code.visualstudio.com/](https://code.visualstudio.com/).
 
 Open it and go to `File > Open Folder` and select `YourProject/resources/app/Content/Datas/Scripts`
 

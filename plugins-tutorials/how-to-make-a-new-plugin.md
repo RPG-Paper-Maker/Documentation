@@ -1,4 +1,6 @@
-# How to make a new plugin
+---
+description: Here are the steps to make a new plugin
+---
 
-Work in progress.
+# How to create a plugin
 

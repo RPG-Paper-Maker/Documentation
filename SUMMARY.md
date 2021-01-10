@@ -31,7 +31,7 @@
 * [Event commands](plugins-tutorials/event-commands.md)
 * [Collisions](plugins-tutorials/collisions.md)
 * [Picture2D](plugins-tutorials/picture2d.md)
-* [How to make a new plugin](plugins-tutorials/how-to-make-a-new-plugin.md)
+* [How to create a plugin](plugins-tutorials/how-to-make-a-new-plugin.md)
 
 ---
 
