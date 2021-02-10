@@ -93,14 +93,16 @@ Let's see how to extend the System. Currently, We can use the Inject function:
 
 ### Function Syntax
 
+> for the sake of simplicity, methods and fields will be referred to as functions and variables respectively.
+
 The Inject function is designed to replace the prototyping that'd normally be required to alter existing classes, inject is more streamlined and doesn't require you to alias as it does this for you:
 
 * classObject: The class or newable function that you want to inject/overwrite a variable/function into.
 * prototypeName: The variable/function name you want to overwrite/inject code into.
 * prototype: The new variable/function you want to inject/overwrite.
-* staticType: Sets rather this is a static function/variable or a non static function/variable \(NOTE: Both a static and non static variable/method can exist at the same time with the same name.\) \(DEFAULT: false\)
-* overwrite: \(FUNCTIONS ONLY\) Should call original method's code or overwrite original method. \(DEFAULT: false\)
-* loadBefore \(FUNCTIONS ONLY\) Should original method's code be executed before or after your code \(NOTE: This is obviously disabled if param overwrite is set to true.\) \(DEFAULT: true\)
+* staticType: Sets rather this is a static function/variable or a non static function/variable \(NOTE: Both a static and non static variable/function can exist at the same time with the same name.\) \(DEFAULT: false\)
+* overwrite: \(FUNCTIONS ONLY\) Should call original function's code or overwrite original function. \(DEFAULT: false\)
+* loadBefore \(FUNCTIONS ONLY\) Should original function's code be executed before or after your code \(NOTE: This is obviously disabled if param overwrite is set to true.\) \(DEFAULT: true\)
 
 #### added 'this' content
 
@@ -183,12 +185,12 @@ Not every variable/function is part of the class instance, some are statically a
 const inject = RPM.Manager.Plugins.inject;
 
 class myClass {
-    static myStaticMethod(){
+    static myStaticFunction(){
         return 2;
     }
 }
 
-inject(myClass,"myStaticMethod",function () {
+inject(myClass,"myStaticFunctions",function () {
     return 4
 },true,true,false);
 ```
