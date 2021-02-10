@@ -114,6 +114,26 @@ due to the nature of inject there are two new values added to it's 'this'
 ```javascript
 const inject = RPM.Manager.Plugins.inject;
 
+
+class myClass {
+ 
+ constructor(){}
+ 
+  myFunction(){
+  
+  }
+  
+  isMyClass(){
+  return true;
+  }
+  
+  myFunction2(){
+  return math.floor(math.random() * 26);
+  }
+
+}
+
+
 inject(myClass, "myFunction", function() {
  if(this.isMyClass()){
   console.log("this is my class :)");
@@ -122,6 +142,15 @@ inject(myClass, "myFunction", function() {
  }    
 
 }, false, true, false);
+
+inject(myClass, "myFunction2", function() {
+ if(this.callResult === 2){
+  return 4;
+ } else {
+ return this.callResult;
+ }
+},false,false,true);
+
 ```
 
 This way, you can edit an existing function prototype. As an example, let's try to display an icon in the title screen. What we will need to do is extend two functions:
