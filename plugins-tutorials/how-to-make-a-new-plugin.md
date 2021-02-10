@@ -115,18 +115,13 @@ due to the nature of inject there are two new values added to it's 'this'
 const inject = RPM.Manager.Plugins.inject;
 
 inject(myClass, "myFunction", function() {
-// This extension of the prototype function here
-    
+ if(this.isMyClass()){
+  console.log("this is my class :)");
+ } else {
+ this.super();
+ }    
 
-}, false, false, true);
-
-//this would be the old equivilant of inject:
-/*
-let alias = myClass.prototype.myFunction;
-myClass.prototype.myFunction = function() {
-    alias.apply(this);
-}
-*/
+}, false, true, false);
 ```
 
 This way, you can edit an existing function prototype. As an example, let's try to display an icon in the title screen. What we will need to do is extend two functions:
