@@ -54,7 +54,8 @@ Let's try to just create a plugin displaying "Hello world" in the console!
 ```javascript
 import { RPM } from "../path.js"
 
-let pluginName = "MyFirstPlugin";
+const pluginName = "MyFirstPlugin";
+const inject = RPM.Manager.Plugins.inject;
 
 console.log("Hello world!");
 ```
@@ -74,7 +75,8 @@ So you'll have to use `RPM` module before any other `System` module. For example
 ```javascript
 import { RPM } from "../path.js"
 
-let pluginName = "MyFirstPlugin";
+const pluginName = "MyFirstPlugin";
+const inject = RPM.Manager.Plugins.inject;
 
 console.log("Hello world: " + RPM.Core.MapObject.SPEED_NORMAL);
 ```
@@ -83,17 +85,46 @@ console.log("Hello world: " + RPM.Core.MapObject.SPEED_NORMAL);
 
 Great! It works!
 
-## Protoypes extension
+## Inject extension
 
-Let's see how to extend the System prototypes. Currently, we can use the alias trick:
+Let's see how to extend the System. Currently, We can use the Inject function:
+
+> **WARNING: do not use arrow function syntax, arrow functions do not have "this" and therefor will not work when injecting, use function instead.**
+
+### Function Syntax
+
+The Inject function is designed to replace the prototyping that'd normally be required to alter existing classes, inject is more streamlined and doesn't require you to alias as it does this for you:
+
+* classObject: The class or newable function that you want to inject/overwrite a variable/function into.
+* prototypeName: The variable/function name you want to overwrite/inject code into.
+* prototype: The new variable/function you want to inject/overwrite.
+* staticType: Sets rather this is a static function/variable or a non static function/variable \(NOTE: Both a static and non static variable/method can exist at the same time with the same name.\) \(DEFAULT: false\)
+* overwrite: \(FUNCTIONS ONLY\) Should call original method's code or overwrite original method. \(DEFAULT: false\)
+* loadBefore \(FUNCTIONS ONLY\) Should original method's code be executed before or after your code \(NOTE: This is obviously disabled if param overwrite is set to true.\) \(DEFAULT: true\)
+
+#### added 'this' content
+
+due to the nature of inject there are two new values added to it's 'this'
+
+* callResult: if loadBefore is set to true and the function is a return function this will give the result of the first function, this way you could alter/pass through it's value.
+* super: this is for if you want the alias call to be conditional, or happen in the middle of your code, it's recommended you only call super if overwrite is set to true or you will call the alias twice.
 
 ```javascript
+const inject = RPM.Manager.Plugins.inject;
+
+inject(myClass, "myFunction", function() {
+// This extension of the prototype function here
+    
+
+}, false, false, true);
+
+//this would be the old equivilant of inject:
+/*
 let alias = myClass.prototype.myFunction;
 myClass.prototype.myFunction = function() {
     alias.apply(this);
-    
-    // This extension of the prototype function here
 }
+*/
 ```
 
 This way, you can edit an existing function prototype. As an example, let's try to display an icon in the title screen. What we will need to do is extend two functions:
@@ -105,29 +136,62 @@ This way, you can edit an existing function prototype. As an example, let's try 
 import { Datas } from "../../System/index.js";
 import { RPM } from "../path.js"
 
-let pluginName = "MyFirstPlugin";
+const pluginName = "MyFirstPlugin";
+const inject = RPM.Manager.Plugins.inject;
 
 console.log("Hello world: " + RPM.Core.MapObject.SPEED_NORMAL);
 
 // Load the icon
+inject(RPM.Scene.TitleScreen,"load", async function() {
+    this.pictureIcon = RPM.Datas.Pictures.getPictureCopy(RPM.Common.Enum.PictureKind.Icons, 1);
+},false,false,true);
+
+//this would be the old equivilant of inject:
+/*
 let alias_load = RPM.Scene.TitleScreen.prototype.load;
 RPM.Scene.TitleScreen.prototype.load = async function() {
     await alias_load.apply(this);
     this.pictureIcon = RPM.Datas.Pictures.getPictureCopy(RPM.Common.Enum.PictureKind
         .Icons, 1);
 }
+*/
 
 // Draw the icon
+inject(RPM.Scene.TitleScreen,"drawHUD", function() {
+        this.pictureIcon.draw(200, 200);
+},false,false,true);
+
+//this would be the old equivilant of inject:
+/*
 let alias_drawHUD = RPM.Scene.TitleScreen.prototype.drawHUD;
 RPM.Scene.TitleScreen.prototype.drawHUD = function() {
     alias_drawHUD.apply(this);
     this.pictureIcon.draw(200, 200);
 }
+*/
 ```
 
 And it works!
 
 ![](../.gitbook/assets/plugin-icon.png)
+
+## Static Functions and Variables
+
+Not every variable/function is part of the class instance, some are statically assigned to the class and can therefor be accessed without the need for a instance of that class.
+
+```javascript
+const inject = RPM.Manager.Plugins.inject;
+
+class myClass {
+    static myStaticMethod(){
+        return 2;
+    }
+}
+
+inject(myClass,"myStaticMethod",function () {
+    return 4
+},true,true,false);
+```
 
 ## Parameters
 
@@ -135,14 +199,13 @@ Now imagine that we want the user \(people that would use this plugin\) to be ab
 
 ![](../.gitbook/assets/plugin-parameter.png)
 
-In the code side, you'll need to edit the load prototype to get the iconID parameter. To get a parameter value, use `getParameter(pluginName, parameterName)`.
+In the code side, you'll need to edit the load function to get the iconID parameter. To get a parameter value, use `getParameter(pluginName, parameterName)`.
 
 ```javascript
-RPM.Scene.TitleScreen.prototype.load = async function() {
-    await alias_load.apply(this);
-    this.pictureIcon = RPM.Datas.Pictures.getPictureCopy(RPM.Common.Enum.PictureKind
-        .Icons, RPM.Manager.Plugins.getParameter(pluginName, "iconID"));
-}
+inject(RPM.Scene.TitleScreen,"load", async function() {
+       this.pictureIcon = RPM.Datas.Pictures.getPictureCopy(RPM.Common.Enum.PictureKind
+       .Icons, RPM.Manager.Plugins.getParameter(pluginName, "iconID"));
+},false,false,true);
 ```
 
 So now, the plugin users can change the parameter value like this:
