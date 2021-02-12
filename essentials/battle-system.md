@@ -307,7 +307,32 @@ Troops correspond to a monsters group and some states with reactions.
 
 ## Status <a id="status"></a>
 
-_Not available yet._
+![](../.gitbook/assets/status.png)
+
+Status can be applied after using particular skills or items. This can be KO, poisonned, paralized, etc.
+
+* `Animation ID`: Select an animation to display with a loop when the player is affected by this status. Since you can't display more than one animation on a player if there is several status, the `priority` will decide which one to display.
+* `Restrictions`: You can add restrictions for the player when it is affected by the status. It can be:
+  * `Can't do anything`: The player will pass their turn everytime
+  * `Can't use skills`: The player won't be able to open skills menu
+  * `Can't use items`: The player won't be able to open items menu
+  * `Can't escape`: The player won't be able to escape
+  * `Attack random target`: The player will use a random attack to attack a random target \(ally or enemy\)
+  * `Attack random ally`: The player will use a random attack to attack a random ally
+  * `Attack random enemy`: The player will use a random attack to attack a random enemy
+* `Priority`: Defines which `Animation ID` and `Battler position` to display. If you have several status, the one with higher priority will be displayed.
+* `Battler position`: The column to display in Battler picture when the player is affected by the status
+* **Release conditions**: Defines all the status release conditions
+  * `Release at the end of battle`: The status will disappear after the end of a battle
+  * `Release with X% chance after being attacked`: The status will disappear with X% chance after being attacked \(receiving positive damages\)
+  * `Release at the start of turn`: The status will disappear at the start of a turn according to a list of conditions depending on a chance according to the turn number.
+* **Messages**: Defines messages to display according to the status situation
+  * `Ally affected`
+  * `Enemy affected`
+  * `Status healed`
+  * `Status still affected`
+* **Effects**: The effects to apply at the beginning of a turn if the player is still affected by the status
+* **Characteristics**: The characteristics \(buffs etc\) to apply when the player is affected by the status
 
 ## Animations <a id="animations"></a>
 

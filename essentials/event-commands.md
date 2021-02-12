@@ -262,9 +262,36 @@ Remove a picture that is displayed on top of the screen.
 
 _Not available yet._
 
-## Start shop <a id="start-shop"></a>
+## Start shop menu <a id="start-shop"></a>
 
-_Not available yet._
+![](../.gitbook/assets/event-command-shop-menu.png)
+
+This will open a menu for a shop where the player can buy or sell items.
+
+* `Buy only`: Indicate if you want to enable selling items or not
+* `Shop ID`: Indicate the shop ID. This will be used only if you want to use command `Restock shop` later.
+* `Items / Price / Stock`: Select the items to sell with their price and stock
+
+![](../.gitbook/assets/event-command-shop-menu-item-price-stock.png)
+
+* **Item**:
+  * `Item ID`
+  * `Weapon ID`
+  * `Armor ID`
+* **Price**:
+  * `Default`: The default price indicated in the item datas
+  * `Specific`: A specific price that you can indicate here
+* **Stock**:
+  * `Unlimited`: An unlimited stock
+  * `Specific`: A spercific stock that can indicate here
+
+Render in game:
+
+![](../.gitbook/assets/event-command-shop-menu-render.png)
+
+## _Restock_ shop <a id="start-shop"></a>
+
+Mostly the same options than [Start shop menu command](event-commands.md#start-shop), but you can use this command to update the stock of a shop thanks to `shop ID`.
 
 ## Enter a name <a id="enter-a-name"></a>
 
@@ -350,7 +377,7 @@ _Not available yet._
 
 ## Send event <a id="send-event"></a>
 
-![](../.gitbook/assets/command-send-event.png)
+![](../.gitbook/assets/event-command-send-event.png)
 
 This will send an event to the selected target.
 
@@ -358,6 +385,7 @@ This will send an event to the selected target.
   * `All`: _Not available yet._
   * `Detection`: Send the event to a specific detection.
     * `Sender can't receive`: The detection is not applied to the sender.
+    * `Only the closest`: If checked, this will only send event to the closest object detected. If not, this will send event to all the objects detected.
   * `Object`: Send the event to a specific object.
 * **Event**:
   * `Event system`: Select a system event \(events sent by the game system itself\).

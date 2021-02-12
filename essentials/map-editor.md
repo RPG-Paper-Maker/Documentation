@@ -216,7 +216,7 @@ _Not available yet._
 
 ### Rotation <a id="rotation"></a>
 
-Apply rotation to sprites or 3D objects only.
+Apply rotation to floors, sprites or 3D objects only.
 
 ![](../.gitbook/assets/rotate.png)
 
