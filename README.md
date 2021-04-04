@@ -2,169 +2,173 @@
 description: This is the initial page of RPG Paper Maker documentation.
 ---
 
-# Getting started
+# Pour commencer
 
-Welcome to RPG Paper Maker documentation! You will find here all what you need to be a pro Paper Maker!
+Bienvenue sur la documentation de RPG Paper Maker ! Vous trouverez ici tout ce dont vous aurez besoin pour devenir un pro de Paper Maker !
 
 ## Installation <a id="installation"></a>
 
-Go to the [download section](http://rpg-paper-maker.com/index.php/downloads#content) from the official website and download the installer according to your system.
+Allez sur [la section téléchargement](http://rpg-paper-maker.com/index.php/downloads#content) du site officiel et téléchargez l'installateur suivant votre système d'exploitation.
 
 ### Windows <a id="windows"></a>
 
-Run `RPG Paper Maker installer.exe`. This will install the program on your computer and run `RPG Paper Maker.exe`. This will ask you for downloading the latest version of RPG Paper Maker. Wait for the downloading to be finished.
+Démarrez `RPG Paper Maker installer.exe`. Cela installera le programme sur votre ordinateur, puis lancez `RPG Paper Maker.exe`. Il vous sera demandé de télécharger la dernière version de RPG Paper Maker. Puis, attendez que le téléchargement se termine.
 
 ### Linux <a id="linux"></a>
 
-Extract the file. Check out the `README` instructions in the root of the folder. After running the last instruction \(`./run.sh`\), this will ask you for downloading the latest version of RPG Paper Maker. Wait for the downloading to be finished.
+Extraire le fichier. Consultez les instructions du `README` à la racine du dossier. Après avoir exécuté la dernière instruction \(`./run.sh`\), Il vous sera demandé de télécharger la dernière version de RPG Paper Maker. Puis, attendez que le téléchargement se termine.
 
 ### MacOSX <a id="macosx"></a>
 
-Extract the file. After running `RPG Paper Maker.app`, this will ask you for downloading the latest version of RPG Paper Maker. Wait for the downloading to be finished.
+Extraire le fichier. Après avoir lancé `RPG Paper Maker.app`, Il vous sera demandé de télécharger la dernière version de RPG Paper Maker. Puis, attendez que le téléchargement se termine.
 
-## Change theme <a id="change-theme"></a>
+## Changer de thème <a id="change-theme"></a>
 
-There actually are two different themes: `Dark` and `White`. If you want to change it, go to `Options > General options...`.
+Il y a actuellement 2 thèmes différents : `Sombre` and `Clair`. Si vous souhaitez changer, allez dans `Options > General options...`.
 
 ![](.gitbook/assets/themes-options.png)
 
-## Create a new project <a id="create-a-new-project"></a>
+## Créer un nouveau projet
 
-You can create a new project by clicking here on the main toolbar:
+Vous pouvez créer un nouveau projet en cliquant ici sur la barre d'outils principale :
 
 ![](.gitbook/assets/new-project.png)
 
-You can also use `CTRL+N` or go to `File > New project...`.
+Vous pouvez également utiliser `CTRL+N` ou aller dans `File > New project...`.
 
 ![](.gitbook/assets/new-project-window.png)
 
-You can choose here the `Project name` corresponding to your game's name. This will auto generate a folder name \(you can disable the option `auto-generate` if you want to customize your folder name\). And finally, choose the `location` of your project folder. By default, it will be on a freshly created `RPG Paper Maker Games` folder.
+Vous pouvez choisir `Project name` qui correspond au nom du jeu. Cela génèrera automatiquement un dossier \(vous pouvez désactiver l'option `auto-generate` si vous souhaitez personnaliser le nom du dossier\). Enfin, choisissez la`location` du dossier de votre projet. Par défaut, cela se créera dans un nouveau dossier `RPG Paper Maker Games`.
 
-## Open an existing project <a id="open-an-existing-project"></a>
+## Ouvrir un projet existant
 
-You can open an existing project by clicking here on the main toolbar:
+Vous pouvez ouvrir un projet existant en cliquant ici sur la barre d'outils principale :
 
 ![](.gitbook/assets/open-project.png)
 
-You can also use `CTRL+O` or go to `File > Open project > Browse...`. Recent projects can also be opened on the first screen \(or go to `File > Open project`\).
+Vous pouvez également utiliser `CTRL+O` ou aller dans `File > Open project > Browse...`. Les projets récents peuvent également être ouverts dans la première fenêtre \(ou dans `File > Open project`\).
 
-## Change general game settings <a id="change-general-game-settings"></a>
+## Changer les paramètres principaux du jeu
 
-A lot of options are available in the `Systems manager`. Click here on the main toolbar and go to the `System` tab:
+De nombreuses options sont disponibles dans `Systems manager`. Cliquez ici sur la barre principale d'outils, puis allez dans l'onglet `System` :
 
 ![](.gitbook/assets/system-basic.png)
 
-* `Game name`: Change the name of your game
-* `Game native resolution`: Change width / height resolution and also choose if you want a Window or Fullscreen display
-* `Antialiasing`: If checked, antialiasing will be applied in game
-* **Map properties**:
-  * `Square size (in px)`: choose here the size \(in pixel\) of a square in your maps. You should adapt your textures after any change here
-  * `Ray portions (editor)`: _\(not available yet\)_ The map is separated into several portions \(16x16 squares\). You can change here the number of portions to display
-  * `Ray portions (ingame)`: _\(not available yet\)_ Same but for ingame
-  * `Mountain collision height limit (in px)`: The height considered for blocking the hero so the hero can go up blocks that are in inferior height value
-  * `Mountain collision angle limit (in degree)`: The angle considered for blocking the hero so the hero can go up mountains that are in inferior angle value
-* **Frames**:
-  * `Map frame duration`: Time in milliseconds for a frame of a map \(characters\)
-  * `Animation frames`: Number of frames available in an animation \(walk, waiting, etc.\)
-  * `Battlers frames`: The number of frames available in a battler animation
-  * `Battlers columns`: The number of columns available in a battler template texture
-* `Global sounds`:
-  * `Cursor`: Sound to play when the cursor is moving in window choices
-  * `Confirmation`: Sound to play when the cursor is confirming in window choices
-  * `Cancel`: Sound to play when canceling something
-  * `Impossible`: Sound to play when a choice is impossible in window choices
-* `Other options`:
-  * `Window skin`: The default windows skin used for designing windows UI
-  * `Max number of save slots`: _\(not available yet\)_ Change the max number of save slots available for the players
-  * `Price of sold item`: Change the percent value of the original price of an item when you want to sell it in a shop
 
-## Change language <a id="update-keyboard-controls"></a>
+
+* `Game name`: Changez le nom de votre jeu
+* `Game native resolution`: Change la largeur / hauteur de votre résolution et choisi également si vous souhaitez un mode d'affichage en plein écran ou fenêtré. 
+* `Antialiasing`: Si coché, l'anti-crénelage sera activé en jeu
+* **Propriétés de la carte**:
+  * `Square size (in px)`: Choisissez ici la taille \(en pixel\) des carrés sur vos cartes. Vous devrez adapter vos textures après tout changements
+  * `Ray portions (editor)`: _\(Non disponible actuellement\)_ La carte est séparée en plusieurs portions \(carrés de 16x16\). Vous pouvez changer ici le nombre de portions à afficher dans l'éditeur
+  * `Ray portions (ingame)`: _\(Non disponible actuellement\)_ Idem, mais en jeu
+  * `Mountain collision height limit (in px)`: Le niveau de hauteur considérée comme bloquante pour le héro, afin qu'il ne puisse que parcourir des blocs de niveau inférieur à cette valeur.
+  * `Mountain collision angle limit (in degree)`: L'angle considéré comme bloquant pour le héro afin qu'il ne puisse traverser que des montagnes d'une valeur d'angle inférieure.
+* **Cadence d'image**:
+  * `Map frame duration`: Durée en millisecondes d'une image sur la carte \(personnages\)
+  * `Animation frames`: Nombre d'images sur une animation \(marcher, attendre, etc.\)
+  * `Battlers frames`: Le nombres d'images pour les animations de combattants
+  * `Battlers columns`: Le nombre de colonnes dans un modèle d'animation de combattant
+* `Global sounds`:
+  * `Cursor`: Son à jouer lorsque la souris bouge dans une fenêtre de choix
+  * `Confirmation`: Son à jouer si la souris confirme dans une fenêtre de choix
+  * `Cancel`: Son à jouer si vous annulez quelque chose avec la souris
+  * `Impossible`: Son à jouer quand un choix est impossible dans une fenêtre de choix
+* `Other options`:
+  * `Window skin`: L'apparence par défaut des fenêtres utilisées pour l'interface utilisateur
+  * `Max number of save slots`: _\(Non disponible actuellement\)_ Change le maximum d'emplacement de sauvegardes disponibles pour le joueur
+  * `Price of sold item`: Change en pourcentage la valeur du prix initial d'un objet quand vous souhaitez le vendre dans une boutique
+
+## Changer la langue
 
 You can change the engine language in `Options > Change language...`:
 
 ![](.gitbook/assets/change-language.png)
 
-## Update keyboard controls <a id="update-keyboard-controls"></a>
+## Mettre à jour les contrôles du clavier
 
-You can change the engine and game keyboard controls in the keyboard manager by clicking on the main toolbar:
+Vous pouvez changer les contrôles du clavier et du moteur de jeu dans le gestionnaire du clavier en clqiaunt sur la barre d'outils principale :
 
 ![](.gitbook/assets/keyboard-manager.png)
 
-For engine:
 
-* `CursorUp`, `CursorDown`, `CursorLeft`, `CursorRight`: The cursor directions in map editor.
 
-For Game:
+Pour le moteur de jeu :
 
-* `UpHero`, `DownHero`, `LeftHero`, `RightHero`: The hero directions in map.
-* `UpMenu`, `DownMenu`, `LeftMenu`, `RightMenu`: The directions in menus.
-* `LeftCamera`, `RightCamera`: Turn the camera.
-* `Action`: Hero action in map.
-* `Cancel`: Cancel in menus.
-* `Main menu`: Open / Close main menu.
+* `CursorUp`, `CursorDown`, `CursorLeft`, `CursorRight`: Les directions du curseur dans l'éditeur de carte.
 
-Select the corresponding system menus controls: `Action`, `Cancel`, `Up`, `Down`, `Left`, `Right`. You can add as much keys as possbile.
+Pour le jeu:
 
-When adding / editing a key:
+* `UpHero`, `DownHero`, `LeftHero`, `RightHero`: Les directions du héro sur la carte.
+* `UpMenu`, `DownMenu`, `LeftMenu`, `RightMenu`: Les directions dans le menu.
+* `LeftCamera`, `RightCamera`: Tourne la caméra.
+* `Action`: Action du héro sur la carte.
+* `Cancel`: Annulation dans les menus.
+* `Main menu`: Ouvrir / Fermer le menu principal.
 
-* `Abbreviation`: Name used for JavaScript use \(for programers\).
-* `Description`: Will be displayed ingame for the keyboard settings menu.
-* `Shortcut`: Change the shortcut here. Press the corresponding shortcut thanks to `Change...` button. You can have several shortcuts for one action \(separated with `|` symbol\) and also several keys for one shortcut \(separated with `+` symbol\).
-  * `Remove last`: Remove the last shortcut \(on the right\).
-  * `Remove all`: Remove all the entered shortcuts.
+Selectionnez les menus de système de contrôles correspondants : `Action`, `Cancel`, `Up`, `Down`, `Left`, `Right`. Vous pouvez ajouter autant de touches qu'il est possible d'avoir.
 
-## Update general colors <a id="update-general-colors"></a>
+À l'ajout / moddification de touche :
 
-Go to the `Systems manager > System` and take a look on the `Colors` box:
+* `Abbreviation`: Nom donné pour l'utilisation Javascript \(Pour les programmeurs\).
+* `Description`: Sera affiché en jeu pour le menu de paramètres clavier.
+* `Shortcut`: Changement de raccourcis. Appuyez sur le raccourcis correspondant grâce au bouton `Change...` . Vous pouvez avoir plusieurs raccourcis pour une même action \(séparés par le symbole `|` \) et également plusieurs touches pour un même raccourci \(séparés par le symbole `+` \).
+  * `Remove last`: Retire le dernier raccourcis \(sur la droite\).
+  * `Remove all`: Enlève tous les raccourcis entrés.
+
+## Mettre a jour les couleurs générales
+
+Allez dans `Systems manager > System` puis regardez le cadre `Colors`:
 
 ![](.gitbook/assets/colors.png)
 
-## Update general font sizes and font names <a id="update-general-font-sizes-and-font-names"></a>
+## Mettre à jour les noms de police générale et leur taille
 
-Go to the `Systems manager > System` and take a look on the `Font size` and `Font name` box:
+Allez dans `Systems manager > System` puis regardez le cadre `Font size` ainsi que `Font name` :
 
 ![](.gitbook/assets/deepinscreenshot_select-area_20200323082522.png)
 
-## Change game name <a id="change-game-name"></a>
+## Changer le nom du jeu
 
-Go to the `Systems manager > System` and take a look on the `Game name` box:
+Allez dans `Systems manager > System` puis regardez le cadre `Game name` :
 
 ![](.gitbook/assets/game-name.png)
 
-This will affect the window title when you are launching the game.
+Cela affectera le titre de la fenêtre lorsque vous lancerez le jeu.
 
-## Change game screen resolution <a id="change-game-screen-resolution"></a>
+## Changer la résolution d'écran du jeu
 
-Go to the `Systems manager > System` and take a look on the `Game native resolution` box:
+Allez dans `Systems manager > System` puis regardez le cadre `Game native resolution` :
 
 ![](.gitbook/assets/game-resolution.png)
 
-* `Width`: The native width of your game window.
-* `Height`: The native height of your game window.
-* `Window`: Choose a window mode.
-* `Full screen`: choose full screen mode. Note that `Width` and `Height` have no effect with this option.
+* `Width`: La largeur native de votre fenêtre de jeu.
+* `Height`: La hauteur native de votre fenêtre de jeu.
+* `Window`: Choisir le mode fenêtré.
+* `Full screen`: Choisir le mode plein écran. Notez que `Width` et `Height` n'auront aucun effet avec cette option.
 
-## Test your game <a id="test-your-game"></a>
+## Testez votre jeu
 
-You can test your opened project by clicking here on the main toolbar:
+Vous pouvez tester votre projet actuellement ouvert en cliquant ici sur la barre principale :
 
 ![](.gitbook/assets/play.png)
 
-## Deploy your game <a id="deploy-your-game"></a>
+## Déployez votre jeu
 
-If you want to publish your game \(share your game without any need for players to have RPG Paper Maker installed\) you have to go to `File > Export standalone...`.
+Si vous souhaitez publier votre jeu \(partager votre jeu sans que vos joueurs nécessitent d'avoir RPG Paper Maker d'installé\) vous devez aller dans `File > Export standalone...`.
 
 ![](.gitbook/assets/deploy.png)
 
-* `Location`: The location of the standalone folder that you want to create. The name of this folder will be `yourGameName{OS}`.
-* `Type of export`: Choose export options here.
-  * `Deploy a desktop application`: Choose here to deploy your game as a desktop application \(choose the `OS` in options: Windows, Linux, or Mac\).
-  * `Deploy for web browser`: _\(not available yet\)_ Choose here to deploy your game as a web application. This will generate an `index.html` page and other files.
-* `Version`: Choose you game version. Having 1 for `major` and 0 for `minor` will create a 1.0 version.
+* `Location`: La localisation du dossier autonome que vous souhaitez créer. Le nom du dossier sera `yourGameName{OS}`.
+* `Type of export`: Choisissez les options d'exportation ici.
+  * `Deploy a desktop application`: Choisissez ici de déployer votre jeu comme application de bureau \(choisissez les options de système d'exploitation `OS` : Windows, Linux, or Mac\).
+  * `Deploy for web browser`: _\(Non disponible actuellement\)_ Choisissez ici de déployer votre jeu comme application web. Ceci génèrera un fichier de page`index.html` et d'autres fichiers.
+* `Version`: Choisissez la version de votre jeu. Avoir 1 comme `major` et 0 comme `minor` créera une version 1.0.
 
-## Enable / Disable Updater <a id="enable-disable-updater"></a>
+## Activer / désactiver le programme de mise à jour
 
-Go on `Help > Auto display updater` to enable or disable the auto check of updater that will check if a new version is available or not.
+Allez dans `Help > Auto display updater` pour activer ou désactiver l'auto vérification du programme de mise à jour qui vérifiera si une nouvelle mise à jour est disponible ou non.
 
 ![](.gitbook/assets/autoupdater.png)
 

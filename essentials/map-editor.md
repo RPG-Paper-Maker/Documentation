@@ -1,39 +1,38 @@
 ---
-description: All you need to know about Map editor.
+description: Tout ce dont vous devez savoir sur l'éditeur de carte.
 ---
 
 # Map editor
 
-After opening a project, you should have this view:
+Après avoir ouvert un projet, vous devriez voir ceci :
 
 ![](../.gitbook/assets/map-editor.png)
 
-## Manage maps
+## Gestion des cartes
 
-Take a look at the map selector **\(1\)**. You can add, edit, remove, copy, and paste folders or maps here. We recommend that you use folders to sort your maps for each zones of your game. By default, there's also a `Battle maps` folder that you can use to put all the maps that you will use for battle backgrounds. It is not required to put these maps into this specific folder. Clicking on a map will load this one on the map editor **\(5\)**. `Right clicking` will open this context menu:
+Jetez un œil au sélecteur de cartes **\(1\)**. Vous pouvez ajouter, modifier, supprimer, copier et coller des dossiers ou cartes ici. Nous recommandons l'utilisation de dossier pour trier vos cartes pour chaque zones de votre jeu. Par défaut il y a également un dossier pour les cartes de combats `Battle maps` . Il n'est pas obligatoire de ranger des cartes spécifiquement dans ce dossier. Cliquer sur une carte chargera celle-ci dans l'éditeur de carte **\(5\)**. `Clic droit` ouvrira ce menu contextuel :
 
 ![](../.gitbook/assets/new-map.png)
 
-If you want to create / edit a map, you will get this window:
+Si vous souhaitez créer/éditer une carte, vous aurez cette fenêtre :
 
 ![](../.gitbook/assets/map-properties.png)
 
-* `Name`: The map name.
-* `Tileset`: A tileset represents a lot of information applied on a specific set of textures \(collisions, dynamic textures,...\). We will see how to configure it in a next chapter.
-* **Size**:
-  * `Length`: The map length number of squares \(X axe\).
-  * `Width`: The map width number of squares \(Z axe\).
-  * `Height`: The map height number of squares \(Y axe &gt; 0\).
-  * `Depth`: The map depth number of squares \(Y axe &lt; 0\).
-* `Music`: The music that is played in the background when entering the map.
-* `Background sound`: The background that is played in the background with the music. This can be wind, rain, etc.
-* `Camera prop. ID`: The camera property ID used when entering the map.
-* **Sky**:
-  * `Color ID`: The unique color ID used for the sky.
-  * `Picture`: A picture used as background for the sky.
-  * `Skybox ID`: The skybox ID used for the sky.
-* **Map startup reactions**: You can configure here particular things happening when entering the map. We will se later how to do that thanks to objects.
-* **Battles:**
+* `Name`: Le nom de la carte.
+* `Tileset`: Un ''tileset' \(jeu de tuiles\) représente un tas d'informations appliqué sur une jeu de texture spécifique \(collision, textures dynamiques...\). Nous verrons comment les configurer dans un prochain chapitre.
+* **Size**: \(Taille\)
+  * `Length`: Le nombre de carrés en longueur de la carte  \(axe X\).
+  * `Width`: Le nombre de carrés en largeur de la carte \(axe Z\).
+  * `Height`: Le nombre de carrés en hauteur de la carte \(axe Y &gt; 0\).
+  * `Depth`: Le nombre de carrés en profondeur de la carte \(axe Y &lt; 0\).
+* `Music`: L'arrière plan musical lorsque vous entrez sur la carte.
+* `Background sound`: Les effets sonores d'arrière plan qui peuvent accompagner la musique. Cela peut être du vent, de la pluie, etc.
+* `Camera prop. ID`: Les propriétés d'identifiants de la caméra lorsque vous entrez dans une carte:
+* * `Color ID`: L'Identifiant unique de couleur utilisé pour le ciel.
+  * `Picture`: Image utilisée comme arrière plan pour le ciel.
+  * `Skybox ID`: L'identifiant utilisé pour le ciel.
+* **Map startup reactions**: \(réactions au démarrage de la carte\) Vous pouvez configurer ici des réactions particulières lors de l'entrée dans la carte. Nous verrons plus tard comment faire cela via les objets.
+* **Battles**: **\(batailles\)**
 
 ![](../.gitbook/assets/map-properties-battles.png)
 
@@ -52,228 +51,228 @@ If you want to create / edit a map, you will get this window:
 * Number of steps after next battle: The number of steps to trigger a random battle
 * Variance \(%\): The steps variance in percentage
 
-## Move cursor / grid / camera <a id="move-cursor-grid-camera"></a>
+## Déplacement du curseur / grille / Camera
 
-The camera is always looking at the following cursor:
+La camera cible toujours le curseur suivant :
 
 ![](../.gitbook/assets/cursor.png)
 
-Here are some actions possible with the cursor:
+Voici quelques actions possibles avec le curseur :
 
-* Move on `X` and `Z` axis by using `QWSD` on keyboard.
-* Move on `Y` axis:
-  * Move by square: use `CTRL + Arrow Up/Down` or `CTRL + mouse wheel`
-  * Move by pixel: use `CTRL + SHIFT + Arrow Up/Down` or `CTRL + SHIFT + mouse wheel`
+* Se déplace sur les axes `X` et `Z` en utilisant les touches clavier `QWSD` .
+* Déplacement sur l'axe `Y`  :
+  * Déplacement par carré : utiliser `CTRL + Flèche Haut/Bas` or `CTRL + molette souris`
+  * Déplacement par pixel : utiliser `CTRL + SHIFT + Flèche Haut/Bas` ou `CTRL + SHIFT + molette souris`
 
 ![](../.gitbook/assets/y-axis.png)
 
-* Teleport the cursor on the pointed element square by using `CTRL + Left click`.
+* Téléportez le curseur sur la case de l'élément pointé en utilisant `CTRL + clic gauche`.
 
-To move the camera position, press the `mouse wheel` and move the mouse in the direction you want:
+Afin de déplacer la position de la caméra, appuyez sur la `molette souris` puis bougez la souris dans la direction voulue :
 
 ![](../.gitbook/assets/camera-turn.gif)
 
-## Place / Remove elements <a id="place-remove-elements"></a>
+## Placer / Retirer des éléments
 
-The map element selection portion **\(3\)** allows you to select kind of element to place in the map \(lands, sprites, objects, reliefs, etc.\). You can add or remove something in a specific square by clicking left or right.
+La partie de sélection des éléments de la carte **\(3\)** vous permets de choisir le type d'éléments à placer sur la carte \(terrains, sprites, objets, reliefs, etc.\). Vous pouvez ajouter ou retirer des éléments dans une case spécifiques en faisant clic gauche ou droit..
 
-For example with a floor:
+Par exemple avec un sol :
 
 ![](../.gitbook/assets/map-editor-add-remove.png)
 
-## Undo / Redo <a id="undo-redo"></a>
+## Défaire / Refaire
 
-You can go back / after a change in each map. Press `CTRL+Z` for undo and `CTRL+Y` for redo.
+Vous pouvez revenir en arrière après un changement sur chaque cartes. Appuyez `CTRL+Z` pour défaire \(undo\) et `CTRL+Y` pour refaire \(redo\).
 
-## Save changes <a id="save-changes"></a>
+## Sauvegarder les changements
 
-To save your map editor changes, you can use these shortcuts in the toolbar:
+Pour sauvegarder les changements de l'éditeur de carte, vous pouvez utiliser ces raccourcis dans la barre d'outils :
 
 ![](../.gitbook/assets/save.png)
 
-* `Save`: Save the changes on the current opened map.
-* `All`: Save the changes on all the modified maps. A map has been changed when you see a `*` after its name:
+* `Save`: Sauvegarde les changements sur la carte actuellement ouverte.
+* `All`: Sauvegarde les changement sur toutes les cartes modifiées. Une carte a été modifiée si vous voyez une `*` derrière son nom :
 
 ![](../.gitbook/assets/map-save.png)
 
-## Show / Hide some UI details <a id="show-hide-some-ui-details"></a>
+## Montrer/ Cacher des détails de l'interface
 
-* `G`: Show / Hide grid
-* `I`: Show / Hide information about the pointed square:
+* `G`: Montrer / Cacher la grille
+* `I`: Montrer / Cacher des informations de la case sélectionnée :
 
 ![](../.gitbook/assets/square-infos.png)
 
-## Change paint mode <a id="change-paint-mode"></a>
+## Changer le mode de dessin <a id="change-paint-mode"></a>
 
-Here are the different paint mode **\(4\)** for drawing your elements in the map:
+Il y a ici les différents mode **\(4\)** pour dessiner vos éléments sur votre carte :
 
 ![](../.gitbook/assets/paint.png)
 
-* `Pencil`: Draw squares one by one.
-* `Rectangle`: Draw squares after tracing a rectangle **\(not available yet\)**.
-* `Pin of paint`: Fill squares with the same texture as the one pointed.
+* `Pencil`: Dessine des carrés un par un.
+* `Rectangle`: Dessine des carrés après avoir tracé un rectangle **\(Actuellement non disponible\)**.
+* `Pin of paint`: Rempli les carrés de la même texture que celle de la case pointée.
 
-## Lands <a id="lands"></a>
+## Terrains
 
-Here are the possible lands to place:
+Voici les possibilités de terrain à utiliser :
 
 ![](../.gitbook/assets/lands.png)
 
-## Floors <a id="floors"></a>
+## Sols <a id="floors"></a>
 
-The texture selector **\(2\)** allows you to select a rectangle for a texture. After selecting a rectangle, place your mouse on a square of your map to place your floor.
+Le sélecteur de texture **\(2\)** vous permet de sélectionner un rectangle pour une texture. Après la sélection d'un rectangle, placez votre souris sur une case de votre carte pour y placer votre sol.
 
 ![](../.gitbook/assets/add-floor.png)
 
 ## Autotiles <a id="autotiles"></a>
 
-Autotiles are dynamic floors. This will have borders with automatic changing according to the neighbor squares:
+Autotiles \(tuiles automatisées\) sont des sols dynamiques. Elles ont des bordures qui changeront automatiquement selon les cases voisines :
 
 ![](../.gitbook/assets/autotiles-preview.png)
 
-In the texture selector **\(2\)**, you just have to select a square:
+Dans la sélection de texture **\(2\)**, vous avez juste à sélectionner une case :
 
 ![](../.gitbook/assets/autotile-texture.png)
 
-## Animated autotiles <a id="animated-autotiles"></a>
+## Tuiles animées
 
-_Not available yet._
+_Actuellement non disponible._
 
 ## Sprites <a id="sprites"></a>
 
 ![](../.gitbook/assets/sprites.png)
 
-Sprites are vertical planes that can be used to simulate a "paper" world. Here are the different types of sprites:
+Les Sprites sont des plans verticaux permettant de simuler un monde "papier". Voici les différents types de sprites :
 
 ![](../.gitbook/assets/sprites-preview.png)
 
-* `Face Sprite`: A sprite that is always facing the camera on the X / Y axe.
-* `Fix Sprite`: A flat sprite.
-* `Double Sprite`: Two crossing flat sprites.
-* `Quadra Sprite`: four crossing flat sprites.
+* `Face Sprite`: Sprite qui sera toujours en face de la caméra sur les axes X / Y.
+* `Fix Sprite`: Un sprite plat.
+* `Double Sprite`: Deux sprites plats entrecroisés.
+* `Quadra Sprite`:  Quatre sprites plats entrecroisés
 
-Another kind of sprites are `Walls Sprite` that are dynamic \(such as autotiles\).
+Un autre type de sprite est le `Walls Sprite` \(sprites muraux\) qui sont dynamiques \(à l'instar des tuiles automatisées\).
 
 ![](../.gitbook/assets/walls-preview.png)
 
-In the texture selector **\(2\)**, you just have to select a wall:
+Dans le selecteur de texture **\(2\)**, sélectionnez simplement un mur :
 
 ![](../.gitbook/assets/walls-texture.png)
 
-## Mountains <a id="mountains"></a>
+## Montagnes
 
-You can add some reliefs to your map thanks to mountains!
+Vous pouvez ajouter du relief à votre carte grâce aux montagnes !
 
 ![](../.gitbook/assets/mountains-preview.png)
 
-In the texture selector **\(2\)**, you have several possible options for designing your mountains:
+Dans le sélecteur de texture **\(2\)**, vous avez plusieurs possibilités afin de façonner vos montagnes :
 
 ![](../.gitbook/assets/mountains-texture.png)
 
-* `Top floor`: The floor that whill be automatically added on top of the mountains. This floor depends on the tileset texture. Click on the `...` button to edit the top floor.
-* `Border width`: If the border width is equal to zero, this will be a 90° mountain. You can adjust here the width of the borders of the mountains \(this will create small slopes\).
-  * `Square(s)`: Select the number of squares.
-  * `Pixel(s)`: Select the number of pixels added.
-* `Height`: The total height of the mountain.
-  * `Square(s)`: Select the number of squares.
-  * `Pixel(s)`: Select the number of pixels added.
+* `Top floor`: Le sol qui sera automatiquement ajouté au sommet de vos montagnes. Ces sols dépendront du jeu de tuiles \(tileset\) utilisé. Cliquez sur le bouton `...` pour éditer le sol au sommet.
+* `Border width`: Si la largeur de la bordure est égale à 0, cela sera une montagne à 90°. Vous pourrez ici ajuster la largeur des bordures de vos montagnes \(cela créera de petites pentes\).
+  * `Square(s)`: Sélectionne le nombre de case.
+  * `Pixel(s)`: Sélectionne le nombre de pixels ajoutés.
+* `Height`: La hauteur totale de vos montagnes.
+  * `Square(s)`: Sélectionne le nombre de cases.
+  * `Pixel(s)`: Sélectionne le nombre de pixels ajoutés.
 
-Note that you can se the angle value bellow these options so you can refer to this for angle collisions in `Systems manager > System`.
+Notez que vous pouvez voir la valeur de l'angle sous ces options, afin de vous y référer pour l'angle des collisions dans `Systems manager > System`.
 
-## 3D Objects <a id="3d-objects"></a>
+## Objets 3D <a id="3d-objects"></a>
 
-There are not only sprites, but also 3D objects available for your maps!
+Il n'y a pas juste des images \(Sprites\), mais également des objets 3d disponibles pour vos cartes !
 
 ![](../.gitbook/assets/objects-3d-preview.png)
 
-In the texture selector **\(2\)**, you just have to select an object:
+Dans le sélecteur de texture **\(2\)**,vous avez juste à sélectionner un objet :
 
 ![](../.gitbook/assets/objects-3d-texture.png)
 
-## Objects <a id="objects"></a>
+## Objets <a id="objects"></a>
 
-All the previous elements were static \(it doesn't move\). There are objects in order to add some life on your map. This can be NPCs, chests, etc.
+Tous les précédents éléments étaient statiques\(ils ne bougent pas\). Il y a des objets permettant de donner vie à vos cartes. Cela peut être des PNJ \(personnages non joueurs\), des coffres, etc.
 
 ![](../.gitbook/assets/objects.png)
 
-We will see later how to manage it because this is one of the biggest topics of the engine.
+Nous verrons plus tard comme les paramétrer, car ce sera l'un des plus gros sujets concernant le moteur de jeu.
 
-## The hero <a id="the-hero"></a>
+## Le héros <a id="the-hero"></a>
 
-To define where the game should start, you have to define who is the hero in one of your maps. When you create a new project, the hero is the character at the center of the first map. If you want to change it, here is the simple way:
+Pour définir le point de départ du jeu, vous devrez définir qui est le héros dans l'une de vos cartes. Lorsque vous créez un nouveau projet, Le héro est le personnage au centre de la carte. Si vous voulez le changer, voici une façon simple de le faire :
 
-* Select an empty square on object mode, right click on it and click on `define as the hero`.
+* Sélectionnez une case en mode objet, clic droit dessus et choisissez `define as the hero`.
 
 ![](../.gitbook/assets/define-as-the-hero-none.png)
 
-Another way \(more complex\) is:
+Une autre manière \(plus complexe\) serait de :
 
-* Create a new object \(`Double click` on a square\)
-* Remove all the states and events from the lists \(by using `Del` on keyboard\) and choose `Hero` as model in the combo box. You can name it "Hero" if you want. You should have something like this:
+* Créer un nouvel objet \(`Double clic` sur sur une case\)
+* Retirer tous les évènements et états des listes\(En utilisant la touche `suppr.` \) puis choisissez  `Hero` comme modèle dans le menu défilant. Vous pouvez le nommer "Hero" Si vous le souhaitez. Vous devriez obtenir quelque chose comme ça :
 
 ![](../.gitbook/assets/object-map%20%281%29.png)
 
-* Click on `OK`. `Right click` on your object, and choose `Define as Hero`.
+* Cliquez sur `OK`. `Clic droit` sur votre objet, puis choisir `Define as Hero`.
 
 ![](../.gitbook/assets/define-hero.png)
 
-That's it! You will understand later why we are using an object and why this will open a lot of opportunities for customizing your games!
+Ça y est ! Vous comprendrez plus tard pourquoi nous utilisons un objet et pourquoi cela vous offrira un tas d'opportunités pour configurer vos jeux !
 
-_Note:_ You can see who is the hero with a "S" symbol under it.
+_Note:_ Vous pouvez voir qui est le héros via le symbole "S" dessous.
 
 ![](../.gitbook/assets/hero.png)
 
 ## Transformations <a id="transformations"></a>
 
-In 3D, transformations are these 3 different action:
+En 3d, les transformations sont sont les 3 actions suivantes :
 
 ### Translation <a id="translation"></a>
 
-_Not available yet._
+_Non disponible actuellement._
 
 ### Rotation <a id="rotation"></a>
 
-Apply rotation to floors, sprites or 3D objects only.
+Applique une rotation uniquement aux sols, sprites ou objets 3d.
 
 ![](../.gitbook/assets/rotate.png)
 
-If you left / right click a map element, this will select the object and apply the current configured transformation. You can choose the axis `X`, `Y`, or `Z` to apply the rotation on by selecting the corresponding tab.
+Si vous cliquez droit / gauche sur un élément de la carte, cela sélectionnera l'objet et appliquera la configuration de transformation actuelle. Vous pouvez choisir les axes `X`, `Y`, or `Z` afin d'appliquer la rotation en sélectionnant l'onglet correspondant.
 
 ![](../.gitbook/assets/rotation-panel.png)
 
-* `[Selected object]`: Display information about the current selected object bellow. New transformations will be applied to this selected object.
-* `+ / =`: The operation to apply on transformation \(add or apply\).
-* `Angle`: The angle to add or apply to the selected object.
-* `Apply on left / right click`: If checked, you will apply the transformation each time you click on a selected object. If `+` operation is activated, right click will in fact be a `-` operation. If not checked, updating `angle` will immediately update the selected object.
-* `Define as default X/Y/Z rotation`: Save current `angle` input in engine settings so you get this value in the `angle` input each time you restart the engine.
-* `Reset to default X/Y/Z rotation`: Fill current `angle` input with the saved default rotation value.
+* `[Selected object]`: Affiche des informations concernant l'objet sélectionné. Les nouvelles transformations seront appliquées sur cet objet.
+* `+ / =`: L'opérateur à utiliser pour la transformation  \(ajouter ou appliquer\).
+* `Angle`: L'angle à ajouter ou appliquer à l'objet sélectionné.
+* `Apply on left / right click`: Si coché, vous appliquerez la transformation à chaque clic sur l'objet sélectionné. Si l'opérateur `+` est activé, le clic droit deviendra en réalité un opérateur `-` . Si décoché, modifier `angle` modifiera immédiatement l'objet sélectionné.
+* `Define as default X/Y/Z rotation`: Sauvegarde la valeur d'entrée d' `angle` actuelle dans les paramètres du moteur, afin que vous puissiez obtenir cette valeur d' `angle` à chaque fois que vous redémarrez le moteur.
+* `Reset to default X/Y/Z rotation`: Rétablit l' `angle` actuel par la valeur de rotation sauvegardée par défaut .
 
-### Scaling <a id="scaling"></a>
+### Mise à l'échelle <a id="scaling"></a>
 
-_Not available yet._
+_Non disponible actuellement._
 
-## Layers options <a id="layers-options"></a>
+## Options de calques <a id="layers-options"></a>
 
-You can choose here if you want to be on layer mode or not here:
+Vous pouvez choisir si vous souhaitez être ou non en mode calque :
 
 ![](../.gitbook/assets/layers.png)
 
-* `No layer`: Replace the selected square by a new one.
-* `Layer`: Add a new square on top of the selected one. There is no limit.
+* `No layer`: Remplace la case actuelle par une nouvelle.
+* `Layer`: Ajoute une nouvelle case au-dessus de celle sélectionnée. Il n'y a aucune limite.
 
-Example of layers used with walls:
+Exemple de calques utilisés avec les murs :
 
 ![](../.gitbook/assets/image%20%281%29%20%281%29.png)
 
 ## Skyboxes <a id="layers-options"></a>
 
-Skyboxes are used to give illusion to be in a huge 3D world space.
+Les Skyboxes \(littéralement boîtes de ciel\) sont utilisées afin de donner l'impression d'être dans immense espace 3d.
 
 ![](../.gitbook/assets/skybox.png)
 
-Skybox is simply a huge textured cube that follows the camera. You can edit you skyboxes in `Systems > System > Skyboxes`:
+Les Skyboxes sont tout simplement une immense texture sur un cube qui suit la caméra. Vous pouvez les éditer dans `Systems > System > Skyboxes`:
 
 ![](../.gitbook/assets/system-skyboxes.png)
 
-And then, you can use it in map properties while selecting `Skybox ID`.
+Puis, vous pouvez les utiliser dans les propriétés de la carte en sélectionnant `Skybox ID`.
 
