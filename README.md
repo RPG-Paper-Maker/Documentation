@@ -103,7 +103,7 @@ For Game:
 * `Cancel`: Cancel in menus.
 * `Main menu`: Open / Close main menu.
 
-Select the corresponding system menus controls: `Action`, `Cancel`, `Up`, `Down`, `Left`, `Right`. You can add as much keys as possbile.
+Select the corresponding system menus controls: `Action`, `Cancel`, `Up`, `Down`, `Left`, `Right`. You can add as much keys as possible.
 
 When adding / editing a key:
 
