@@ -98,7 +98,7 @@ You can add a new state on this list. There also is a `Update complete list...` 
 
 For each state, you have to choose different reactions to specific events. You can copy / paste reactions through states by using `Copy reaction` and `Paste reaction` buttons. These different options are also available for each state:
 
-![](../.gitbook/assets/state-options.png)
+![](../.gitbook/assets/state-options%20%281%29.png)
 
 * `Graphics`: Select the object graphics here \(character picture\). Choose below the kind of element \(Sprite etc.\).
 * `Moving`: Options linked to the object moves when there is no reaction.
@@ -108,14 +108,12 @@ For each state, you have to choose different reactions to specific events. You c
     * `Random`: The object will move randomly in the map.
     * `Route`: The object will loop on a route that you can edit with the `Edit route...` button. Check out move object command documentation [here](event-commands.md#move-object) that is exactly the same.
 
-  \`\`
-
-  * `Speed`: The speed value when the object is moving. This value is multiplied with the traveled distance with equal time. This also is multiplying the frame duration. Default value is 1.
-  * `Freq`: The frequency value when the object is moving. This value is changing the time in second\(s\) to wait before executing the next move. Default value is 0 \(second\(s\)\).
-
 
 
   NOTE: You can edit speed and frequency list in `Systems manager > System`:
+
+* `Speed`: The speed value when the object is moving. This value is multiplied with the traveled distance with equal time. This also is multiplying the frame duration. Default value is 1.
+* `Freq`: The frequency value when the object is moving. This value is changing the time in second\(s\) to wait before executing the next move. Default value is 0 \(second\(s\)\).
 
 ![](../.gitbook/assets/speeds.png)
 
@@ -123,13 +121,16 @@ For each state, you have to choose different reactions to specific events. You c
 
 * `Name`: The name of the speed / frequency.
 * `Value`: The value of the speed / frequency \(can only be a number\).
+
+
+
 * `Move animation`: If checked, all the frames of the character will be drawn for move animation. If not, this will only draw the first frame of the character animation.
-* `Stop animation`: _\(not available yet\)_ If checked, all the frames of the character will be drawn for stopped animation. If not, this will only draw the first frame of the character animation.
+* `Stop animation`: If checked, all the frames of the character will be drawn for stopped animation. If not, this will only draw the first frame of the character animation.
 * `Climb animation`: _\(not available yet\)_ If checked, all the frames of the character will be drawn for climbing animation. If not, this will only draw the first frame of the character animation.
-* `Direction fix`: _\(not available yet\)_ If checked, the graphics will not change direction to look at the hero. If not, it will look at the hero.
+* `Direction fix`: If checked, the graphics will not change direction to look at the hero. If not, it will look at the hero.
 * `Set with camera`: If checked, the graphics will update orientation according to the camera orientation. If not, the camera orientation changes nothing.
 * `Pixel offset`: If checked, the move animation will go 1px down after two frames. This adds an interesting effect.
-* `Keep position`: _\(not available yet\)_ If checked, the object always keep its position after moving, even after loading save or changing map. If not, the object position is reinitialized after loading save or changing map.
+* `Keep position`: If checked, the object always keep its position after moving, even after loading save or changing map. If not, the object position is reinitialized after loading save or changing map.
 * `Detection`: A detection to select for sending an event each frames.
 
 ### Properties <a id="properties"></a>

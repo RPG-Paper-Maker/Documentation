@@ -15,11 +15,11 @@ Displays a text in a dialog box with the current dialog box options.
 * `Interlocutor`: This will display a text inside a small box on top of the text box for indicating the interlocutor's name. If empty, this will not show the box.
 * `Faceset`: The faceset to display inside the dialog box on the left.
 * `Message`:
-  * ![Screenshot](https://rpg-paper-maker.github.io/basics/img/bold.png) : Apply bold effect on the selected text.
-  * ![Screenshot](https://rpg-paper-maker.github.io/basics/img/italic.png) : Apply italic effect on the selected text.
-  * ![Screenshot](https://rpg-paper-maker.github.io/basics/img/text-left.png) : Apply left align effect on the selected text.
-  * ![Screenshot](https://rpg-paper-maker.github.io/basics/img/text-center.png) : Apply center align effect on the selected text.
-  * ![Screenshot](https://rpg-paper-maker.github.io/basics/img/text-right.png) : Apply right align effect on the selected text.
+  * ![](../.gitbook/assets/bold.png) : Apply bold effect on the selected text.
+  * ![](../.gitbook/assets/italic.png) : Apply italic effect on the selected text.
+  * ![](../.gitbook/assets/text-left.png) : Apply left align effect on the selected text.
+  * ![](../.gitbook/assets/text-center.png) : Apply center align effect on the selected text.
+  * ![](../.gitbook/assets/text-right.png) : Apply right align effect on the selected text.
   * `Font size`: Apply the selected font size on the selected text.
   * `Font name`: Apply the selected font name on the selected text.
   * `Text color`: Apply the selected text color on the selected text.
@@ -57,7 +57,16 @@ Using without show text command before:
 
 ## Input number <a id="input-number"></a>
 
-_Not available yet._
+![](../.gitbook/assets/event-command-input-number.png)
+
+Display spinboxes so the player can choose a number. Like Display a choice command, you can have a Show Text command before it so you have the text box and input number in the same time.
+
+* `Stock value in variable ID`: The variable ID where the entered number will be stocked
+* `Digits`: The number of digits for the number
+
+Render in game:
+
+![](../.gitbook/assets/render-input-number.png)
 
 ## Set dialog box options <a id="set-dialog-box-options"></a>
 
@@ -159,7 +168,7 @@ This will teleport an object on an existing map with a new position.
 
 ## Move object <a id="move-object"></a>
 
-![](../.gitbook/assets/command-move-object.png)
+![](../.gitbook/assets/command-move-object%20%281%29.png)
 
 This will move an object in the current map with a specific route. You can also temporary change some properties linked to the object state.
 
@@ -176,11 +185,29 @@ This will move an object in the current map with a specific route. You can also 
   * `1 opposite to the hero`: Move the object to 1 square / step in the opposite of the hero direction.
   * `1 in front`: Move the object to 1 square / step in front.
   * `1 back`: Move the object to 1 square / step back.
-* **Change direction**: _Not available yet._
+  * `Jump...`: Make the object jump:
+    * **Final position offset**: The final position offset in the end of the jump
+    * **Peak**: The peak Y values \(offset\)
+    * `Time`: The time execution of the move
+* **Change direction**:
+  * `Turn North / South / West / East`: Turn the object in the selected direction
+  * `Turn 90° left / right`: Turn the object 90° in the left or right
+  * `Look at the hero`: Turn in the hero direction
+  * `Look at hero opposite`: Turn in the opposite of the hero direction
 * **Change object options**:
-  * ON / OFF: For some options, you can use the option ON or OFF.
-  * Permanent: If checked, the object option will be conserved even after saving.
-  * Change graphics: Change the obejct graphics.
+  * `ON / OFF`: For some options, you can use the option ON or OFF
+  * `Permanent`: If checked, the object option will be conserved even after saving
+  * `Change speed / frequency`: Change the speed or frequency value
+  * `Move animation`: Change the move animation to ON or OFF
+  * `Stop animation`: Change the stop animation to ON or OFF
+  * `Climb animation`: Change the climb animation to ON or OFF
+  * `Direction fix`: Change the direction fix to ON or OFF
+  * `Through`: Change the through to ON or OFF
+  * `Set with camera`: Change the set with camera to ON or OFF
+  * `Pixel offset`: Change the pixel offset to ON or OFF
+  * `Keep position`: Change the keep position to ON or OFF
+  * `Change graphics`: Change the obejct graphics
+  * `Wait / Play sound / Script`: Use the following commands
 
 ## Display an animation <a id="display-an-animation"></a>
 
@@ -198,11 +225,17 @@ Check out the camera guide [here](camera-control.md).
 
 ## Reset camera <a id="reset-camera"></a>
 
-_Not available yet._
+This command will simply reset the camera properties after using move camera command, but it won't change the current camera target.
 
 ## Create object in map <a id="create-object-in-map"></a>
 
-_Not available yet._
+![](../.gitbook/assets/event-command-create-object-in-map.png)
+
+Create an object in the map. Note that this object will be removed after changing map or quitting the game.
+
+* `New object model ID`: The model ID for the object that will be created
+* **Position**: Select the position of the new object
+* `Stock ID in variable ID`: The variable ID where you will stock the new object generated ID
 
 ## Remove object from map <a id="remove-object-from-map"></a>
 
@@ -293,9 +326,18 @@ Render in game:
 
 Mostly the same options than [Start shop menu command](event-commands.md#start-shop), but you can use this command to update the stock of a shop thanks to `shop ID`.
 
-## Enter a name <a id="enter-a-name"></a>
+## Enter a name menu <a id="enter-a-name"></a>
 
-_Not available yet._
+![](../.gitbook/assets/event-command-enter-a-name-menu.png)
+
+This will open a menu in order to change the name of a specific player.
+
+* `The hero with instance ID`: Select the variable containing the player instance ID
+* `Max characters`: The max number of characters that you can edit
+
+Render in game:
+
+![](../.gitbook/assets/render-enter-a-name-menu.png)
 
 ## Open main menu <a id="open-main-menu"></a>
 
@@ -502,15 +544,15 @@ _Not available yet._
 
 ## End battle <a id="end-battle"></a>
 
-_Not available yet._
+You can use the end battle command in troops reactions to force a defeat.
 
 ## Change battle music <a id="change-battle-music_1"></a>
 
-_Not available yet._
+You can select a battle music for the next battles.
 
 ## Change victory music <a id="change-victory-music_1"></a>
 
-_Not available yet._
+You can select a victory music for the next battles.
 
 ## Change a statistic <a id="change-a-statistic"></a>
 
@@ -535,7 +577,16 @@ _Not available yet._
 
 ## Change status <a id="change-status"></a>
 
-_Not available yet._
+![](../.gitbook/assets/event-command-change-status.png)
+
+Add or remove a player status.
+
+* **Selection**:
+  * `Hero / Enemy instance ID`: Select the instance ID of a character. They are mainly stocked into a variable.
+  * `The entire`: Select a group, this can be the `team`, `reserve`, or `hidden`.
+* **Operation**: Choose to add or remove the status
+* **Status**:
+  * `Status ID`: The status ID
 
 ## Change a skill <a id="change-a-skill"></a>
 

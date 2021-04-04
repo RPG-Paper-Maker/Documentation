@@ -37,11 +37,11 @@ The second list corresponds to all the pictures that you are using in your game 
 
 If you check the option `Show available content of ...`, this will show the available pictures that are located in the Basic Resources folder.
 
-## Add / Remove pictures <a id="add-remove-pictures"></a>
+## Add / Remove assets <a id="add-remove-pictures"></a>
 
 To add pictures in your game list: select a picture in the available content list, and press on the `left arrow` button below \(or `double click`\). To remove a picture in your game list, select one of your used picture and press `Del` on you keyboard.
 
-## Use my custom pictures <a id="use-my-custom-pictures"></a>
+## Use custom assets <a id="use-my-custom-pictures"></a>
 
 Click on the `+` button and select one or several pictures. This will add your custom pictures in the available content list. Not that you can distinguish BR and non BR pictures thanks to the bullets colors:
 
@@ -83,4 +83,14 @@ Again, you can manage your songs exactly like pictures. Here are the different k
 * `OBJ`: `.obj` files for importing 3D objects models.
 * `MTL` **\(not available yet\)**
 * `Collisions`: **\(not available yet\)**
+
+## Manage fonts <a id="manage-shapes"></a>
+
+You can import your own fonts for your game HUD text. Open the fonts manager by clicking here on the main toolbar:
+
+![](../.gitbook/assets/fonts-manager.png)
+
+You can then use it in `Systems Manager > System` and select a `Font name`:
+
+![](../.gitbook/assets/font-name.png)
 

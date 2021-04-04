@@ -14,6 +14,8 @@
 * [Battle system](essentials/battle-system.md)
 * [Windows skins](essentials/windows-skins.md)
 * [Title screen & Game Over](essentials/title-and-game-over.md)
+* [Main menu](essentials/main-menu.md)
+* [Multi languages](essentials/multi-languages.md)
 
 ## Advanced
 

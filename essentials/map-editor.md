@@ -33,7 +33,24 @@ If you want to create / edit a map, you will get this window:
   * `Picture`: A picture used as background for the sky.
   * `Skybox ID`: The skybox ID used for the sky.
 * **Map startup reactions**: You can configure here particular things happening when entering the map. We will se later how to do that thanks to objects.
-* **Battles**: **\(not implemented yet\)**
+* **Battles:**
+
+![](../.gitbook/assets/map-properties-battles.png)
+
+* `Battle map ID`: The battle map ID when entering in a battle in this map \(if default selected\)
+* **Random battles**:
+  * `The troop list`: 
+
+![](../.gitbook/assets/random-battle.png)
+
+* `Troop ID`: The troop ID that you can encounter
+* `Priority`: The priority for this troop
+* `Probability`: The calculated probability according to each troops priorities
+* `Terrain`: The terrain where the steps are triggering
+  * `Entire map` : Apply on the entire map
+  * `Terrain`: Not implemented yet
+* Number of steps after next battle: The number of steps to trigger a random battle
+* Variance \(%\): The steps variance in percentage
 
 ## Move cursor / grid / camera <a id="move-cursor-grid-camera"></a>
 

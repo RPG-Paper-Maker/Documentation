@@ -141,6 +141,7 @@ These four data have common properties:
 * `Sound (main menu)`: The sound to play when using it in the main menu.
 * `User animation ID`: The animation ID to display on the user before attacking.
 * `Target animation ID`: The animation ID to display on the target\(s\) when attacking.
+* `Can be sold`: Indicate if the item can be sold in a shop
 * `Price`: Price of the data when it can be bought / sold in a shop menu.
 
 There also are three more common properties that can be listed: `Costs`, `Effects`, and `Caracteristics`.
@@ -186,7 +187,7 @@ Choose the effects done for the target\(s\) data.
 
 Choose the characteristics added to the character when equipped.
 
-![](../.gitbook/assets/battle-caracteristics-buff.png)
+![](../.gitbook/assets/battle-characteristic-buff.png)
 
 * `Buff increase / decrease`: Select which data will be influenced. This can be:
 
@@ -203,9 +204,11 @@ Choose the characteristics added to the character when equipped.
   * `* / +`: Choose operation by multiplying by or adding a value.
   * `% / Fix`: Choose unit value.
 
-![](../.gitbook/assets/battle-caracteristics-character.png)
+![](../.gitbook/assets/battle-characteristic-character-specific.png)
 
-_Not available yet._
+* `Equip`: Choose to allow or forbid a weapon or armor to be equipped
+* `Change equipment`: Choose to allow or forbid an equipment slot to be editable
+* `Begin equipment`:  Choose a begin equipment \(when the player is instancied\)
 
 ![](../.gitbook/assets/battle-caracteristics-other.png)
 
@@ -238,7 +241,7 @@ Each character has a class. The class defines a lot of attributes that a charact
       * `Fast`: The experience increases fast at the begining and increase slowly at te end.
     * `Random variation`: The variance applied on the progression function. Note that this will always lead to the max value.
   * **Formula**: Use a formula to define the value. `u` corresponds to the character.
-* **Caracteristics**: _Not available yet._
+* **Characteristics**: Defines the class characteristics
 * **Skills to learn**: Defines the list of skills that can be learned according to levels.
   * `Skill`: The corresponding skill to learn.
   * `Level`: The level for learning this skill.
@@ -296,14 +299,29 @@ You can manage your monster's AI here. You can specify monster actions with thes
 
 ## Troops <a id="troops"></a>
 
-![](../.gitbook/assets/battle-troops.png)
+![](../.gitbook/assets/battle-troops%20%281%29.png)
 
 Troops correspond to a monsters group and some states with reactions.
 
 * **Monsters list**:
   * `Monster`: The monster in the group.
   * `Level`: The level of the monster.
-* **States**: _Not available yet._
+* **Reactions:** a list of reactions to trigger in this battle troop
+  * `Name`: The reaction name \(only to help for ordering everything\)
+  * `Conditions`: The condition\(s\) to validate to trigger the reaction:
+
+![](../.gitbook/assets/troops-reactions.png)
+
+* * `Number of turns + x` : The turn number. The first turn is turn 1. The \(`+`\) turn is the fix base turn, and the \(`x`\) is the number of time it's trigerred. `1 + 2 x` will for example be triggered in turn 1, 3, 5... etc.
+  * `The heroes/monsters all players/none of the players/at least one player/the player with instance ID`:
+
+    * `Are under effect of status ID`: Check if the status is applied
+    * `Have the statistic ID`: Compare a statistic value
+* `Frequency`: The frequency of trigerring
+  * `One time`: Only triggered one time in the beginning of the first turn
+  * `Each turn (begin)`: Triggered in the beggining of each turn
+  * `Each turn (end)`: Triggered in the end of each turn
+  * `Always`: Triggered in each frames
 
 ## Status <a id="status"></a>
 
