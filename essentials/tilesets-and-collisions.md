@@ -70,6 +70,8 @@ You can manage picture and collisions for each autotiles here. Autotiles are dyn
 
 ![](../.gitbook/assets/autotile-general.png)
 
+You can also check the option `animated` to have animated autotiles. You can change the number of frames in animated autotiles in `Systems Manager > System > Autotiles frames` and the frame duration in `Systems Manager > System > Autotiles frame duration`.
+
 Rendering in map:
 
 ![](../.gitbook/assets/autotiles-preview%20%281%29.png)
@@ -81,10 +83,6 @@ Don't forget to add your autotiles in the tileset:
 This can also be done in the texture selector **\(2\)**:
 
 ![](../.gitbook/assets/autotiles-update-list.png)
-
-## Animated autotiles <a id="animated-autotiles"></a>
-
-_Not available yet._
 
 ## Sprites walls <a id="sprites-walls"></a>
 

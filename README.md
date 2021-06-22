@@ -54,22 +54,24 @@ You can also use `CTRL+O` or go to `File > Open project > Browse...`. Recent pro
 
 A lot of options are available in the `Systems manager`. Click here on the main toolbar and go to the `System` tab:
 
-![](.gitbook/assets/system-basic.png)
+![](.gitbook/assets/systems-manager.png)
 
 * `Game name`: Change the name of your game
 * `Game native resolution`: Change width / height resolution and also choose if you want a Window or Fullscreen display
 * `Antialiasing`: If checked, antialiasing will be applied in game
 * **Map properties**:
   * `Square size (in px)`: choose here the size \(in pixel\) of a square in your maps. You should adapt your textures after any change here
-  * `Ray portions (editor)`: _\(not available yet\)_ The map is separated into several portions \(16x16 squares\). You can change here the number of portions to display
-  * `Ray portions (ingame)`: _\(not available yet\)_ Same but for ingame
+  * `Ray portions (editor)`: The map is separated into several portions \(16x16 squares\). You can change here the number of portions to display
+  * `Ray portions (ingame)`: Same but for ingame
   * `Mountain collision height limit (in px)`: The height considered for blocking the hero so the hero can go up blocks that are in inferior height value
   * `Mountain collision angle limit (in degree)`: The angle considered for blocking the hero so the hero can go up mountains that are in inferior angle value
 * **Frames**:
   * `Map frame duration`: Time in milliseconds for a frame of a map \(characters\)
   * `Animation frames`: Number of frames available in an animation \(walk, waiting, etc.\)
   * `Battlers frames`: The number of frames available in a battler animation
-  * `Battlers columns`: The number of columns available in a battler template texture
+  * `Battlers rows`: The number of rows available in a battler template texture
+  * `Autotiles frames`: The number of frames available for each animated autotiles
+  * `Autotiles frame duration`: Time in milliseconds for a frame of n animated autotile
 * `Global sounds`:
   * `Cursor`: Sound to play when the cursor is moving in window choices
   * `Confirmation`: Sound to play when the cursor is confirming in window choices
@@ -77,7 +79,7 @@ A lot of options are available in the `Systems manager`. Click here on the main 
   * `Impossible`: Sound to play when a choice is impossible in window choices
 * `Other options`:
   * `Window skin`: The default windows skin used for designing windows UI
-  * `Max number of save slots`: _\(not available yet\)_ Change the max number of save slots available for the players
+  * `Max number of save slots`: Change the max number of save slots available for the players
   * `Price of sold item`: Change the percent value of the original price of an item when you want to sell it in a shop
 
 ## Change language <a id="update-keyboard-controls"></a>

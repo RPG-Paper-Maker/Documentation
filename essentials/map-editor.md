@@ -135,10 +135,6 @@ In the texture selector **\(2\)**, you just have to select a square:
 
 ![](../.gitbook/assets/autotile-texture.png)
 
-## Animated autotiles <a id="animated-autotiles"></a>
-
-_Not available yet._
-
 ## Sprites <a id="sprites"></a>
 
 ![](../.gitbook/assets/sprites.png)

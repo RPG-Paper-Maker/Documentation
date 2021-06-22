@@ -8,7 +8,7 @@ Now that you are a pro for objects and event, you can have here a description of
 
 ## Show text <a id="show-text"></a>
 
-![](../.gitbook/assets/command-show-text.png)
+![](../.gitbook/assets/command-show-text%20%281%29.png)
 
 Displays a text in a dialog box with the current dialog box options.
 
@@ -139,7 +139,19 @@ _Not available yet._
 
 ## Change map properties <a id="change-map-properties"></a>
 
-_Not available yet._
+![](../.gitbook/assets/command-change-map-properties.png)
+
+Change some of a map properties.
+
+* `Map ID`: The map ID that you want to change
+* **Properties**:
+  * `Tileset ID`
+  * `Music`
+  * `Background sound`
+  * `Camera properties ID`
+  * `Sky`
+    * `Color ID`
+    * `Skybox ID`
 
 ## Wait <a id="wait"></a>
 
@@ -151,11 +163,26 @@ Wait during a specific time.
 
 ## Change chronometer <a id="change-chronometer"></a>
 
-_Not available yet._
+![](../.gitbook/assets/command-change-chronometer1.png)
+
+![](../.gitbook/assets/command-change-chronometer2.png)
+
+Start, pause, continue, or stop a chronometer. 
+
+If you choose to `start` a new chronometer:
+
+* `Stock chronometer ID in variable ID`: The variable ID where you want to stock this new chronometer ID
+* `Time`: The time count for this new chronometer
+* `Display on screen`: If checked, display the chronometer on screen
+
+If you choose to `pause`, `continue`, or `stop` an existing chronometer:
+
+* `Chronometer ID`: The existing chronometer ID to edit
+* `Stock current chronometer value in variable ID`: Stock the current value \(in seconds\) in the variable ID.
 
 ## Teleport object <a id="teleport-object"></a>
 
-![](../.gitbook/assets/command-teleport-object.png)
+![](../.gitbook/assets/command-teleport-object%20%281%29.png)
 
 This will teleport an object on an existing map with a new position.
 
@@ -164,7 +191,12 @@ This will teleport an object on an existing map with a new position.
   * `Select...`: Choose map and position thanks to a map previewer.
   * `ID map`, `X`, `Y`, `Y plus`, `Z`: Choose map ID an position to go manually.
   * `Object (ID)`: Choose an object to teleport on.
-* **Options**: _Not available yet._
+* **Transition**:
+  * `Direction`: Select the direction of the object after teleportation
+  * `Start / End`: Start / End type of transition:
+    * `None`: Immediate transition.
+    * `Fade in / out`: Transition on a color.
+    * `Zoom in / out`: Transition by zooming in / out.
 
 ## Move object <a id="move-object"></a>
 
@@ -411,20 +443,20 @@ Check out the play music command [here](event-commands.md#play-a-music) that is 
 
 ## Change battle music <a id="change-battle-music"></a>
 
-_Not available yet._
+Select a music to change the battle music for every next coming battles.
 
 ## Change victory music <a id="change-victory-music"></a>
 
-_Not available yet._
+Select a music to change the battle victory music for every next coming battles.
 
 ## Send event <a id="send-event"></a>
 
-![](../.gitbook/assets/event-command-send-event.png)
+![](../.gitbook/assets/command-send-event%20%281%29.png)
 
 This will send an event to the selected target.
 
 * **Target**:
-  * `All`: _Not available yet._
+  * `All`: Send the event to all the objects visible in the map
   * `Detection`: Send the event to a specific detection.
     * `Sender can't receive`: The detection is not applied to the sender.
     * `Only the closest`: If checked, this will only send event to the closest object detected. If not, this will send event to all the objects detected.
@@ -488,13 +520,14 @@ This will update inventory containing. You can for example add items to it.
 
 ## Modify team <a id="modify-team"></a>
 
-![](../.gitbook/assets/command-modify-team.png)
+![](../.gitbook/assets/command-modify-team%20%281%29.png)
 
 This will update team organization.
 
 * `Create new instance with level ... in team / reserve / hidden of`: Create a new instance of a hero or monster in team, reserve, or hidden.
   * `Stock instance ID in`: Choose a variable where you want to stock the instance ID. This can be useful to move or remove characters in team.
-* `Move / Remove the character with ID ... in team / reserve / hidden`: _Not available yet._
+* `Add enemy with instance ID ... in team / reserve / hidden`: Add an enemy that is in a current battle in team, reserve, or hidden
+* `Modify`: Move or remove a character with instance ID
 
 ## Allow / Forbid saves <a id="allow-forbid-saves"></a>
 
@@ -540,7 +573,23 @@ _Not available yet._
 
 ## Force an action <a id="force-an-action"></a>
 
-_Not available yet._
+![](../.gitbook/assets/command-force-an-action.png)
+
+During a battle, this will force an hero or enemy to execute an action on a target.
+
+* **Battler**: The battler that should execute the action
+  * `Enemy`: Select an enemy of the current troop
+  * `Hero / Enemy instance ID`: Select the instance ID of a character. They are mainly stocked into a variable
+* **Action**: The action to execute
+  * `Use skill ID:` Select a skill with a specific ID
+  * `Use item ID:` Select an item with a specific ID
+  * `Do nothing`
+* **Target**:
+  * `Random`: A random target
+  * `Last target`: The last target that the battler selected
+  * `Custom`:
+    * `Enemy`: Select an enemy of the current troop
+    * `Hero / Enemy instance ID`: Select the instance ID of a character. They are mainly stocked into a variable
 
 ## End battle <a id="end-battle"></a>
 
@@ -573,7 +622,17 @@ You can here change a statistic value to one or several characters \(heroes or e
 
 ## Change experience curve <a id="change-experience-curve"></a>
 
-_Not available yet._
+![](../.gitbook/assets/command-change-experience-curve.png)
+
+Change the experience curve table of one or several players.
+
+* **Selection**:
+  * `Hero / Enemy instance ID`: Select the instance ID of a character. They are mainly stocked into a variable
+  * `The entire`: Select a group, this can be the `team`, `reserve`, or `hidden`
+* **Level**:
+  * `Range`: The level range to apply the experience curve changes
+* **Operation**: The operation to use according to the current experience value
+* `Total experience`:  The total experience to change in the table
 
 ## Change status <a id="change-status"></a>
 
@@ -608,12 +667,19 @@ Choose a character you want to change the name. This isn't like the command ente
 
 * `Name`: The new character name.
 * **Selection**:
-  * `Hero / Enemy instance ID`: Select the instance ID of a character. They are mainly stocked into a variable.
-  * `The entire`: Select a group, this can be the `team`, `reserve`, or `hidden`.
+  * `Hero / Enemy instance ID`: Select the instance ID of a character. They are mainly stocked into a variable
+  * `The entire`: Select a group, this can be the `team`, `reserve`, or `hidden`
 
 ## Change class <a id="change-class"></a>
 
-_Not available yet._
+![](../.gitbook/assets/command-change-class.png)
+
+Change one or several players class. This will apply changes on statistics and learned skills.
+
+* `Class ID`: The new class ID to apply
+* **Selection**:
+  * `Hero / Enemy instance ID`: Select the instance ID of a character. They are mainly stocked into a variable
+  * `The entire`: Select a group, this can be the `team`, `reserve`, or `hidden`
 
 ## Change equipment <a id="change-equipment"></a>
 
@@ -718,22 +784,22 @@ This will call a common reaction with the corresponding parameters.
 
 ## Change variables <a id="change-variables"></a>
 
-![](../.gitbook/assets/command-change-variables.png)
+![](../.gitbook/assets/command-change-variables%20%281%29.png)
 
 This will change one or several variable\(s\) value.
 
 * **Selection**:
-  * `One variable`: The unique variable to change.
-  * `Range`: The range of variables IDs to change.
-* **Operation**: The operation to use according to the current variable\(s\) value.
+  * `One variable`: The unique variable to change
+  * `Range`: The range of variables IDs to change
+* **Operation**: The operation to use according to the current variable\(s\) value
 * **Value**:
-  * `Number`: A simple number.
-  * `Random`: A random number between two selected values.
-  * `Message`: A simple message.
-  * `Switch`: A simple switch.
-  * `Number of ... in inventory`: _Not available yet._
-  * `Total currency ... with ID`: _Not available yet._
-  * `An ... with instance ID ... statistic ID`: _Not available yet._
+  * `Number`: A simple number
+  * `Random`: A random number between two selected values
+  * `Message`: A simple message
+  * `Switch`: A simple switch
+  * `Number of ... in inventory`: The number of item / weapon / armor that are currently in the inventory
+  * `Total currency ... with ID`: The total number of a specific currency \(owned, earned, or used\)
+  * `Hero / Enemy instance ID ... statistic ID`: Get a statistic value according to a player instance ID
   * `An object in the map ... characteristic`: The selected object characteristic:
     * `X square position`: The x square position of the selected object.
     * `Y square position`: The y square position of the selected object.
@@ -742,7 +808,21 @@ This will change one or several variable\(s\) value.
     * `Y square position`: The y pixel position of the selected object.
     * `Z square position`: The z pixel position of the selected object.
     * `Orientation`: The orientation of the selected object.
-  * `Other characteristics`: _Not available yet._
+  * `Enemy ... instance ID`: The selected enemy instance ID
+  * `Other characteristics`:
+    * `Current map ID`: The current map ID
+    * `Number in team`: Number of players in team
+    * `Number in hidden`: Number of hidden players
+    * `Number in reserve`: Number of players in reserve
+    * `Total number of steps`: Number of steps made by the hero
+    * `Total number of seconds`: Number of seconds playtime
+    * `Total number of saves done`: Number of saves done since starting the game
+    * `Total number of battles`: Number of started battles
+    * `Camera X position`: The camera X position
+    * `Camera Y position`: The camera Y position
+    * `Camera Z position`: The camera Z position
+    * `Total seconds played of the current music`: The total number of seconds played of the current music
+    * `Total seconds played of the current background music`: The total number of seconds played of the current background music
 
 ## Script <a id="script"></a>
 

@@ -14,7 +14,7 @@ _Note: if you want to do an action RPG \(battles directly on maps\), you can do 
 
 A lot of battle system datas can be found in `Systems Manager > Battle System:`
 
-![](../.gitbook/assets/battle-system.png)
+![](../.gitbook/assets/battle-system%20%281%29.png)
 
 ## Elements <a id="elements"></a>
 
@@ -78,6 +78,10 @@ Battle maps are in fact maps associated with a specific position \(representing 
 
 * `Is dead`: Formula in JavaScript defining conditions to consider that a character is dead. `u` corresponds to the character.
 * `Critical influence`: Formula in JavaScript defining the new damages value after having a critical hit. `damage` corresponds to the damages done without critical influence.
+* `Heroes battlers center offset:` Formula in JavaScript defining the position of heroes battlers according to the center of the map battle.
+* `Heroes battlers offset:` Formula in JavaScript defining the position of heroes battlers according to other heroes position \(where `i` is the hero index\).
+* `Troops battlers center offset:` Formula in JavaScript defining the position of troops battlers according to the center of the map battle.
+* `Troops battlers offset:` Formula in JavaScript defining the position of troops battlers according to other enemies position \(where `i` is the enemy index\).
 
 ## Battle musics <a id="battle-musics"></a>
 
@@ -102,19 +106,19 @@ Go to `Datas Manager`.
 
 In `Skills` tab:
 
-![](../.gitbook/assets/battle-skills.png)
+![](../.gitbook/assets/skills.png)
 
 In `Items` tab:
 
-![](../.gitbook/assets/battle-items.png)
+![](../.gitbook/assets/items.png)
 
 In `Weapons` tab:
 
-![](../.gitbook/assets/battle-weapons.png)
+![](../.gitbook/assets/weapons.png)
 
 In `Armors` tab:
 
-![](../.gitbook/assets/battle-armors.png)
+![](../.gitbook/assets/armors.png)
 
 These four data have common properties:
 
@@ -124,7 +128,7 @@ These four data have common properties:
 * `One hand`: _Not available yet._
 * `Icon`: Icon associated with the data.
 * `Description`: Description of the data that will be displayed in game.
-* `Conditions formula`: _Not available yet._
+* `Conditions formula`: The conditions to be able to equip or use the skill / item / weapon / armor
 * `Target`: Target for applying associated effects.
   * `None`: No target selection.
   * `The user`: Select the user only.
@@ -132,7 +136,7 @@ These four data have common properties:
   * `An ally`: Only select one ally.
   * `All enemies`: Select all enemies.
   * `All allies`: Select all allies.
-* `Target conditions formula`: _Not available yet._
+* `Target conditions formula`: The conditions to be able to use the skill / item / weapon / armor according to the target
 * `Available`: Available kind of the data.
   * `Battle only`: The data can be used only in battle.
   * `Main menu only`: The data can be used only in main menu.
@@ -157,7 +161,7 @@ Choose the cost of using a skill. This is generally used for HP, MP, and TP stat
 
 ## Effects <a id="effects"></a>
 
-![](../.gitbook/assets/battle-effects.png)
+![](../.gitbook/assets/effects.png)
 
 Choose the effects done for the target\(s\) data.
 
@@ -170,17 +174,17 @@ Choose the effects done for the target\(s\) data.
   * `Critical`: The critical hit chance in percent. If not checked, there is no chance to do critical hit \(= 0\).
   * `Precision`: The precision hit in percent. If not checked, you have 100% chance to hit.
   * `Stock value in`: You can stock the damages value in a variable. This can for example be used for a next effect.
-* `Status Add / Remove`: _Not available yet._
-* `Skill Add / Remove`: _Not available yet._
-* `Perform skill`: _Not available yet._
-* `Call common reaction`: _Not available yet._
+* `Status Add / Remove`: Add or remove a status to the target
+* `Skill Add / Remove`: Add or remove a skill to the target \(learn or forget\)
+* `Perform skill`: Execute another skill to the target
+* `Call common reaction`: Call a common reaction
 * `Special action`: Execute one of the following special actions:
   * `Apply weapon(s) effects and properties`: This will use all the effects of the currently equipped weapon. If the is no weapon equipped, this will apply the next effects following this one.
   * `Open skills choice`: Open the skills choice for battle command.
   * `Open items choice`: Open the items choice for battle command.
   * `Escape`: Escape from the battel.
   * `End turn`: End the team turn.
-* `Script`: _Not available yet._
+* `Script`: Execute a script
 * `Temporarily change target`: You can temporarily change the target for this effect only. You have to return an array of battlers. Example: `[u.battler]` will be the user of the item/skill/weapon.
 
 ## Characteristics <a id="characteristics"></a>
@@ -193,11 +197,10 @@ Choose the characteristics added to the character when equipped.
 
   * `Statistic value`: Select a statistic. If bar statistic, this will increase the max value.
   * `Element resistance`: Select an element to apply resistance on it.
-  * `Status resistance`: _Not available yet._
-  * `Experience gain`: _Not available yet._
-  * `Currency gain`: _Not available yet._
-  * `Skill cost`: _Not available yet._
-  * `Variable`: _Not available yet._
+  * `Status resistance`: Select a status to apply resistance on it.
+  * `Experience gain`: Change experience gain after each battle.
+  * `Currency gain`: Change currency gain after each battle.
+  * `Skill cost`: Select a skill to apply skill cost change.
 
   After selecting the data influence, you can choose how this is influenced according to the base value:
 
@@ -212,7 +215,7 @@ Choose the characteristics added to the character when equipped.
 
 ![](../.gitbook/assets/battle-caracteristics-other.png)
 
-_Not available yet._
+* `Script`: Execute a script
 
 ## Classes <a id="classes"></a>
 
@@ -299,9 +302,13 @@ You can manage your monster's AI here. You can specify monster actions with thes
 
 ## Troops <a id="troops"></a>
 
-![](../.gitbook/assets/battle-troops%20%281%29.png)
+![](../.gitbook/assets/troops.png)
 
 Troops correspond to a monsters group and some states with reactions.
+
+* **Test button**: You can test a troop battle at any moment with the test button. It will open a small window when you can choose a team fighting this troop. When it's done, just press ok and it will open a game battle with the selected troop.
+
+![](../.gitbook/assets/troop-test.png)
 
 * **Monsters list**:
   * `Monster`: The monster in the group.
