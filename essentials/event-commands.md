@@ -828,7 +828,7 @@ This will change one or several variable\(s\) value.
 
 ![](../.gitbook/assets/command-script.png)
 
-Execute a script code \(for advanced programmers\).
+Execute a script code \(for advanced programmers\). Note that you can use `$object` local variable to get the Core.MapObject current object!
 
 * `Use dynamic`: Non-static code \(in variable, or parameter, or property\).
 
