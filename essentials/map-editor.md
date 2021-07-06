@@ -60,7 +60,7 @@ The camera is always looking at the following cursor:
 
 Here are some actions possible with the cursor:
 
-* Move on `X` and `Z` axis by using `QWSD` on keyboard.
+* Move on `X` and `Z` axis by using `AWSD` on keyboard.
 * Move on `Y` axis:
   * Move by square: use `CTRL + Arrow Up/Down` or `CTRL + mouse wheel`
   * Move by pixel: use `CTRL + SHIFT + Arrow Up/Down` or `CTRL + SHIFT + mouse wheel`
