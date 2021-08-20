@@ -52,7 +52,7 @@ Default are 16x16, but you can change to any value!
 
 How to create footstep sound effects?  
 How to create item drops? \(I assume in an ABS style game\)  
-How to zoom out the camera, or do anything with the camera?  
+How to zoom out the camera, or do anything with the camera? first person view  
 How to import a resource file?  
 How to set variables/run code right away when starting a new game?  
 How to speed up various animations?  
@@ -60,10 +60,9 @@ How to do line of sight and proximity detection?
 How to heal characters?  
 How to disable camera movement in certain rooms only?  
 How to change what hero the player controls?  
-How to make camera first person view?  
 What file types can be used for music?  
 Why can't I move the hero?  
-What size are the resources?  
+What size are the resources? make templates for all resource types and list sizes  
 How to use battle formulas?  
 How to see sprites during top down view?  
 How large can a sprite be?  
@@ -80,8 +79,9 @@ How do I change the default player sprite?
 How to make quick time events?  
 How to make puzzles, mini-games?  
 How to make custom menus?  
+How to make custom battle system?  
 How to make caterpillar system/visible teammates?  
-How to make skill/level up system?  
+How to make skill system/level up system?  
 How to make item crafting?  
 How to make ammunition for gun type weapon in battle?  
 How to make quest/journal system?  
@@ -94,7 +94,7 @@ How to make projectiles?
 How to make party switching menu?  
 How to display a variable on screen?  
 How to track hit detection?  
-How to make a map / minimap?  
+How to display a map / minimap?  
 How to make events move on long complicated routes?  
   
 How to do actions like:  
