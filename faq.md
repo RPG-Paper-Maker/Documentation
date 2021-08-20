@@ -58,7 +58,7 @@ How to set variables/run code right away when starting a new game?
 How to speed up various animations?  
 How to do line of sight and proximity detection?  
 How to heal characters?  
-How to disable the camera in certain rooms only?  
+How to disable camera movement in certain rooms only?  
 How to change what hero the player controls?  
 How to make camera first person view?  
 What file types can be used for music?  
