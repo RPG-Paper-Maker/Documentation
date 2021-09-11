@@ -115,94 +115,94 @@ description: This is the initial page of RPG Paper Maker documentation.
 
 ## Оновлення керівних клавіш <a id="update-keyboard-controls"></a>
 
-Можна змінити керівні клавіші редактора або гри, використовуючи пункт меню Керування &gt; Керівні клавіші або ou can change the engine and game keyboard controls in the keyboard manager by clicking on the main toolbar:
+Можна змінити керівні клавіші редактора або гри, використовуючи пункт меню `Керування > Керівні клавіші` або настиснувши на кнопку `Клавіші` на основній панелі інструментів:
 
 ![](.gitbook/assets/keyboard-manager.png)
 
-For engine:
+Для редактора:
 
-* `CursorUp`, `CursorDown`, `CursorLeft`, `CursorRight`: The cursor directions in map editor.
+* `CursorUp`, `CursorDown`, `CursorLeft`, `CursorRight`: Рух карти в редакторі в різних напрямках.
 
-For Game:
+Для гри:
 
-* `UpHero`, `DownHero`, `LeftHero`, `RightHero`: The hero directions in map.
-* `UpMenu`, `DownMenu`, `LeftMenu`, `RightMenu`: The directions in menus.
-* `LeftCamera`, `RightCamera`: Turn the camera.
-* `Action`: Hero action in map.
-* `Cancel`: Cancel in menus.
-* `Main menu`: Open / Close main menu.
+* `UpHero`, `DownHero`, `LeftHero`, `RightHero`: Рух героя в різних напрямках.
+* `UpMenu`, `DownMenu`, `LeftMenu`, `RightMenu`: Пересування в різних напрямках у меню.
+* `LeftCamera`, `RightCamera`: Пересування камери.
+* `Action`: Дія героя на карті.
+* `Cancel`: Скасування в меню.
+* `Main menu`: Відкриття/закриття основного меню.
 
-Select the corresponding system menus controls: `Action`, `Cancel`, `Up`, `Down`, `Left`, `Right`. You can add as many keys as you want.
+Виберіть відповідні клавіші для керування меню: `Action`, `Cancel`, `Up`, `Down`, `Left`, `Right`. Можна додати скільки завгодно клавіш.
 
-When adding / editing a key:
+Під час додавання/редагування клавіші:
 
-* `Abbreviation`: Name used for JavaScript use \(for programmmers\).
-* `Description`: Will be displayed in-game in the keyboard settings menu.
-* `Shortcut`: Choose the keyboard key here. To set a new key press `Change...`. You can have more than one key per action. They are separated with a `|` symbol. You can also use the `+` symbol for key combinations. 
-  * `Remove last`: Remove the last shortcut \(from the right\).
-  * `Remove all`: Remove all shortcuts.
+* `Скорочення (для JavaScript)`: Назва, яка використовується в коді на JavaScript \(для програмісток та програмістів\).
+* `Опис`: Буде показуватися під час гри в меню клавіатурних налаштувань.
+* `Клавіші`: Тут встановлюються клавіші. Щоб додати нову клавішу, натисність на кнопку `Змінити...`. Ви також можете встановити декілька клавіш для однієї діш. Вони будуть показуватися, розділені символом `|`. Також можна використовувати комбінації клавіш: вони позначаються символом `+`. 
+  * `Видалити останню`: Видаляє останню \(найправішу\) клавішу.
+  * `Видалити всі`: Видаляє всі клавіші.
 
-## Update general colors <a id="update-general-colors"></a>
+## Редагування загальних кольорів <a id="update-general-colors"></a>
 
-These are required for other events that need to be given a color to use, such as tint screen and fonts. You may want to enter the base rainbow of colors to match your other graphics' palette. 
+Кольори потрібні для подій, які приймають колір, наприклад, для забарвлення екрана або зміни шрифта. Ви можете встановити основну кольорову палітру, щоб вона сполучалася з палітрою вашої графіки. 
 
-Go to the `Systems manager > System` to find the `Colors` box:
+Перейдіть у `Керування системами > Система` і налаштуйте кольори в полі `Кольори`:
 
 ![](.gitbook/assets/colors.png)
 
-## Update general font sizes and font names <a id="update-general-font-sizes-and-font-names"></a>
+## Оновлення загальних кеглів та назв шрифтів <a id="update-general-font-sizes-and-font-names"></a>
 
-When writing text messages you are given a dropdown menu of choices. This menu is where you determine what choices are available for some of them.
+Під час написання текстових повідомлень у вас буде випадаючий список доступних варіантів. Описане тут поле використовується для того, щоб вказати доступні варіанти.
 
-Size is in pixels and is a single number. 
+Кегль — це розмір шрифту в пікселях, він задається як одне число. 
 
-Font names is where you choose the font file and name. Remember to include them in /"project folder"/content/font. 
+У полі `Назви шрифтів` можна або вказати назву базового шрифту, або назву файла зі шрифтом. Не забудьте додати свій файл у директорію /"директорія проєкта"/зміст/шрифт. 
 
-Go to the `Systems manager > System` to locate the `Font size` and `Font name` boxes:
+Перейдіть в `Керування системами > Система` і змініть списки `Кеглі шрифтів` та `Назви шрифтів`:
 
 ![](.gitbook/assets/deepinscreenshot_select-area_20200323082522.png)
 
-## Change game name <a id="change-game-name"></a>
+## Зміна назви гри <a id="change-game-name"></a>
 
-Go to the `Systems manager > System` to find the `Game name` box:
+Перейдіть у `Керування системами > Система` і використовуйте поле `Назва гри`:
 
 ![](.gitbook/assets/game-name.png)
 
-This will affect the window title when you are launching the game.
+Від цього поля залежить заголовок при запуску гри.
 
-## Change game screen resolution <a id="change-game-screen-resolution"></a>
+## Зміна роздільної здатності ігрового екрана <a id="change-game-screen-resolution"></a>
 
-Go to the `Systems manager > System`to view the `Game native resolution` box:
+Перейдіть у `Керування системами > Система`, в розділ  `Базовий розмір графіки гри`:
 
 ![](.gitbook/assets/game-resolution.png)
 
-* `Width`: The native width of your game window.
-* `Height`: The native height of your game window.
-* `Window`: Choose a window mode.
-* `Full screen`: choose full screen mode. Note that `Width` and `Height` have no effect with this option.
+* `Ширина`: Базова ширина ігрового вікна.
+* `Висота`: Базова висота ігрового вікна.
+* `Вікно`: Встановлює віконний режим.
+* `Повний екран`: встановлює повноекранний режим. Зверніть увагу, що у цьому режимі поля `Ширина` та `Висота` ігноруються.
 
-## Test your game <a id="test-your-game"></a>
+## Тестовий запуск гри <a id="test-your-game"></a>
 
-You can test your project by clicking here on the main toolbar:
+Перевірити роботу своєї гри можна, натиснувши на кнопку `Запуск` на основній панелі:
 
 ![](.gitbook/assets/play.png)
 
-## Deploy your game <a id="deploy-your-game"></a>
+## Експорт гри для публікації <a id="deploy-your-game"></a>
 
-If you want to publish your game \(share your game without any need for players to have RPG Paper Maker installed\) you go to `File > Export standalone...`.
+Якщо ви хочете опублікувати свою гру \(поділитися нею з тими, в кого не встановлений редактор RPG Paper Maker\), відкрийте пункт `Файл > Експорт як самостійного...`.
 
 ![](.gitbook/assets/deploy.png)
 
-* `Location`: The location of the standalone folder that you want to create. The name of this folder will be `yourGameName{OS}`.
-* `Type of export`: Choose export options here.
-  * `Deploy a desktop application`: Choose here to deploy your game as a desktop application \(choose the `OS` in options: Windows, Linux, or Mac\).
-  * `Protect data`: Enable this if you want to encrypt the files so they can't be accessed outside of the game. \*\*May not work\*\*
-  * `Deploy for web browser`: _\(not available yet\)_ Choose here to deploy your game as a web application. This will generate an `index.html` page and other files.
-* `Version`: Choose you game version. Having 1 for `major` and 0 for `minor` will create a 1.0 version.
+* `Місцезнаходження`: Місце, в якому буде створено директорію з самостійним проєктом. Директорію буде названо  `назваВашоїГри{ОС}`.
+* `Тип ексорту`: Тут вказуються налаштування експорту.
+  * `Експорт для настільних систем`: Цей пункт дозволяє опублікувати гру для настільних комп'ютерів \(в полі `ОС` виберіть операційну систему: Windows, Linux, or Mac\).
+  * `Зашифрувати дані`: Виберіть цей пункт, якщо ви хочете зашифрувати файли, щоб вони не були недоступні по-за грою. \*\*Може не спрацювати\*\*
+  * `Експорт для веббраузера`: _\(поки що недоступний\)_ Виберіть цей пункт, щоб експортувати вашу гру як вебдодаток. Тоді буде створено сторінку `index.html` та інші потрібні файли.
+* `Версія`: Вкажіть версію гру. Якщо ввести 1 в полі `Основна` та 0 в полі `Другорядна`, буде створено версію 1.0.
 
-## Enable / Disable Updater <a id="enable-disable-updater"></a>
+## Увімкнути/вимкнути автоматичне оновлення <a id="enable-disable-updater"></a>
 
-Go to`Help > Auto display updater` to enable or disable the updater that will check if a new version is available or not.
+Перейдіть в пункт меню `Допомога > Автоматично показувати вікно оновлення`, щоб дозволити або заборонити автоматичну перевірку наявності нових версій.
 
 ![](.gitbook/assets/autoupdater.png)
 
