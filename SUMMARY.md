@@ -2,9 +2,9 @@
 
 * [Початок роботи](README.md)
 
-## Essentials
+## Найголовніше <a id="essentials"></a>
 
-* [Map editor](essentials/map-editor.md)
+* [Редактор карт](essentials/map-editor.md)
 * [Resources management](essentials/resources-management.md)
 * [Tilesets & Collisions](essentials/tilesets-and-collisions.md)
 * [Variables overview](essentials/variables-overview.md)
