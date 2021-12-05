@@ -346,7 +346,16 @@ Remove a picture that is displayed on top of the screen.
 
 ## Play a video <a href="#play-a-video" id="play-a-video"></a>
 
-_Not available yet._
+![](../.gitbook/assets/command-play-a-video.png)
+
+
+
+Play, pause, or stop a video. The video will be displayed on top of the screen.
+
+* `Video`: The video ID to play.
+* **Operation**: The kind of operation to do: `Play`, `Pause`, or `Stop`.
+* `Start`: If checked and using `Play` operation, the video will be played at the indicated value (in seconds).
+* `Wait the end of the change before next command`: If checked, the next command will be executed only when the video is finished/paused/stopped.
 
 ## Start shop menu <a href="#start-shop" id="start-shop"></a>
 
@@ -414,9 +423,7 @@ Go to the title screen.
 
 ## Game over <a href="#game-over" id="game-over"></a>
 
-This will go to the game over screen.
-
-_**/! Today, there is no game over screen, it's only closing the game window.**_
+Go to the game over screen.
 
 ## Play a music <a href="#play-a-music" id="play-a-music"></a>
 

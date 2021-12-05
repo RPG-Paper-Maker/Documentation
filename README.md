@@ -105,6 +105,8 @@ Click here on the main toolbar and go to the `System` tab:
   * `Impossible`: Sound to play when a choice is impossible.
 * `Other options`:
   * `Window skin`: The default window skin used for various window UI elements.&#x20;
+  * `Faceset scaling width/height (in px)`: The faceset stretched width/height when using a 640x480 screen resolution. This exists in order to have HD facesets for bigger screens resolution.
+  * `Icons size (in px)`: The icon size for original texture. This exists in order to cut every icon equaly in a texture.
   * `Max number of save slots`: Change the max number of save slots available to the player.
   * `Price of sold item`: Set how much of the original value you get back when selling an item. This can be a variable.&#x20;
 

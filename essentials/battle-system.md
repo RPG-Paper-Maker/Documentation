@@ -146,6 +146,7 @@ These four data have common properties:
 * `User animation ID`: The animation ID to display on the user before attacking.
 * `Target animation ID`: The animation ID to display on the target(s) when attacking.
 * `Can be sold`: Indicate if the item can be sold in a shop
+* `Battle message`: The message to display on the top bar when using a skill or item. `[item]` will display the item name, and `[skill]` will display the skill name.
 * `Price`: Price of the data when it can be bought / sold in a shop menu.
 
 There also are three more common properties that can be listed: `Costs`, `Effects`, and `Caracteristics`.
@@ -251,9 +252,10 @@ Each character has a class. The class defines a lot of attributes that a charact
 
 ## Heroes <a href="#heroes" id="heroes"></a>
 
-![](../.gitbook/assets/battle-heroes.png)
+![](../.gitbook/assets/heroes.png)
 
 * `Class`: Select an existing class.
+* `Description`: A description that will be displayed in the state menu ingame.
 * `Faceset`: Select a faceset for battles.
 * `Battler`: Select a battler for battles.
 
