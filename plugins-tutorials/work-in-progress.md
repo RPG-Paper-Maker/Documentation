@@ -18,17 +18,17 @@ _Discovering JavaScript Talk:_
 
 _First 3.5h of a video course about JS:_
 
-{% embed url="https://www.youtube.com/watch?v=Bv\_5Zv5c-Ts" %}
+{% embed url="https://www.youtube.com/watch?v=Bv_5Zv5c-Ts" %}
 
-_You Don't Know JS \(book\):_ 
+_You Don't Know JS (book):_&#x20;
 
-[https://github.com/getify/You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS) 
+[https://github.com/getify/You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)&#x20;
 
 {% hint style="success" %}
-You know the JS basics? Now you can keep going! :\)
+You know the JS basics? Now you can keep going! :)
 {% endhint %}
 
-First of all, we strongly recommand you to use **Visual Studio Code** as your **IDE** \(**Integrated Development Environment**\). This will help a lot for auto-completion. You can download it here: [https://code.visualstudio.com/](https://code.visualstudio.com/).
+First of all, we strongly recommand you to use **Visual Studio Code** as your **IDE** (**Integrated Development Environment**). This will help a lot for auto-completion. You can download it here: [https://code.visualstudio.com/](https://code.visualstudio.com).
 
 Open it and go to `File > Open Folder` and select `YourProject/resources/app/Content/Datas/Scripts`
 
@@ -38,5 +38,4 @@ Now you'll be able to start your code learning!
 
 ![](../.gitbook/assets/vsc-opened.png)
 
-You can keep an eye on the doc API here: [https://rpg-paper-maker.github.io/](https://rpg-paper-maker.github.io/)
-
+You can keep an eye on the doc API here: [https://rpg-paper-maker.github.io/](https://rpg-paper-maker.github.io)

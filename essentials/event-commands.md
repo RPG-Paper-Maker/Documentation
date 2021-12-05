@@ -6,9 +6,9 @@ description: An overview about event command
 
 Now that you are a pro for objects and event, you can have here a description of ALL the possible event commands. If there's a command or an option that you don't understand, you can go back here and search for a description.
 
-## Show text <a id="show-text"></a>
+## Show text <a href="#show-text" id="show-text"></a>
 
-![](../.gitbook/assets/command-show-text.png)
+![](<../.gitbook/assets/command-show-text (1).png>)
 
 Displays a text in a dialog box with the current dialog box options.
 
@@ -35,7 +35,7 @@ Render in game:
 
 ![](../.gitbook/assets/render-hello-world.png)
 
-## Display a choice <a id="display-a-choice"></a>
+## Display a choice <a href="#display-a-choice" id="display-a-choice"></a>
 
 ![](../.gitbook/assets/command-display-choice.png)
 
@@ -55,7 +55,7 @@ Using without show text command before:
 
 ![](../.gitbook/assets/render-command-display-choice-without-text.png)
 
-## Input number <a id="input-number"></a>
+## Input number <a href="#input-number" id="input-number"></a>
 
 ![](../.gitbook/assets/event-command-input-number.png)
 
@@ -68,7 +68,7 @@ Render in game:
 
 ![](../.gitbook/assets/render-input-number.png)
 
-## Set dialog box options <a id="set-dialog-box-options"></a>
+## Set dialog box options <a href="#set-dialog-box-options" id="set-dialog-box-options"></a>
 
 ![](../.gitbook/assets/command-dialog-box-options.png)
 
@@ -98,21 +98,21 @@ Set all the dialog box options.
   * `Size ID`: The size ID to use for texts.
   * `Font ID`: The font ID to use for texts.
 
-## Change screen tone <a id="change-screen-tone"></a>
+## Change screen tone <a href="#change-screen-tone" id="change-screen-tone"></a>
 
 ![](../.gitbook/assets/command-change-screen-tone.png)
 
-Change the screen tone \(dominant color\). The RGB color \(0, 0, 0\) changes nothing on the screen tone.
+Change the screen tone (dominant color). The RGB color (0, 0, 0) changes nothing on the screen tone.
 
 * `Red`: The red dominant color.
 * `Green`: The green dominant color.
 * `Blue`: The blue dominant color.
-* `Grey`: The grey dominant color \(saturation\). If grey = 0, then no changes. If grey = 100, then the screen will only have grey colors.
+* `Grey`: The grey dominant color (saturation). If grey = 0, then no changes. If grey = 100, then the screen will only have grey colors.
 * `Adding color ID`: You can combine the previous color with an existing color.
 * `Wait the end of the change before the next command`: If checked, the command will end only after `Time` number.
 * `Time`: Time to wait for changing the screen tone.
 
-## Shake screen <a id="shake-screen"></a>
+## Shake screen <a href="#shake-screen" id="shake-screen"></a>
 
 ![](../.gitbook/assets/command-shake-screen.png)
 
@@ -123,7 +123,7 @@ This is useful for staging your cinematics by simulating earthquakes, for exampl
 * `Wait the end of the move before the next command`: If checked, the next command will be executed when the shakes ends.
 * `Time`: Duration of the total shakes.
 
-## Flash screen <a id="flash-screen"></a>
+## Flash screen <a href="#flash-screen" id="flash-screen"></a>
 
 ![](../.gitbook/assets/command-flash-screen.png)
 
@@ -133,15 +133,27 @@ This will simply fill your screen with a color and linearly go back to normal sc
 * `Wait the end of the move before the next command`: If checked, the next command will be executed when the flash ends.
 * `Time`: Duration of the flash.
 
-## Change meteo <a id="change-meteo"></a>
+## Change meteo <a href="#change-meteo" id="change-meteo"></a>
 
 _Not available yet._
 
-## Change map properties <a id="change-map-properties"></a>
+## Change map properties <a href="#change-map-properties" id="change-map-properties"></a>
 
-_Not available yet._
+![](../.gitbook/assets/command-change-map-properties.png)
 
-## Wait <a id="wait"></a>
+Change some of a map properties.
+
+* `Map ID`: The map ID that you want to change
+* **Properties**:
+  * `Tileset ID`
+  * `Music`
+  * `Background sound`
+  * `Camera properties ID`
+  * `Sky`
+    * `Color ID`
+    * `Skybox ID`
+
+## Wait <a href="#wait" id="wait"></a>
 
 ![](../.gitbook/assets/command-wait.png)
 
@@ -149,13 +161,28 @@ Wait during a specific time.
 
 * `Time`: Time to wait in seconds.
 
-## Change chronometer <a id="change-chronometer"></a>
+## Change chronometer <a href="#change-chronometer" id="change-chronometer"></a>
 
-_Not available yet._
+![](../.gitbook/assets/command-change-chronometer1.png)
 
-## Teleport object <a id="teleport-object"></a>
+![](../.gitbook/assets/command-change-chronometer2.png)
 
-![](../.gitbook/assets/command-teleport-object.png)
+Start, pause, continue, or stop a chronometer.&#x20;
+
+If you choose to `start` a new chronometer:
+
+* `Stock chronometer ID in variable ID`: The variable ID where you want to stock this new chronometer ID
+* `Time`: The time count for this new chronometer
+* `Display on screen`: If checked, display the chronometer on screen
+
+If you choose to `pause`, `continue`, or `stop` an existing chronometer:
+
+* `Chronometer ID`: The existing chronometer ID to edit
+* `Stock current chronometer value in variable ID`: Stock the current value (in seconds) in the variable ID.
+
+## Teleport object <a href="#teleport-object" id="teleport-object"></a>
+
+![](<../.gitbook/assets/command-teleport-object (1).png>)
 
 This will teleport an object on an existing map with a new position.
 
@@ -164,18 +191,23 @@ This will teleport an object on an existing map with a new position.
   * `Select...`: Choose map and position thanks to a map previewer.
   * `ID map`, `X`, `Y`, `Y plus`, `Z`: Choose map ID an position to go manually.
   * `Object (ID)`: Choose an object to teleport on.
-* **Options**: _Not available yet._
+* **Transition**:
+  * `Direction`: Select the direction of the object after teleportation
+  * `Start / End`: Start / End type of transition:
+    * `None`: Immediate transition.
+    * `Fade in / out`: Transition on a color.
+    * `Zoom in / out`: Transition by zooming in / out.
 
-## Move object <a id="move-object"></a>
+## Move object <a href="#move-object" id="move-object"></a>
 
-![](../.gitbook/assets/command-move-object%20%281%29.png)
+![](<../.gitbook/assets/command-move-object (1).png>)
 
 This will move an object in the current map with a specific route. You can also temporary change some properties linked to the object state.
 
 * `Object ID`: The object ID to move.
-* `Ignore if impossible`: If checked, the moves that can't be executed \(example: a wall blocking the route\) would be ignored. If not checked, this will try the impossible move as long as it become possible \(example: use for NPCs moving\).
-* `Wait the end of moves`: If checked, the command would end only when all the moves are executed. If not, the command would end immediately \(moves executed in parallel\).
-* `With camera orientation`: If checked, the direction moves \(north, south, west, east\) would take account of the camera orientation. If not, the direction moves would not take account of the camera orientation.
+* `Ignore if impossible`: If checked, the moves that can't be executed (example: a wall blocking the route) would be ignored. If not checked, this will try the impossible move as long as it become possible (example: use for NPCs moving).
+* `Wait the end of moves`: If checked, the command would end only when all the moves are executed. If not, the command would end immediately (moves executed in parallel).
+* `With camera orientation`: If checked, the direction moves (north, south, west, east) would take account of the camera orientation. If not, the direction moves would not take account of the camera orientation.
 * **Step / square moves**:
   * `Square`: Change all the direction moves unit to square.
   * `Step`: Change all the direction moves unit to step.
@@ -187,7 +219,7 @@ This will move an object in the current map with a specific route. You can also 
   * `1 back`: Move the object to 1 square / step back.
   * `Jump...`: Make the object jump:
     * **Final position offset**: The final position offset in the end of the jump
-    * **Peak**: The peak Y values \(offset\)
+    * **Peak**: The peak Y values (offset)
     * `Time`: The time execution of the move
 * **Change direction**:
   * `Turn North / South / West / East`: Turn the object in the selected direction
@@ -209,7 +241,7 @@ This will move an object in the current map with a specific route. You can also 
   * `Change graphics`: Change the obejct graphics
   * `Wait / Play sound / Script`: Use the following commands
 
-## Display an animation <a id="display-an-animation"></a>
+## Display an animation <a href="#display-an-animation" id="display-an-animation"></a>
 
 ![](../.gitbook/assets/command-display-an-animation.png)
 
@@ -219,15 +251,15 @@ Display an animation in the current map.
 * `Animation ID`: The animation ID to play.
 * `Wait the end of the animation before next command`: If checked, the next command will be executed only after the animation end.
 
-## Move camera <a id="move-camera"></a>
+## Move camera <a href="#move-camera" id="move-camera"></a>
 
 Check out the camera guide [here](camera-control.md).
 
-## Reset camera <a id="reset-camera"></a>
+## Reset camera <a href="#reset-camera" id="reset-camera"></a>
 
 This command will simply reset the camera properties after using move camera command, but it won't change the current camera target.
 
-## Create object in map <a id="create-object-in-map"></a>
+## Create object in map <a href="#create-object-in-map" id="create-object-in-map"></a>
 
 ![](../.gitbook/assets/event-command-create-object-in-map.png)
 
@@ -237,7 +269,7 @@ Create an object in the map. Note that this object will be removed after changin
 * **Position**: Select the position of the new object
 * `Stock ID in variable ID`: The variable ID where you will stock the new object generated ID
 
-## Remove object from map <a id="remove-object-from-map"></a>
+## Remove object from map <a href="#remove-object-from-map" id="remove-object-from-map"></a>
 
 ![](../.gitbook/assets/command-remove-object-from-map.png)
 
@@ -245,7 +277,7 @@ Remove an object from the map. This removing is effective as long as you don't c
 
 * `Object ID`: The object ID to remove in the map.
 
-## Display a picture <a id="display-a-picture"></a>
+## Display a picture <a href="#display-a-picture" id="display-a-picture"></a>
 
 ![](../.gitbook/assets/command-display-picture.png)
 
@@ -254,7 +286,7 @@ Display a picture on top of the screen.
 * `Image ID`: The image ID to display.
 * `Index`: The index of the image to display. You can display several images in the same time if they have different index. The more the index is high, the more the image is displayed on top. If two images have the same index, then the ancient image will be removed.
 * `Origin`:
-  * `Top / Left`: The origin position will be \(0, 0\) \(= top left of the screen\).
+  * `Top / Left`: The origin position will be (0, 0) (= top left of the screen).
   * `Center`: The origin position will be the center of the screen.
 * `Coordinates`:
   * `X`: The x position according to the origin.
@@ -264,7 +296,7 @@ Display a picture on top of the screen.
   * `Opacity`: The % opacity of the image.
   * `Angle`: The ° angle of the image.
 
-## Set / Move / Turn a picture <a id="set-move-turn-a-picture"></a>
+## Set / Move / Turn a picture <a href="#set-move-turn-a-picture" id="set-move-turn-a-picture"></a>
 
 ![](../.gitbook/assets/command-set-move-turn-picture.png)
 
@@ -283,7 +315,7 @@ Set / Move / Turn a picture that is already displayed on top of the screen.
 * `Wait the end of the actions before the next command`: If checked, the command will end only after `Time` number.
 * `Time`: Time to wait for updating the picture.
 
-## Remove a picture <a id="remove-a-picture"></a>
+## Remove a picture <a href="#remove-a-picture" id="remove-a-picture"></a>
 
 ![](../.gitbook/assets/command-remove-picture.png)
 
@@ -291,11 +323,11 @@ Remove a picture that is displayed on top of the screen.
 
 * `Image index`: Select the index of the image to remove.
 
-## Play a video <a id="play-a-video"></a>
+## Play a video <a href="#play-a-video" id="play-a-video"></a>
 
 _Not available yet._
 
-## Start shop menu <a id="start-shop"></a>
+## Start shop menu <a href="#start-shop" id="start-shop"></a>
 
 ![](../.gitbook/assets/event-command-shop-menu.png)
 
@@ -322,11 +354,11 @@ Render in game:
 
 ![](../.gitbook/assets/event-command-shop-menu-render.png)
 
-## _Restock_ shop <a id="start-shop"></a>
+## _Restock_ shop <a href="#start-shop" id="start-shop"></a>
 
 Mostly the same options than [Start shop menu command](event-commands.md#start-shop), but you can use this command to update the stock of a shop thanks to `shop ID`.
 
-## Enter a name menu <a id="enter-a-name"></a>
+## Enter a name menu <a href="#enter-a-name" id="enter-a-name"></a>
 
 ![](../.gitbook/assets/event-command-enter-a-name-menu.png)
 
@@ -339,7 +371,7 @@ Render in game:
 
 ![](../.gitbook/assets/render-enter-a-name-menu.png)
 
-## Open main menu <a id="open-main-menu"></a>
+## Open main menu <a href="#open-main-menu" id="open-main-menu"></a>
 
 This will open the main menu.
 
@@ -347,7 +379,7 @@ Render in game:
 
 ![](../.gitbook/assets/render-main-menu.png)
 
-## Open saves menu <a id="open-saves-menu"></a>
+## Open saves menu <a href="#open-saves-menu" id="open-saves-menu"></a>
 
 This will open the saves menu.
 
@@ -355,17 +387,17 @@ Render in game:
 
 ![](../.gitbook/assets/render-saves-menu.png)
 
-## Title screen <a id="title-screen"></a>
+## Title screen <a href="#title-screen" id="title-screen"></a>
 
 Go to the title screen.
 
-## Game over <a id="game-over"></a>
+## Game over <a href="#game-over" id="game-over"></a>
 
 This will go to the game over screen.
 
 _**/! Today, there is no game over screen, it's only closing the game window.**_
 
-## Play a music <a id="play-a-music"></a>
+## Play a music <a href="#play-a-music" id="play-a-music"></a>
 
 ![](../.gitbook/assets/command-play-music.png)
 
@@ -373,11 +405,11 @@ This will play a music on the current map.
 
 * `Select song by ID`: Instead of using the left list, you can select by ID values.
 * **Options**:
-  * `Volume`: The music volume \(in %\).
+  * `Volume`: The music volume (in %).
   * `Start`: The beginning time of the music in seconds.
   * `End`: The end time of the music in seconds.
 
-## Stop music <a id="stop-music"></a>
+## Stop music <a href="#stop-music" id="stop-music"></a>
 
 ![](../.gitbook/assets/command-stop-music.png)
 
@@ -385,56 +417,56 @@ This will stop the music played in the current map.
 
 * `Disappear with time`: Number of seconds for music played for disappearing.
 
-## Play a background sound <a id="play-a-background-sound"></a>
+## Play a background sound <a href="#play-a-background-sound" id="play-a-background-sound"></a>
 
 This will play a background sound on top of the current music.
 
 Check out the play music command [here](event-commands.md#play-a-music) that is similar.
 
-## Stop background sound <a id="stop-background-sound"></a>
+## Stop background sound <a href="#stop-background-sound" id="stop-background-sound"></a>
 
 This will stop the background sound played in the current map.
 
 Check out the stop music command [here](event-commands.md#stop-music) that is similar.
 
-## Play a sound <a id="play-a-sound"></a>
+## Play a sound <a href="#play-a-sound" id="play-a-sound"></a>
 
 This will play a sound on top of all the songs.
 
 Check out the play music command [here](event-commands.md#stop-music) that is similar.
 
-## Play a music effect <a id="play-a-music-effect"></a>
+## Play a music effect <a href="#play-a-music-effect" id="play-a-music-effect"></a>
 
 This will play a music by pausing the current played music. When the music effect is finished the previously played music is unpaused.
 
 Check out the play music command [here](event-commands.md#play-a-music) that is similar.
 
-## Change battle music <a id="change-battle-music"></a>
+## Change battle music <a href="#change-battle-music" id="change-battle-music"></a>
 
-_Not available yet._
+Select a music to change the battle music for every next coming battles.
 
-## Change victory music <a id="change-victory-music"></a>
+## Change victory music <a href="#change-victory-music" id="change-victory-music"></a>
 
-_Not available yet._
+Select a music to change the battle victory music for every next coming battles.
 
-## Send event <a id="send-event"></a>
+## Send event <a href="#send-event" id="send-event"></a>
 
-![](../.gitbook/assets/event-command-send-event.png)
+![](<../.gitbook/assets/command-send-event (1).png>)
 
 This will send an event to the selected target.
 
 * **Target**:
-  * `All`: _Not available yet._
+  * `All`: Send the event to all the objects visible in the map
   * `Detection`: Send the event to a specific detection.
     * `Sender can't receive`: The detection is not applied to the sender.
     * `Only the closest`: If checked, this will only send event to the closest object detected. If not, this will send event to all the objects detected.
   * `Object`: Send the event to a specific object.
 * **Event**:
-  * `Event system`: Select a system event \(events sent by the game system itself\).
-  * `Event user`: Select a user event \(custom events sent by the map objects\).
+  * `Event system`: Select a system event (events sent by the game system itself).
+  * `Event user`: Select a user event (custom events sent by the map objects).
   * `Parameters values`: Select the event parameters values. You can keep the default value.
 
-## Change state <a id="change-state"></a>
+## Change state <a href="#change-state" id="change-state"></a>
 
 ![](../.gitbook/assets/command-change-state.png)
 
@@ -450,7 +482,7 @@ This will change the state of the current object. An object can have several sta
   * `Add`: Only add the new state.
   * `Remove`: Remove the object state having this ID.
 
-## Change property <a id="change-property"></a>
+## Change property <a href="#change-property" id="change-property"></a>
 
 ![](../.gitbook/assets/command-change-property.png)
 
@@ -462,7 +494,7 @@ This will change a property value of the current object.
 * **Value**:
   * `New value`: The new value to apply to the property with the corresponding operation.
 
-## Modify currency <a id="change-money"></a>
+## Modify currency <a href="#change-money" id="change-money"></a>
 
 ![](../.gitbook/assets/command-modify-currency.png)
 
@@ -473,7 +505,7 @@ Change the currency value.
 * **Operation**: The operation to apply to the currency value.
 * **Number**: The number value to apply to the currency.
 
-## Modify inventory <a id="modify-inventory"></a>
+## Modify inventory <a href="#modify-inventory" id="modify-inventory"></a>
 
 ![](../.gitbook/assets/command-modify-inventory.png)
 
@@ -486,37 +518,38 @@ This will update inventory containing. You can for example add items to it.
 * **Operation**: The operation to use according to the current number of the selection in the inventory.
 * **Number**: The value to use for updating the selection number.
 
-## Modify team <a id="modify-team"></a>
+## Modify team <a href="#modify-team" id="modify-team"></a>
 
-![](../.gitbook/assets/command-modify-team.png)
+![](<../.gitbook/assets/command-modify-team (1).png>)
 
 This will update team organization.
 
 * `Create new instance with level ... in team / reserve / hidden of`: Create a new instance of a hero or monster in team, reserve, or hidden.
   * `Stock instance ID in`: Choose a variable where you want to stock the instance ID. This can be useful to move or remove characters in team.
-* `Move / Remove the character with ID ... in team / reserve / hidden`: _Not available yet._
+* `Add enemy with instance ID ... in team / reserve / hidden`: Add an enemy that is in a current battle in team, reserve, or hidden
+* `Modify`: Move or remove a character with instance ID
 
-## Allow / Forbid saves <a id="allow-forbid-saves"></a>
+## Allow / Forbid saves <a href="#allow-forbid-saves" id="allow-forbid-saves"></a>
 
 ![](../.gitbook/assets/command-allow-forbid-saves.png)
 
 * `Allow`: If checked, the saves menu will be allowed.
 
-## Allow / Forbid main menu <a id="allow-forbid-main-menu"></a>
+## Allow / Forbid main menu <a href="#allow-forbid-main-menu" id="allow-forbid-main-menu"></a>
 
 ![](../.gitbook/assets/command-allow-forbid-main-menu.png)
 
 * `Allow`: If checked, the main menu will be allowed.
 
-## Change general options <a id="change-general-options"></a>
+## Change general options <a href="#change-general-options" id="change-general-options"></a>
 
 _Not available yet._
 
-## Start a battle <a id="start-a-battle"></a>
+## Start a battle <a href="#start-a-battle" id="start-a-battle"></a>
 
 ![](../.gitbook/assets/command-start-battle.png)
 
-This will start a battle with your team against a troop \(group of monsters\).
+This will start a battle with your team against a troop (group of monsters).
 
 * **Troop's ID**:
   * `ID`: Fix troop ID.
@@ -534,31 +567,47 @@ This will start a battle with your team against a troop \(group of monsters\).
     * `Fade in / out`: Transition on a color.
     * `Zoom in / out`: Transition by zooming in / out.
 
-## Display / Hide enemy <a id="display-hide-enemy"></a>
+## Display / Hide enemy <a href="#display-hide-enemy" id="display-hide-enemy"></a>
 
 _Not available yet._
 
-## Force an action <a id="force-an-action"></a>
+## Force an action <a href="#force-an-action" id="force-an-action"></a>
 
-_Not available yet._
+![](../.gitbook/assets/command-force-an-action.png)
 
-## End battle <a id="end-battle"></a>
+During a battle, this will force an hero or enemy to execute an action on a target.
+
+* **Battler**: The battler that should execute the action
+  * `Enemy`: Select an enemy of the current troop
+  * `Hero / Enemy instance ID`: Select the instance ID of a character. They are mainly stocked into a variable
+* **Action**: The action to execute
+  * `Use skill ID:` Select a skill with a specific ID
+  * `Use item ID:` Select an item with a specific ID
+  * `Do nothing`
+* **Target**:
+  * `Random`: A random target
+  * `Last target`: The last target that the battler selected
+  * `Custom`:
+    * `Enemy`: Select an enemy of the current troop
+    * `Hero / Enemy instance ID`: Select the instance ID of a character. They are mainly stocked into a variable
+
+## End battle <a href="#end-battle" id="end-battle"></a>
 
 You can use the end battle command in troops reactions to force a defeat.
 
-## Change battle music <a id="change-battle-music_1"></a>
+## Change battle music <a href="#change-battle-music_1" id="change-battle-music_1"></a>
 
 You can select a battle music for the next battles.
 
-## Change victory music <a id="change-victory-music_1"></a>
+## Change victory music <a href="#change-victory-music_1" id="change-victory-music_1"></a>
 
 You can select a victory music for the next battles.
 
-## Change a statistic <a id="change-a-statistic"></a>
+## Change a statistic <a href="#change-a-statistic" id="change-a-statistic"></a>
 
 ![](../.gitbook/assets/command-change-a-statistic.png)
 
-You can here change a statistic value to one or several characters \(heroes or enemies\).
+You can here change a statistic value to one or several characters (heroes or enemies).
 
 * `Statistic ID`: The statistic ID to change value.
 * **Selection**:
@@ -568,14 +617,24 @@ You can here change a statistic value to one or several characters \(heroes or e
 * **Value**:
   * `Number`: Choose a dynamic number value.
   * `Formula`: Enter a formula as a value.
-  * `Maximum statistic value`: Take the maximum value of a statistic \(used to heal maximum HP, for example\)
+  * `Maximum statistic value`: Take the maximum value of a statistic (used to heal maximum HP, for example)
   * `Can go above maximum value`: If checked, the given value can be superior to maximum value of the statistic.
 
-## Change experience curve <a id="change-experience-curve"></a>
+## Change experience curve <a href="#change-experience-curve" id="change-experience-curve"></a>
 
-_Not available yet._
+![](../.gitbook/assets/command-change-experience-curve.png)
 
-## Change status <a id="change-status"></a>
+Change the experience curve table of one or several players.
+
+* **Selection**:
+  * `Hero / Enemy instance ID`: Select the instance ID of a character. They are mainly stocked into a variable
+  * `The entire`: Select a group, this can be the `team`, `reserve`, or `hidden`
+* **Level**:
+  * `Range`: The level range to apply the experience curve changes
+* **Operation**: The operation to use according to the current experience value
+* `Total experience`:  The total experience to change in the table
+
+## Change status <a href="#change-status" id="change-status"></a>
 
 ![](../.gitbook/assets/event-command-change-status.png)
 
@@ -588,7 +647,7 @@ Add or remove a player status.
 * **Status**:
   * `Status ID`: The status ID
 
-## Change a skill <a id="change-a-skill"></a>
+## Change a skill <a href="#change-a-skill" id="change-a-skill"></a>
 
 ![](../.gitbook/assets/command-change-a-skill.png)
 
@@ -600,7 +659,7 @@ Choose if you want a character to learn or forget a specific skill.
   * `The entire`: Select a group, this can be the `team`, `reserve`, or `hidden`.
 * **Operation**: Choose here if you want to learn or forget the selected skill.
 
-## Change name <a id="change-name"></a>
+## Change name <a href="#change-name" id="change-name"></a>
 
 ![](../.gitbook/assets/command-change-name.png)
 
@@ -608,27 +667,34 @@ Choose a character you want to change the name. This isn't like the command ente
 
 * `Name`: The new character name.
 * **Selection**:
-  * `Hero / Enemy instance ID`: Select the instance ID of a character. They are mainly stocked into a variable.
-  * `The entire`: Select a group, this can be the `team`, `reserve`, or `hidden`.
+  * `Hero / Enemy instance ID`: Select the instance ID of a character. They are mainly stocked into a variable
+  * `The entire`: Select a group, this can be the `team`, `reserve`, or `hidden`
 
-## Change class <a id="change-class"></a>
+## Change class <a href="#change-class" id="change-class"></a>
 
-_Not available yet._
+![](../.gitbook/assets/command-change-class.png)
 
-## Change equipment <a id="change-equipment"></a>
+Change one or several players class. This will apply changes on statistics and learned skills.
+
+* `Class ID`: The new class ID to apply
+* **Selection**:
+  * `Hero / Enemy instance ID`: Select the instance ID of a character. They are mainly stocked into a variable
+  * `The entire`: Select a group, this can be the `team`, `reserve`, or `hidden`
+
+## Change equipment <a href="#change-equipment" id="change-equipment"></a>
 
 ![](../.gitbook/assets/command-change-equipment.png)
 
 You can force a character to equip a weapon or an armor.
 
 * `Equipment ID`: The equipment slot ID to force equip.
-* `with Weapon ID / Armor ID`: The weapon or armor ID to force equip \(according to equipment ID\).
+* `with Weapon ID / Armor ID`: The weapon or armor ID to force equip (according to equipment ID).
 * **Selection**:
   * `Hero / Enemy instance ID`: Select the instance ID of a character. They are mainly stocked into a variable.
   * `The entire`: Select a group, this can be the `team`, `reserve`, or `hidden`.
 * `Apply only if in inventory`: If checked, the equipment is not equiped if not in inventory. If not checked, the item will be added to inventory and then equiped.
 
-## Condition <a id="condition"></a>
+## Condition <a href="#condition" id="condition"></a>
 
 Create a container for commands that will be executed only if the indicated condition is true.
 
@@ -666,24 +732,24 @@ Create a container for commands that will be executed only if the indicated cond
 ![](../.gitbook/assets/command-condition-others.png)
 
 * `Key ID`: Check if selected key is ON or OFF.
-* `Escaped last battle`: Check if the player escaped last battle \(using escape battle command\).
-* `Script`: Check according to the script return value \(for programmers\).
+* `Escaped last battle`: Check if the player escaped last battle (using escape battle command).
+* `Script`: Check according to the script return value (for programmers).
 
-## Loop <a id="loop"></a>
+## Loop <a href="#loop" id="loop"></a>
 
 Create a container for commands that will be executed on a loop.
 
-## Break loop <a id="break-loop"></a>
+## Break loop <a href="#break-loop" id="break-loop"></a>
 
 If inside a loop container, this will go out of the loop and go to the next command after the loop.
 
-## Label <a id="label"></a>
+## Label <a href="#label" id="label"></a>
 
 ![](../.gitbook/assets/command-label.png)
 
 Add label to your reaction, you will combine it with jump to label command. You can choose any name you want.
 
-## Jump to label <a id="jump-to-label"></a>
+## Jump to label <a href="#jump-to-label" id="jump-to-label"></a>
 
 ![](../.gitbook/assets/command-jump-label.png)
 
@@ -693,13 +759,13 @@ Combined with label command, you can choose to move to the named label. Here is 
 
 The commands will be executed like this:
 
-Condition ? &gt; No &gt; End if &gt;Jump to label loop &gt; Label loop &gt; End if &gt; Jump to label loop &gt; Label loop &gt; ...
+Condition ? > No > End if >Jump to label loop > Label loop > End if > Jump to label loop > Label loop > ...
 
-## Stop the reaction <a id="stop-the-reaction"></a>
+## Stop the reaction <a href="#stop-the-reaction" id="stop-the-reaction"></a>
 
 Stop the current reaction.
 
-## Comment <a id="comment"></a>
+## Comment <a href="#comment" id="comment"></a>
 
 ![](../.gitbook/assets/command-comment.png)
 
@@ -707,7 +773,7 @@ Comments won't be interpreted in game, it's only here for you. You can leave a c
 
 ![](../.gitbook/assets/example-command-comment.png)
 
-## Call a common reaction <a id="call-a-common-reaction"></a>
+## Call a common reaction <a href="#call-a-common-reaction" id="call-a-common-reaction"></a>
 
 ![](../.gitbook/assets/command-call-common-reaction.png)
 
@@ -716,24 +782,24 @@ This will call a common reaction with the corresponding parameters.
 * `Common reaction`: The common reaction to call.
 * **Parameters values**: The parameters to apply with the common reaction.
 
-## Change variables <a id="change-variables"></a>
+## Change variables <a href="#change-variables" id="change-variables"></a>
 
-![](../.gitbook/assets/command-change-variables.png)
+![](<../.gitbook/assets/command-change-variables (1).png>)
 
-This will change one or several variable\(s\) value.
+This will change one or several variable(s) value.
 
 * **Selection**:
-  * `One variable`: The unique variable to change.
-  * `Range`: The range of variables IDs to change.
-* **Operation**: The operation to use according to the current variable\(s\) value.
+  * `One variable`: The unique variable to change
+  * `Range`: The range of variables IDs to change
+* **Operation**: The operation to use according to the current variable(s) value
 * **Value**:
-  * `Number`: A simple number.
-  * `Random`: A random number between two selected values.
-  * `Message`: A simple message.
-  * `Switch`: A simple switch.
-  * `Number of ... in inventory`: _Not available yet._
-  * `Total currency ... with ID`: _Not available yet._
-  * `An ... with instance ID ... statistic ID`: _Not available yet._
+  * `Number`: A simple number
+  * `Random`: A random number between two selected values
+  * `Message`: A simple message
+  * `Switch`: A simple switch
+  * `Number of ... in inventory`: The number of item / weapon / armor that are currently in the inventory
+  * `Total currency ... with ID`: The total number of a specific currency (owned, earned, or used)
+  * `Hero / Enemy instance ID ... statistic ID`: Get a statistic value according to a player instance ID
   * `An object in the map ... characteristic`: The selected object characteristic:
     * `X square position`: The x square position of the selected object.
     * `Y square position`: The y square position of the selected object.
@@ -742,13 +808,26 @@ This will change one or several variable\(s\) value.
     * `Y square position`: The y pixel position of the selected object.
     * `Z square position`: The z pixel position of the selected object.
     * `Orientation`: The orientation of the selected object.
-  * `Other characteristics`: _Not available yet._
+  * `Enemy ... instance ID`: The selected enemy instance ID
+  * `Other characteristics`:
+    * `Current map ID`: The current map ID
+    * `Number in team`: Number of players in team
+    * `Number in hidden`: Number of hidden players
+    * `Number in reserve`: Number of players in reserve
+    * `Total number of steps`: Number of steps made by the hero
+    * `Total number of seconds`: Number of seconds playtime
+    * `Total number of saves done`: Number of saves done since starting the game
+    * `Total number of battles`: Number of started battles
+    * `Camera X position`: The camera X position
+    * `Camera Y position`: The camera Y position
+    * `Camera Z position`: The camera Z position
+    * `Total seconds played of the current music`: The total number of seconds played of the current music
+    * `Total seconds played of the current background music`: The total number of seconds played of the current background music
 
-## Script <a id="script"></a>
+## Script <a href="#script" id="script"></a>
 
 ![](../.gitbook/assets/command-script.png)
 
-Execute a script code \(for advanced programmers\).
+Execute a script code (for advanced programmers). Note that you can use `$object` local variable to get the Core.MapObject current object!
 
-* `Use dynamic`: Non-static code \(in variable, or parameter, or property\).
-
+* `Use dynamic`: Non-static code (in variable, or parameter, or property).

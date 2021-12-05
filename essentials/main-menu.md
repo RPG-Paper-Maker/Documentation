@@ -8,7 +8,7 @@ You can customize your ingame main menu by going in `Systems manager > Main menu
 
 Items types are a list of all the types that you will be able to select when editing an item.
 
-![](../.gitbook/assets/main-menu-item-type.png)
+![](<../.gitbook/assets/main-menu-item-type (1).png>)
 
 ## Inventory filters
 
@@ -65,4 +65,3 @@ You can customize the statistics to display on the right side of the hero descri
 ![](../.gitbook/assets/main-menu-statistic.png)
 
 * `Statistic ID`: The statistic ID to display
-
