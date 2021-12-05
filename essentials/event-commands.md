@@ -133,9 +133,29 @@ This will simply fill your screen with a color and linearly go back to normal sc
 * `Wait the end of the move before the next command`: If checked, the next command will be executed when the flash ends.
 * `Time`: Duration of the flash.
 
-## Change meteo <a href="#change-meteo" id="change-meteo"></a>
+## Change weather <a href="#change-meteo" id="change-meteo"></a>
 
-_Not available yet._
+![](../.gitbook/assets/command-change-weather.png)
+
+Change the current map weather by adding particles.
+
+* `None`: Remove current map weather.
+* `Custom`: Add a custom map weater.
+* **Options**:
+  * `Texture`: The weather particle texture.
+    * `Color ID`
+    * `Image`
+  * `Number per portion`: Number of particles in each portion (16x16 squares)
+  * `Ray portions`: Number of portions (16x16 squares) ray around the camera to display particles.
+  * `Size`: The particles size (texture).
+  * `dephTest`: [https://threejs.org/docs/#api/en/materials/Material.depthTest](https://threejs.org/docs/#api/en/materials/Material.depthTest)
+  * `depthWrite`: [https://threejs.org/docs/#api/en/materials/Material.depthWrite](https://threejs.org/docs/#api/en/materials/Material.depthWrite)
+  * `Initial velcity`: The initial velocity of the particle when it's created.
+  * `Velocity addition`: Velocity addition after each frame.
+  * `Initial Y rotation`: The initial Y rotation around the portion.
+  * `Y rotation addition`: Y rotation addition after each frame.
+* `Wait the end of the move before next comand`: Wait the end of the time before running next command if checked.
+  * `Time`: Time (in seconds) to make the weather transition. There will be more and more particles appearing.
 
 ## Change map properties <a href="#change-map-properties" id="change-map-properties"></a>
 
@@ -147,6 +167,7 @@ Change some of a map properties.
 * **Properties**:
   * `Tileset ID`
   * `Music`
+  *
   * `Background sound`
   * `Camera properties ID`
   * `Sky`

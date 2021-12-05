@@ -6,7 +6,7 @@ description: All you need to know about Map editor.
 
 After opening a project, you should have this view:
 
-![](../.gitbook/assets/map-editor.png)
+![](<../.gitbook/assets/map-editor (1).png>)
 
 ## Manage maps
 
@@ -113,7 +113,18 @@ Here are the different paint mode **(4)** for drawing your elements in the map:
 * `Rectangle`: Draw squares after tracing a rectangle **(not available yet)**.
 * `Pin of paint`: Fill squares with the same texture as the one pointed.
 
+You can also choose to point on squares or pixel perfect:
+
+![](../.gitbook/assets/squarepixel.png)
+
+* `Square`: When pointing with mouse, this will focus on the center of the pointed square.
+* `Pixel`: When pointig with mouse, this will focus on the exact pointed pixel.
+
+
+
 ## Lands <a href="#lands" id="lands"></a>
+
+
 
 Here are the possible lands to place:
 

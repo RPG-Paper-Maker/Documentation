@@ -48,6 +48,12 @@ You can for example change the tileset collision by resizing it for each square.
 
 ![](../.gitbook/assets/collision-praticable.png)
 
+## Terrain (only for floors)
+
+You can add terrain tags to your floors in order to add particular events when a character is on top of a particular floor (example: step sounds). You'll be able to get this tag valuthan to the change variables command.
+
+![](../.gitbook/assets/terrain-tag.png)
+
 ## Directions (only for floors) <a href="#directions-only-for-floors" id="directions-only-for-floors"></a>
 
 You can indicate in which direction there will be a collision.

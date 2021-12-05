@@ -69,6 +69,7 @@ Click here on the main toolbar and go to the `System` tab:
 * `Game name`: Change the name of your game.
 * `Game native resolution`: Set width / height resolution of the game when in window mode. You can choose between Window or Fullscreen display. &#x20;
 * `Antialiasing`: If checked, antialiasing will be applied in game.
+* `Mouse controls`: If checked, mouse controls will be applied (windows choices, events...)
 * **Map properties**:
   * `Square size (in px)`: this is the size (in pixels) of one tile in your maps. Your other graphics should match this size, with larger sprites being multiples of the base size. (16, 32, 48, etc)
   * `Ray portions (editor)`: The map is separated into several portions (16x16 squares). You can change here the number of portions to display.
@@ -191,13 +192,13 @@ You can test your project by clicking here on the main toolbar:
 
 If you want to publish your game (share your game without any need for players to have RPG Paper Maker installed) you go to `File > Export standalone...`.
 
-![](.gitbook/assets/deploy.png)
+![](.gitbook/assets/export-standalone.png)
 
 * `Location`: The location of the standalone folder that you want to create. The name of this folder will be `yourGameName{OS}`.
 * `Type of export`: Choose export options here.
   * `Deploy a desktop application`: Choose here to deploy your game as a desktop application (choose the `OS` in options: Windows, Linux, or Mac).
-  * `Protect data`: Enable this if you want to encrypt the files so they can't be accessed outside of the game. \*\*May not work\*\*
-  * `Deploy for web browser`: _(not available yet)_ Choose here to deploy your game as a web application. This will generate an `index.html` page and other files.
+  * `Protect data`: Enable this if you want to encrypt the files so they can't be accessed outside of the game.
+  * `Deploy for web browser`: Choose here to deploy your game as a web application. This will generate a folder with an `index.html` file on the root that you can easily export to you website.
 * `Version`: Choose you game version. Having 1 for `major` and 0 for `minor` will create a 1.0 version.
 
 ## Enable / Disable Updater <a href="#enable-disable-updater" id="enable-disable-updater"></a>

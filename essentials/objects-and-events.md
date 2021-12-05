@@ -87,10 +87,21 @@ System events are the following:
   * **Immediate repeat** (default: OFF): If ON, this event will be sent as long as you press the key without any offset.
 * `KeyRelease`: Event sent when releasing a key on keyboard.
   * **ID** (default: anything): The ID of the key.
+* `MouseDown`: Event sent when the mouse is pressed down.
+  * **X** (default: 0) : Mouse X position when event is triggered.
+  * **Y** (default: 0) : Mouse Y position when event is triggered.
+  * **Left** (default: ON): If ON, this event will be sent only if it's from mouse left click.
+* `MouseUp`: Event sent when the mouse is up.
+  * **X** (default: 0) : Mouse X position when event is triggered.
+  * **Y** (default: 0) : Mouse Y position when event is triggered.
+  * **Left** (default: ON): If ON, this event will be sent only if it's from mouse left click.
+* `MouseMove`: Event sent when the mouse is moved.
+  * **X** (default: 0) : Mouse X position when event is triggered.
+  * **Y** (default: 0) : Mouse Y position when event is triggered
 
 ### States <a href="#states" id="states"></a>
 
-An object has a set of `States`. For example, the hero can be in a normal state, or poisoned / vulnerable. Note that an object can be in several states at the same time.
+An object has a set of `States`. For exampleero can be in a normal state, or poisoned / vulnerable. Note that an object can be in several states at the same time.
 
 You can add a new state on this list. There also is a `Update complete list...` button if you want to create new common states.
 
@@ -206,13 +217,13 @@ In map properties, you can see this section:
 
 This simply is an invisible object that will be useful for kinematics when entering a new map, for example. This is invisible, so there are no state graphics. By default, it is reacting to the event `Time` with 0 for interval parameter and OFF for repeat parameter. That means that these reactions will be executed in high priority when entering the map. This can be used for kinematics and some other stuff.
 
-## Detection <a href="#detections" id="detections"></a>
+## Detections <a href="#detections" id="detections"></a>
 
 It is important to use detection with objects. In fact, you are already using it when you react to `Hero Action` event. `Hero Action` event is an event that is sent by the hero itself to the objects that are in front of him. In order to determine where the events are sent, we use what we call `detection`.
 
 You can access to detection list in `Systems manager > System`:
 
-![](../.gitbook/assets/detections.png)
+![](<../.gitbook/assets/detections (1).png>)
 
 And here is the front detection! You clearly see here that your event can be sent in front. There is an arrow indicating the square position of the object sending the event, and also the orientation. You can add detection boxes by using `left click` and `right click` to delete existing detection boxes.
 
@@ -222,9 +233,9 @@ And here is the front detection! You clearly see here that your event can be sen
   * `Right`: Number of squares on the right side of the object sending the event.
   * `Top`: Number of squares on the top side of the object sending the event.
   * `Bot`: Number of squares on the bot side of the object sending the event.
-* `New box height`: The height that will be applied on the next boxes.
-  * `Square(s)`: Number of squares for detection box height.
-  * `Pixel(s)`: Number of pixels in addition for detection box height.
+* `New box length/width/height`: The height that will be applied on the next boxes.
+  * `Square(s)`: Number of squares for detection box length/width/height.
+  * `Pixel(s)`: Number of pixels in addition for detection box length/width/height.
 * `Automatic`: A way to automatically generate detection boxes adding.
   * `Circle`: Draw a circle with given `radius`.
   * `Rectangle`: Draw a rectangle with given `length` and `width`.
