@@ -854,8 +854,8 @@ This will change one or several variable(s) value.
 
 ## Script <a href="#script" id="script"></a>
 
-![](../.gitbook/assets/command-script.png)
+![](<../.gitbook/assets/command-script (1).png>)
 
-Execute a script code (for advanced programmers). Note that you can use `$object` local variable to get the Core.MapObject current object!
+Execute a script code (for advanced programmers). Note that you can use `$object` local variable to get the Core.MapObject current object!&#x20;
 
 * `Use dynamic`: Non-static code (in variable, or parameter, or property).
