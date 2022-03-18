@@ -50,16 +50,123 @@ Default are 16x16, but you can change to any value!
 
 ## Questions from Discord <a href="#what-are-the-tile-size-squares-size" id="what-are-the-tile-size-squares-size"></a>
 
+\---Q---\
 How to create footstep sound effects?\
+\---A---\
+This depends on how your hero moves. By default this movement is in the "Hero" model, in the code for pressing the keys for each direction. It moves you by 1 step. If you add a sound effect here, it will play too fast.&#x20;
+
+You could change the movement from step to square, moving in one full tile. If made to wait until complete, you can put the sound effect after the move and it plays with the correct timing. However this causes bugs with collision(try walking up slopes).&#x20;
+
+One possible solution for step movement is that every time you take a step it turns on a switch. This switch is contained in a conditional branch that checks itself to be OFF, so it can only run one at a time. \
+Another event is turned on by the switch and plays the sound effect. It waits the proper amount of time, around .4 seconds, and turns OFF the switch. This allows your next step to trigger another sound effect. If you have stopped moving, no further sounds. \
+\
+\
+\---Q---\
 How to create item drops? (I assume in an ABS style game)\
+\---A---\
+For repeat drops, use the "Create object in map" command. This will allow you to spawn as many copies of the same thing as you want. \
+Start by creating a new Model. Name it and assign the graphic. Add the code. \
+Now go to the map object that spawns the item drop. Set up the trigger for dropping. \
+Add the "Create object" command and choose your item drop model. \
+A drop will be spawned out of thin air using the graphic and code set up in the model. \
+Using this method you will need to manually keep track of IDs if you want to do anything other than spawn them. Despawn, move around, change, all require an ID to be assigned.&#x20;
+
+Let's say we're talking about killing an enemy and it drops an item. You can use states to simply change the graphic and code without adding any new objects. This means both can't be displayed at once(the coin laying next to the dead body).&#x20;
+
+Another method is to create an object in advance and make it invisible. When activated it is moved to any place on the map it is needed. This has the benefit of having preset IDs that can be organized in advance.&#x20;
+
+\---Q---\
 How to zoom out the camera, or do anything with the camera? first person view\
+\---A---\
+One method is to make multiple copies of the same Camera Property and change the zoom level in each. Then use the "Change Map Properties..." command to switch between Camera Properties of varying levels of zoom. A variable can keep track of the current zoom level and the code to change map properties also changes this variable. This might be useful in a game that otherwise limits how much you can turn the camera. It can carry between maps with some extra code.
+
+The straightforward method is to use the "Move Camera..." command. However each time you teleport to a new map these changes will be lost. \
+When using the equals operation, any box with a 0 will change the camera. So use plus or minus so it only alters the fields we use.\
+Put a number only in the Distance field. This is the distance between the target object and the camera. A larger number moves the camera farther away. 0.5 is first person view and 600+ is a bird's eye view. The default number is 300.&#x20;
+
+The default camera is whichever Camera Property is set to the Map Properties of the starting map. Under Systems/Camera Properties is where you can create different presets. Each map is assigned one and it can be changed by command.&#x20;
+
+Moving the camera in every other way with the "Move Camera" command can be complicated. You should learn some of the basics and figure out what is needed for each situation.&#x20;
+
+\*Link to a detailed guide for moving the camera around\*
+
+\---Q---\
 How to import a resource file?\
+\---A---\
+When you make a new project you determine the folder path. To find your project's resource folders navigate to that folder and open /resources/app/Content/ and you will see all the subfolders for each type of resource. Start by adding your files here.&#x20;
+
+In the editor some of these resources will be ready to use right away. Some have their own lists and you need to add the resources to this list.&#x20;
+
+\*Show video of new in-engine pop up hints\*
+
+You can drag files into these folders while the engine is open. You may need to need to save, open a database window, or reload the project for changes to appear. Most things are safe to add. If a resource has been added to one of the lists, make sure you update the list before removing the resource from the folder to avoid problems. \
+
+
+\---Q---\
 How to set variables/run code right away when starting a new game?\
+\---A---\
+There are 2 possible locations where the first lines of code can be run. The starting map is going to be which ever map the object marked as hero starts on. On this map you can use the Map Properties or a map object. \
+\*Show examples\*\
+Needs testing, but in the past having both of these run at the same time caused a problem and it wasn't consistently picking the same one to run first. So you should only have one to avoid conflict. \
+\
+\---Q---\
 How to speed up various animations?\
+\---A---\
+In Systems, you will find a group of settings called Frames. This applies to most animations in the game. Some other animations have their own settings that override these.&#x20;
+
+The first box is "Map frame duration". By setting this to a number you are making it static throughout the whole game. By setting it as a variable, you can adjust in game before displaying a certain animation to possibly get varied speeds. Needs testing.&#x20;
+
+The "Animation frames" applies to all charsets. They all have to match.&#x20;
+
+The remaining settings apply to each labeled area. \
+\
+\*There should be more detailed information somewhere else\*\
+\
+\---Q---\
 How to do line of sight and proximity detection?\
+\---A---\
+Proximity detection is the easy part. There is a built in command called "Send event". You can create hitboxes of any size, summon them, and see if any objects are hit by them. By creating a circle hitbox and summoning it on the player, it will detect anything within that range. Followed by any code for a reaction.&#x20;
+
+A simple form of line of sight can be done with the above method, plus some code to track which direction the object is facing. The object has to be facing the target(likely the hero) in order for the reaction to trigger. This won't allow walls to block sight.&#x20;
+
+A method that does allow walls and certain objects to block the line of sight is more complicated. This will likely have to be a built in feature for future release, or added via script/plugin. It might be possible with event commands, if someone was motivated enough. \
+\
+\---Q---\
 How to heal characters?\
+\---A---\
+This one works a little different from most engines. There is no specific command to heal because HP is altered the same as every other stat. You use the "Change a statistic" command as needed.&#x20;
+
+\
+\---Q---\
 How to disable camera movement in certain rooms only?\
+\---A---\
+This will depend on how you handle camera movement. By default it's found on the "Hero" model. \
+\
+The easiest way would be to put a conditional branch around the code for moving the camera so you can disable it all with a switch. When you enter a map where the camera should be disabled you simply turn ON the switch. However using conditional branches on models in this way causes a bug, so we can't do that.&#x20;
+
+You can use another state on the "Hero" model that is a duplicate of the normal model except the code for moving the camera is removed. Don't forget to switch it back. If you use many states for other things in your game this can become very complicated.&#x20;
+
+If you want to change the default way, you can move the code to another object. Then you can do more with it. One example is that on the model when you press the key to turn the camera, it doesn't contain any code. Only a call out to another object that does contain the code, where using conditional branches should work. Needs testing.&#x20;
+
+\
+\---Q---\
 How to change what hero the player controls?\
+\---A---\
+This is going to depend on a few things.&#x20;
+
+Remember, the object you control at the start of a new game is something you designate. On this first map that object will have it's normal ID. However when you teleport to any other map, the ID changes. If it was 10, and you teleport into a new map that also has a 10, there would be a conflict. So the hero object becomes ID 0 and each new map retains it's normal ID. This need confirming.
+
+The reason this matters is because several other commands reference "Hero", like "Move object" and "Send event". Which is this special object you are teleporting around the maps. If you want to change the object you are controlling, it will change how certain things interact.&#x20;
+
+You can use the "Move object" command to simply change the sprite used and all the other code will remain the same.&#x20;
+
+The main way you will change what the hero sprite looks like is to change the state on the Hero object/model. If you make a new state it will not contain any code for moving. So you always want to copy the state and change the graphic. Then remove any code that doesn't apply.
+
+You can create other objects to use as placeholder for the other members of your party when switching. The Hero object state is changed and it's teleported to another spot, where one of the placeholders was standing.&#x20;
+
+\*I created a test project where 4 different objects are used for 4 heroes and the player can switch between them. In my experience if you plan to use this method, abandon the object designated as Hero and do not use "Hero" in the target drop down for anything. You have to create a system that uses variables to determine the target. \*\
+
+
 What file types can be used for music?\
 Why can't I move the hero?\
 What size are the resources? make templates for all resource types and list sizes\
