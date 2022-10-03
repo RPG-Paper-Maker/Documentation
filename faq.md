@@ -4,19 +4,29 @@ description: Frequently Asked Questions
 
 # FAQ
 
-## Are there all same features & commands/functions available that normal RPG Maker have? <a href="#are-there-all-same-features-commandsfunctions-avaible-that-normal-rpg-maker-have" id="are-there-all-same-features-commandsfunctions-avaible-that-normal-rpg-maker-have"></a>
+## Can I make my character sprite object bigger? <a href="#are-there-all-same-features-commandsfunctions-avaible-that-normal-rpg-maker-have" id="are-there-all-same-features-commandsfunctions-avaible-that-normal-rpg-maker-have"></a>
 
-Almost all the RPG Maker commands and features will be available. The current state of the engine doesn't give 100% of the features since the engine is still at its beginning.
+Yes. The engine automatically cut the picture so you can make it any size. Just make the picture be multiple of the square size (16px).
 
-## Can you upload in this app your own textures? <a href="#can-you-upload-in-this-app-your-own-textures" id="can-you-upload-in-this-app-your-own-textures"></a>
+## Are there all features from RPG Maker? <a href="#are-there-all-same-features-commandsfunctions-avaible-that-normal-rpg-maker-have" id="are-there-all-same-features-commandsfunctions-avaible-that-normal-rpg-maker-have"></a>
 
-Yes, you can.
+Almost all the RPG Maker commands and features are available.
 
-## What's the picture size & format support? <a href="#whats-the-picture-size-format-support" id="whats-the-picture-size-format-support"></a>
+## Can I use my own pictures / musics / 3D objects? <a href="#can-you-upload-in-this-app-your-own-textures" id="can-you-upload-in-this-app-your-own-textures"></a>
 
-Max size: 4096x4096 pixels. Formats: .png, .jpg.
+Yes.
 
-## What's the scale or game world size support in this game? <a href="#whats-the-scale-or-game-world-size-support-in-this-game" id="whats-the-scale-or-game-world-size-support-in-this-game"></a>
+## What's the max picture size? <a href="#whats-the-picture-size-format-support" id="whats-the-picture-size-format-support"></a>
+
+4096x4096 pixels.
+
+
+
+## What are the supported pictures formats? <a href="#whats-the-picture-size-format-support" id="whats-the-picture-size-format-support"></a>
+
+.png, .jpg.
+
+## What's the max size of a map? <a href="#whats-the-scale-or-game-world-size-support-in-this-game" id="whats-the-scale-or-game-world-size-support-in-this-game"></a>
 
 For now the max map size is 1000 x 1000 squares. But there will be a feature for connecting large maps to create really huge maps like open worlds.
 
@@ -24,45 +34,53 @@ For now the max map size is 1000 x 1000 squares. But there will be a feature for
 
 No 4K for now but at least 1080p without problem.
 
-## Are there in app/software drawing/texture tool, where you can edit & draw textures? <a href="#are-there-in-appsoftware-drawingtexture-tool-where-you-can-edit-draw-textures" id="are-there-in-appsoftware-drawingtexture-tool-where-you-can-edit-draw-textures"></a>
+## Can you directly edit pictures in the engine? <a href="#are-there-in-appsoftware-drawingtexture-tool-where-you-can-edit-draw-textures" id="are-there-in-appsoftware-drawingtexture-tool-where-you-can-edit-draw-textures"></a>
 
 No.
 
-## Can you export & use own sound effects? <a href="#can-you-export-use-own-sound-effects" id="can-you-export-use-own-sound-effects"></a>
-
-Yes.
-
 ## Can you set camera into "first person view"? <a href="#can-you-set-camera-into-first-person-view" id="can-you-set-camera-into-first-person-view"></a>
 
-Actually you can't set the default camera without using scripts but there will be an option soon!
+Yes. In map properties, change camera properties to FPS.
 
-## Can you use gif animations? Or parsed series of images that app can use into animation? <a href="#can-you-use-gif-animations-or-parsed-series-of-images-that-app-can-use-into-animation" id="can-you-use-gif-animations-or-parsed-series-of-images-that-app-can-use-into-animation"></a>
+## Can you use gif animations? <a href="#can-you-use-gif-animations-or-parsed-series-of-images-that-app-can-use-into-animation" id="can-you-use-gif-animations-or-parsed-series-of-images-that-app-can-use-into-animation"></a>
 
-GIF are not supported yet but parsed images are (like in RPG Maker with characters).
+GIF are not supported yet.
 
-## Is that possible to make real time battles or just turn based? <a href="#is-that-possible-to-make-real-time-battles-or-just-turn-based" id="is-that-possible-to-make-real-time-battles-or-just-turn-based"></a>
+## Is that possible to make real time battles? <a href="#is-that-possible-to-make-real-time-battles-or-just-turn-based" id="is-that-possible-to-make-real-time-battles-or-just-turn-based"></a>
 
 Now it's only turn based, but plugins will be available to implement different kind of battle.
 
 ## What are the tile size (squares size) ? <a href="#what-are-the-tile-size-squares-size" id="what-are-the-tile-size-squares-size"></a>
 
-Default are 16x16, but you can change to any value!
+Default are 16x16 pixels, but you can change to any value!
 
-## Questions from Discord <a href="#what-are-the-tile-size-squares-size" id="what-are-the-tile-size-squares-size"></a>
+Questions from Discord\
+ <a href="#what-are-the-tile-size-squares-size" id="what-are-the-tile-size-squares-size"></a>
+---------------------------------------------------------------------------------------------
+
+\---Q---\
+How to import a custom file?\
+\---A---
+
+When you make a new project you determine the folder path. To find your project's resource folders navigate to that folder and open /resources/app/Content/ and you will see all the subfolders for each type of resource. Start by adding your files here.&#x20;
+
+In the editor some of these resources will be ready to use right away. Some have their own lists and you need to add the resources to this list.&#x20;
+
+You can drag files into these folders while the engine is open. You may need to need to save, open a database window, or reload the project for changes to appear. Most things are safe to add. If a resource has been added to one of the lists, make sure you update the list before removing the resource from the folder to avoid problems.&#x20;
 
 \---Q---\
 How to create footstep sound effects?\
-\---A---\
+\---A---
+
 This depends on how your hero moves. By default this movement is in the "Hero" model, in the code for pressing the keys for each direction. It moves you by 1 step. If you add a sound effect here, it will play too fast.&#x20;
 
 You could change the movement from step to square, moving in one full tile. If made to wait until complete, you can put the sound effect after the move and it plays with the correct timing. However this causes bugs with collision(try walking up slopes).&#x20;
 
 One possible solution for step movement is that every time you take a step it turns on a switch. This switch is contained in a conditional branch that checks itself to be OFF, so it can only run one at a time. \
-Another event is turned on by the switch and plays the sound effect. It waits the proper amount of time, around .4 seconds, and turns OFF the switch. This allows your next step to trigger another sound effect. If you have stopped moving, no further sounds. \
-\
-\
+Another event is turned on by the switch and plays the sound effect. It waits the proper amount of time, around .4 seconds, and turns OFF the switch. This allows your next step to trigger another sound effect. If you have stopped moving, no further sounds.&#x20;
+
 \---Q---\
-How to create item drops? (I assume in an ABS style game)\
+How to create item drops? (ABS game style)\
 \---A---\
 For repeat drops, use the "Create object in map" command. This will allow you to spawn as many copies of the same thing as you want. \
 Start by creating a new Model. Name it and assign the graphic. Add the code. \
@@ -74,33 +92,6 @@ Using this method you will need to manually keep track of IDs if you want to do 
 Let's say we're talking about killing an enemy and it drops an item. You can use states to simply change the graphic and code without adding any new objects. This means both can't be displayed at once(the coin laying next to the dead body).&#x20;
 
 Another method is to create an object in advance and make it invisible. When activated it is moved to any place on the map it is needed. This has the benefit of having preset IDs that can be organized in advance.&#x20;
-
-\---Q---\
-How to zoom out the camera, or do anything with the camera? first person view\
-\---A---\
-One method is to make multiple copies of the same Camera Property and change the zoom level in each. Then use the "Change Map Properties..." command to switch between Camera Properties of varying levels of zoom. A variable can keep track of the current zoom level and the code to change map properties also changes this variable. This might be useful in a game that otherwise limits how much you can turn the camera. It can carry between maps with some extra code.
-
-The straightforward method is to use the "Move Camera..." command. However each time you teleport to a new map these changes will be lost. \
-When using the equals operation, any box with a 0 will change the camera. So use plus or minus so it only alters the fields we use.\
-Put a number only in the Distance field. This is the distance between the target object and the camera. A larger number moves the camera farther away. 0.5 is first person view and 600+ is a bird's eye view. The default number is 300.&#x20;
-
-The default camera is whichever Camera Property is set to the Map Properties of the starting map. Under Systems/Camera Properties is where you can create different presets. Each map is assigned one and it can be changed by command.&#x20;
-
-Moving the camera in every other way with the "Move Camera" command can be complicated. You should learn some of the basics and figure out what is needed for each situation.&#x20;
-
-\*Link to a detailed guide for moving the camera around\*
-
-\---Q---\
-How to import a resource file?\
-\---A---\
-When you make a new project you determine the folder path. To find your project's resource folders navigate to that folder and open /resources/app/Content/ and you will see all the subfolders for each type of resource. Start by adding your files here.&#x20;
-
-In the editor some of these resources will be ready to use right away. Some have their own lists and you need to add the resources to this list.&#x20;
-
-\*Show video of new in-engine pop up hints\*
-
-You can drag files into these folders while the engine is open. You may need to need to save, open a database window, or reload the project for changes to appear. Most things are safe to add. If a resource has been added to one of the lists, make sure you update the list before removing the resource from the folder to avoid problems. \
-
 
 \---Q---\
 How to set variables/run code right away when starting a new game?\
@@ -237,11 +228,11 @@ This is a tutorial based on Paper Maker 1.6.1 and the game I made with it, Gobli
 
 &#x20;Cid331:&#x20;
 
-[https://youtu.be/56BeodBay60](https://youtu.be/56BeodBay60)[YouTube](https://www.youtube.com)[Digital Container](https://www.youtube.com/channel/UCndVoWxj9WbMLBg0HM7KYdw)[RPG Paper Maker Tutorial - #013 Transportation](https://www.youtube.com/watch?v=56BeodBay60)\
+[https://youtu.be/56BeodBay60](https://youtu.be/56BeodBay60)[YouTube](https://www.youtube.com/)[Digital Container](https://www.youtube.com/channel/UCndVoWxj9WbMLBg0HM7KYdw)[RPG Paper Maker Tutorial - #013 Transportation](https://www.youtube.com/watch?v=56BeodBay60)\
 \
 terikumo:&#x20;
 
-i messed up in the previous video, so i remade it [https://youtu.be/ynVupoA5ApU](https://youtu.be/ynVupoA5ApU)[YouTube](https://www.youtube.com)[terikumo](https://www.youtube.com/channel/UCvd\_3bntrydnq5SOFfwdAHQ)[RPG Paper Maker Tutorial - Beginner: The Basics (#1)](https://www.youtube.com/watch?v=ynVupoA5ApU)\
+i messed up in the previous video, so i remade it [https://youtu.be/ynVupoA5ApU](https://youtu.be/ynVupoA5ApU)[YouTube](https://www.youtube.com/)[terikumo](https://www.youtube.com/channel/UCvd\_3bntrydnq5SOFfwdAHQ)[RPG Paper Maker Tutorial - Beginner: The Basics (#1)](https://www.youtube.com/watch?v=ynVupoA5ApU)\
 \
 
 
