@@ -1,7 +1,3 @@
----
-description: Time to some action.
----
-
 # Battle system
 
 If you want to create to create a RPG, you may need a battle system. Here, we will see all the features linked to the battle implementation.

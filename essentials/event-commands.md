@@ -15,11 +15,11 @@ Displays a text in a dialog box with the current dialog box options.
 * `Interlocutor`: This will display a text inside a small box on top of the text box for indicating the interlocutor's name. If empty, this will not show the box.
 * `Faceset`: The faceset to display inside the dialog box on the left.
 * `Message`:
-  * ![](../.gitbook/assets/bold.png) : Apply bold effect on the selected text.
-  * ![](../.gitbook/assets/italic.png) : Apply italic effect on the selected text.
-  * ![](../.gitbook/assets/text-left.png) : Apply left align effect on the selected text.
-  * ![](../.gitbook/assets/text-center.png) : Apply center align effect on the selected text.
-  * ![](../.gitbook/assets/text-right.png) : Apply right align effect on the selected text.
+  * <img src="../.gitbook/assets/bold.png" alt="" data-size="line"> : Apply bold effect on the selected text.
+  * <img src="../.gitbook/assets/italic.png" alt="" data-size="line"> : Apply italic effect on the selected text.
+  * <img src="../.gitbook/assets/text-left.png" alt="" data-size="line"> : Apply left align effect on the selected text.
+  * <img src="../.gitbook/assets/text-center.png" alt="" data-size="line"> : Apply center align effect on the selected text.
+  * <img src="../.gitbook/assets/text-right.png" alt="" data-size="line"> : Apply right align effect on the selected text.
   * `Font size`: Apply the selected font size on the selected text.
   * `Font name`: Apply the selected font name on the selected text.
   * `Text color`: Apply the selected text color on the selected text.

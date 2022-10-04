@@ -1,7 +1,3 @@
----
-description: How to work with Tilesets & Collisions
----
-
 # Tilesets & Collisions
 
 We've previously seen that the map properties had an option `Tileset` selection. We will now see what it is.

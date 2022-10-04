@@ -1,7 +1,3 @@
----
-description: Give life for your game.
----
-
 # Objects & Events
 
 You know how to create beautiful maps, but you want to make it be alive by adding NPCs, treasures, etc. These elements are called `objects`. These objects will also react to `events` (hero action, chronometer, attack, etc.). Objects and events are here to galvanize your maps and create your game stories!

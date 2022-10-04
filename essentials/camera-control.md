@@ -1,7 +1,3 @@
----
-description: Being director of your game.
----
-
 # Camera control
 
 In your 2D games, you are limited to screen moves for adding dynamism to your important scenes. A 3D camera offers a lot of opportunities for your scenes (moves, rotations, zooms...) and you need to know some easy basics to use it correctly.

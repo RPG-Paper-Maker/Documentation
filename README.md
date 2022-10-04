@@ -1,10 +1,8 @@
----
-description: This is the initial page of RPG Paper Maker documentation.
----
-
 # Getting started
 
-![](.gitbook/assets/splash.png)
+<figure><img src=".gitbook/assets/splash.png" alt=""><figcaption></figcaption></figure>
+
+
 
 Welcome to RPG Paper Maker documentation! You will find here all that you need to be a pro Paper Maker!
 

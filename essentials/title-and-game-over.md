@@ -1,7 +1,3 @@
----
-description: Let's see how to work with Title and Game Over screens.
----
-
 # Title screen & Game Over
 
 Got to `Systems datas > Title screen / Game over`:

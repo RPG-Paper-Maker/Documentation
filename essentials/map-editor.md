@@ -1,7 +1,3 @@
----
-description: All you need to know about Map editor.
----
-
 # Map editor
 
 After opening a project, you should have this view:
