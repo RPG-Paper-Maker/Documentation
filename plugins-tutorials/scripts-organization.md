@@ -12,17 +12,16 @@ The System code is using ECMAScript modules, so every modules are packed into a 
 
 Here are the following modules:
 
-* `Common`: Every static classes mainly used to get static properties and methods \(Mathf, Paths...\)
-* `Core`: Every core classes that will be directly used in the game run \(Autotiles, WindowBox...\)
-* `Datas`: Every datas classes grouping every System classes that will read JSON game files
+* `Common`: Every static classes mainly used to get static properties and methods (Mathf, Paths...)
+* `Core`: Every core classes that will be directly used in the game run (Autotiles, WindowBox...)
+*   `Datas`: Every datas classes grouping every System classes that will read JSON game files
 
-   \(Heroes, Systems...\)
-
-* `EventCommand`: Every event commands that can be interpreted in reactions \(ShowText, Wait...\)
-* `Graphic`: Every graphic classes that are used to be drawn inside WindowBox classes \(Text, Player...\)
-* `Manager`: Every manager classes used to manage specific game events \(Collisions, Plugins...\)
-* `Scene`: Every scenes classes where everything is drawn \(Map, Menu...\)
-* `System`: Every systems classes that will read JSON from datas \(Color, Monster...\)
+    &#x20;(Heroes, Systems...)
+* `EventCommand`: Every event commands that can be interpreted in reactions (ShowText, Wait...)
+* `Graphic`: Every graphic classes that are used to be drawn inside WindowBox classes (Text, Player...)
+* `Manager`: Every manager classes used to manage specific game events (Collisions, Plugins...)
+* `Scene`: Every scenes classes where everything is drawn (Map, Menu...)
+* `System`: Every systems classes that will read JSON from datas (Color, Monster...)
 
 We will gradually see how these modules are used in this tutorial.
 
@@ -51,7 +50,7 @@ The `Libs` folder contains every external libraries used by RPG Paper Maker.
 We are using he following:
 
 * `howler.js`: It's a library managing every songs playing very easily.
-* `three.js`: The most important library. It provides a lot of functions and classes to handle webGL \(3D\) very easily. We will see it a lot in our code. You can check out the doc here: [https://threejs.org/docs/](https://threejs.org/docs/) and easily understand the RPG Paper Maker use.
+* `three.js`: The most important library. It provides a lot of functions and classes to handle webGL (3D) very easily. We will see it a lot in our code. You can check out the doc here: [https://threejs.org/docs/](https://threejs.org/docs/) and easily understand the RPG Paper Maker use.
 
 ## Plugins
 
@@ -79,7 +78,7 @@ async function initialize() {
 }
 ```
 
-First, we define the `initialize` function. The first thing it does is to load the plugins, and then it initialize some managers \(`Manager.Stack` and `Manager.Songs`\) and then load the datas \(that are inside the game JSON\) thanks to this `load` function:
+First, we define the `initialize` function. The first thing it does is to load the plugins, and then it initialize some managers (`Manager.Stack` and `Manager.Songs`) and then load the datas (that are inside the game JSON) thanks to this `load` function:
 
 ```javascript
 /**
@@ -157,47 +156,12 @@ It is called thanks to:
 requestAnimationFrame(loop);
 ```
 
-It's basically updating and drawing the current scene \(when starting, it's `Scene.TitleScreen`\).
+It's basically updating and drawing the current scene (when starting, it's `Scene.TitleScreen`).
 
-Finally, inputs are managed thanks to these lines:
+Finally, inputs are managed thanks to:
 
 ```javascript
-document.addEventListener('keydown', function (event) {
-    if (loaded && !Manager.Stack.isLoading()) {
-        let key = event.keyCode;
-        // On pressing F12, quit game
-        if (key === KeyEvent.DOM_VK_F12) {
-            Platform.quit();
-        }
-        // If not repeat, call simple press RPM event
-        if (!event.repeat) {
-            if (KeyEvent.keysPressed.indexOf(key) === -1) {
-                KeyEvent.keysPressed.push(key);
-                Manager.Stack.onKeyPressed(key);
-                // If is loading, that means a new scene was created, return
-                if (Manager.Stack.isLoading()) {
-                    return;
-                }
-            }
-        }
-        // Also always call pressed and repeat RPM event
-        Manager.Stack.onKeyPressedAndRepeat(key);
-    }
-}, false);
-// -------------------------------------------------------
-document.addEventListener('keyup', function (event) {
-    if (loaded && !Manager.Stack.isLoading()) {
-        let key = event.keyCode;
-        // Remove this key from pressed keys list
-        KeyEvent.keysPressed.splice(KeyEvent.keysPressed.indexOf(key), 1);
-        // Call release RPM event
-        Manager.Stack.onKeyReleased(key);
-    }
-    else {
-        KeyEvent.keysPressed = [];
-    }
-}, false);
+Inputs.initialize();
 ```
 
 We will see in the next tutorial how the `Manager.Stack` is handled.
-

@@ -13,7 +13,7 @@ You can use the `WindowBox` class in `Core` module to draw window boxes with spe
 Here is an example of window box declaration in a scene:
 
 ```javascript
-this.exampleWindow = new Core.WindowBox(x, y, w, h, { 
+this.exampleWindow = new RPM.Core.WindowBox(x, y, w, h, { 
     // The following options are optional
     content: new Graphic.Text("myText"), // The content is a Graphic.Base
     padding: [0, 0, 0, 0], // [x, y, x, h] for box padding
@@ -38,7 +38,7 @@ You can also use `WindowChoices` class in `Core` module for displaying several `
 Here is an example of window choice use in a scene:
 
 ```javascript
-this.exampleChoices = new Core.WindowChoices(x, y, w, h, [new Graphic.Text("A"), new Graphic.Text("B")], { 
+this.exampleChoices = new RPM.Core.WindowChoices(x, y, w, h, [new Graphic.Text("A"), new Graphic.Text("B")], { 
     // The following options are optional
     listCallbacks: [myfunction1, myFunction2], // List of all the callback functions to excecute when pressed.
     orientation: OrientationWindow.Vertical, // The orientation of the window (horizontal or vertical)
@@ -62,7 +62,7 @@ onKeyPressedAndRepeat(key) {
 }
 ```
 
-`onKeyPressed` is for handling callbacks \(functions\) when pressing enter in a choice. The 2nd argument here is `this` but you can replace it by whatever you want to repalce the `this` inside the callback. `onKeyPressedAndRepeat` is for handling move keys to switch between choices.
+`onKeyPressed` is for handling callbacks (functions) when pressing enter in a choice. The 2nd argument here is `this` but you can replace it by whatever you want to repalce the `this` inside the callback. `onKeyPressedAndRepeat` is for handling move keys to switch between choices.
 
 And then you can draw the choices, in `drawHUD` of the scene:
 
@@ -133,4 +133,3 @@ Drawing the player in choice box or drawing the player description.
 ```javascript
 new Graphic.PlayerDescription(player);
 ```
-
