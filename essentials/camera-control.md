@@ -2,7 +2,7 @@
 
 In your 2D games, you are limited to screen moves for adding dynamism to your important scenes. A 3D camera offers a lot of opportunities for your scenes (moves, rotations, zooms...) and you need to know some easy basics to use it correctly.
 
-![](../.gitbook/assets/camera-example.gif)
+<figure><img src="../.gitbook/assets/camera.gif" alt=""><figcaption></figcaption></figure>
 
 ## The camera <a href="#the-camera" id="the-camera"></a>
 
