@@ -6,78 +6,118 @@ description: Frequently Asked Questions
 
 ## Can I make my character sprite object bigger? <a href="#are-there-all-same-features-commandsfunctions-avaible-that-normal-rpg-maker-have" id="are-there-all-same-features-commandsfunctions-avaible-that-normal-rpg-maker-have"></a>
 
+## Are there similar features found in mainstream RPG Makers? <a href="#are-there-all-same-features-commandsfunctions-avaible-that-normal-rpg-maker-have" id="are-there-all-same-features-commandsfunctions-avaible-that-normal-rpg-maker-have"></a>
+
+\*Because this engine is still in development, some classic features are currently missing. However as time goes on you can expect to see most of what you need\*
+
 Yes. The engine automatically cut the picture so you can make it any size. Just make the picture be multiple of the square size (16px).
 
 ## Are there all features from RPG Maker? <a href="#are-there-all-same-features-commandsfunctions-avaible-that-normal-rpg-maker-have" id="are-there-all-same-features-commandsfunctions-avaible-that-normal-rpg-maker-have"></a>
 
-Almost all the RPG Maker commands and features are available.
+Yes, but with a twist.&#x20;
 
-## Can I use my own pictures / musics / 3D objects? <a href="#can-you-upload-in-this-app-your-own-textures" id="can-you-upload-in-this-app-your-own-textures"></a>
+Where it counts, instead of giving you limited, exact replica features - this engine gives you a framework that allows full customization and creation of old features along with some new ones. Some features are of course replicas, because you can't always improve what works.&#x20;
 
-Yes.
+Many commands allow use of variables in place of static numbers. You can create a database of hitboxes, fonts, camera angles, etc; and then reference them in event commands for easy access.&#x20;
 
-## What's the max picture size? <a href="#whats-the-picture-size-format-support" id="whats-the-picture-size-format-support"></a>
-
-4096x4096 pixels.
+You will find familiar database windows and layouts. Familiar 'Move Hero' and 'Change Variable' commands. All slightly enhanced.&#x20;
 
 
 
 ## What are the supported pictures formats? <a href="#whats-the-picture-size-format-support" id="whats-the-picture-size-format-support"></a>
 
+It can take a bit of time to get used to, but this type of framework allows you to make gameplay systems in a fraction of the time and code. And it's close enough to mainstream editors to reduce the learning curve.&#x20;
+
 .png, .jpg.
 
-## What's the max size of a map? <a href="#whats-the-scale-or-game-world-size-support-in-this-game" id="whats-the-scale-or-game-world-size-support-in-this-game"></a>
+## How large of a game can I create? <a href="#whats-the-scale-or-game-world-size-support-in-this-game" id="whats-the-scale-or-game-world-size-support-in-this-game"></a>
 
-For now the max map size is 1000 x 1000 squares. But there will be a feature for connecting large maps to create really huge maps like open worlds.
+For now the max map size is 1000 x 1000 squares. But there will be a feature for connecting large maps to create really huge maps, like open world games.
 
-## Are there 4K resolution support? <a href="#are-there-4k-resolution-support" id="are-there-4k-resolution-support"></a>
+## Is 4K resolution supported? <a href="#are-there-4k-resolution-support" id="are-there-4k-resolution-support"></a>
 
-No 4K for now but at least 1080p without problem.
+No. The engine can support up to 1080p.&#x20;
 
-## Can you directly edit pictures in the engine? <a href="#are-there-in-appsoftware-drawingtexture-tool-where-you-can-edit-draw-textures" id="are-there-in-appsoftware-drawingtexture-tool-where-you-can-edit-draw-textures"></a>
+## Is there a built-in image editor? <a href="#are-there-in-appsoftware-drawingtexture-tool-where-you-can-edit-draw-textures" id="are-there-in-appsoftware-drawingtexture-tool-where-you-can-edit-draw-textures"></a>
 
-No.
+Not at this time. You will have to use external programs then import the resources.&#x20;
 
-## Can you set camera into "first person view"? <a href="#can-you-set-camera-into-first-person-view" id="can-you-set-camera-into-first-person-view"></a>
+## Can you use GIF files for animations?  <a href="#can-you-use-gif-animations-or-parsed-series-of-images-that-app-can-use-into-animation" id="can-you-use-gif-animations-or-parsed-series-of-images-that-app-can-use-into-animation"></a>
 
-Yes. In map properties, change camera properties to FPS.
+GIFs are not supported at this time. You will have to use standard methods like any RPG Maker.&#x20;
 
-## Can you use gif animations? <a href="#can-you-use-gif-animations-or-parsed-series-of-images-that-app-can-use-into-animation" id="can-you-use-gif-animations-or-parsed-series-of-images-that-app-can-use-into-animation"></a>
+## Is it possible to make real time battles? <a href="#is-that-possible-to-make-real-time-battles-or-just-turn-based" id="is-that-possible-to-make-real-time-battles-or-just-turn-based"></a>
 
-GIF are not supported yet.
+For the default battle system, turn based is the only option at this time. Other types of combat systems are planned, such as tactical battle system.&#x20;
 
-## Is that possible to make real time battles? <a href="#is-that-possible-to-make-real-time-battles-or-just-turn-based" id="is-that-possible-to-make-real-time-battles-or-just-turn-based"></a>
+There are enough commands to create a custom battle system to mimic most games, from Pokemon to Star Ocean. But with more planned commands this will become even easier.&#x20;
 
-Now it's only turn based, but plugins will be available to implement different kind of battle.
+## What is the tile size? <a href="#what-are-the-tile-size-squares-size" id="what-are-the-tile-size-squares-size"></a>
 
-## What are the tile size (squares size) ? <a href="#what-are-the-tile-size-squares-size" id="what-are-the-tile-size-squares-size"></a>
+By default the value is 16x16, but you can change it to any value. Your resources should match, being multiples of whatever you set the tile size to. (32x32, 48x48, etc)
 
-Default are 16x16 pixels, but you can change to any value!
+## Questions from Discord <a href="#what-are-the-tile-size-squares-size" id="what-are-the-tile-size-squares-size"></a>
 
-Questions from Discord\
- <a href="#what-are-the-tile-size-squares-size" id="what-are-the-tile-size-squares-size"></a>
----------------------------------------------------------------------------------------------
+\---Q---\
+How to create footstep sound effects?\
+\---A---\
+This depends on how your hero moves. By default this movement is in the "Hero" model, in the code for pressing the keys for each direction. It moves you by 1 step. If you add a sound effect here, it will play too fast.&#x20;
+
+You could change the movement from step to square, moving in one full tile. If made to wait until complete, you can put the sound effect after the move and it plays with the correct timing. However this causes bugs with collision(try walking up slopes).&#x20;
 
 \---Q---\
 How to import a custom file?\
 \---A---
 
+One possible solution for step movement is that every time you take a step it turns on a switch. This switch is contained in a conditional branch that checks itself to be OFF, so it can only run one at a time. \
+Another event is turned on by the switch and plays the sound effect. It waits the proper amount of time, around .4 seconds, and turns OFF the switch. This allows your next step to trigger another sound effect. If you have stopped moving, no further sounds. \
+\
+\
+\---Q---\
+How to create item drops? (I assume in an ABS style game)\
+\---A---\
+For repeat drops, use the "Create object in map" command. This will allow you to spawn as many copies of the same thing as you want. \
+Start by creating a new Model. Name it and assign the graphic. Add the code. \
+Now go to the map object that spawns the item drop. Set up the trigger for dropping. \
+Add the "Create object" command and choose your item drop model. \
+A drop will be spawned out of thin air using the graphic and code set up in the model. \
+Using this method you will need to manually keep track of IDs if you want to do anything other than spawn them. Despawn, move around, change, all require an ID to be assigned.&#x20;
+
 When you make a new project you determine the folder path. To find your project's resource folders navigate to that folder and open /resources/app/Content/ and you will see all the subfolders for each type of resource. Start by adding your files here.&#x20;
+
+Let's say we're talking about killing an enemy and it drops an item. You can use states to simply change the graphic and code without adding any new objects. This means both can't be displayed at once(the coin laying next to the dead body).&#x20;
 
 In the editor some of these resources will be ready to use right away. Some have their own lists and you need to add the resources to this list.&#x20;
 
+Another method is to create an object in advance and make it invisible. When activated it is moved to any place on the map it is needed. This has the benefit of having preset IDs that can be organized in advance.&#x20;
+
 You can drag files into these folders while the engine is open. You may need to need to save, open a database window, or reload the project for changes to appear. Most things are safe to add. If a resource has been added to one of the lists, make sure you update the list before removing the resource from the folder to avoid problems.&#x20;
+
+\---Q---\
+How to zoom out the camera, or do anything with the camera? first person view\
+\---A---\
+One method is to make multiple copies of the same Camera Property and change the zoom level in each. Then use the "Change Map Properties..." command to switch between Camera Properties of varying levels of zoom. A variable can keep track of the current zoom level and the code to change map properties also changes this variable. This might be useful in a game that otherwise limits how much you can turn the camera. It can carry between maps with some extra code.
 
 \---Q---\
 How to create footstep sound effects?\
 \---A---
 
+The straightforward method is to use the "Move Camera..." command. However each time you teleport to a new map these changes will be lost. \
+When using the equals operation, any box with a 0 will change the camera. So use plus or minus so it only alters the fields we use.\
+Put a number only in the Distance field. This is the distance between the target object and the camera. A larger number moves the camera farther away. 0.5 is first person view and 600+ is a bird's eye view. The default number is 300.&#x20;
+
 This depends on how your hero moves. By default this movement is in the "Hero" model, in the code for pressing the keys for each direction. It moves you by 1 step. If you add a sound effect here, it will play too fast.&#x20;
+
+The default camera is whichever Camera Property is set to the Map Properties of the starting map. Under Systems/Camera Properties is where you can create different presets. Each map is assigned one and it can be changed by command.&#x20;
 
 You could change the movement from step to square, moving in one full tile. If made to wait until complete, you can put the sound effect after the move and it plays with the correct timing. However this causes bugs with collision(try walking up slopes).&#x20;
 
+Moving the camera in every other way with the "Move Camera" command can be complicated. You should learn some of the basics and figure out what is needed for each situation.&#x20;
+
 One possible solution for step movement is that every time you take a step it turns on a switch. This switch is contained in a conditional branch that checks itself to be OFF, so it can only run one at a time. \
 Another event is turned on by the switch and plays the sound effect. It waits the proper amount of time, around .4 seconds, and turns OFF the switch. This allows your next step to trigger another sound effect. If you have stopped moving, no further sounds.&#x20;
+
+\*Link to a detailed guide for moving the camera around\*
 
 \---Q---\
 How to create item drops? (ABS game style)\
@@ -89,9 +129,21 @@ Add the "Create object" command and choose your item drop model. \
 A drop will be spawned out of thin air using the graphic and code set up in the model. \
 Using this method you will need to manually keep track of IDs if you want to do anything other than spawn them. Despawn, move around, change, all require an ID to be assigned.&#x20;
 
+\---Q---\
+How to import a resource file?\
+\---A---\
+When you make a new project you determine the folder path. To find your project's resource folders navigate to that folder and open /resources/app/Content/ and you will see all the subfolders for each type of resource. Start by adding your files here.&#x20;
+
 Let's say we're talking about killing an enemy and it drops an item. You can use states to simply change the graphic and code without adding any new objects. This means both can't be displayed at once(the coin laying next to the dead body).&#x20;
 
+In the editor some of these resources will be ready to use right away. Some have their own lists and you need to add the resources to this list.&#x20;
+
 Another method is to create an object in advance and make it invisible. When activated it is moved to any place on the map it is needed. This has the benefit of having preset IDs that can be organized in advance.&#x20;
+
+\*Show video of new in-engine pop up hints\*
+
+You can drag files into these folders while the engine is open. You may need to need to save, open a database window, or reload the project for changes to appear. Most things are safe to add. If a resource has been added to one of the lists, make sure you update the list before removing the resource from the folder to avoid problems. \
+
 
 \---Q---\
 How to set variables/run code right away when starting a new game?\
@@ -156,20 +208,270 @@ The main way you will change what the hero sprite looks like is to change the st
 You can create other objects to use as placeholder for the other members of your party when switching. The Hero object state is changed and it's teleported to another spot, where one of the placeholders was standing.&#x20;
 
 \*I created a test project where 4 different objects are used for 4 heroes and the player can switch between them. In my experience if you plan to use this method, abandon the object designated as Hero and do not use "Hero" in the target drop down for anything. You have to create a system that uses variables to determine the target. \*\
-
-
-What file types can be used for music?\
+\
+\---Q---\
 Why can't I move the hero?\
+\---A---\
+I'm going to assume it was already working and suddenly stopped working. If you are new to the engine and your first play test has a non-moving hero - check out \*some guide for making a new project TBD\*
+
+Did you change anything related to hero movement? \
+Have you been tweaking the code for key inputs or the hero model? \
+Check your code and undo the changes if possible. Consult a default project to see how the hero model works.&#x20;
+
+A common problem is that a different object on the map has the 'Block hero when reaction' option enabled, and it's running all the time. Meaning the hero is frozen while that object is processing. Check all recent objects you added. If it's enabled by mistake go ahead fix it, otherwise you will have to change how that object is coded.&#x20;
+
+There could also be another object that is trying to move the hero. Perhaps a cutscene triggering when it shouldn't. Check any objects/common reactions that alter the hero in any way; move hero command, changing the state, etc. &#x20;
+
+\-If this only happens on a certain map, and this map allowed walking on that spot before, but now it doesn't- \
+Make sure there are tiles actually painted there and they can be walked on.\
+Make sure you painted the correct tile where the hero is getting stuck. Some tilesets can have duplicate tiles that can't be walked on. \
+Make sure there are no layered tiles on top that can't be walked on. You can try to erase and redraw, ensuring the correct layer is chosen.  \
+Check the database/tilesets section to ensure the tiles are correctly configured.\
+\
+Check the collisions for hero and map objects.\
+\
+If you still can't move, report it. It could be a bug. \
+
+
+&#x20;\
+\---Q---\
 What size are the resources? make templates for all resource types and list sizes\
-How to use battle formulas?\
+\---A---\
+For most of your resources there are no set sizes. The size will be determined by tile size, image size, frames, etc. There is no simple list like some other RPG Makers.&#x20;
+
+The most relevent factor is tile size. All your resources should be divisible by the tile size. In the editor when you work with various elements like tilesets, hitboxes, collisions; your selection box size is determined by the tile size. If your graphics aren't divisible you won't be able to select whole pieces.&#x20;
+
+There are many reasons to change the tile size but I recommend using the tileset as the base value. Drawing maps is pretty important and you need to be able to draw a single tile of the smallest size by default. For larger sprites, they occupy multiple tiles on the tileset and you simply draw them in a group. For most of the other resources the tile size doesn't matter. You simply create a canvas in multiples of the tile size and draw images of any size within them.&#x20;
+
+This allows you to draw maps with tiles of 16x16 and make characters of any size.&#x20;
+
+The effects of making a larger tile size need testing. \
+\
+WIP&#x20;
+
+Does it require more processing/cause lag? Make a test map and find out how large you can make the tile size/chars before a basic map shows signs of lag. Then change the tile size to 16, changing nothing else, does it still lag?\
+\
+If you make tilesets and characters really large, how does it affect other resources like battle animations?\
+\
+With larger tile size, do maps need to be made larger to compensate? \
+Or is the map width tied to tile size? (Tested, and it is)\
+\
+Does it change how "move object" commands work? Perhaps more of a problem if tileset and characters have a large difference in size.\
+\
+Does it affect the camera? Perhaps just larger values needed to move the larger distance?\
+\
+/WIP\
+\
+Types of Resources
+
+&#x20;       Tilesets\
+A single tile is equal to the tile size setting. Your tileset resource file can be of any size in multiples of the tile size.&#x20;
+
+To determine the width and height of your resource file consider the following:
+
+&#x20;       How will it look in the editor?&#x20;
+
+The display box for your tileset can be resized and you will have a scroll bar if it's too large for the display box. Since it's much easier to scroll up and down, you might want to consider a tall, skinny file. \
+\
+Find out how much map editor space you want to balance it with, and use that to determine how many tiles wide your file is. I like about 11 tiles wide, then infinitely expanding down. When I need more room I simply make a larger file by adding to the bottom.&#x20;
+
+The height limit is unknown, but so far has reached 912px without any sign of a problem. That's a single tileset file with 627 tiles in it.&#x20;
+
+&#x20;       How large of an object do I want to draw on the map?\
+\
+In a typical retro game your character is 16x16. A tree might be 16x16. You might see some larger things like mountains or buildings at 32x32. When you add these things to a tileset it's possible to highlight the entire sprite and paint it in the map with a single click, instead of drawing each individual tile. So you may want a very wide tileset to make room for all the large sprites you will be drawing.
+
+Drawing in this way can be tricky when it comes to centering. If you selected a large section of the tileset, let's say it's a house, it will always be drawn flush with the ground. The door touching the ground. If it's an even number of tiles, it will fit to the grid. If it's an odd number of tiles, it will not align one side to the grid. It will place it centered within the grid. You may need to adjust the position on the tileset to get the result you need.&#x20;
+
+\*Some large sprites are better placed as objects/character sheets, but some things are easier on the tileset. Find what works best for you.\*
+
+&#x20;       Characters\
+The first step in making a character resource file is to make a single frame. The minimum size of this frame is equal to the tile size.&#x20;
+
+Draw your sprite. If the sprite needs to be larger than the minimum tile size, then increase the size of the frame by multiples of the tile size. This can be done in either direction, as long as it's divisible by the tile size.&#x20;
+
+16 x 16, 16 x 32, 32 x 16, 32 x 32, etc.&#x20;
+
+If you increase the size of the frame, make sure you center the sprite inside the new frame. If it's not flying, make sure the bottom of the sprite is at the bottom of the frame. \
+\
+Once you create this frame, all other frames in the resource file MUST be the same size. If the sprite inside one of the frames is smaller, it still needs the uniform frame size.&#x20;
+
+Now that you have a single frame, you will copy and paste it multiple times for form a grid. Each row is a direction so there will always be 4 rows. The number columns depends on System/animation frames. By default it's 4. So for a default character sheet paste it enough times to form a 4x4 grid of frames. If it's animated you would update each frame as needed.\
+\
+The frame on the left is the starting frame. \
+\
+When the engine reads a character resource file it calculates all that in reverse to determine the size of a single frame and how to animate. It cuts it into 4 rows for direction, and divides by animation frames. That is why you can make a character of any size.&#x20;
+
+When making characters in new sizes, test how a single frame looks in game. You might need to make adjustments to it's position within the frame and it's best to figure it out early in the process. \
+\
+&#x20;       Battle Sprites\
+This works like Characters. Each row being a certain stance: idle, attacking, getting hit, etc. The number of columns depends on a different setting, Systems/battler frames. The main difference is that there is also an option for battler rows, allowing you to create more stances.&#x20;
+
+There is no size limit. You can make large battlers by increasing the frame size to allow for larger sprites, just like above.&#x20;
+
+&#x20;        Battle Animations\
+There is no size limit, but any animation file has to be a grid of 5x5 frames. The frames can be any size and do not have to match the tile size. However if your game uses large tile size and large resources, you will need to scale up the size of animations. \
+\
+&#x20;         Pictures\
+These can be any size up to 4096x4096 pixels. This is a hard limit.&#x20;
+
+You can use .png and .jpg file types.&#x20;
+
+WIP
+
+list of other types\
+\
+bars\
+facesets\
+gameover\
+icons\
+titlescreen\
+windows skins\
+autotiles\
+mountains\
+3d objects\
+particles\
+skyboxes\
+walls\
+\
+all these need further testing and information\
+\
+/WIP\
+
+
+\---Q---\
 How to see sprites during top down view?\
-How large can a sprite be?\
+\---A---\
+Not available at this time. There are planned features to alter how sprites are drawn relative to the camera so they are always visible. \
+\
+\---Q---\
 How to create a clock/timer?\
+\---A---\
+To create a timer you have a few methods.&#x20;
+
+There is a built in timer command, but it's limited in scope. You can set timers and then use events to set a trigger. Needs further information/testing. \
+\
+The other main method is to use waits and variables. Have an object run on a loop where the code is:
+
+wait 1sec\
+variable TIMER +1\
+IF TIMER =10\
+&#x20;   put your code here
+
+Every second the variable increases by 1 and you use a conditional branch to check when the timer reaches a certain amount to trigger some code. You can decrease the wait to 0.1 for milliseconds, you then have to increase the IF to 100. Or 0.01 for more accurate time. This will depend on what it's used for. \
+\
+That is for a variable counting up. If you want a variable to count down: \
+\
+Object 1\
+variable TIMER =10
+
+Object 2\
+wait 1sec\
+variable TIMER -1\
+IF TIMER =0\
+&#x20;  put your code here\
+\
+You would set it to 10 somewhere that only triggers once, change the code to subtract instead, and a branch to tell when it reaches 0. Again, which method and accuracy you choose will depend on what you're trying to do. \
+\
+For a clock, perhaps a feature or script will be added in the future. \
+\
+Using basic commands, the variable counting method works well. Have a common reaction that always runs and simply has:
+
+wait 1sec\
+variable TIME +1
+
+This will have a single variable keeping track of seconds. You might add exceptions so time doesn't count when in battle for example. Just put this inside a conditional branches that makes sure a certain Switch is OFF. Like battle. When you get into a battle turn the switch on so time doesn't continue. After battle turn the switch ON to resume time. You can also change the speed of time by increases the variable by a larger amount. You can increase the TIME variable by other variable, so the player has control of time. \
+\
+There might be a way to make a formula to divide by 60 and so on to turn seconds into a readable time like 3:28 PM. But I accomplish like so:
+
+wait 1sec\
+variable TIME +1\
+branch - IF TIME equals 60\
+&#x20;   variable MINS =1\
+&#x20;   variable TIME =0\
+\
+Every 60 seconds a minute is counted and the seconds are reset. Then you add a branch to check if MINS =60 and add an HOUR. If HOUR equals 12, or 24, reset them all. You get the idea. \
+\
+To see the current time the most basic method is a Show Text command where you input variables instead of text:\
+\[var=1] : \[var=2]   : \[var=3]
+
+(hours  :  minutes : seconds)
+
+You could create a complex system that shows pictures for each number. Hopefully future features will allow direct drawing of text or numbers on screen using variables so this can easily be drawn on the screen without any downsides.&#x20;
+
+\---Q---\
 Where are the default resources located?\
-How do I make the enemies bigger in battle?\
+\---A---\
+If you didn't change the install directory you can find them at:\
+C:\Program Files (x86)\RPG Paper Maker\Engine\Content\BR\Content\\\
+\
+It's best not to edit these directly or remove them from this folder. You can copy them to your project folder and edit the duplicates.&#x20;
+
+\---Q---\
 How do I place objects in the air?\
+\---A---\
+In RPM the width and height of the map are the X and Z coordinates. The height of an object is the Y coordinate. In the editor you can hold CTRL and UP/DOWN ARROWS to change which plane you are drawing on. If enabled, you will see the grid move up and down. This will help you pick the right Y level. (You can also use CTRL + Scroll wheel).&#x20;
+
+Make it a habit to reset the Y back to ground level after you draw something at a different height. It's not fun to draw a lot of tiles on the wrong level and have to redo it all.&#x20;
+
+\---Q---\
 How do I change the font?\
+\---A---\
+First make sure the font files are in your projects /Font folder. Don't put them in the engine folder.&#x20;
+
+Then click the Fonts button along the top of the editor. Move the fonts from the right side to the middle. You can rename the files here, but you will also have a chance to give them names in another spot.&#x20;
+
+Now go to System and you will see the 2 groups that deal with font. Size and Names.
+
+It's a good idea to set the sizes early on. Some fonts won't look good in the default sizes because they are rather small. Be aware that this will affect menus and shops, so do some testing for your specific fonts.\
+\
+The first item in Font Names is your default font. Therefore this is where your title screen font is set. You can add many other fonts to the list and change them with commands. Double click or edit an item and give it a name. Basic allows you to name the font or use a variable. Font ID allows you to choose from a dropdown. \
+\
+When you use a "Show Text" command, one of the dropdowns here let's you choose the font. You can even use different fonts in the same text box. Any changes here are temporary and won't affect the menu or future show text commands.&#x20;
+
+To change the font for good use the "Set dialog box options" command. You can change size and font by checking only those boxes and nothing else. Anything that shows words will use this new default value. \
+
+
+\---Q---\
 How do I connect 2 maps?\
+\---A---\
+The most common method is to use an object placed on the tile the player will step on to move to another map. It might be the edge of a map, a hole in the ground, or a door to a house.&#x20;
+
+The type of object will determine how it's triggered. A door might require the event be "Hero Action". A typical map transition will use a "Hero touch" event.&#x20;
+
+In the code you will have a "Teleport Object" command. At the top make sure the player object is selected(usually Hero but can be something else). You have multiple options to choose which map you end up on. Most of the time you will click the select button and pick a specific spot.&#x20;
+
+Sometimes there may be many tiles that the player can touch to be teleported to another map. Maybe the entire edge of the map. You could make copies of the above event and paste them along the entire edge, but there is an easier way. If you are not already, track the player's coordinates. Have some object always running with the following code:
+
+Variable(HEROX) = object HERO x square position\
+Variable(HEROZ) = object HERO z square position\
+wait 0.1 sec\
+\
+The size of that wait determines how accurate the coordinates are. A smaller values checks the coordinates more often, but can cause lag if it's checking too much. You can only move so fast anyways. Too high and you might move 2 tiles before it checks again. 0.1 is usually good for all purposes. To reduce lag you might try 0.2 and it will still be fairly ac
+
+The top left corner of the map is 0,0. The X coordinate is the first number and it runs from left to right. The Z coordinate is next and runs from top to bottom. Lets assume a map of 20x20. All the tiles along the right side of the map will have a X value of 0. So at any point if the hero coordinates have 0 as a value for X, that means the player is touching the left edge. So you would put in the code for teleporting to that map. And a single object is covering the entire edge.&#x20;
+
+Where you end up is going to be a problem. You probably want it to match the same area on the next map. For that you need to use the "Map ID" section of the teleport command. You will need the number value of the map you're going to. The X value is going to be the right edge of the new map, so you will need to look that up. (remember the first tile is 0, so the 20th tile will be X=19). You can then plug in the Z variable, which was part of the tracking, to place the hero on the same Z tile as the previous map. This creates a system similar to early Zelda games. \
+\
+There is mention of a future feature for linking maps that might be easier than the above.&#x20;
+
+It's also possible to not use objects at all and instead put multiple branch checks after each coordinate update. If X = 12 AND Z = 4, then you know the hero is stepping on a doorway and you put the teleport code here. That way you can keep all teleport related code in a single object, although it becomes a little abstract. Add comments that say which teleport each branch is, like "enter hero house", or "fall in well". It also allows you to reduce the number of objects on a map, which in some cases can cause lag on large maps if you have too many objs.   \
+
+
+\---Q---\
+\
+\---A---
+
+\---Q---\
+\
+\---A---
+
+\
+\
+\
+\
+\
+\
 I got an error message, how can I report it?\
 How do I stop X from walking through Y?\
 How do I put things on walls?\
@@ -193,7 +495,12 @@ How to make party switching menu?\
 How to display a variable on screen?\
 How to track hit detection?\
 How to display a map / minimap?\
-How to make events move on long complicated routes?\
+How to make events move on long complicated routes?
+
+What file types can be used for music?\
+How to use battle formulas?\
+How large can a sprite be?\
+How do I make the enemies bigger in battle?\
 \
 How to do actions like:\
 Jump\
