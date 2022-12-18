@@ -1,7 +1,3 @@
----
-description: by KevinOfNine
----
-
 # Getting started
 
 <figure><img src=".gitbook/assets/splash.png" alt=""><figcaption><p>A.K.A "RPM"</p></figcaption></figure>
@@ -322,3 +318,6 @@ You can find it in the menu, under `File > Export standalone...`.
 
 Your folder would turn out like this: Getting-Started-WINDOWS-x64-v1.0 (but feel free to rename it). Now you can send your masterpiece out into the world.&#x20;
 
+
+
+&#x20;                                                 Written by KevinOfNine
