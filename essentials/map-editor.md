@@ -1,281 +1,322 @@
 # Map editor
 
-After opening a project, you should have this view:
+## Overview
 
-![](<../.gitbook/assets/map-editor (1).png>)
+This section will explain the basics of each aspect of the map editor. It will include what each section is used for, how to interact with it, what each button/menu does, and the keyboard controls for map editing.&#x20;
 
-## Manage maps
+For more in depth explanations and usage look at the ADVANCED section about mapping.&#x20;
 
-Take a look at the map selector **(1)**. You can add, edit, remove, copy, and paste folders or maps here. We recommend that you use folders to sort your maps for each zones of your game. By default, there's also a `Battle maps` folder that you can use to put all the maps that you will use for battle backgrounds. It is not required to put these maps into this specific folder. Clicking on a map will load this one on the map editor **(5)**. `Right clicking` will open this context menu:
+## Meet the Editor
 
-![](../.gitbook/assets/new-map.png)
+After opening a project, you will be brought to what we can consider the home screen of our project- The Map Editor. From here you have access to every feature the engine has to offer.&#x20;
 
-If you want to create / edit a map, you will get this window:
+Let's look at each individual section.&#x20;
 
-![](../.gitbook/assets/map-properties.png)
+<figure><img src="../.gitbook/assets/editor_marked (1).png" alt=""><figcaption></figcaption></figure>
 
-* `Name`: The map name.
-* `Tileset`: A tileset represents a lot of information applied on a specific set of textures (collisions, dynamic textures,...). We will see how to configure it in a next chapter.
-* **Size**:
-  * `Length`: The map length number of squares (X axe).
-  * `Width`: The map width number of squares (Z axe).
-  * `Height`: The map height number of squares (Y axe > 0).
-  * `Depth`: The map depth number of squares (Y axe < 0).
-* `Music`: The music that is played in the background when entering the map.
-* `Background sound`: The background that is played in the background with the music. This can be wind, rain, etc.
-* `Camera prop. ID`: The camera property ID used when entering the map.
-* **Sky**:
-  * `Color ID`: The unique color ID used for the sky.
-  * `Picture`: A picture used as background for the sky.
-  * `Skybox ID`: The skybox ID used for the sky.
-* **Map startup reactions**: You can configure here particular things happening when entering the map. We will se later how to do that thanks to objects.
-* **Battles:**
+### (1) The Map Selector
+
+A.K.A the map tree, this is where you create and organize the maps that make up your game. You can create folders and drag items around at any time(this won't affect your code, like teleport commands, so it's safe to do).
+
+Click on the map you want to appear on the right side (5) for editing. Clicking on a folder displays no data in the other sections.&#x20;
+
+It is recommended that you use folders to categorize your maps. There are different approaches to naming conventions like area names, level numbers, story elements, etc.&#x20;
+
+<figure><img src="../.gitbook/assets/editor_foldernames.png" alt=""><figcaption></figcaption></figure>
+
+You can use folders inside of folders to further categorize things. Whatever works best for you.&#x20;
+
+In the default RPG battle system regular maps are used as the backdrop. So by default there is a folder called "Battle maps" which is used to store these maps. This isn't required but is highly recommended to keep them separate from normal maps the hero will walk on. Although for some games you might just use normal maps for battle.&#x20;
+
+To make a new map you have to right click on a folder. Maps can't exist outside of at least one folder. By default each project starts with a top folder called "Maps". You can't even delete everything from the map tree, there will always be one folder present.&#x20;
+
+You can right click on a map for the usual options like edit, copy, delete.&#x20;
+
+If you right click on a folder you get similar options for that folder. When you copy a folder it can only be pasted on another folder or an open space under the list.
+
+When you create or edit a map, you will get this window:
+
+<figure><img src="../.gitbook/assets/editor_newmap.png" alt=""><figcaption></figcaption></figure>
+
+* `Name`: Label for your map that appears in the map tree.
+* `Tileset`: This determines what tiles you have available to draw onto this map.
+*   **Size**:
+
+    * `Length`: The map length in number of squares (X axis, left to right).
+    * `Width`: The map width in number of squares (Z axis, front to back).
+    * `Height`: The map height above 0 in number of squares (Y axis, floor to sky).
+    * `Depth`: The map depth below 0 in number of squares (Y axis, floor to seabed).
+
+    \*Depth isn't always needed if you plan your maps ahead of time. But if you suddenly want to add lower levels to a map you can increase the depth to be able to draw lower in the Y axis.
+* `Music`: The music played in the background while on this map.
+* `Background sound`: This is like a second sound channel that lets you play a repeating sound file alongside the music. Common uses would be wind/rain, birds chirping, etc.
+* `Camera prop. ID`: The settings for the camera that are applied when entering the map. Any previous changes to the camera are lost.
+* **Sky**: (the area around or behind your map tiles)
+  * `Color ID`: Use a solid color for the entire sky.
+  * `Picture`: Use a picture for the entire sky. It doesn't rotate with the camera.
+  * `Skybox ID`: Uses 6 images to form a cube around the map. This does rotate with the camera.
+
+**There are 2 tabs on the right side:**
+
+* **Map startup reactions**: Like objects on your map you can add code here. By default it's set up to run this code only once, each time you enter the map. However you can adjust the STATES/EVENTS however you'd like.
+* **Battles:** This lets you enable random battles on the selected map. ****&#x20;
 
 ![](../.gitbook/assets/map-properties-battles.png)
 
-* `Battle map ID`: The battle map ID when entering in a battle in this map (if default selected)
-* **Random battles**:
-  * `The troop list`:&#x20;
+* `Battle map ID`: This determines what map the fight will take place on. You can use a variable for this.
+* **Random battles**: Create a list of possible enemy troops to battle.\
+  \*Double click an empty space or right click to add to the list\
+  (see below image for that dialogue box)
+* Number of steps after next battle: Determines how many steps are required to trigger a battle. (1 square = 3-4 steps)
+* Variance (%): Provides variation to the above number so it's not the same number of steps each time. (It's a percentage)\
+  \*300 steps with 20 variance = 240-360 steps between battles
 
 ![](../.gitbook/assets/random-battle.png)
 
-* `Troop ID`: The troop ID that you can encounter
-* `Priority`: The priority for this troop
-* `Probability`: The calculated probability according to each troops priorities
-* `Terrain`: The terrain where the steps are triggering
-  * `Entire map` : Apply on the entire map
-  * `Terrain`: Not implemented yet
-* Number of steps after next battle: The number of steps to trigger a random battle
-* Variance (%): The steps variance in percentage
+* `Troop ID`: The group of enemies to fight.
+* `Priority`: Determines how often this troop will be picked to fight. Higher number gets picked more often.
+* `Probability`: The calculated probability of this troop getting picked, based on the priorities of all troops in the list. (Since there is only one troop it's showing 100%. It changes as you add more.)
+* `Terrain`: Determines which parts of the map can trigger this fight.
+  * `Entire map` : You can trigger this battle from anywhere on the map.
+  * `Terrain`: Choose a number and only tiles with that assigned number will trigger this fight. You can add multiple numbers.
 
-## Move cursor / grid / camera <a href="#move-cursor-grid-camera" id="move-cursor-grid-camera"></a>
+### (2) The Tile Selector
 
-The camera is always looking at the following cursor:
+This is where you see all the tiles available to draw with. These tiles can also be used by objects in place of a full character sprite sheet.&#x20;
 
-![](../.gitbook/assets/cursor.png)
+Only 1 tileset can be selected per map, however there is no limit to how large a tileset can be. So you can put all your game's tiles on one tileset and use it for every map. Or you can use different files for different maps. (I prefer one large tileset)
 
-Here are some actions possible with the cursor:
+There are really only 2 functions here:
 
-* Move on `X` and `Z` axis by using `AWSD` on keyboard.
-* Move on `Y` axis:
-  * Move by square: use `CTRL + Arrow Up/Down` or `CTRL + mouse wheel`
-  * Move by pixel: use `CTRL + SHIFT + Arrow Up/Down` or `CTRL + SHIFT + mouse wheel`
+* Left Mouse Click - Select a single tile. This will be used with whatever draw tool you select.
+* Left Mouse Click and Drag - Use this to select more than one tile. Useful for drawing large objects like trees or houses. It's alignment with the grid changes between odd and even number of tiles selected. If your 3 tile wide tree isn't matching up, try drawing it 1 or 2 tiles at a time.&#x20;
 
-![](../.gitbook/assets/y-axis.png)
+The map and tile selector boxes are connected.&#x20;
 
-* Teleport the cursor on the pointed element square by using `CTRL + Left click`.
+* You can drag the horizontal separator up and down to see more of one or the other. It's useful to see more of the tiles when drawing maps.&#x20;
+* You can also move the vertical separator left and right to hide or show more of both sections. It's wise to limit your tileset in width, so you don't have to make this box too wide in order to see everything.&#x20;
 
-To move the camera position, press the `mouse wheel` and move the mouse in the direction you want:
+![](../.gitbook/assets/editor\_resize.png)
 
-![](../.gitbook/assets/camera-turn.gif)
+### (3) Drawing types
 
-## Place / Remove elements <a href="#place-remove-elements" id="place-remove-elements"></a>
+There various types of terrain and each one works differently. You will be switching between these on a regular basis. The currently selected type that you will be drawing with is always highlighted.
 
-The map element selection portion **(3)** allows you to select kind of element to place in the map (lands, sprites, objects, reliefs, etc.). You can add or remove something in a specific square by clicking left or right.
+Each type has sub types. The word you see is the subtype selected. When you hover your mouse over that type you will see a list of subtypes. Click one and that word is now showing, which tells you what kind of tile you are about to draw. If that type is highlighted, of course. Click the words directly to switch types without changing the subtype.&#x20;
 
-For example with a floor:
+Land - These tiles are laid flat and make up what the player will walk on.
 
-![](../.gitbook/assets/map-editor-add-remove.png)
+* Floor - Draw tiles from the tileset to make up a floor.&#x20;
+* Autotile - These use unique resource files. They can be animated and have special properties. These resource files have to be imported to a list before they appear in the tile selector. (More on this in the next chapter)
 
-## Undo / Redo <a href="#undo-redo" id="undo-redo"></a>
+Sprites - These tiles are drawn standing up, like the hero.&#x20;
 
-You can go back / after a change in each map. Press `CTRL+Z` for undo and `CTRL+Y` for redo.
+*
 
-## Save changes <a href="#save-changes" id="save-changes"></a>
-
-To save your map editor changes, you can use these shortcuts in the toolbar:
-
-![](../.gitbook/assets/save.png)
-
-* `Save`: Save the changes on the current opened map.
-* `All`: Save the changes on all the modified maps. A map has been changed when you see a `*` after its name:
-
-![](../.gitbook/assets/map-save.png)
-
-## Show / Hide some UI details <a href="#show-hide-some-ui-details" id="show-hide-some-ui-details"></a>
-
-* `G`: Show / Hide grid
-* `I`: Show / Hide information about the pointed square:
-
-![](../.gitbook/assets/square-infos.png)
-
-## Change paint mode <a href="#change-paint-mode" id="change-paint-mode"></a>
-
-Here are the different paint mode **(4)** for drawing your elements in the map:
-
-![](../.gitbook/assets/paint.png)
-
-* `Pencil`: Draw squares one by one.
-* `Rectangle`: Draw squares after tracing a rectangle **(not available yet)**.
-* `Pin of paint`: Fill squares with the same texture as the one pointed.
-
-You can also choose to point on squares or pixel perfect:
-
-![](../.gitbook/assets/squarepixel.png)
-
-* `Square`: When pointing with mouse, this will focus on the center of the pointed square.
-* `Pixel`: When pointig with mouse, this will focus on the exact pointed pixel.
-
-
-
-## Lands <a href="#lands" id="lands"></a>
-
-
-
-Here are the possible lands to place:
-
-![](../.gitbook/assets/lands.png)
-
-## Floors <a href="#floors" id="floors"></a>
-
-The texture selector **(2)** allows you to select a rectangle for a texture. After selecting a rectangle, place your mouse on a square of your map to place your floor.
-
-![](<../.gitbook/assets/add-floor (1).png>)
-
-## Autotiles <a href="#autotiles" id="autotiles"></a>
-
-Autotiles are dynamic floors. This will have borders with automatic changing according to the neighbor squares:
-
-![](../.gitbook/assets/autotiles-preview.png)
-
-In the texture selector **(2)**, you just have to select a square:
-
-![](../.gitbook/assets/autotile-texture.png)
-
-## Sprites <a href="#sprites" id="sprites"></a>
-
-![](../.gitbook/assets/sprites.png)
-
-Sprites are vertical planes that can be used to simulate a "paper" world. Here are the different types of sprites:
+    ![](../.gitbook/assets/sprites.png)
+* Face Sprite - Draws tiles from the tileset that always turn with the camera to "face" the viewer.
+* Fix Sprite - Draws tiles from the tileset that don't turn with the camera. They remain "fixed" in their orientation
+* Double Sprite - Same as Fix Sprite, except 2 copies of the tile are crossed together. They don't turn with the camera, but never appear flat when seen from any side.
+* Quadra Sprite - Same as Double Sprite, except 4 copies to appear more full.
 
 ![](../.gitbook/assets/sprites-preview.png)
 
-* `Face Sprite`: A sprite that is always facing the camera on the X / Y axe.
-* `Fix Sprite`: A flat sprite.
-* `Double Sprite`: Two crossing flat sprites.
-* `Quadra Sprite`: four crossing flat sprites.
+* Wall - These use unique resource files and are drawn using their own unique method. They can only be drawn by choosing a starting point and an end point in a straight line. Then the graphic fills in a wall in between. You can't single click to delete a wall. You have to right click a starting point then right click an end point and it will erase everything in between. You need to be on the correct Y axis for this.&#x20;
 
-Another kind of sprites are `Walls Sprite` that are dynamic (such as autotiles).
+These resource files have to be imported to a list before they appear in the tile selector. (More on this in the next chapter)
 
 ![](../.gitbook/assets/walls-preview.png)
 
-In the texture selector **(2)**, you just have to select a wall:
+Mountains - These are squares and slopes that give a 3D feel to any map.&#x20;
 
-![](../.gitbook/assets/walls-texture.png)
+* Mountain - These use unique resource files that are used to create squares, with FLOOR tiles used on top. By changing some options you can create slopes of various sizes instead.&#x20;
 
-## Mountains <a href="#mountains" id="mountains"></a>
-
-You can add some reliefs to your map thanks to mountains!
+These resource files have to be imported to a list before they appear in the tile selector. (More on this in the next chapter)
 
 ![](../.gitbook/assets/mountains-preview.png)
 
-In the texture selector **(2)**, you have several possible options for designing your mountains:
+3D Objects - These use pre-rendered of any shape and size.
 
-![](../.gitbook/assets/mountains-texture.png)
-
-* `Top floor`: The floor that whill be automatically added on top of the mountains. This floor depends on the tileset texture. Click on the `...` button to edit the top floor.
-* `Border width`: If the border width is equal to zero, this will be a 90° mountain. You can adjust here the width of the borders of the mountains (this will create small slopes).
-  * `Square(s)`: Select the number of squares.
-  * `Pixel(s)`: Select the number of pixels added.
-* `Height`: The total height of the mountain.
-  * `Square(s)`: Select the number of squares.
-  * `Pixel(s)`: Select the number of pixels added.
-
-Note that you can se the angle value bellow these options so you can refer to this for angle collisions in `Systems manager > System`.
-
-## 3D Objects <a href="#3d-objects" id="3d-objects"></a>
-
-There are not only sprites, but also 3D objects available for your maps!
-
-![](../.gitbook/assets/objects-3d-preview.png)
-
-In the texture selector **(2)**, you just have to select an object:
+* 3D Object - Lets you place and drag around your 3D objects on the map.
 
 ![](../.gitbook/assets/objects-3d-texture.png)
 
-## Objects <a href="#objects" id="objects"></a>
+Object - These are used for the hero, npcs, interactive items, or to simply add code to a map. They use 2D sprites for a graphic.
 
-All the previous elements were static (it doesn't move). There are objects in order to add some life on your map. This can be NPCs, chests, etc.
+* Object - Lets you create and drag around objects on the map.
 
-![](../.gitbook/assets/objects.png)
+View - This is for viewing the map.
 
-We will see later how to manage it because this is one of the biggest topics of the engine.
+* View - Lets you see things as they will appear in the game.
 
-## The hero <a href="#the-hero" id="the-hero"></a>
+### (4) Drawing tools
 
-To define where the game should start, you have to define who is the hero in one of your maps. When you create a new project, the hero is the character at the center of the first map. If you want to change it, here is the simple way:
+Once you select the type, it's time to choose the tool we draw with. Not all drawing tools are available for all types.&#x20;
 
-* Select an empty square on object mode, right click on it and click on `define as the hero`.
+There are 3 groups separated by a vertical line:
 
-![](../.gitbook/assets/define-as-the-hero-none.png)
+* Group 1 determines if it will align to the grid or not.
+  * The first icon has an isometric view of a square, to say it will align to the grid and the other squares.
+  * The second icon is just a pixel, to say you can place it on any pixel you want.&#x20;
 
-Another way (more complex) is:
+Some tiles benefit from being aligned to the grid and it makes it easier overall, especially when working with the Move Object command.&#x20;
 
-* Create a new object (`Double click` on a square)
-* Remove all the states and events from the lists (by using `Del` on keyboard) and choose `Hero` as model in the combo box. You can name it "Hero" if you want. You should have something like this:
+Other tiles look better when pixel placed, like scenery, for a more natural look. Trees and flowers, for example.&#x20;
 
-![](../.gitbook/assets/object-map.png)
+*   Group 2 are your basic art tools.
 
-* Click on `OK`. `Right click` on your object, and choose `Define as Hero`.
+    ![](../.gitbook/assets/rotate.png)
 
-![](../.gitbook/assets/define-hero.png)
+    * The first icon is the MOVE tool. With it you can move what is already drawn. Click and drag them around.
+    * The second icon is the ROTATION tool. With it you can rotate what is already drawn. In place of the Tile Selector you will see some options. Choose here which axis you want it to rotate on and by how much, then click on something drawn to apply it.
+    * The third icon is the SCALING tool. With it you stretch what is already drawn. Choose which axis to alter, then click and drag something. It will stretch in that direction.&#x20;
+    * The fourth icon is the PENCIL tool. It will draw whatever you have selected from the Tile Selector. Click and drag to draw freehand. Right click will delete whatever the mouse cursor is pointing at, however it can only delete whatever is from the selected Draw Type. (You can't erase sprites while floor is selected)
+    * The fifth icon is the SQUARE tool. It will let you click once to start a square, then drag to the desired size and let go of the mouse button to finish. Using right click instead will delete in the same way.&#x20;
+    * The sixth icon is the PAINT tool. It will fill the area you click on with whatever you have selected from the Tile Selector. Using right click instead will delete in the same way.
+*   Group 3 determines what layer it will draw on.\
 
-That's it! You will understand later why we are using an object and why this will open a lot of opportunities for customizing your games!
 
-_Note:_ You can see who is the hero with a "S" symbol under it.
+    ![](../.gitbook/assets/layers.png)
 
-![](../.gitbook/assets/hero.png)
+    * The first icon has an isometric view of a single square, this is the default layer. When you draw there is only one layer. Drawing on an existing spot will remove the previous tile. It will not delete more than one layer under it if many are stacked.
+    * The second icon is an isometric view of a 2nd square on top, to say that this will be drawn as an extra layer on top of whatever you click on. With this enabled you can draw an infinite number of layers on top of already drawn tiles. When you right click to delete it will remove the top layer first. You would have to keep right clicking to remove each layer in a stack.&#x20;
 
-## Transformations <a href="#transformations" id="transformations"></a>
+!! IMPORTANT !! - Be careful when using the extra layer tool. When you are done using it always remember to switch back to the default layer. Drawing some things with the extra layer can have undesired consequences, resulting in the need to redraw parts of your map. It's not fun.
 
-In 3D, transformations are these 3 different action:
+A common behavior of all drawing tools is that when you click and drag, the cursor is locked to that Y coordinate. You will need to click again to affect any other Y coordinate.&#x20;
 
-### Translation <a href="#translation" id="translation"></a>
+When you are drawing, the camera angle plays a big part in where you can draw. It will always try to place the tile you want to draw on top of anything under your cursor. You may need to turn the map, or change the zoom level, to draw in the exact spot you want to. Turning the camera upside down is sometimes required.\
+\
+For example, lets says there is a flat map with a mountain in the middle. If your cursor appears over the mountain, it will automatically draw at the higher Y elevation of that mountain. If your cursor appears over the ground below, it will draw at that lower Y elevation. If you wanted to draw floor tiles under the mountain, you would start drawing on the floor next to the mountain and drag the cursor under the mountain, because the drawing will be locked to that Y value and it will prevent the tile from drawing on top of the mountain.
 
-_Not available yet._
+The Advanced > Mapping section will go into more detail on using these tools effectively.&#x20;
 
-### Rotation <a href="#rotation" id="rotation"></a>
+### (5) Drawing space
 
-Apply rotation to floors, sprites or 3D objects only.
+This is the area for viewing and drawing your maps.&#x20;
 
-![](../.gitbook/assets/rotate.png)
+You will see data in the bottom left corner of this section that will help guide you, especially when using the pixel drawing option.
 
-If you left / right click a map element, this will select the object and apply the current configured transformation. You can choose the axis `X`, `Y`, or `Z` to apply the rotation on by selecting the corresponding tab.
+![](../.gitbook/assets/editor\_cursorinfo.png)
 
-![](../.gitbook/assets/rotation-panel.png)
+It displays the information where your cursor is. You can hover over a tile to see it's coordinates and other info. This also tells you where it's going to draw/delete when you click, so if it's going to affect a tile on a higher Y value it will tell you here beforehand.
 
-* `[Selected object]`: Display information about the current selected object bellow. New transformations will be applied to this selected object.
-* `+ / =`: The operation to apply on transformation (add or apply).
-* `Angle`: The angle to add or apply to the selected object.
-* `Apply on left / right click`: If checked, you will apply the transformation each time you click on a selected object. If `+` operation is activated, right click will in fact be a `-` operation. If not checked, updating `angle` will immediately update the selected object.
-* `Define as default X/Y/Z rotation`: Save current `angle` input in engine settings so you get this value in the `angle` input each time you restart the engine.
-* `Reset to default X/Y/Z rotation`: Fill current `angle` input with the saved default rotation value.
+There are 2 numbers in the top left corner of this section. This tells you where on the Y axis you will be drawing(unless your cursor is over a tile with a higher Y value). When you change this value the visible grid moves up and down. This is listed in the menu under Edition>Height up/down. Height moves in full squares, and Height Plus moves in pixels on top of that.&#x20;
 
-### Scaling <a href="#scaling" id="scaling"></a>
+Generally left mouse button is for drawing graphics or selecting an object.&#x20;
 
-_Not available yet._
+Right click will delete graphics or give a context menu for an object.
 
-## Layers options <a href="#layers-options" id="layers-options"></a>
+If you have a scroll wheel it will change the camera zoom level. You can also click and drag the scroll wheel to turn the camera.
 
-You can choose here if you want to be on layer mode or not here:
+Keyboard shortcuts are needed to draw at different Y elevations (see below Keyboard Shortcuts/Modifiers).
 
-![](../.gitbook/assets/layers.png)
+### (6) Main Toolbar
 
-* `No layer`: Replace the selected square by a new one.
-* `Layer`: Add a new square on top of the selected one. There is no limit.
+This contain icons for the most common functions of the editor.&#x20;
 
-Example of layers used with walls:
+You can right click anywhere on this toolbar for an option to toggle it on and off. When it's off, you right click anywhere in the main menu section to get it back.
 
-![](../.gitbook/assets/image.png)
+When the editor is in windowed mode and not long enough, you will see double arrows on the right hand side of the toolbar. Click this to view the hidden icons.&#x20;
 
-## Skyboxes <a href="#layers-options" id="layers-options"></a>
+### (7) Main Menu
 
-Skyboxes are used to give illusion to be in a huge 3D world space.
+From here you can access all functions, including what's already visible in the toolbar.&#x20;
 
-![](../.gitbook/assets/skybox.png)
+However, there are a few things found only here so I will cover those.
 
-Skybox is simply a huge textured cube that follows the camera. You can edit you skyboxes in `Systems > System > Skyboxes`:
+* File
+  * Open BR Folder - This opens the location of the default resource files that came with RPM, if you need to examine them for any reason. (BR = Basic Resources)
+  * Export Standalone - To create a copy of your game to publish.
+  * Close Project - This will bring you back to the RPM launch page.&#x20;
+* Edition (A.K.A. Edit)
+  * Shows you some useful keyboard shortcuts, or allows you to trigger those functions with mouse clicks.&#x20;
+* Options
+  * Set BR Path - Lets you choose the location for the engines default resources. Very few people will ever need to change this.
+  * Set DLC Path - Lets you choose the location for the engines DLC resources, if you have any.&#x20;
+  * Debug Options - Remember this for when you have a bug to fix.
+  * General Options - Some options that apply to the editor.
+  * Change Language - Choose the language for the editor. (Doesn't affect the game)
+  * Auto Display Updater - This is a check box to toggle it on/off. When on, it will check for updates every time you start RPM.&#x20;
+*   Display
 
-![](../.gitbook/assets/system-skyboxes.png)
+    * Show / Hide Grid - Toggles the grid visible on your maps. Recommended you leave this on as the grid easily shows you which Y elevation you are currently set to draw on. (You can use the "View" Draw Type to see your map without the grid)
+    * Show / Hide Square Info - Toggles the information where your cursor is pointing. (It's not very obtrusive and extremely helpful, so you might only need this off if you want clean screenshots from the editor)&#x20;
 
-And then, you can use it in map properties while selecting `Skybox ID`.
+    ![](<../.gitbook/assets/editor\_cursorinfo (1).png>)
+* Help
+  * About - Check what version of RPM you are currently running.
+
+## Keyboard Shortcuts/Modifiers
+
+When looking in the main menu you can see some of those options have keyboard shortcuts next to the name; CTRL+N, SHIFT+UP, G, etc. You can get by without knowing most of them, although the Height Up/Down(moving Y axis grid) can only be achieved by using the keyboard.&#x20;
+
+There are keys that modify how your mouse behaves when working on your maps and it's not really stated anywhere inside the program (yet).
+
+* SHIFT - While holding this, you can click and drag to turn the camera. This is helpful if you only have 2 mouse buttons.&#x20;
+* CTRL - While holding this, you can click somewhere on your map and the camera will instantly move there. It also changes the scroll wheel to move the Y axis grid up and down. You will do this often. If you use it temporarily to draw something up in the air, always remember to move the Y axis grid back to normal.
+* SHIFT+CTRL - While holding this, you can move the Y axis grid by pixels, instead of full squares.&#x20;
+
+As a side note - there are some common OS buttons that can help speed up your work on some objects and menus. You don't have to control everything with the mouse.&#x20;
+
+* Arrow keys - These can change the option that is highlighted, like when looking at a list of code or events. Some fields allow you to press up or down to change the value, like choosing a number for a variable or time event. Usually these can also be changed by spinning your scroll wheel.&#x20;
+* Enter - On most windows it will choose/activate the option that is highlighted(although for some options it produces no result). The starting point differs based on what window you opened. There are times when you can press enter more quickly than moving your mouse cursor.&#x20;
+
+\*For example, when you open an object the OK button is highlighted. If you don't need to change anything on the object you can press enter and the window will close. It easy to dismiss it as only saving a small fraction of time compared to moving the mouse to the OK button, but when practiced this can save a lot of time in the long run. However, things are inconsistent across the editor right now so I find it hard to make full use of this.&#x20;
+
+* Escape - On some windows it will act like pressing the cancel button. It will close the window without saving any changes.&#x20;
+* Tab - Changes what option is highlighted.&#x20;
+
+This is common with all Windows programs, so I don't know how it might be in all OS/versions. Pressing Tab allows you to cycle through all the available buttons, check boxes, and text fields in the current window. When it reaches the end it goes back to the first one. SHIFT+TAB cycles in reverse.
+
+\*Normally the fields are cycled in a natural sequence, but in RPM you will see the selection bouncing around the window out of sequence. Hopefully this will get organized in the future.
+
+* Spacebar - On some windows it will edit the option that is highlighted. This is commonly used when working on your code. You can right click a line of code and click edit, you can double click that line of code to jump into the edit window, or you can press spacebar to open what is highlighted. (Sometimes Enter will do the same thing)
+
+These keys comes in handy when doing certain kinds of actions, especially mass changing some lines of code.&#x20;
+
+## Cursors <a href="#move-cursor-grid-camera" id="move-cursor-grid-camera"></a>
+
+There are 2 different cursors you will see on your map.
+
+![](../.gitbook/assets/editor\_cursors.png)&#x20;
+
+The camera always follows the cursor on the left. You control it with keyboard controls. There are no scroll bars so this is the only real way to look around your map. You can't move it outside the boundaries of the map.&#x20;
+
+The cursor on the right is the selector for the OBJECT Draw Type. A mouse click will place this cursor which used for things like pressing SPACEBAR, CTRL+C, CTRL+V, etc.&#x20;
+
+## Undo / Redo <a href="#undo-redo" id="undo-redo"></a>
+
+You can use this common feature to rollback changes to your map. You can find it in the main menu, where it shows the keyboard shortcuts.&#x20;
+
+* Undo - CTRL + Z
+* Redo - CTRL + SHIFT + Z
+
+This works for things like drawing/erasing any graphic, creating/deleting objects, writing in a text field, and probably more.
+
+It doesn't work for everything so be careful. A few things that don't work are; changing editor options, creating/deleting maps and folders, creating/deleting lines of code.&#x20;
+
+## Save your changes <a href="#save-changes" id="save-changes"></a>
+
+Don't forget to save often.&#x20;
+
+\*Caution - this engine is still in development and sometimes crashes. It gets more stable with each version and it's currently not too bad, but it can happen.&#x20;
+
+To save your changes you can use the main menu or these shortcuts in the main toolbar:
+
+![](../.gitbook/assets/save.png)
+
+* `Save`: Save the changes only on the currently selected map.
+* `All`: Save the changes on all maps.&#x20;
+
+When a map has been changed you will see a `*` after its name in the map tree:
+
+![](../.gitbook/assets/map-save.png)
+
+### Automatic Backups
+
+A recent update introduced an automatic backup feature. Every 30 minutes it creates a backup of the important project files. It doesn't copy all the resources so each backup is only about 5mb. &#x20;
+
+How to restore backups is not yet clear, but you probably just make a copy of the main project and drop the backup files in.&#x20;
+
+&#x20;                                                           Written by KevinOfNine
