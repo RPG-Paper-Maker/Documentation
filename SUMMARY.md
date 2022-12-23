@@ -5,7 +5,7 @@
 ## Essentials
 
 * [Map editor](essentials/map-editor.md)
-* [Resources management](essentials/resources-management.md)
+* [Resource management](essentials/resources-management.md)
 * [Tilesets & Collisions](essentials/tilesets-and-collisions.md)
 * [Variables overview](essentials/variables-overview.md)
 * [Objects & Events](essentials/objects-and-events.md)
@@ -32,7 +32,6 @@
 * [Event commands](plugins-tutorials/event-commands.md)
 * [How to create a plugin](plugins-tutorials/how-to-make-a-new-plugin.md)
 
----
+***
 
 * [FAQ](faq.md)
-

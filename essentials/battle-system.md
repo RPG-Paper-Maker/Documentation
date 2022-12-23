@@ -89,7 +89,7 @@ Battle maps are in fact maps associated with a specific position (representing t
 
 Go to `Systems Manager > System`.
 
-![](../.gitbook/assets/currencies.png)
+![](<../.gitbook/assets/currencies (1).png>)
 
 Currencies can be used in the game for trading with NPCs or any other way.
 
@@ -102,7 +102,7 @@ Go to `Datas Manager`.
 
 In `Skills` tab:
 
-![](../.gitbook/assets/skills.png)
+![](<../.gitbook/assets/skills (2).png>)
 
 In `Items` tab:
 

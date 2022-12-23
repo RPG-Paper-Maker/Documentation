@@ -6,7 +6,7 @@
 
 Welcome to the official RPG Paper Maker documentation page! Here you will find all that you need to become a pro Paper Maker!
 
-## How do I get this amazing program?
+## -- How do I get this amazing program?
 
 ### Installation <a href="#installation" id="installation"></a>
 
@@ -26,7 +26,7 @@ Extract the file. Check out the `README` instructions in the root of the folder 
 
 Extract the file. Run `RPG Paper Maker.app.`
 
-## The program is open...now what?
+## -- The program is open...now what?
 
 There are a few options that apply to the editor itself so let's look at those first.
 
@@ -42,7 +42,7 @@ If you want to change it, go to `Options > General options...`.
 
 <figure><img src=".gitbook/assets/getstart_generaloptions.png" alt=""><figcaption></figcaption></figure>
 
-There is also an option to hide the splash screen while the program is loading if you don't want it remain on top of other programs.&#x20;
+There is also an option to hide the splash screen while the program is loading if you don't want it to remain on top of other programs.&#x20;
 
 ### Change language <a href="#update-keyboard-controls" id="update-keyboard-controls"></a>
 
@@ -60,7 +60,7 @@ This option will check for new updates to RPG Paper Maker on startup. Go to `Opt
 
 <figure><img src=".gitbook/assets/getstart_menuupdater.png" alt=""><figcaption></figcaption></figure>
 
-## I'm ready to create!
+## -- I'm ready to create!
 
 ### Create a new project <a href="#create-a-new-project" id="create-a-new-project"></a>
 
@@ -84,7 +84,7 @@ You can also use `CTRL+O` or go to `File > Open project > Browse...`.&#x20;
 
 Recent projects can also be opened on the first screen (or go to `File > Open project`).
 
-## What should I do first?
+## -- What should I do first?
 
 Before you jump into making maps and working on gameplay there are settings you should get in order first. They will determine how some functions work later on, so it's pretty important.&#x20;
 
@@ -98,9 +98,9 @@ Click the KEYBOARD icon in the main toolbar:
 
 The ENGINE CONTROLS are what you use in the editor. Right now you can only change the directions, which moves the cursor(allowing you to look around the maps you are making).
 
-The GAME CONTROLS are the what the player will have available to press in game. If you plan on using a key you first have to add it to this list, then it becomes available to use in your code. All controls in this list are available in the main menu under SETTINGS for the player to customize, if you choose to allow it. &#x20;
+The GAME CONTROLS are the what the player will have available to press in game. If you plan on using a key you first have to add it to this list, then it becomes available to use in your code. All controls in this list are available in the main menu under SETTINGS for the player to customize in the game, if you choose to allow it. &#x20;
 
-The MENU CONTROLS link actions that are used by the player for window based menus to existing GAME CONTROLS. You might change these if you want the player to move around and control menus at the same time.&#x20;
+The MENU CONTROLS link actions that are used by the player for window based menus to existing GAME CONTROLS. &#x20;
 
 The default controls are set up like your standard RPG game, but you can name them anything you want. If you were making a spaceship game you might name keys "acceleration" or "shields". What happens when these keys are pressed is determined by your game objects, mainly the hero. The entire system is customizable.&#x20;
 
@@ -116,7 +116,7 @@ You can add as many keys as you want to the GAME CONTROLS. To make a new one rig
 
 A lot of options are available in the `Systems manager.` The many tabs along the top contain important game elements but for now let's focus on the first tab, System.&#x20;
 
-You may not need to change all of these options but many of them need to match the resource files you will use. This engine doesn't use fixed resource file sizes. You determine that by the changing the following options.&#x20;
+You may not need to change all of these options but many of them need to match the resource files you will use. This engine doesn't use fixed resource file sizes. You decide that by altering the following options.&#x20;
 
 Click the SYSTEMS icon on the main toolbar. It will display the last tab you were working on.&#x20;
 
@@ -202,7 +202,7 @@ Next click on the FONTS icon in the main toolbar.
 
 Make sure the box is checked up above or you won't see your new fonts on the right side. From here simply double click a file on the right side to put it in the middle. Only the files in the middle can be seen by the editor.&#x20;
 
-Changing the name here seems to rename the actual file. You will have a chance to give it a label later on. Hit OK when finished.&#x20;
+Changing the name here is mainly for when the file was changed externally - update it here to match. You will have a chance to give it a label later on that you will see more often. Hit OK when finished.&#x20;
 
 Now go back to SYSTEMS and our FONT NAMES list. Edit a new entry.
 
@@ -261,7 +261,7 @@ This is for later. It's used to create a cube of walls, floor, and ceiling that 
 
 This is for later, when you actually have heroes to add.
 
-## A hidden feature
+## -- A hidden feature
 
 Most of the other tabs here are self explanatory. You will end up working in them later as you flesh out your game. They will be explained in more details in other sections. However there is one other important hidden feature here to understand early on.&#x20;
 
@@ -271,13 +271,13 @@ It's on the MODEL tab:
 
 A model is like an object you might find on a map, except this is global and outside of any map. Any map object can use a model instead of having it's own code. It's a template for objects.
 
-The first model in this list is what determines the default values when you create a new object on a map. So you can tailor this model to however you want your new objects to start out.&#x20;
+The first model in this list is what determines the default values when you create a new object on a map. So you can tailor this model to however you want your new objects to start out. It might even be useful to change it temporarily to easily mass produce some objects on a map.&#x20;
 
-I find it helpful to disable the check boxes for "Block hero when reaction" and "Pixel Offset". Most of my objects won't want that enabled by default, but the actual look of this model will depend on your needs.
+I find it helpful to disable the check boxes for "Block hero when reaction" and "Pixel Offset". Most of my objects won't want that enabled by default, but the actual look of this model will depend on your needs and preferences.
 
 DO NOT use this model for any other purpose(unless you have a good plan). If you made this into a treasure chest, then every new object would start out as a treasure chest.
 
-## My game is made now
+## -- My game is made now
 
 ### Test your game <a href="#test-your-game" id="test-your-game"></a>
 
@@ -317,6 +317,12 @@ You can find it in the menu, under `File > Export standalone...`.
 * `Version`: Make up a version number. These numbers are automatically used in name o fthe resulting folder. Having 1 for `major` and 0 for `minor` will create a 1.0 version.
 
 Your folder would turn out like this: Getting-Started-WINDOWS-x64-v1.0 (but feel free to rename it). Now you can send your masterpiece out into the world.&#x20;
+
+## -- Conclusion
+
+If you have used other RPG making software before you will find a lot of this engine very familiar. The biggest reason to use it, besides the 3D, is the flexibility of those familiar features. It has a way of letting you do a lot with much less code than you would expect, as long as you make use of the new features as well.&#x20;
+
+
 
 
 

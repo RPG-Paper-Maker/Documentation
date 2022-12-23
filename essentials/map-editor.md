@@ -1,12 +1,12 @@
 # Map editor
 
-## Overview
+## -- Overview
 
 This section will explain the basics of each aspect of the map editor. It will include what each section is used for, how to interact with it, what each button/menu does, and the keyboard controls for map editing.&#x20;
 
 For more in depth explanations and usage look at the ADVANCED section about mapping.&#x20;
 
-## Meet the Editor
+## -- Meet the Editor
 
 After opening a project, you will be brought to what we can consider the home screen of our project- The Map Editor. From here you have access to every feature the engine has to offer.&#x20;
 
@@ -135,13 +135,13 @@ These resource files have to be imported to a list before they appear in the til
 
 ![](../.gitbook/assets/mountains-preview.png)
 
-3D Objects - These use pre-rendered of any shape and size.
+3D Objects - These use pre-rendered models of any shape and size as static scenery.
 
 * 3D Object - Lets you place and drag around your 3D objects on the map.
 
 ![](../.gitbook/assets/objects-3d-texture.png)
 
-Object - These are used for the hero, npcs, interactive items, or to simply add code to a map. They use 2D sprites for a graphic.
+Object - These are used for the hero, npcs, interactive items, or to simply add code to a map. They use 2D sprites for a graphic in either fixed or face orientation. You can use 3D objects but that feature is not fully functional (as of Dec 2022).
 
 * Object - Lets you create and drag around objects on the map.
 
@@ -151,7 +151,7 @@ View - This is for viewing the map.
 
 ### (4) Drawing tools
 
-Once you select the type, it's time to choose the tool we draw with. Not all drawing tools are available for all types.&#x20;
+Once you select the type, it's time to choose a tool to draw with. Not all drawing tools are available for all types.&#x20;
 
 There are 3 groups separated by a vertical line:
 
@@ -247,7 +247,7 @@ However, there are a few things found only here so I will cover those.
 * Help
   * About - Check what version of RPM you are currently running.
 
-## Keyboard Shortcuts/Modifiers
+## -- Keyboard Shortcuts/Modifiers
 
 When looking in the main menu you can see some of those options have keyboard shortcuts next to the name; CTRL+N, SHIFT+UP, G, etc. You can get by without knowing most of them, although the Height Up/Down(moving Y axis grid) can only be achieved by using the keyboard.&#x20;
 
@@ -275,7 +275,7 @@ This is common with all Windows programs, so I don't know how it might be in all
 
 These keys comes in handy when doing certain kinds of actions, especially mass changing some lines of code.&#x20;
 
-## Cursors <a href="#move-cursor-grid-camera" id="move-cursor-grid-camera"></a>
+## -- Cursors <a href="#move-cursor-grid-camera" id="move-cursor-grid-camera"></a>
 
 There are 2 different cursors you will see on your map.
 
@@ -285,7 +285,7 @@ The camera always follows the cursor on the left. You control it with keyboard c
 
 The cursor on the right is the selector for the OBJECT Draw Type. A mouse click will place this cursor which used for things like pressing SPACEBAR, CTRL+C, CTRL+V, etc.&#x20;
 
-## Undo / Redo <a href="#undo-redo" id="undo-redo"></a>
+## -- Undo / Redo <a href="#undo-redo" id="undo-redo"></a>
 
 You can use this common feature to rollback changes to your map. You can find it in the main menu, where it shows the keyboard shortcuts.&#x20;
 
@@ -296,7 +296,7 @@ This works for things like drawing/erasing any graphic, creating/deleting object
 
 It doesn't work for everything so be careful. A few things that don't work are; changing editor options, creating/deleting maps and folders, creating/deleting lines of code.&#x20;
 
-## Save your changes <a href="#save-changes" id="save-changes"></a>
+## -- Save your changes <a href="#save-changes" id="save-changes"></a>
 
 Don't forget to save often.&#x20;
 
@@ -313,10 +313,20 @@ When a map has been changed you will see a `*` after its name in the map tree:
 
 ![](../.gitbook/assets/map-save.png)
 
+When you are in a menu like SYSTEMS and you press OK, those changes are automatically saved. Even if you were to quit without saving, only map changes would be lost. If the engine crashes before you hit OK, you will lose those changes. I assume this works for most other menus.
+
 ### Automatic Backups
 
 A recent update introduced an automatic backup feature. Every 30 minutes it creates a backup of the important project files. It doesn't copy all the resources so each backup is only about 5mb. &#x20;
 
 How to restore backups is not yet clear, but you probably just make a copy of the main project and drop the backup files in.&#x20;
+
+## -- Conclusion
+
+It's a very simple layout and is easy to get used to. Drawing maps in 3D takes some getting used to, but everything is harder with a 3rd dimension.&#x20;
+
+
+
+
 
 &#x20;                                                           Written by KevinOfNine
