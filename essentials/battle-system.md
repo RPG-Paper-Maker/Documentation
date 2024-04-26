@@ -399,7 +399,7 @@ You can right-click and click on `Edit...` to edit properties of an element:
 
     ![Screenshot](../.gitbook/assets/animation-copy-frames.png)
 
-    ****
+
 
     * **Frames to copy**: Select all the frames to copy.
     * `Paste from frame`: Paste from this frame.
@@ -409,7 +409,7 @@ You can right-click and click on `Edit...` to edit properties of an element:
 
     ![Screenshot](../.gitbook/assets/animation-clear-frames.png)
 
-    ``
+
 
     * `Create transition...`: Create a transition on several frames with the following options.
 
@@ -417,7 +417,7 @@ You can right-click and click on `Edit...` to edit properties of an element:
 
     ![Screenshot](../.gitbook/assets/animation-create-transition.png)
 
-    ****
+
 
     * **Frames**: The frames begin and end transition.
     * **Elements index**: The elements index to apply transition.

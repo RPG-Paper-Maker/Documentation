@@ -424,7 +424,7 @@ The only hiccup is that not all file types will work in the preview box of the e
 
 Based on my testing there is no noticeable difference in load times or quality between different file types of the same length. Use whatever works best for your needs. Maybe you want to ensure it works in preview mode. Maybe you want the best compression, or the highest quality.&#x20;
 
-### -- Conclusion
+## -- Conclusion
 
 That covers how to create and import all the types of resources currently available. One more reminder to always run tests on your resource sizes. Working in 3D adds a new layer of complexity on how things actually appear in the game that some users may not be used to. Your choice of camera angle will set the stage.&#x20;
 

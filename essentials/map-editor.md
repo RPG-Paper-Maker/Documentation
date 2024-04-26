@@ -59,7 +59,7 @@ When you create or edit a map, you will get this window:
 **There are 2 tabs on the right side:**
 
 * **Map startup reactions**: Like objects on your map you can add code here. By default it's set up to run this code only once, each time you enter the map. However you can adjust the STATES/EVENTS however you'd like.
-* **Battles:** This lets you enable random battles on the selected map. ****&#x20;
+* **Battles:** This lets you enable random battles on the selected map. &#x20;
 
 ![](../.gitbook/assets/map-properties-battles.png)
 

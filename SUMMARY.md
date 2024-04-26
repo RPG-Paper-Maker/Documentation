@@ -9,6 +9,7 @@
 * [Tilesets & Collisions](essentials/tilesets-and-collisions.md)
 * [Variables overview](essentials/variables-overview.md)
 * [Objects & Events](essentials/objects-and-events.md)
+* [3D Objects](essentials/3d-objects.md)
 * [Event commands list](essentials/event-commands.md)
 * [Camera control](essentials/camera-control.md)
 * [Battle system](essentials/battle-system.md)

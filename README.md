@@ -38,9 +38,17 @@ If you want to change it, go to `Options > General options...`.
 
 &#x20;      &#x20;
 
+<div align="center">
+
 <figure><img src=".gitbook/assets/getstart_generaloptionsmenu.png" alt=""><figcaption></figcaption></figure>
 
+</div>
+
+<div align="center">
+
 <figure><img src=".gitbook/assets/getstart_generaloptions.png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 There is also an option to hide the splash screen while the program is loading if you don't want it to remain on top of other programs.&#x20;
 
@@ -50,7 +58,11 @@ You can change the engine language in `Options > Change language...`:
 
 
 
-![](.gitbook/assets/change-language.png)
+<div align="center">
+
+<img src=".gitbook/assets/change-language.png" alt="">
+
+</div>
 
 ### Enable / Disable Updater <a href="#enable-disable-updater" id="enable-disable-updater"></a>
 
