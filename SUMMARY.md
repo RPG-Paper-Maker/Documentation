@@ -7,7 +7,7 @@
 * [Map editor](essentials/map-editor.md)
 * [Resource management](essentials/resources-management.md)
 * [Tilesets & Collisions](essentials/tilesets-and-collisions.md)
-* [Variables overview](essentials/variables-overview.md)
+* [Variables & Conditions](essentials/variables-overview.md)
 * [Objects & Events](essentials/objects-and-events.md)
 * [3D Objects](essentials/3d-objects.md)
 * [Event commands list](essentials/event-commands.md)

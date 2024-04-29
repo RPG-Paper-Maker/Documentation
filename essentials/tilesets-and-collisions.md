@@ -62,7 +62,7 @@ To delete a square you can click on it to highlight it in purple, then press Del
 
 This tab controls how an object can walk over a tile when it's used as a Floor tile.&#x20;
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 Each tile has 4 arrows that determine which side of the tile the player can walk through.&#x20;
 
@@ -74,7 +74,7 @@ You can click each individual arrow to make change. If you click the square in t
 
 Here are some common uses, with red lines indicating where you can't walk:
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. A tile that can only be entered from the north side
 2. A tile that can't be walked on at all
@@ -85,7 +85,7 @@ Here are some common uses, with red lines indicating where you can't walk:
 
 This tab allows you to assign ID numbers to each tile which can be used in your code to identify what tile an object is standing on. This can have many uses like making the object slow down, take damage, or checking if they can jump onto that tile.&#x20;
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 Left click to increase the number and right click to decrease it.
 
@@ -101,7 +101,7 @@ It will check which tile the object is standing on and write the Terrain ID into
 
 This tab lets you set a tile to be climbable when it's used as a Sprite. When enabled, an object that walks into it will automatically climb up one side and down the other.&#x20;
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 An O means it CAN be climbed.
 
@@ -115,13 +115,13 @@ This is a new feature and can be a little buggy. Placement of your sprite is ver
 
 There is a setting that determines climbing speed on the Systems>System tab:
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>You can use a variable to adjust it mid-game</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>You can use a variable to adjust it mid-game</p></figcaption></figure>
 
 
 
 Some of these tabs allow you to change the zoom.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
 ## -- Other types
 
@@ -169,7 +169,7 @@ When you check the box for Animated it assumes all frames on the top row are for
 
 The number of frames and speed of an Autotile is set in the Systems Manager:
 
-<figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once you have imported all the files, you must add them to the list. First choose the Autotile drawing tool:
 
@@ -231,17 +231,17 @@ Mountain files must be placed in the project folder under /images/textures/mount
 
 Click the Mountains icon to add them to the list:
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 Move them to the left side to make them available when using the Mountain draw tool.
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
 Choose which texture you want to use, then adjust the Settings to select the size and shape.
 
 These default settings create a cube that is 1 tile x 1 tile. The actual size in px depends on your system setting for Square Size. Mountain collision height and angle will affect how objects interact with them.
 
-<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
 
 Adjust the Border Height to make a cube that is taller or shorter. You must increase the pixel setting before setting the square setting to 0.&#x20;
 
@@ -249,21 +249,21 @@ If the Border Height in px is equal to or lower than the Mountain collision heig
 
 For example, this mountain size will allow the player to walk on top of it because the Mountain collision height setting is currently on 4.&#x20;
 
-<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
 
 1 square of the border height is equal to the square size setting. So using the defaults, you would need to set the Mountain collision height setting to 16 to allow objects to climb over a mountain with a border height of 1 square.&#x20;
 
 When drawing mountains you can stack single cubes on top of each other, or change the border height. Each method will create a different looking mountain.&#x20;
 
-<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (27) (1).png" alt=""><figcaption></figcaption></figure>
 
 By drawing the same texture next to it, the engine will combine them and create a continuous wall. It will not merge different textures.&#x20;
 
-<figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
 
 When you adjust the Border Width, it will change from a cube to a cube with angled sides.&#x20;
 
-<figure><img src="../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
 
 The Angle listed corresponds to the Mountain collision angle setting. If the angle is equal to or less than the setting, the player will be able to walk up the slope.&#x20;
 
@@ -271,7 +271,7 @@ Both of the Mountain collision settings can be variables and changed mid-game.
 
 The engine doesn't offer single tile slopes yet, but you can create them by using border width and height of 1. Then placing cubes to cover the angled sides.&#x20;
 
-<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption><p>You might want to make it 2 tiles wide for easy access</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (30) (1).png" alt=""><figcaption><p>You might want to make it 2 tiles wide for easy access</p></figcaption></figure>
 
 ## -- Collisions <a href="#collisions" id="collisions"></a>
 
@@ -285,7 +285,7 @@ There is another type of box that is blue and is used for other interactions, li
 
 A Bounding Box is a simple geometric shape that is used to check for an interaction between 2 objects. When you set a square collision, it is automatically turned into a cube that is placed around the sprite.&#x20;
 
-<figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption><p>A cylinder requires more processing, so cubes are used to increase performance</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (33) (1).png" alt=""><figcaption><p>A cylinder requires more processing, so cubes are used to increase performance</p></figcaption></figure>
 
 When an object with a collision moves, the engine will check if it's red bounding box touches another red bounding box and stop it from moving. This is why if there is no collision, it will walk through everything.
 
@@ -295,19 +295,19 @@ To see the bounding boxes as you play, you can enable it from the editor. This c
 
 Check the following option:
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p>This can cause lag on low-end computers</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (1).png" alt=""><figcaption><p>This can cause lag on low-end computers</p></figcaption></figure>
 
 When the camera is facing N, E, S, or W the red bounding box will appear as a diamond.&#x20;
 
 When the camera is facing in between, like NE or SW, the red bounding box will appear as a square.&#x20;
 
-<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption><p>Other boxes turn as well, but it can possibly change how 2 boxes interact</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (34) (1).png" alt=""><figcaption><p>Other boxes turn as well, but it can possibly change how 2 boxes interact</p></figcaption></figure>
 
 The different shapes will affect how your object moves in the game world. Floor tiles will be square and your hero is a diamond. So if even the tip of the diamond touches the floor tile, you won't be able to pass.&#x20;
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 The tip of the diamond extends below the visual appearance of the sprite, so it can take a while for players to adjust. They might think the collision is only the yellow line, but it also includes the red triangle.&#x20;
 
@@ -327,7 +327,7 @@ Fix sprites are flat. The player will be able to walk closer to them.
 
 Other types of sprites will have a full diamond like the player. The player will have to walk further north/south in order to pass by. &#x20;
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption><p>Floor tiles</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16) (1).png" alt=""><figcaption><p>Floor tiles</p></figcaption></figure>
 
 Floor tiles that are set to block the hero, like the dark square, don't show a bounding box. However, you can imagine something like this flat red bounding box in it's place. In this scenario, the hero is unable to walk directly S or W because the tips of it's diamond are hitting the blocked floor tile.&#x20;
 
@@ -335,7 +335,7 @@ Autotiles work the same way as floor tiles.
 
 Mountains have a few options:
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 * The default is going to be the most common. This will make the collision match the size and shape of the mountain.&#x20;
 * Force Always (not sure, needs more specific data)
@@ -347,13 +347,13 @@ Walls work similar to sprites, in that they will have Practicable and Climbable 
 
 1. Collisions icon > 3D Objects tab
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption><p>3D Objects</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17) (1).png" alt=""><figcaption><p>3D Objects</p></figcaption></figure>
 
 You are limited to NONE, or SIMPLIFIED. Which likely uses the basic shape/size of the object as it's collision. Needs more data.&#x20;
 
 2. 3D Objects icon
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption><p>3D Objects</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p>3D Objects</p></figcaption></figure>
 
 It provides the same options, just in a different place. Changing it in one place, also changes it in the other.&#x20;
 
@@ -361,7 +361,7 @@ It provides the same options, just in a different place. Changing it in one plac
 
 The best place to adjust your collisions will be the Collisions Manager since it combines all collision types in one place. This is the only place to set collisions for Characters, but all others have a second place to set them.&#x20;
 
-<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 It's good practice to set collisions when you import the graphics, like in the Tileset or Autotiles windows.  But if you need to adjust them later, Collisions will be your central location.&#x20;
 
