@@ -20,7 +20,7 @@ Paper Maker allows the following types of data:
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>The circle/dot to the left of each field is called a Radio Button</p></figcaption></figure>
 
-When writing data into a variable, you can choose the type of data you want to store by selecting one of the above highlighted fields. All other fields look at existing data elsewhere in the database and writing that into the variable as a number.&#x20;
+When writing data into a variable, you can choose the type of data you want to store by selecting one of the above highlighted fields. All other options look at existing data in the database and write that into the variable as a number.&#x20;
 
 ### Entering Data
 
@@ -60,15 +60,15 @@ Next you choose what kind of operation this will be.&#x20;
 
 Equals - Overwrite the old value with the new one.
 
-Plus - Add the number to the value in variable.&#x20;
+Plus - Add the new value to the variable.&#x20;
 
-Minus - Subtract the number from the value in variable.&#x20;
+Minus - Subtract the new value from the variable.&#x20;
 
-Times - Multiply the value of the variable by the number.&#x20;
+Times - Multiply the variable by the new value.&#x20;
 
-Divided by - Divide the value of the variable by the number.&#x20;
+Divided by - Divide the variable by the new value.&#x20;
 
-Modulo - Divide the value of the variable by the number, then get rid of the remainder. \*
+Modulo - Divide the variable by the new value, then get rid of the remainder. \*
 
 * Equals works for all data types.
 * Plus \ Minus works for Number and Message.
@@ -80,7 +80,7 @@ Let's say you have 10 divide by 3. You will end up with 3.333.&#x20;
 
 If you instead use 10 mod 3, you will end up with 3. Because 3 only fits into 10 three times, which is a total of 9. It discards the 1 left over.
 
-One good use for this is to remove decimal points. If you take any number, like 3.333 Mod 1, 3 fits into 3.333 three times so you are left with 3. The .333 is discarded.&#x20;
+One good use for this is to remove decimal points. If you take any number, like 3.333 Mod 1, the 1 fits into 3.333 three times so the result is 3. The remaining .333 is discarded. This will always round down. You would need to add code to check when it should round up, then add 1 to the result.&#x20;
 
 ### - Value
 
@@ -107,7 +107,7 @@ Set the range and the engine will pick a number at random between the two values
 
 <figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-Enter some text to be written into the variable. You can use the ADD operation and it will include the new text to the right of the existing message. Remember you might need to add spaces and punctuation.&#x20;
+Enter some text to be written into the variable. You can use the ADD operation and it will include the new text to the right of the existing message. Remember to add spaces and punctuation when required.&#x20;
 
 ### -- Switch
 
@@ -143,11 +143,11 @@ The last drop down menu has you choosing which currency to check, if your game u
 
 <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
-Get the value of a statistic of a Hero or Enemy. Knowing the ID can be difficult. IDs are assigned in sequence as a Hero or Enemy is encountered. Unless your game is extremely linear, there is no real way to know this unless you manually keep track with code.&#x20;
+Get the value of a statistic of a Hero or Enemy. Knowing the ID can be difficult. IDs are assigned in sequence as a Hero or Enemy is encountered. Unless your game is extremely linear, there is no direct way to know this unless you manually keep track with variables.&#x20;
 
-For Heroes, the best method is to add all the heroes to your party at the start of a New Game. This will secure their IDs starting with 0. Then you can change some of them to be HIDDEN with the Modify Party command, so they are not available to the player. When you want to give them back to the player, move them from HIDDEN to TEAM/RESERVE. This doesn't work if an unlimited number of heroes could be added, such as a Pokemon clone. The other choice is to keep track with variables as the heroes are added.
+For Heroes, a simple method is to add all the heroes to your party at the start of a New Game. This will secure their IDs starting with 0. Then you can change some of them to be HIDDEN with the Modify Party command, so they are not available to the player. When you want to give them back to the player, move them from HIDDEN to TEAM/RESERVE. This doesn't work if an unlimited number of heroes could be added, such as a Pokemon clone. The other choice is to keep track with variables as the heroes are added.
 
-For Enemies, there is an option below that can provide it's ID but it only works inside a troop reactions.
+For Enemies, there is an option below that can provide it's ID but it only works inside a troop reactions. You could also keep track with variables.&#x20;
 
 ### -- Map Characteristic
 
@@ -155,17 +155,17 @@ For Enemies, there is an option below that can provide it's ID but it only works
 
 Allows you to find various map related information about an object.&#x20;
 
-The drop down allows you to choose This Object, which will be the object that runs this command. The Hero is an available, too. Then a list of all objects on the current map. It's not possible to use this on objects in a different map.
+The drop down allows you to choose This Object, which will be the object that runs this command. The Hero is an available option, too. Followed by a list of all objects on the current map. It's not possible to target objects in a different map.
 
 If you use Number in the first drop down menu, you can then make sure a certain object always has the same Object ID in each map. That way you can refer to it by number in your code and it you know it will target the correct object.&#x20;
 
 The last drop down menu gives the following choices:
 
-* X, Y, and Z square position - This corresponds to the values you see in the editor. 0, 0, 0 is in the upper left corner of the map at ground level. Squares will often be more useful, since commands like Move Object and Teleport Object will be measured in tiles.&#x20;
+* X, Y, and Z square position - This corresponds to the values you see in the editor. 0, 0, 0 is in the NW corner of the map at ground level. Squares will often be more useful, since commands like Move Object and Teleport Object will be measured in squares.&#x20;
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption><p>Square = Tile</p></figcaption></figure>
 
-* X, Y, and Z pixel position - This will depend on your square size. If your square size is 16 px, then a square position of 4 will be 4 x 16 = 64 px.&#x20;
+* X, Y, and Z pixel position - This will depend on your square size. If your square size is 16 px, then a square position of 4 will be a pixel position of 4 x 16 = 64 px.&#x20;
 * Orientation - This gives you what direction the object is facing. It corresponds with the character sheet resources.&#x20;
 
 <figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
@@ -267,7 +267,7 @@ To create a property, open an object and create a new entry in the Properties bo
 
 These are useful because you can have the same property on multiple objects and each one will store it's own value. Any commands using the property have to be on the object itself. This allows you to copy and paste completed objects and they will all function independently.&#x20;
 
-For example you can give an object a HP property and every time the player attacks it, 1 is subtracted from it's HP. It has no affect on the HP property of other objects. You can't use external objects to check a property, it has to be check on itself.&#x20;
+For example you can give an object a HP property and every time the player attacks it, 1 is subtracted from it's HP. It has no effect on the HP property of other objects. You can't use external objects to check a property, it has to be check on itself.&#x20;
 
 <img src="../.gitbook/assets/mm (1).jpg" alt="" data-size="line"> You **can** make a property be a variable, write a property into a variable and use/edit that value, or write any existing variable into a property.
 
@@ -285,9 +285,9 @@ Most commands can reference variables, parameters, or properties. They won't sho
 
 There are different defaults for the various types of data.&#x20;
 
-* Variables automatically start at 0
-* Parameters ask you to choose the default value
-* Properties ask you to choose the default value
+* Variables automatically start at 0.
+* Parameters ask you to choose the default value.
+* Properties ask you to choose the default value.
 
 If you choose a certain type of data as the default, any type of data can be accepted and it becomes that data type moving forward.&#x20;
 
@@ -295,9 +295,9 @@ If you choose a certain type of data as the default, any type of data can be acc
 
 Variables alone won't accomplish much. Aside from plugging variables into commands, conditions will check a variable and run some code based on the value inside. Let's refer to them as IF statements and you can think of them logically.&#x20;
 
-IF the variable is equal to 0, THEN do X\
-IF the variable is equal to 1, THEN do Y\
-IF the variable is equal to 2, THEN do Z
+IF the variable is equal to 0, THEN do X.\
+IF the variable is equal to 1, THEN do Y.\
+IF the variable is equal to 2, THEN do Z.
 
 You have the option to add an ELSE statement, which decides what happens when the IF part isn't true.&#x20;
 
@@ -317,7 +317,7 @@ When using Conditions you start by choosing a type of data to look at. Most of t
 
 ### Variables / Parameters / Properties
 
-This section will likely be the most common. You will be using many of these to keep track of things in your game. Tracking hero actions, by increasing one as you swing a sword. Quest progress, by increasing one each time you talk to the next NPC or complete an action. All switches/messages are essentially variables.
+This section will likely be the most commonly used. You will be using many variables to keep track of things in your game. Tracking hero actions, by increasing one as you swing a sword. Quest progress, by increasing one each time you talk to the next NPC or complete an action. All switches/messages are essentially variables.
 
 If you don't have any parameters or properties set up, you will only have the option to choose a variable.&#x20;
 
@@ -336,7 +336,7 @@ When using these you will have the following standard mathematical options:
 * Greater Than
 * Less Than
 
-The final field is what you are comparing to. Generally, it should match the type of data that is inside the var/param/prop. If you write Switch:ON into a variable, you might want to compare it to another Switch data type. Not all cross combinations of types will work.&#x20;
+The final field is what you are comparing to. Generally, it should match the type of data that is inside the var/param/prop. If you write Switch:ON into a variable, you might want to compare it to another Switch data type. Not all cross combinations of types might work.&#x20;
 
 For simple IF statements you will mostly be using a static number, like 4. But for complex and dynamic systems you will start comparing it to another var/param/prop. This will be explored in more detail later on.&#x20;
 
@@ -412,7 +412,7 @@ To check a single hero you could set a variable to a static number and reference
 
 <figure><img src="../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
 
-You might want to check all 4 heroes for that Battle Sword. You could make 4 conditions, 1 for each hero. Or you could increment the variable and loop the code. As long as your heroes IDs are in sequence.
+You might want to check all 4 heroes for that Battle Sword. You could make 4 conditions, 1 for each hero. Or you could increment the variable and loop the code. As long as your hero's IDs are in sequence.
 
 <figure><img src="../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
 
@@ -426,11 +426,11 @@ You might want to check all 4 heroes for that Battle Sword. You could make 4 con
 >
 > It increments another variable, so that we can keep track of how many times the loop runs.
 >
-> We have to check 4 heroes, so if the count is below 4 it needs to loop. So it jumps to the TOP.
+> We have to check 4 heroes, so if the count is below 4 it needs to keep looping. So it jumps to the TOP.
 >
-> It runs the same condition a second time, this time with the variable on 2. So it checks the second hero for the sword.
+> It runs the same condition a second time, this time with the variable set to 2. So it checks the second hero for the sword.
 >
-> It repeats this for each hero and when the count reaches 4 it stops looping to the TOP and finishes.
+> It repeats this for each hero and when the count reaches 4 it stops looping and finishes.
 
 &#x20;
 
@@ -438,7 +438,7 @@ The possibilities are endless. Keep in mind that the field a variable is replaci
 
 ## -- Conclusion
 
-How complex you make use of these is up to you. For those just learning, start simple and slowly work your way to complex. Good external note taking can help you keep track of everything, especially when you need to look at your code after a long time has passed. &#x20;
+How complex you make use of these is up to you. For those just learning, start simple and slowly work your way up to complex. Good external note taking can help you keep track of everything, especially when you need to look at your code after a long time has passed. &#x20;
 
 
 
