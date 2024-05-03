@@ -74,13 +74,13 @@ Modulo - Divide the variable by the new value, then get rid of the remainder. \*
 * Plus \ Minus works for Number and Message.
 * The rest only work for Number.
 
-\*This function, a.k.a. Mod, might not be familiar to most people but it can be useful. Basically it only returns how many times the full number you choose can fit into the value.&#x20;
+\*This function, a.k.a. Mod, might not be familiar to most people but it can be useful. It divides a number by the value entered, and only gives you the remainder.&#x20;
 
 Let's say you have 10 divide by 3. You will end up with 3.333.&#x20;
 
-If you instead use 10 mod 3, you will end up with 3. Because 3 only fits into 10 three times, which is a total of 9. It discards the 1 left over.
+If you instead use 10 mod 3, you will end up with 1. Because 3 fits into 10 three times, which is a total of 9. The remainder is 1.
 
-One good use for this is to remove decimal points. If you take any number, like 3.333 Mod 1, the 1 fits into 3.333 three times so the result is 3. The remaining .333 is discarded. This will always round down. You would need to add code to check when it should round up, then add 1 to the result.&#x20;
+One possible use for this is to remove decimal points. If you have a variable with a value of 3.333, start by making a copy of it. Do Mod 1 to the copy, which results in 0.333. Then subtract the copy from the original. 3.333 - 0.333 = 3. There are other ways to do this with javascript, but this method can be done with default commands and some math.&#x20;
 
 ### - Value
 
