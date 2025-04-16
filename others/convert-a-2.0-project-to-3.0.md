@@ -11,9 +11,9 @@ icon: rocket-launch
 
 To begin, ensure your project is upgraded to version 2.11.0 using RPG Paper Maker 2.11.0. Download the latest version, open your project, and follow the prompts to convert it to the new version. This update includes essential improvements and features.
 
-RPG Paper Maker 3.0.0 requires your project to be at least version 2.11.0 or newer before performing the upgrade.
+**RPG Paper Maker 3.0.0 requires your project to be at least version 2.11.0 before performing the upgrade.**
 
-### Importing your project
+## Importing your project
 
 Before importing your project into RPG Paper Maker 3.0.0, ensure your project directory is correctly structured. Verify that your 2.11.0 project folder contains the path `YourProjectName/resources/app/Content`. Follow these steps to prepare and import your project:
 
@@ -23,7 +23,7 @@ Before importing your project into RPG Paper Maker 3.0.0, ensure your project di
 4. Select the `YourProjectName.zip` file for import.
 5. Accept the conversion prompt, if it appears, to complete the process.
 
-### Manual Changes Needed
+## Manual changes needed
 
 Certain manual updates might be necessary:
 
