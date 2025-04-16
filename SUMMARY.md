@@ -36,3 +36,7 @@
 ***
 
 * [FAQ](faq.md)
+
+## OTHERS
+
+* [Convert a 2.0 project to 3.0](others/convert-a-2.0-project-to-3.0.md)
