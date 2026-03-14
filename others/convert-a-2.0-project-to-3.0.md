@@ -13,13 +13,22 @@ To begin, ensure your project is upgraded to version 2.11.0 using RPG Paper Make
 
 **RPG Paper Maker 3.0.0 requires your project to be at least version 2.11.0 before performing the upgrade.**
 
-## Importing your project
+[You can download RPG Paper Maker 2.0.11 for Windows here.](https://github.com/RPG-Paper-Maker/RPG-Paper-Maker/releases/download/2.0.10/RPG.Paper.Maker.2.0.11.zip)
+
+## Upgrading your 2.0.11 project to 3.0 for Desktop
+
+1. Launch RPG Paper Maker 3.0.0 and click the `Open project...` button.
+2. Open `YourProjectName/game.rpm` .
+3. This will ask you to convert your project to the latest version. Accept it.
+4. All done!
+
+## Importing your 2.0.11 project to 3.0 for Web version
 
 Before importing your project into RPG Paper Maker 3.0.0, ensure your project directory is correctly structured. Verify that your 2.11.0 project folder contains the path `YourProjectName/resources/app/Content`. Follow these steps to prepare and import your project:
 
 1. Compress the `Content` folder into a `.zip` archive. If necessary, download and use a tool like 7-Zip.
 2. Rename the created `.zip` file from `Content.zip` to `YourProjectName.zip`.
-3. Launch RPG Paper Maker 3.0.0 and click the "Import a project..." button.
+3. Launch RPG Paper Maker 3.0.0 and click the `Import a project...` button.
 4. Select the `YourProjectName.zip` file for import.
 5. Accept the conversion prompt, if it appears, to complete the process.
 
@@ -27,7 +36,11 @@ Before importing your project into RPG Paper Maker 3.0.0, ensure your project di
 
 Certain manual updates might be necessary:
 
-* **Local Plugins**: If you have plugins that are installed locally rather than through the online plugin manager, these won't be compatible with RPG Paper Maker 3.0.0. Check for any manual integration or updates required by the plugin creators.
-* **Custom 3D Objects**: For any custom 3D objects in your project, ensure that the shapes are centered at the origin point (0,0,0). Misalignment may cause rendering issues in the updated version.
+* **Local Plugins**: If you have plugins that are installed locally rather than through the online plugin manager, these won't be compatible with RPG Paper Maker 3.0.0. Check for any manual integration or updates required by the plugin creators. Key differences:
+* `Datas.*` → `Data.*`
+* `System.*` → `Model.*`
+* `Core.Vector2` → `THREE.Vector2`
+* `Core.Vector3` → `THREE.Vector3`
+* `Core.ReactionInterpreter.currentParameters[N]` → `Core.ReactionInterpreter.currentParameters.get(N)`
 * **Special Characters**: If using the online version of RPG Paper Maker, it's important to remove any special characters before importing, such as `ñ`, from your project's file names and paths to avoid compatibility issues.
 
