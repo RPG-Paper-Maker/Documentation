@@ -13,7 +13,7 @@ To begin, ensure your project is upgraded to version 2.11.0 using RPG Paper Make
 
 **RPG Paper Maker 3.0.0 requires your project to be at least version 2.11.0 before performing the upgrade.**
 
-[You can download RPG Paper Maker 2.0.11 for Windows here.](https://github.com/RPG-Paper-Maker/RPG-Paper-Maker/releases/download/2.0.10/RPG.Paper.Maker.2.0.11.zip)
+[You can download RPG Paper Maker 2.0.11 for Windows here.](https://github.com/RPG-Paper-Maker/RPG-Paper-Maker/releases/download/2.0.11/RPG.Paper.Maker.2.0.11.zip)
 
 ## Upgrading your 2.0.11 project to 3.0 for Desktop
 
